@@ -1,26 +1,29 @@
 <template>
   <Layout>
-    <!-- Learn how to use images here: https://gridsome.org/docs/images -->
-    <g-image alt="Example image" src="~/favicon.png" width="135" />
-
-    <h1>Hello, world!</h1>
+    <h1>Hello, Django! This is Gatsby!</h1>
     <p>
       Learning VueJS by using Gridsome to explore the Python Django library, as
       processed by Parso.
     </p>
     <p>I gotta be me, I guess.</p>
     <h2>Django Modules</h2>
-    <div v-for="edge in $page.modules.edges" :key="edge.node.id">
-      <h3>{{ edge.node.module }}</h3>
-      <pre>{{ edge.node.docstring }}</pre>
-    </div>
+    <ModuleSummary
+      v-for="edge in $page.modules.edges"
+      v-bind:key="edge.node.id"
+      v-bind:module="edge.node"
+    />
   </Layout>
 </template>
 
 <script>
+import ModuleSummary from "~/components/ModuleSummary.vue";
+
 export default {
   metaInfo: {
     title: "Hello, world!",
+  },
+  components: {
+    ModuleSummary,
   },
 };
 </script>
