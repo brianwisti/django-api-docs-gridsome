@@ -6,5 +6,13 @@
 
 module.exports = {
   siteName: 'Django API Docs',
-  plugins: []
+  plugins: [],
+  templates: {
+    DjangoModule: [
+      {
+        path: '/module/:module',
+        component: './src/templates/DjangoModule.vue',
+      },
+    ]
+  }
 }

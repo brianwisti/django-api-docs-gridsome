@@ -1,6 +1,8 @@
 <template>
   <div class="module-summary">
-    <header>{{ module.module }}</header>
+    <header>
+      <g-link :to="module.path">{{ module.module }}</g-link>
+    </header>
     <pre v-if="module.docstring" class="docstring">{{ module.docstring }}</pre>
   </div>
 </template>
@@ -18,7 +20,7 @@ export default {
 
 .module-summary header {
   font-weight: bold;
-  border: thin solid black;
+  border-bottom: thin solid black;
 }
 
 .docstring {

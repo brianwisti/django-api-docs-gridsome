@@ -42,6 +42,7 @@ query {
         id
         module
         docstring
+        path
       }
     }
   }
