@@ -46,5 +46,5 @@
     }
   ],
   "classes": [],
-  "doc": "\"\"\"Functions to parse datetime objects.\"\"\""
+  "docstring": "\"\"\"Functions to parse datetime objects.\"\"\""
 }

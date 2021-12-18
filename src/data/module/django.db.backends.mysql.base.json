@@ -268,5 +268,5 @@
       "classes": []
     }
   ],
-  "doc": "\"\"\"\nMySQL database backend for Django.\n\nRequires mysqlclient: https://pypi.org/project/mysqlclient/\n\"\"\""
+  "docstring": "\"\"\"\nMySQL database backend for Django.\n\nRequires mysqlclient: https://pypi.org/project/mysqlclient/\n\"\"\""
 }

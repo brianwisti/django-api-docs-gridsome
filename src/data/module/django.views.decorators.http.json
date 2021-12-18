@@ -49,5 +49,5 @@
     }
   ],
   "classes": [],
-  "doc": "\"\"\"\nDecorators for views based on HTTP headers.\n\"\"\""
+  "docstring": "\"\"\"\nDecorators for views based on HTTP headers.\n\"\"\""
 }

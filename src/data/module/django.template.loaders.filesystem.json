@@ -49,5 +49,5 @@
       "classes": []
     }
   ],
-  "doc": "\"\"\"\nWrapper for loading templates from the filesystem.\n\"\"\""
+  "docstring": "\"\"\"\nWrapper for loading templates from the filesystem.\n\"\"\""
 }

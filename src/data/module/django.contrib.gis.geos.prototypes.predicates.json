@@ -14,5 +14,5 @@
       "docstring": "\"For GEOS binary predicate functions.\""
     }
   ],
-  "doc": "\"\"\"\n This module houses the GEOS ctypes prototype functions for the\n unary and binary predicate operations on geometries.\n\"\"\""
+  "docstring": "\"\"\"\n This module houses the GEOS ctypes prototype functions for the\n unary and binary predicate operations on geometries.\n\"\"\""
 }

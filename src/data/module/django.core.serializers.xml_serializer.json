@@ -340,5 +340,5 @@
       "docstring": "\"\"\"Resolving an external reference is forbidden.\"\"\""
     }
   ],
-  "doc": "\"\"\"\nXML serializer.\n\"\"\""
+  "docstring": "\"\"\"\nXML serializer.\n\"\"\""
 }

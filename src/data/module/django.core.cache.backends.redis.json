@@ -535,5 +535,5 @@
       "classes": []
     }
   ],
-  "doc": "\"\"\"Redis cache backend.\"\"\""
+  "docstring": "\"\"\"Redis cache backend.\"\"\""
 }

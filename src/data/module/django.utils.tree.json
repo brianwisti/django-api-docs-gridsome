@@ -41,5 +41,5 @@
       "docstring": "\"\"\"\n    A single internal node in the tree graph. A Node should be viewed as a\n    connection (the root) with the children being either leaf nodes or other\n    Node instances.\n    \"\"\""
     }
   ],
-  "doc": "\"\"\"\nA class for storing a tree graph. Primarily used for filter constructs in the\nORM.\n\"\"\""
+  "docstring": "\"\"\"\nA class for storing a tree graph. Primarily used for filter constructs in the\nORM.\n\"\"\""
 }

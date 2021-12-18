@@ -47,5 +47,5 @@
       "docstring": "\"\"\"\n    Base class for email backend implementations.\n\n    Subclasses must at least overwrite send_messages().\n\n    open() and close() can be called indirectly by using a backend object as a\n    context manager:\n\n       with backend as connection:\n           # do something with connection\n           pass\n    \"\"\""
     }
   ],
-  "doc": "\"\"\"Base email backend class.\"\"\""
+  "docstring": "\"\"\"Base email backend class.\"\"\""
 }

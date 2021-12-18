@@ -426,5 +426,5 @@
       "docstring": "\"\"\"\n    Set up the GNUTranslations context with regard to output charset.\n\n    This translation object will be constructed out of multiple GNUTranslations\n    objects by merging their catalogs. It will construct an object for the\n    requested language and add a fallback to the default language, if it's\n    different from the requested language.\n    \"\"\""
     }
   ],
-  "doc": "\"\"\"Translation helper functions.\"\"\""
+  "docstring": "\"\"\"Translation helper functions.\"\"\""
 }

@@ -193,5 +193,5 @@
       "classes": []
     }
   ],
-  "doc": "\"Thread-safe in-memory cache backend.\""
+  "docstring": "\"Thread-safe in-memory cache backend.\""
 }

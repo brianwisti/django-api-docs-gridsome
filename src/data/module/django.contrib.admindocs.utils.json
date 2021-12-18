@@ -121,5 +121,5 @@
     }
   ],
   "classes": [],
-  "doc": "\"Misc. utility functions/classes for admin documentation generator.\""
+  "docstring": "\"Misc. utility functions/classes for admin documentation generator.\""
 }

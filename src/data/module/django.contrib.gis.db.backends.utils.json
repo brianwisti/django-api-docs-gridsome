@@ -54,5 +54,5 @@
       "docstring": "\"\"\"\n    Class encapsulating the behavior specific to a GIS operation (used by lookups).\n    \"\"\""
     }
   ],
-  "doc": "\"\"\"\nA collection of utility routines and classes used by the spatial\nbackends.\n\"\"\""
+  "docstring": "\"\"\"\nA collection of utility routines and classes used by the spatial\nbackends.\n\"\"\""
 }

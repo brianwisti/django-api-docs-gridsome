@@ -169,5 +169,5 @@
       "classes": []
     }
   ],
-  "doc": "\"File-based cache backend\""
+  "docstring": "\"File-based cache backend\""
 }

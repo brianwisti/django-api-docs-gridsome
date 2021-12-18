@@ -43,5 +43,5 @@
       "classes": []
     }
   ],
-  "doc": "\"\"\"Email backend that writes messages to a file.\"\"\""
+  "docstring": "\"\"\"Email backend that writes messages to a file.\"\"\""
 }

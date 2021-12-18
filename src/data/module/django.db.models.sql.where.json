@@ -337,5 +337,5 @@
       "classes": []
     }
   ],
-  "doc": "\"\"\"\nCode to manage the creation and SQL rendering of 'where' constraints.\n\"\"\""
+  "docstring": "\"\"\"\nCode to manage the creation and SQL rendering of 'where' constraints.\n\"\"\""
 }

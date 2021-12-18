@@ -58,5 +58,5 @@
     }
   ],
   "classes": [],
-  "doc": "\"\"\"\nCreates permissions for all installed apps that need permissions.\n\"\"\""
+  "docstring": "\"\"\"\nCreates permissions for all installed apps that need permissions.\n\"\"\""
 }

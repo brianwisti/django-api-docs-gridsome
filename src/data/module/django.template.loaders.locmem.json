@@ -38,5 +38,5 @@
       "classes": []
     }
   ],
-  "doc": "\"\"\"\nWrapper for loading templates from a plain Python dict.\n\"\"\""
+  "docstring": "\"\"\"\nWrapper for loading templates from a plain Python dict.\n\"\"\""
 }

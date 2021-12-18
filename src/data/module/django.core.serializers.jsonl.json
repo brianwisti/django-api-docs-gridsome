@@ -61,5 +61,5 @@
       "docstring": "\"\"\"Convert a queryset to JSON Lines.\"\"\""
     }
   ],
-  "doc": "\"\"\"\nSerialize data to/from JSON Lines\n\"\"\""
+  "docstring": "\"\"\"\nSerialize data to/from JSON Lines\n\"\"\""
 }

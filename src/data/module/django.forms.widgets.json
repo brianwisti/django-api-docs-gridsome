@@ -1582,5 +1582,5 @@
       "docstring": "\"\"\"\n    A widget that splits date input into three <select> boxes.\n\n    This also serves as an example of a Widget that has more than one HTML\n    element and hence implements value_from_datadict.\n    \"\"\""
     }
   ],
-  "doc": "\"\"\"\nHTML Widget classes\n\"\"\""
+  "docstring": "\"\"\"\nHTML Widget classes\n\"\"\""
 }

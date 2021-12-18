@@ -44,5 +44,5 @@
     }
   ],
   "classes": [],
-  "doc": "\"\"\"\nUtility functions for generating \"lorem ipsum\" Latin text.\n\"\"\""
+  "docstring": "\"\"\"\nUtility functions for generating \"lorem ipsum\" Latin text.\n\"\"\""
 }

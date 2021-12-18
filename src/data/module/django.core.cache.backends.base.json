@@ -900,5 +900,5 @@
       "classes": []
     }
   ],
-  "doc": "\"Base Cache class.\""
+  "docstring": "\"Base Cache class.\""
 }

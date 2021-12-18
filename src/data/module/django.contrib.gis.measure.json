@@ -71,5 +71,5 @@
       "classes": []
     }
   ],
-  "doc": "\"\"\"\nDistance and Area objects to allow for sensible and convenient calculation\nand conversions.\n\nAuthors: Robert Coup, Justin Bronn, Riccardo Di Virgilio\n\nInspired by GeoPy (https://github.com/geopy/geopy)\nand Geoff Biggs' PhD work on dimensioned units for robotics.\n\"\"\""
+  "docstring": "\"\"\"\nDistance and Area objects to allow for sensible and convenient calculation\nand conversions.\n\nAuthors: Robert Coup, Justin Bronn, Riccardo Di Virgilio\n\nInspired by GeoPy (https://github.com/geopy/geopy)\nand Geoff Biggs' PhD work on dimensioned units for robotics.\n\"\"\""
 }

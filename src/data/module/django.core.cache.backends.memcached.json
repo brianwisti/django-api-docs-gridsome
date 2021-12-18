@@ -419,5 +419,5 @@
       "docstring": "\"\"\"An implementation of a cache binding using pymemcache.\"\"\""
     }
   ],
-  "doc": "\"Memcached cache backend\""
+  "docstring": "\"Memcached cache backend\""
 }

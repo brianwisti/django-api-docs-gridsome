@@ -116,5 +116,5 @@
       "docstring": "\"\"\"\n    A simple representation of a file, which just has content, size, and a name.\n    \"\"\""
     }
   ],
-  "doc": "\"\"\"\nClasses representing uploaded files.\n\"\"\""
+  "docstring": "\"\"\"\nClasses representing uploaded files.\n\"\"\""
 }

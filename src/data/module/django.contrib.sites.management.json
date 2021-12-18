@@ -37,5 +37,5 @@
     }
   ],
   "classes": [],
-  "doc": "\"\"\"\nCreates the default Site object.\n\"\"\""
+  "docstring": "\"\"\"\nCreates the default Site object.\n\"\"\""
 }

@@ -35,5 +35,5 @@
       "classes": []
     }
   ],
-  "doc": "\"\"\"\n This object provides quoting for GEOS geometries into PostgreSQL/PostGIS.\n\"\"\""
+  "docstring": "\"\"\"\n This object provides quoting for GEOS geometries into PostgreSQL/PostGIS.\n\"\"\""
 }

@@ -168,5 +168,5 @@
       "classes": []
     }
   ],
-  "doc": "\"\"\"\nClasses to represent the definitions of aggregate functions.\n\"\"\""
+  "docstring": "\"\"\"\nClasses to represent the definitions of aggregate functions.\n\"\"\""
 }

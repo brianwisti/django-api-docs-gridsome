@@ -45,5 +45,5 @@
       "classes": []
     }
   ],
-  "doc": "\"\"\"\nSets up the terminal color scheme.\n\"\"\""
+  "docstring": "\"\"\"\nSets up the terminal color scheme.\n\"\"\""
 }

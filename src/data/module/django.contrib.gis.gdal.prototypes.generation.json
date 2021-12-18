@@ -263,5 +263,5 @@
       "classes": []
     }
   ],
-  "doc": "\"\"\"\n This module contains functions that generate ctypes prototypes for the\n GDAL routines.\n\"\"\""
+  "docstring": "\"\"\"\n This module contains functions that generate ctypes prototypes for the\n GDAL routines.\n\"\"\""
 }

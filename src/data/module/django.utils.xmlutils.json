@@ -74,5 +74,5 @@
       "classes": []
     }
   ],
-  "doc": "\"\"\"\nUtilities for XML generation/parsing.\n\"\"\""
+  "docstring": "\"\"\"\nUtilities for XML generation/parsing.\n\"\"\""
 }

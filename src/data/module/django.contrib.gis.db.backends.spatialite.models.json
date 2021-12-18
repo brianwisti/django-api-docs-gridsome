@@ -75,5 +75,5 @@
       "docstring": "\"\"\"\n    The 'spatial_ref_sys' table from SpatiaLite.\n    \"\"\""
     }
   ],
-  "doc": "\"\"\"\n The GeometryColumns and SpatialRefSys models for the SpatiaLite backend.\n\"\"\""
+  "docstring": "\"\"\"\n The GeometryColumns and SpatialRefSys models for the SpatiaLite backend.\n\"\"\""
 }

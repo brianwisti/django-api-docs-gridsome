@@ -124,7 +124,7 @@ class ModuleSerializer(serializers.Serializer):
         }
 
         if doc_node := instance.get_doc_node():
-            data["doc"] = doc_node.value
+            data["docstring"] = doc_node.value
 
         return data
 

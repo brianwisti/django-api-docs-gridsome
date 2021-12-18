@@ -98,5 +98,5 @@
       "docstring": "\"\"\"Algorithm is not supported by hashlib.\"\"\""
     }
   ],
-  "doc": "\"\"\"\nDjango's standard crypto functions and utilities.\n\"\"\""
+  "docstring": "\"\"\"\nDjango's standard crypto functions and utilities.\n\"\"\""
 }

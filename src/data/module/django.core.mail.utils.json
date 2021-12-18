@@ -18,5 +18,5 @@
       "classes": []
     }
   ],
-  "doc": "\"\"\"\nEmail message and email sending related helper functions.\n\"\"\""
+  "docstring": "\"\"\"\nEmail message and email sending related helper functions.\n\"\"\""
 }

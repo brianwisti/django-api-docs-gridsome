@@ -55,5 +55,5 @@
       "classes": []
     }
   ],
-  "doc": "\"\"\"\n This module houses the Geometry Collection objects:\n GeometryCollection, MultiPoint, MultiLineString, and MultiPolygon\n\"\"\""
+  "docstring": "\"\"\"\n This module houses the Geometry Collection objects:\n GeometryCollection, MultiPoint, MultiLineString, and MultiPolygon\n\"\"\""
 }

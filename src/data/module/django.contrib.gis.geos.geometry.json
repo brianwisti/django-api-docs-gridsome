@@ -1137,5 +1137,5 @@
       ]
     }
   ],
-  "doc": "\"\"\"\n This module contains the 'base' GEOSGeometry object -- all GEOS Geometries\n inherit from this object.\n\"\"\""
+  "docstring": "\"\"\"\n This module contains the 'base' GEOSGeometry object -- all GEOS Geometries\n inherit from this object.\n\"\"\""
 }

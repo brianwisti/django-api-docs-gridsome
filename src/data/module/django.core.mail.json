@@ -167,5 +167,5 @@
     }
   ],
   "classes": [],
-  "doc": "\"\"\"\nTools for sending email.\n\"\"\""
+  "docstring": "\"\"\"\nTools for sending email.\n\"\"\""
 }

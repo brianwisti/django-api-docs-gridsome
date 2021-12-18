@@ -174,5 +174,5 @@
       "docstring": "\"\"\"The user tried to call a sync-only function from an async context.\"\"\""
     }
   ],
-  "doc": "\"\"\"\nGlobal Django exception and warning classes.\n\"\"\""
+  "docstring": "\"\"\"\nGlobal Django exception and warning classes.\n\"\"\""
 }

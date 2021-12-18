@@ -28,5 +28,5 @@
     }
   ],
   "classes": [],
-  "doc": "\"\"\"\nBuilt-in, globally-available admin actions.\n\"\"\""
+  "docstring": "\"\"\"\nBuilt-in, globally-available admin actions.\n\"\"\""
 }

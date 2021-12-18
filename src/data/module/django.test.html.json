@@ -216,5 +216,5 @@
       "classes": []
     }
   ],
-  "doc": "\"\"\"Compare two HTML documents.\"\"\""
+  "docstring": "\"\"\"Compare two HTML documents.\"\"\""
 }

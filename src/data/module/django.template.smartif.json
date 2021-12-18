@@ -227,5 +227,5 @@
       "classes": []
     }
   ],
-  "doc": "\"\"\"\nParser and utilities for the smart 'if' tag\n\"\"\""
+  "docstring": "\"\"\"\nParser and utilities for the smart 'if' tag\n\"\"\""
 }

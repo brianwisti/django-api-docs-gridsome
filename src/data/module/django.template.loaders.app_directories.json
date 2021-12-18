@@ -18,5 +18,5 @@
       "classes": []
     }
   ],
-  "doc": "\"\"\"\nWrapper for loading templates from \"templates\" directories in INSTALLED_APPS\npackages.\n\"\"\""
+  "docstring": "\"\"\"\nWrapper for loading templates from \"templates\" directories in INSTALLED_APPS\npackages.\n\"\"\""
 }

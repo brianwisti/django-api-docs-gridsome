@@ -90,5 +90,5 @@
       "docstring": "\"\"\"\n    Implement cached, database backed sessions.\n    \"\"\""
     }
   ],
-  "doc": "\"\"\"\nCached, database-backed sessions.\n\"\"\""
+  "docstring": "\"\"\"\nCached, database-backed sessions.\n\"\"\""
 }

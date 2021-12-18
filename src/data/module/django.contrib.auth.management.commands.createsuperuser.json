@@ -94,5 +94,5 @@
       "classes": []
     }
   ],
-  "doc": "\"\"\"\nManagement utility to create superusers.\n\"\"\""
+  "docstring": "\"\"\"\nManagement utility to create superusers.\n\"\"\""
 }

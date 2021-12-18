@@ -390,5 +390,5 @@
       "classes": []
     }
   ],
-  "doc": "\"\"\"Database functions that do comparisons or type conversions.\"\"\""
+  "docstring": "\"\"\"Database functions that do comparisons or type conversions.\"\"\""
 }

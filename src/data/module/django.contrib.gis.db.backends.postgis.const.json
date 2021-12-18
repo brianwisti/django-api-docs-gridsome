@@ -1,5 +1,5 @@
 {
   "functions": [],
   "classes": [],
-  "doc": "\"\"\"\nPostGIS to GDAL conversion constant definitions\n\"\"\""
+  "docstring": "\"\"\"\nPostGIS to GDAL conversion constant definitions\n\"\"\""
 }

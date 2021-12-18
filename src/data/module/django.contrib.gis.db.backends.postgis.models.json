@@ -75,5 +75,5 @@
       "docstring": "\"\"\"\n    The 'spatial_ref_sys' table from PostGIS. See the PostGIS\n    documentation at Ch. 4.2.1.\n    \"\"\""
     }
   ],
-  "doc": "\"\"\"\n The GeometryColumns and SpatialRefSys models for the PostGIS backend.\n\"\"\""
+  "docstring": "\"\"\"\n The GeometryColumns and SpatialRefSys models for the PostGIS backend.\n\"\"\""
 }

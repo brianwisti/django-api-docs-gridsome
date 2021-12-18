@@ -62,5 +62,5 @@
       "docstring": "\"\"\"\n    A wrapper that manages the SMTP network connection.\n    \"\"\""
     }
   ],
-  "doc": "\"\"\"SMTP email backend class.\"\"\""
+  "docstring": "\"\"\"SMTP email backend class.\"\"\""
 }

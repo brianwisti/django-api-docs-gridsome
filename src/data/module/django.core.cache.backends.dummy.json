@@ -168,5 +168,5 @@
       "classes": []
     }
   ],
-  "doc": "\"Dummy cache backend\""
+  "docstring": "\"Dummy cache backend\""
 }

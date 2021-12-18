@@ -234,5 +234,5 @@
       "docstring": "\"\"\"\n    Django uses \"format\" style placeholders, but pysqlite2 uses \"qmark\" style.\n    This fixes it -- but note that if you want to use a literal \"%s\" in a query,\n    you'll need to use \"%%s\".\n    \"\"\""
     }
   ],
-  "doc": "\"\"\"\nSQLite backend for the sqlite3 module in the standard library.\n\"\"\""
+  "docstring": "\"\"\"\nSQLite backend for the sqlite3 module in the standard library.\n\"\"\""
 }

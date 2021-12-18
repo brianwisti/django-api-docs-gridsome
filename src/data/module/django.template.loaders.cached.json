@@ -116,5 +116,5 @@
       "classes": []
     }
   ],
-  "doc": "\"\"\"\nWrapper class that takes a list of template loaders as an argument and attempts\nto load templates from them in order, caching the result.\n\"\"\""
+  "docstring": "\"\"\"\nWrapper class that takes a list of template loaders as an argument and attempts\nto load templates from them in order, caching the result.\n\"\"\""
 }

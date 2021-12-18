@@ -39,5 +39,5 @@
       "classes": []
     }
   ],
-  "doc": "\"\"\"\nEmail backend that writes messages to console instead of sending them.\n\"\"\""
+  "docstring": "\"\"\"\nEmail backend that writes messages to console instead of sending them.\n\"\"\""
 }

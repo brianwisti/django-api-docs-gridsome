@@ -56,5 +56,5 @@
       "docstring": "\"\"\"\n    A mixin for use alongside django.core.files.base.File, which provides\n    additional features for dealing with images.\n    \"\"\""
     }
   ],
-  "doc": "\"\"\"\nUtility functions for handling images.\n\nRequires Pillow as you might imagine.\n\"\"\""
+  "docstring": "\"\"\"\nUtility functions for handling images.\n\nRequires Pillow as you might imagine.\n\"\"\""
 }

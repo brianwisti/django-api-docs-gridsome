@@ -44,5 +44,5 @@
     }
   ],
   "classes": [],
-  "doc": "\"\"\"\nThis module is for inspecting OGR data sources and generating either\nmodels for GeoDjango and/or mapping dictionaries for use with the\n`LayerMapping` utility.\n\"\"\""
+  "docstring": "\"\"\"\nThis module is for inspecting OGR data sources and generating either\nmodels for GeoDjango and/or mapping dictionaries for use with the\n`LayerMapping` utility.\n\"\"\""
 }

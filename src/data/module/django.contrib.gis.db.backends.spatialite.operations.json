@@ -261,5 +261,5 @@
       "classes": []
     }
   ],
-  "doc": "\"\"\"\nSQL functions reference lists:\nhttps://www.gaia-gis.it/gaia-sins/spatialite-sql-4.3.0.html\n\"\"\""
+  "docstring": "\"\"\"\nSQL functions reference lists:\nhttps://www.gaia-gis.it/gaia-sins/spatialite-sql-4.3.0.html\n\"\"\""
 }

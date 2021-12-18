@@ -561,5 +561,5 @@
       "docstring": "\"\"\"\n    A management command which takes one or more arbitrary arguments\n    (labels) on the command line, and does something with each of\n    them.\n\n    Rather than implementing ``handle()``, subclasses must implement\n    ``handle_label()``, which will be called once for each label.\n\n    If the arguments should be names of installed applications, use\n    ``AppCommand`` instead.\n    \"\"\""
     }
   ],
-  "doc": "\"\"\"\nBase classes for writing management commands (named commands which can\nbe executed through ``django-admin`` or ``manage.py``).\n\"\"\""
+  "docstring": "\"\"\"\nBase classes for writing management commands (named commands which can\nbe executed through ``django-admin`` or ``manage.py``).\n\"\"\""
 }

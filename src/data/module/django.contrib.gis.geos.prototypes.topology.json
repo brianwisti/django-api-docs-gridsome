@@ -8,5 +8,5 @@
       "docstring": "\"For GEOS unary topology functions.\""
     }
   ],
-  "doc": "\"\"\"\n This module houses the GEOS ctypes prototype functions for the\n topological operations on geometries.\n\"\"\""
+  "docstring": "\"\"\"\n This module houses the GEOS ctypes prototype functions for the\n topological operations on geometries.\n\"\"\""
 }

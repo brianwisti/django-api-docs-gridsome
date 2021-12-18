@@ -254,5 +254,5 @@
       "docstring": "\"\"\"\n    Django uses \"format\" (e.g. '%s') style placeholders, but Oracle uses \":var\"\n    style. This fixes it -- but note that if you want to use a literal \"%s\" in\n    a query, you'll need to use \"%%s\".\n    \"\"\""
     }
   ],
-  "doc": "\"\"\"\nOracle database backend for Django.\n\nRequires cx_Oracle: https://oracle.github.io/python-cx_Oracle/\n\"\"\""
+  "docstring": "\"\"\"\nOracle database backend for Django.\n\nRequires cx_Oracle: https://oracle.github.io/python-cx_Oracle/\n\"\"\""
 }

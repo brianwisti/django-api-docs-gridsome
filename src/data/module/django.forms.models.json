@@ -1042,5 +1042,5 @@
       "docstring": "\"\"\"A MultipleChoiceField whose choices are a model QuerySet.\"\"\""
     }
   ],
-  "doc": "\"\"\"\nHelper functions for creating Form classes from Django models\nand database field objects.\n\"\"\""
+  "docstring": "\"\"\"\nHelper functions for creating Form classes from Django models\nand database field objects.\n\"\"\""
 }

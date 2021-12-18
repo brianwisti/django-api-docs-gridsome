@@ -139,5 +139,5 @@
     }
   ],
   "classes": [],
-  "doc": "\"\"\"\n Error checking functions for GEOS ctypes prototype functions.\n\"\"\""
+  "docstring": "\"\"\"\n Error checking functions for GEOS ctypes prototype functions.\n\"\"\""
 }

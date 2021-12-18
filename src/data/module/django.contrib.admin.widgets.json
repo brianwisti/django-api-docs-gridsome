@@ -582,5 +582,5 @@
       "classes": []
     }
   ],
-  "doc": "\"\"\"\nForm Widget classes specific to the Django admin site.\n\"\"\""
+  "docstring": "\"\"\"\nForm Widget classes specific to the Django admin site.\n\"\"\""
 }

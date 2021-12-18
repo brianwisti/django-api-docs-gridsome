@@ -283,5 +283,5 @@
     }
   ],
   "classes": [],
-  "doc": "\"\"\"\n This module houses the error-checking routines used by the GDAL\n ctypes prototypes.\n\"\"\""
+  "docstring": "\"\"\"\n This module houses the error-checking routines used by the GDAL\n ctypes prototypes.\n\"\"\""
 }

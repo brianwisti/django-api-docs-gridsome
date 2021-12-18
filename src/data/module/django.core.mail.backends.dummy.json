@@ -23,5 +23,5 @@
       "classes": []
     }
   ],
-  "doc": "\"\"\"\nDummy email backend that does nothing.\n\"\"\""
+  "docstring": "\"\"\"\nDummy email backend that does nothing.\n\"\"\""
 }

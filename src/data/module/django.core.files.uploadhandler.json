@@ -364,5 +364,5 @@
       "docstring": "\"\"\"\n    File upload handler to stream uploads into memory (used for small files).\n    \"\"\""
     }
   ],
-  "doc": "\"\"\"\nBase file upload handler classes, and the built-in concrete subclasses\n\"\"\""
+  "docstring": "\"\"\"\nBase file upload handler classes, and the built-in concrete subclasses\n\"\"\""
 }

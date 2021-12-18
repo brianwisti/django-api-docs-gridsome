@@ -93,5 +93,5 @@
       "docstring": "\"\"\"\n    JSONEncoder subclass that knows how to encode date/time, decimal types, and\n    UUIDs.\n    \"\"\""
     }
   ],
-  "doc": "\"\"\"\nSerialize data to/from JSON\n\"\"\""
+  "docstring": "\"\"\"\nSerialize data to/from JSON\n\"\"\""
 }

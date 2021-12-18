@@ -429,5 +429,5 @@
       "classes": []
     }
   ],
-  "doc": "\"\"\"\nHelpers to manipulate deferred DDL statements that might need to be adjusted or\ndiscarded within when executing a migration.\n\"\"\""
+  "docstring": "\"\"\"\nHelpers to manipulate deferred DDL statements that might need to be adjusted or\ndiscarded within when executing a migration.\n\"\"\""
 }

@@ -1,5 +1,5 @@
 {
   "functions": [],
   "classes": [],
-  "doc": "\"\"\"\nConstants specific to the SQL storage portion of the ORM.\n\"\"\""
+  "docstring": "\"\"\"\nConstants specific to the SQL storage portion of the ORM.\n\"\"\""
 }

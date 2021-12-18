@@ -203,5 +203,5 @@
       "docstring": "\"\"\"\n    Take another query as a parameter to the FROM clause and only select the\n    elements in the provided list.\n    \"\"\""
     }
   ],
-  "doc": "\"\"\"\nQuery subclasses which provide extra functionality beyond simple data retrieval.\n\"\"\""
+  "docstring": "\"\"\"\nQuery subclasses which provide extra functionality beyond simple data retrieval.\n\"\"\""
 }

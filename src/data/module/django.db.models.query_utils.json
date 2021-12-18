@@ -292,5 +292,5 @@
       "docstring": "\"\"\"Specify custom filtering in the ON clause of SQL joins.\"\"\""
     }
   ],
-  "doc": "\"\"\"\nVarious data structures used in query construction.\n\nFactored out from django.db.models.query to avoid making the main module very\nlarge and/or so that they can be used by other modules without getting into\ncircular import difficulties.\n\"\"\""
+  "docstring": "\"\"\"\nVarious data structures used in query construction.\n\nFactored out from django.db.models.query to avoid making the main module very\nlarge and/or so that they can be used by other modules without getting into\ncircular import difficulties.\n\"\"\""
 }

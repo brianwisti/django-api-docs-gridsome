@@ -219,5 +219,5 @@
       "classes": []
     }
   ],
-  "doc": "\"Database cache backend.\""
+  "docstring": "\"Database cache backend.\""
 }
