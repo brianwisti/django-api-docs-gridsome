@@ -1,0 +1,89 @@
+{
+  "functions": [
+    {
+      "name": "check_setting_language_code",
+      "params": [
+        {
+          "prefix": "",
+          "name": "app_configs",
+          "annotation": null
+        },
+        {
+          "prefix": "**",
+          "name": "kwargs",
+          "annotation": null
+        }
+      ],
+      "decorators": [
+        {
+          "name": "@register(Tags.translation)"
+        }
+      ],
+      "docstring": "\"\"\"Error if LANGUAGE_CODE setting is invalid.\"\"\""
+    },
+    {
+      "name": "check_setting_languages",
+      "params": [
+        {
+          "prefix": "",
+          "name": "app_configs",
+          "annotation": null
+        },
+        {
+          "prefix": "**",
+          "name": "kwargs",
+          "annotation": null
+        }
+      ],
+      "decorators": [
+        {
+          "name": "@register(Tags.translation)"
+        }
+      ],
+      "docstring": "\"\"\"Error if LANGUAGES setting is invalid.\"\"\""
+    },
+    {
+      "name": "check_setting_languages_bidi",
+      "params": [
+        {
+          "prefix": "",
+          "name": "app_configs",
+          "annotation": null
+        },
+        {
+          "prefix": "**",
+          "name": "kwargs",
+          "annotation": null
+        }
+      ],
+      "decorators": [
+        {
+          "name": "@register(Tags.translation)"
+        }
+      ],
+      "docstring": "\"\"\"Error if LANGUAGES_BIDI setting is invalid.\"\"\""
+    },
+    {
+      "name": "check_language_settings_consistent",
+      "params": [
+        {
+          "prefix": "",
+          "name": "app_configs",
+          "annotation": null
+        },
+        {
+          "prefix": "**",
+          "name": "kwargs",
+          "annotation": null
+        }
+      ],
+      "decorators": [
+        {
+          "name": "@register(Tags.translation)"
+        }
+      ],
+      "docstring": "\"\"\"Error if language settings are not consistent with each other.\"\"\""
+    }
+  ],
+  "classes": []
+}

@@ -1,0 +1,48 @@
+{
+  "functions": [
+    {
+      "name": "update_proxy_model_permissions",
+      "params": [
+        {
+          "prefix": "",
+          "name": "apps",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "schema_editor",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "reverse",
+          "annotation": null
+        }
+      ],
+      "docstring": "\"\"\"\n    Update the content_type of proxy model permissions to use the ContentType\n    of the proxy model.\n    \"\"\""
+    },
+    {
+      "name": "revert_proxy_model_permissions",
+      "params": [
+        {
+          "prefix": "",
+          "name": "apps",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "schema_editor",
+          "annotation": null
+        }
+      ],
+      "docstring": "\"\"\"\n    Update the content_type of proxy model permissions to use the ContentType\n    of the concrete model.\n    \"\"\""
+    }
+  ],
+  "classes": [
+    {
+      "name": "Migration",
+      "methods": [],
+      "classes": []
+    }
+  ]
+}

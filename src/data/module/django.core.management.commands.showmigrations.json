@@ -1,0 +1,88 @@
+{
+  "functions": [],
+  "classes": [
+    {
+      "name": "Command",
+      "methods": [
+        {
+          "name": "add_arguments",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "parser",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "handle",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "*",
+              "name": "args",
+              "annotation": null
+            },
+            {
+              "prefix": "**",
+              "name": "options",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "show_list",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "connection",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "app_names",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        Show a list of all migrations on the system, or only those of\n        some named apps.\n        \"\"\""
+        },
+        {
+          "name": "show_plan",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "connection",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "app_names",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        Show all known migrations (or only those of the specified app_names)\n        in the order they will be applied.\n        \"\"\""
+        }
+      ],
+      "classes": []
+    }
+  ]
+}

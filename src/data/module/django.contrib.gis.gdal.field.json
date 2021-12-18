@@ -1,0 +1,344 @@
+{
+  "functions": [],
+  "classes": [
+    {
+      "name": "Field",
+      "methods": [
+        {
+          "name": "as_double",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"Retrieve the Field's value as a double (float).\""
+        },
+        {
+          "name": "as_int",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "is_64",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"Retrieve the Field's value as an integer.\""
+        },
+        {
+          "name": "as_string",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"Retrieve the Field's value as a string.\""
+        },
+        {
+          "name": "as_datetime",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"Retrieve the Field's value as a tuple of date & time components.\""
+        },
+        {
+          "name": "is_set",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ],
+          "decorators": [
+            {
+              "name": "# #### Field Properties ####\n    @property"
+            }
+          ],
+          "docstring": "\"Return True if the value of this field isn't null, False otherwise.\""
+        },
+        {
+          "name": "name",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ],
+          "decorators": [
+            {
+              "name": "@property"
+            }
+          ],
+          "docstring": "\"Return the name of this Field.\""
+        },
+        {
+          "name": "precision",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ],
+          "decorators": [
+            {
+              "name": "@property"
+            }
+          ],
+          "docstring": "\"Return the precision of this Field.\""
+        },
+        {
+          "name": "type",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ],
+          "decorators": [
+            {
+              "name": "@property"
+            }
+          ],
+          "docstring": "\"Return the OGR type of this Field.\""
+        },
+        {
+          "name": "type_name",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ],
+          "decorators": [
+            {
+              "name": "@property"
+            }
+          ],
+          "docstring": "\"Return the OGR field type name for this Field.\""
+        },
+        {
+          "name": "value",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ],
+          "decorators": [
+            {
+              "name": "@property"
+            }
+          ],
+          "docstring": "\"Return the value of this Field.\""
+        },
+        {
+          "name": "width",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ],
+          "decorators": [
+            {
+              "name": "@property"
+            }
+          ],
+          "docstring": "\"Return the width of this Field.\""
+        }
+      ],
+      "classes": [],
+      "docstring": "\"\"\"\n    Wrap an OGR Field. Needs to be instantiated from a Feature object.\n    \"\"\""
+    },
+    {
+      "name": "OFTInteger",
+      "methods": [
+        {
+          "name": "value",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ],
+          "decorators": [
+            {
+              "name": "@property"
+            }
+          ],
+          "docstring": "\"Return an integer contained in this field.\""
+        },
+        {
+          "name": "type",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ],
+          "decorators": [
+            {
+              "name": "@property"
+            }
+          ],
+          "docstring": "\"\"\"\n        GDAL uses OFTReals to represent OFTIntegers in created\n        shapefiles -- forcing the type here since the underlying field\n        type may actually be OFTReal.\n        \"\"\""
+        }
+      ],
+      "classes": []
+    },
+    {
+      "name": "OFTReal",
+      "methods": [
+        {
+          "name": "value",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ],
+          "decorators": [
+            {
+              "name": "@property"
+            }
+          ],
+          "docstring": "\"Return a float contained in this field.\""
+        }
+      ],
+      "classes": []
+    },
+    {
+      "name": "OFTString",
+      "methods": [],
+      "classes": []
+    },
+    {
+      "name": "OFTWideString",
+      "methods": [],
+      "classes": []
+    },
+    {
+      "name": "OFTBinary",
+      "methods": [],
+      "classes": []
+    },
+    {
+      "name": "OFTDate",
+      "methods": [
+        {
+          "name": "value",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ],
+          "decorators": [
+            {
+              "name": "@property"
+            }
+          ],
+          "docstring": "\"Return a Python `date` object for the OFTDate field.\""
+        }
+      ],
+      "classes": []
+    },
+    {
+      "name": "OFTDateTime",
+      "methods": [
+        {
+          "name": "value",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ],
+          "decorators": [
+            {
+              "name": "@property"
+            }
+          ],
+          "docstring": "\"Return a Python `datetime` object for this OFTDateTime field.\""
+        }
+      ],
+      "classes": []
+    },
+    {
+      "name": "OFTTime",
+      "methods": [
+        {
+          "name": "value",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ],
+          "decorators": [
+            {
+              "name": "@property"
+            }
+          ],
+          "docstring": "\"Return a Python `time` object for this OFTTime field.\""
+        }
+      ],
+      "classes": []
+    },
+    {
+      "name": "OFTInteger64",
+      "methods": [],
+      "classes": []
+    },
+    {
+      "name": "OFTIntegerList",
+      "methods": [],
+      "classes": []
+    },
+    {
+      "name": "OFTRealList",
+      "methods": [],
+      "classes": []
+    },
+    {
+      "name": "OFTStringList",
+      "methods": [],
+      "classes": []
+    },
+    {
+      "name": "OFTWideStringList",
+      "methods": [],
+      "classes": []
+    },
+    {
+      "name": "OFTInteger64List",
+      "methods": [],
+      "classes": []
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "functions": [
+    {
+      "name": "messages",
+      "params": [
+        {
+          "prefix": "",
+          "name": "request",
+          "annotation": null
+        }
+      ],
+      "docstring": "\"\"\"\n    Return a lazy 'messages' context variable as well as\n    'DEFAULT_MESSAGE_LEVELS'.\n    \"\"\""
+    }
+  ],
+  "classes": []
+}

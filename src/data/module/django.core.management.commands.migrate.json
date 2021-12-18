@@ -1,0 +1,118 @@
+{
+  "functions": [],
+  "classes": [
+    {
+      "name": "Command",
+      "methods": [
+        {
+          "name": "add_arguments",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "parser",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "handle",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "*",
+              "name": "args",
+              "annotation": null
+            },
+            {
+              "prefix": "**",
+              "name": "options",
+              "annotation": null
+            }
+          ],
+          "decorators": [
+            {
+              "name": "@no_translations"
+            }
+          ]
+        },
+        {
+          "name": "migration_progress_callback",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "action",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "migration",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "fake",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "sync_apps",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "connection",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "app_labels",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"Run the old syncdb-style operation on a list of app_labels.\"\"\""
+        },
+        {
+          "name": "describe_operation",
+          "params": [
+            {
+              "prefix": "",
+              "name": "operation",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "backwards",
+              "annotation": null
+            }
+          ],
+          "decorators": [
+            {
+              "name": "@staticmethod"
+            }
+          ],
+          "docstring": "\"\"\"Return a string that describes a migration operation for --plan.\"\"\""
+        }
+      ],
+      "classes": []
+    }
+  ]
+}

@@ -1,0 +1,515 @@
+{
+  "functions": [
+    {
+      "name": "get_storage_class",
+      "params": [
+        {
+          "prefix": "",
+          "name": "import_path",
+          "annotation": null
+        }
+      ]
+    }
+  ],
+  "classes": [
+    {
+      "name": "Storage",
+      "methods": [
+        {
+          "name": "open",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "name",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "mode",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"Retrieve the specified file from storage.\"\"\""
+        },
+        {
+          "name": "save",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "name",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "content",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "max_length",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        Save new content to the file specified by name. The content should be\n        a proper File object or any Python file-like object, ready to be read\n        from the beginning.\n        \"\"\""
+        },
+        {
+          "name": "get_valid_name",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "name",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        Return a filename, based on the provided filename, that's suitable for\n        use in the target storage system.\n        \"\"\""
+        },
+        {
+          "name": "get_alternative_name",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "file_root",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "file_ext",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        Return an alternative filename, by adding an underscore and a random 7\n        character alphanumeric string (before the file extension, if one\n        exists) to the filename.\n        \"\"\""
+        },
+        {
+          "name": "get_available_name",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "name",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "max_length",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        Return a filename that's free on the target storage system and\n        available for new content to be written to.\n        \"\"\""
+        },
+        {
+          "name": "generate_filename",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "filename",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        Validate the filename by calling get_valid_name() and return a filename\n        to be passed to the save() method.\n        \"\"\""
+        },
+        {
+          "name": "path",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "name",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        Return a local filesystem path where the file can be retrieved using\n        Python's built-in open() function. Storage systems that can't be\n        accessed using open() should *not* implement this method.\n        \"\"\""
+        },
+        {
+          "name": "delete",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "name",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        Delete the specified file from the storage system.\n        \"\"\""
+        },
+        {
+          "name": "exists",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "name",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        Return True if a file referenced by the given name already exists in the\n        storage system, or False if the name is available for a new file.\n        \"\"\""
+        },
+        {
+          "name": "listdir",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "path",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        List the contents of the specified path. Return a 2-tuple of lists:\n        the first item being directories, the second item being files.\n        \"\"\""
+        },
+        {
+          "name": "size",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "name",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        Return the total size, in bytes, of the file specified by name.\n        \"\"\""
+        },
+        {
+          "name": "url",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "name",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        Return an absolute URL where the file's contents can be accessed\n        directly by a web browser.\n        \"\"\""
+        },
+        {
+          "name": "get_accessed_time",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "name",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        Return the last accessed time (as a datetime) of the file specified by\n        name. The datetime will be timezone-aware if USE_TZ=True.\n        \"\"\""
+        },
+        {
+          "name": "get_created_time",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "name",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        Return the creation time (as a datetime) of the file specified by name.\n        The datetime will be timezone-aware if USE_TZ=True.\n        \"\"\""
+        },
+        {
+          "name": "get_modified_time",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "name",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        Return the last modified time (as a datetime) of the file specified by\n        name. The datetime will be timezone-aware if USE_TZ=True.\n        \"\"\""
+        }
+      ],
+      "classes": [],
+      "docstring": "\"\"\"\n    A base storage class, providing some default behaviors that all other\n    storage systems can inherit or override, as necessary.\n    \"\"\""
+    },
+    {
+      "name": "FileSystemStorage",
+      "methods": [
+        {
+          "name": "base_location",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ],
+          "decorators": [
+            {
+              "name": "@cached_property"
+            }
+          ]
+        },
+        {
+          "name": "location",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ],
+          "decorators": [
+            {
+              "name": "@cached_property"
+            }
+          ]
+        },
+        {
+          "name": "base_url",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ],
+          "decorators": [
+            {
+              "name": "@cached_property"
+            }
+          ]
+        },
+        {
+          "name": "file_permissions_mode",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ],
+          "decorators": [
+            {
+              "name": "@cached_property"
+            }
+          ]
+        },
+        {
+          "name": "directory_permissions_mode",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ],
+          "decorators": [
+            {
+              "name": "@cached_property"
+            }
+          ]
+        },
+        {
+          "name": "delete",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "name",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "exists",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "name",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "listdir",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "path",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "path",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "name",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "size",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "name",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "url",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "name",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "get_accessed_time",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "name",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "get_created_time",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "name",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "get_modified_time",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "name",
+              "annotation": null
+            }
+          ]
+        }
+      ],
+      "classes": [],
+      "docstring": "\"\"\"\n    Standard filesystem storage\n    \"\"\"",
+      "decorators": [
+        {
+          "name": "@deconstructible"
+        }
+      ]
+    },
+    {
+      "name": "DefaultStorage",
+      "methods": [],
+      "classes": []
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "functions": [],
+  "classes": [
+    {
+      "name": "DatabaseClient",
+      "methods": [
+        {
+          "name": "settings_to_cmd_args_env",
+          "params": [
+            {
+              "prefix": "",
+              "name": "cls",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "settings_dict",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "parameters",
+              "annotation": null
+            }
+          ],
+          "decorators": [
+            {
+              "name": "@classmethod"
+            }
+          ]
+        }
+      ],
+      "classes": []
+    }
+  ]
+}

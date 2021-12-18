@@ -1,0 +1,16 @@
+{
+  "functions": [],
+  "classes": [
+    {
+      "name": "Redirect",
+      "methods": [],
+      "classes": [
+        {
+          "name": "Meta",
+          "methods": [],
+          "classes": []
+        }
+      ]
+    }
+  ]
+}

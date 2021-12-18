@@ -1,0 +1,20 @@
+{
+  "functions": [
+    {
+      "name": "make_template_fragment_key",
+      "params": [
+        {
+          "prefix": "",
+          "name": "fragment_name",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "vary_on",
+          "annotation": null
+        }
+      ]
+    }
+  ],
+  "classes": []
+}

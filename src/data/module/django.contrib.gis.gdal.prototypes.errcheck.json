@@ -1,0 +1,287 @@
+{
+  "functions": [
+    {
+      "name": "arg_byref",
+      "params": [
+        {
+          "prefix": "",
+          "name": "args",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "offset",
+          "annotation": null
+        }
+      ],
+      "docstring": "\"Return the pointer argument's by-reference value.\""
+    },
+    {
+      "name": "ptr_byref",
+      "params": [
+        {
+          "prefix": "",
+          "name": "args",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "offset",
+          "annotation": null
+        }
+      ],
+      "docstring": "\"Return the pointer argument passed in by-reference.\""
+    },
+    {
+      "name": "check_const_string",
+      "params": [
+        {
+          "prefix": "",
+          "name": "result",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "func",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "cargs",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "offset",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "cpl",
+          "annotation": null
+        }
+      ],
+      "docstring": "\"\"\"\n    Similar functionality to `check_string`, but does not free the pointer.\n    \"\"\""
+    },
+    {
+      "name": "check_string",
+      "params": [
+        {
+          "prefix": "",
+          "name": "result",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "func",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "cargs",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "offset",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "str_result",
+          "annotation": null
+        }
+      ],
+      "docstring": "\"\"\"\n    Check the string output returned from the given function, and free\n    the string pointer allocated by OGR.  The `str_result` keyword\n    may be used when the result is the string pointer, otherwise\n    the OGR error code is assumed.  The `offset` keyword may be used\n    to extract the string pointer passed in by-reference at the given\n    slice offset in the function arguments.\n    \"\"\""
+    },
+    {
+      "name": "check_envelope",
+      "params": [
+        {
+          "prefix": "",
+          "name": "result",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "func",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "cargs",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "offset",
+          "annotation": null
+        }
+      ],
+      "docstring": "\"Check a function that returns an OGR Envelope by reference.\""
+    },
+    {
+      "name": "check_geom",
+      "params": [
+        {
+          "prefix": "",
+          "name": "result",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "func",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "cargs",
+          "annotation": null
+        }
+      ],
+      "docstring": "\"Check a function that returns a geometry.\""
+    },
+    {
+      "name": "check_geom_offset",
+      "params": [
+        {
+          "prefix": "",
+          "name": "result",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "func",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "cargs",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "offset",
+          "annotation": null
+        }
+      ],
+      "docstring": "\"Check the geometry at the given offset in the C parameter list.\""
+    },
+    {
+      "name": "check_srs",
+      "params": [
+        {
+          "prefix": "",
+          "name": "result",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "func",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "cargs",
+          "annotation": null
+        }
+      ]
+    },
+    {
+      "name": "check_arg_errcode",
+      "params": [
+        {
+          "prefix": "",
+          "name": "result",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "func",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "cargs",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "cpl",
+          "annotation": null
+        }
+      ],
+      "docstring": "\"\"\"\n    The error code is returned in the last argument, by reference.\n    Check its value with `check_err` before returning the result.\n    \"\"\""
+    },
+    {
+      "name": "check_errcode",
+      "params": [
+        {
+          "prefix": "",
+          "name": "result",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "func",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "cargs",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "cpl",
+          "annotation": null
+        }
+      ],
+      "docstring": "\"\"\"\n    Check the error code returned (c_int).\n    \"\"\""
+    },
+    {
+      "name": "check_pointer",
+      "params": [
+        {
+          "prefix": "",
+          "name": "result",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "func",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "cargs",
+          "annotation": null
+        }
+      ],
+      "docstring": "\"Make sure the result pointer is valid.\""
+    },
+    {
+      "name": "check_str_arg",
+      "params": [
+        {
+          "prefix": "",
+          "name": "result",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "func",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "cargs",
+          "annotation": null
+        }
+      ],
+      "docstring": "\"\"\"\n    This is for the OSRGet[Angular|Linear]Units functions, which\n    require that the returned string pointer not be freed.  This\n    returns both the double and string values.\n    \"\"\""
+    }
+  ],
+  "classes": [],
+  "doc": "\"\"\"\n This module houses the error-checking routines used by the GDAL\n ctypes prototypes.\n\"\"\""
+}

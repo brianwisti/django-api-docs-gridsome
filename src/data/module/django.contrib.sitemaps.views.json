@@ -1,0 +1,85 @@
+{
+  "functions": [
+    {
+      "name": "x_robots_tag",
+      "params": [
+        {
+          "prefix": "",
+          "name": "func",
+          "annotation": null
+        }
+      ]
+    },
+    {
+      "name": "index",
+      "params": [
+        {
+          "prefix": "",
+          "name": "request",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "sitemaps",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "template_name",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "content_type",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "sitemap_url_name",
+          "annotation": null
+        }
+      ],
+      "decorators": [
+        {
+          "name": "@x_robots_tag"
+        }
+      ]
+    },
+    {
+      "name": "sitemap",
+      "params": [
+        {
+          "prefix": "",
+          "name": "request",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "sitemaps",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "section",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "template_name",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "content_type",
+          "annotation": null
+        }
+      ],
+      "decorators": [
+        {
+          "name": "@x_robots_tag"
+        }
+      ]
+    }
+  ],
+  "classes": []
+}

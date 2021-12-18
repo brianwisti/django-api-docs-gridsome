@@ -1,0 +1,15 @@
+{
+  "functions": [
+    {
+      "name": "csrf_input",
+      "params": [
+        {
+          "prefix": "",
+          "name": "request",
+          "annotation": null
+        }
+      ]
+    }
+  ],
+  "classes": []
+}

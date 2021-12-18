@@ -1,0 +1,73 @@
+{
+  "functions": [
+    {
+      "name": "validate_file_name",
+      "params": [
+        {
+          "prefix": "",
+          "name": "name",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "allow_relative_path",
+          "annotation": null
+        }
+      ]
+    }
+  ],
+  "classes": [
+    {
+      "name": "FileProxyMixin",
+      "methods": [
+        {
+          "name": "closed",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ],
+          "decorators": [
+            {
+              "name": "@property"
+            }
+          ]
+        },
+        {
+          "name": "readable",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "writable",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "seekable",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ]
+        }
+      ],
+      "classes": [],
+      "docstring": "\"\"\"\n    A mixin class used to forward file methods to an underlaying file\n    object.  The internal file object has to be called \"file\"::\n\n        class FileProxy(FileProxyMixin):\n            def __init__(self, file):\n                self.file = file\n    \"\"\""
+    }
+  ]
+}

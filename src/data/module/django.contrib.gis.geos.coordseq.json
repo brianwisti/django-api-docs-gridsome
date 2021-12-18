@@ -1,0 +1,278 @@
+{
+  "functions": [],
+  "classes": [
+    {
+      "name": "GEOSCoordSeq",
+      "methods": [
+        {
+          "name": "getOrdinate",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "dimension",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "index",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"Return the value for the given dimension and index.\""
+        },
+        {
+          "name": "setOrdinate",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "dimension",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "index",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "value",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"Set the value for the given dimension and index.\""
+        },
+        {
+          "name": "getX",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "index",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"Get the X value at the index.\""
+        },
+        {
+          "name": "setX",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "index",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "value",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"Set X with the value at the given index.\""
+        },
+        {
+          "name": "getY",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "index",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"Get the Y value at the given index.\""
+        },
+        {
+          "name": "setY",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "index",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "value",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"Set Y with the value at the given index.\""
+        },
+        {
+          "name": "getZ",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "index",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"Get Z with the value at the given index.\""
+        },
+        {
+          "name": "setZ",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "index",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "value",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"Set Z with the value at the given index.\""
+        },
+        {
+          "name": "size",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ],
+          "decorators": [
+            {
+              "name": "# ### Dimensions ###\n    @property"
+            }
+          ],
+          "docstring": "\"Return the size of this coordinate sequence.\""
+        },
+        {
+          "name": "dims",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ],
+          "decorators": [
+            {
+              "name": "@property"
+            }
+          ],
+          "docstring": "\"Return the dimensions of this coordinate sequence.\""
+        },
+        {
+          "name": "hasz",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ],
+          "decorators": [
+            {
+              "name": "@property"
+            }
+          ],
+          "docstring": "\"\"\"\n        Return whether this coordinate sequence is 3D. This property value is\n        inherited from the parent Geometry.\n        \"\"\""
+        },
+        {
+          "name": "clone",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"Clone this coordinate sequence.\""
+        },
+        {
+          "name": "kml",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ],
+          "decorators": [
+            {
+              "name": "@property"
+            }
+          ],
+          "docstring": "\"Return the KML representation for the coordinates.\""
+        },
+        {
+          "name": "tuple",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ],
+          "decorators": [
+            {
+              "name": "@property"
+            }
+          ],
+          "docstring": "\"Return a tuple version of this coordinate sequence.\""
+        },
+        {
+          "name": "is_counterclockwise",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ],
+          "decorators": [
+            {
+              "name": "@property"
+            }
+          ],
+          "docstring": "\"\"\"Return whether this coordinate sequence is counterclockwise.\"\"\""
+        }
+      ],
+      "classes": [],
+      "docstring": "\"The internal representation of a list of coordinates inside a Geometry.\""
+    }
+  ],
+  "doc": "\"\"\"\n This module houses the GEOSCoordSeq object, which is used internally\n by GEOSGeometry to house the actual coordinates of the Point,\n LineString, and LinearRing geometries.\n\"\"\""
+}

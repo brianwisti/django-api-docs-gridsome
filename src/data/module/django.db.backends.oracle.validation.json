@@ -1,0 +1,32 @@
+{
+  "functions": [],
+  "classes": [
+    {
+      "name": "DatabaseValidation",
+      "methods": [
+        {
+          "name": "check_field_type",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "field",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "field_type",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"Oracle doesn't support a database index on some data types.\"\"\""
+        }
+      ],
+      "classes": []
+    }
+  ]
+}

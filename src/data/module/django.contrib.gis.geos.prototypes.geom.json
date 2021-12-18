@@ -1,0 +1,28 @@
+{
+  "functions": [],
+  "classes": [
+    {
+      "name": "geos_char_p",
+      "methods": [],
+      "classes": []
+    },
+    {
+      "name": "GeomOutput",
+      "methods": [],
+      "classes": [],
+      "docstring": "\"For GEOS routines that return a geometry.\""
+    },
+    {
+      "name": "IntFromGeom",
+      "methods": [],
+      "classes": [],
+      "docstring": "\"Argument is a geometry, return type is an integer.\""
+    },
+    {
+      "name": "StringFromGeom",
+      "methods": [],
+      "classes": [],
+      "docstring": "\"Argument is a Geometry, return type is a string.\""
+    }
+  ]
+}

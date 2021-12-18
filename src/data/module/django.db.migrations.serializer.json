@@ -1,0 +1,482 @@
+{
+  "functions": [
+    {
+      "name": "serializer_factory",
+      "params": [
+        {
+          "prefix": "",
+          "name": "value",
+          "annotation": null
+        }
+      ]
+    }
+  ],
+  "classes": [
+    {
+      "name": "BaseSerializer",
+      "methods": [
+        {
+          "name": "serialize",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ]
+        }
+      ],
+      "classes": []
+    },
+    {
+      "name": "BaseSequenceSerializer",
+      "methods": [
+        {
+          "name": "serialize",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ]
+        }
+      ],
+      "classes": []
+    },
+    {
+      "name": "BaseSimpleSerializer",
+      "methods": [
+        {
+          "name": "serialize",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ]
+        }
+      ],
+      "classes": []
+    },
+    {
+      "name": "ChoicesSerializer",
+      "methods": [
+        {
+          "name": "serialize",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ]
+        }
+      ],
+      "classes": []
+    },
+    {
+      "name": "DateTimeSerializer",
+      "methods": [
+        {
+          "name": "serialize",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ]
+        }
+      ],
+      "classes": [],
+      "docstring": "\"\"\"For datetime.*, except datetime.datetime.\"\"\""
+    },
+    {
+      "name": "DatetimeDatetimeSerializer",
+      "methods": [
+        {
+          "name": "serialize",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ]
+        }
+      ],
+      "classes": [],
+      "docstring": "\"\"\"For datetime.datetime.\"\"\""
+    },
+    {
+      "name": "DecimalSerializer",
+      "methods": [
+        {
+          "name": "serialize",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ]
+        }
+      ],
+      "classes": []
+    },
+    {
+      "name": "DeconstructableSerializer",
+      "methods": [
+        {
+          "name": "serialize_deconstructed",
+          "params": [
+            {
+              "prefix": "",
+              "name": "path",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "args",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "kwargs",
+              "annotation": null
+            }
+          ],
+          "decorators": [
+            {
+              "name": "@staticmethod"
+            }
+          ]
+        },
+        {
+          "name": "serialize",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ]
+        }
+      ],
+      "classes": []
+    },
+    {
+      "name": "DictionarySerializer",
+      "methods": [
+        {
+          "name": "serialize",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ]
+        }
+      ],
+      "classes": []
+    },
+    {
+      "name": "EnumSerializer",
+      "methods": [
+        {
+          "name": "serialize",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ]
+        }
+      ],
+      "classes": []
+    },
+    {
+      "name": "FloatSerializer",
+      "methods": [
+        {
+          "name": "serialize",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ]
+        }
+      ],
+      "classes": []
+    },
+    {
+      "name": "FrozensetSerializer",
+      "methods": [],
+      "classes": []
+    },
+    {
+      "name": "FunctionTypeSerializer",
+      "methods": [
+        {
+          "name": "serialize",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ]
+        }
+      ],
+      "classes": []
+    },
+    {
+      "name": "FunctoolsPartialSerializer",
+      "methods": [
+        {
+          "name": "serialize",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ]
+        }
+      ],
+      "classes": []
+    },
+    {
+      "name": "IterableSerializer",
+      "methods": [
+        {
+          "name": "serialize",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ]
+        }
+      ],
+      "classes": []
+    },
+    {
+      "name": "ModelFieldSerializer",
+      "methods": [
+        {
+          "name": "serialize",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ]
+        }
+      ],
+      "classes": []
+    },
+    {
+      "name": "ModelManagerSerializer",
+      "methods": [
+        {
+          "name": "serialize",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ]
+        }
+      ],
+      "classes": []
+    },
+    {
+      "name": "OperationSerializer",
+      "methods": [
+        {
+          "name": "serialize",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ]
+        }
+      ],
+      "classes": []
+    },
+    {
+      "name": "PathLikeSerializer",
+      "methods": [
+        {
+          "name": "serialize",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ]
+        }
+      ],
+      "classes": []
+    },
+    {
+      "name": "PathSerializer",
+      "methods": [
+        {
+          "name": "serialize",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ]
+        }
+      ],
+      "classes": []
+    },
+    {
+      "name": "RegexSerializer",
+      "methods": [
+        {
+          "name": "serialize",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ]
+        }
+      ],
+      "classes": []
+    },
+    {
+      "name": "SequenceSerializer",
+      "methods": [],
+      "classes": []
+    },
+    {
+      "name": "SetSerializer",
+      "methods": [],
+      "classes": []
+    },
+    {
+      "name": "SettingsReferenceSerializer",
+      "methods": [
+        {
+          "name": "serialize",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ]
+        }
+      ],
+      "classes": []
+    },
+    {
+      "name": "TupleSerializer",
+      "methods": [],
+      "classes": []
+    },
+    {
+      "name": "TypeSerializer",
+      "methods": [
+        {
+          "name": "serialize",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ]
+        }
+      ],
+      "classes": []
+    },
+    {
+      "name": "UUIDSerializer",
+      "methods": [
+        {
+          "name": "serialize",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ]
+        }
+      ],
+      "classes": []
+    },
+    {
+      "name": "Serializer",
+      "methods": [
+        {
+          "name": "register",
+          "params": [
+            {
+              "prefix": "",
+              "name": "cls",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "type_",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "serializer",
+              "annotation": null
+            }
+          ],
+          "decorators": [
+            {
+              "name": "@classmethod"
+            }
+          ]
+        },
+        {
+          "name": "unregister",
+          "params": [
+            {
+              "prefix": "",
+              "name": "cls",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "type_",
+              "annotation": null
+            }
+          ],
+          "decorators": [
+            {
+              "name": "@classmethod"
+            }
+          ]
+        }
+      ],
+      "classes": []
+    }
+  ]
+}

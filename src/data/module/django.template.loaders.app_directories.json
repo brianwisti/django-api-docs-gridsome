@@ -1,0 +1,22 @@
+{
+  "functions": [],
+  "classes": [
+    {
+      "name": "Loader",
+      "methods": [
+        {
+          "name": "get_dirs",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ]
+        }
+      ],
+      "classes": []
+    }
+  ],
+  "doc": "\"\"\"\nWrapper for loading templates from \"templates\" directories in INSTALLED_APPS\npackages.\n\"\"\""
+}

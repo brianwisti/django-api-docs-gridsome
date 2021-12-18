@@ -1,0 +1,718 @@
+{
+  "functions": [],
+  "classes": [
+    {
+      "name": "ResponseHeaders",
+      "methods": [
+        {
+          "name": "pop",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "key",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "default",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "setdefault",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "key",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "value",
+              "annotation": null
+            }
+          ]
+        }
+      ],
+      "classes": []
+    },
+    {
+      "name": "BadHeaderError",
+      "methods": [],
+      "classes": []
+    },
+    {
+      "name": "HttpResponseBase",
+      "methods": [
+        {
+          "name": "reason_phrase",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ],
+          "decorators": [
+            {
+              "name": "@property"
+            }
+          ]
+        },
+        {
+          "name": "reason_phrase",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "value",
+              "annotation": null
+            }
+          ],
+          "decorators": [
+            {
+              "name": "@reason_phrase.setter"
+            }
+          ]
+        },
+        {
+          "name": "charset",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ],
+          "decorators": [
+            {
+              "name": "@property"
+            }
+          ]
+        },
+        {
+          "name": "charset",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "value",
+              "annotation": null
+            }
+          ],
+          "decorators": [
+            {
+              "name": "@charset.setter"
+            }
+          ]
+        },
+        {
+          "name": "serialize_headers",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"HTTP headers as a bytestring.\"\"\""
+        },
+        {
+          "name": "has_header",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "header",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"Case-insensitive check for a header.\"\"\""
+        },
+        {
+          "name": "items",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "get",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "header",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "alternate",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "set_cookie",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "key",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "value",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "max_age",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "expires",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "path",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "domain",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "secure",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "httponly",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "samesite",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        Set a cookie.\n\n        ``expires`` can be:\n        - a string in the correct format,\n        - a naive ``datetime.datetime`` object in UTC,\n        - an aware ``datetime.datetime`` object in any time zone.\n        If it is a ``datetime.datetime`` object then calculate ``max_age``.\n        \"\"\""
+        },
+        {
+          "name": "setdefault",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "key",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "value",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"Set a header unless it has already been set.\"\"\""
+        },
+        {
+          "name": "set_signed_cookie",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "key",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "value",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "salt",
+              "annotation": null
+            },
+            {
+              "prefix": "**",
+              "name": "kwargs",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "delete_cookie",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "key",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "path",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "domain",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "samesite",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "make_bytes",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "value",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"Turn a value into a bytestring encoded in the output charset.\"\"\""
+        },
+        {
+          "name": "close",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "write",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "content",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "flush",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "tell",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "readable",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "seekable",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "writable",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "writelines",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "lines",
+              "annotation": null
+            }
+          ]
+        }
+      ],
+      "classes": [],
+      "docstring": "\"\"\"\n    An HTTP response base class with dictionary-accessed headers.\n\n    This class doesn't handle content. It should not be used directly.\n    Use the HttpResponse and StreamingHttpResponse subclasses instead.\n    \"\"\""
+    },
+    {
+      "name": "HttpResponse",
+      "methods": [
+        {
+          "name": "serialize",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"Full HTTP message, including headers, as a bytestring.\"\"\""
+        },
+        {
+          "name": "content",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ],
+          "decorators": [
+            {
+              "name": "@property"
+            }
+          ]
+        },
+        {
+          "name": "content",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "value",
+              "annotation": null
+            }
+          ],
+          "decorators": [
+            {
+              "name": "@content.setter"
+            }
+          ]
+        },
+        {
+          "name": "write",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "content",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "tell",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "getvalue",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "writable",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "writelines",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "lines",
+              "annotation": null
+            }
+          ]
+        }
+      ],
+      "classes": [],
+      "docstring": "\"\"\"\n    An HTTP response class with a string as content.\n\n    This content can be read, appended to, or replaced.\n    \"\"\""
+    },
+    {
+      "name": "StreamingHttpResponse",
+      "methods": [
+        {
+          "name": "content",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ],
+          "decorators": [
+            {
+              "name": "@property"
+            }
+          ]
+        },
+        {
+          "name": "streaming_content",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ],
+          "decorators": [
+            {
+              "name": "@property"
+            }
+          ]
+        },
+        {
+          "name": "streaming_content",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "value",
+              "annotation": null
+            }
+          ],
+          "decorators": [
+            {
+              "name": "@streaming_content.setter"
+            }
+          ]
+        },
+        {
+          "name": "getvalue",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ]
+        }
+      ],
+      "classes": [],
+      "docstring": "\"\"\"\n    A streaming HTTP response class with an iterator as content.\n\n    This should only be iterated once, when the response is streamed to the\n    client. However, it can be appended to or replaced with a new iterator\n    that wraps the original content (or yields entirely new content).\n    \"\"\""
+    },
+    {
+      "name": "FileResponse",
+      "methods": [
+        {
+          "name": "set_headers",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "filelike",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        Set some common response headers (Content-Length, Content-Type, and\n        Content-Disposition) based on the `filelike` response content.\n        \"\"\""
+        }
+      ],
+      "classes": [],
+      "docstring": "\"\"\"\n    A streaming HTTP response class optimized for files.\n    \"\"\""
+    },
+    {
+      "name": "HttpResponseRedirectBase",
+      "methods": [],
+      "classes": []
+    },
+    {
+      "name": "HttpResponseRedirect",
+      "methods": [],
+      "classes": []
+    },
+    {
+      "name": "HttpResponsePermanentRedirect",
+      "methods": [],
+      "classes": []
+    },
+    {
+      "name": "HttpResponseNotModified",
+      "methods": [
+        {
+          "name": "content",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "value",
+              "annotation": null
+            }
+          ],
+          "decorators": [
+            {
+              "name": "@HttpResponse.content.setter"
+            }
+          ]
+        }
+      ],
+      "classes": []
+    },
+    {
+      "name": "HttpResponseBadRequest",
+      "methods": [],
+      "classes": []
+    },
+    {
+      "name": "HttpResponseNotFound",
+      "methods": [],
+      "classes": []
+    },
+    {
+      "name": "HttpResponseForbidden",
+      "methods": [],
+      "classes": []
+    },
+    {
+      "name": "HttpResponseNotAllowed",
+      "methods": [],
+      "classes": []
+    },
+    {
+      "name": "HttpResponseGone",
+      "methods": [],
+      "classes": []
+    },
+    {
+      "name": "HttpResponseServerError",
+      "methods": [],
+      "classes": []
+    },
+    {
+      "name": "Http404",
+      "methods": [],
+      "classes": []
+    },
+    {
+      "name": "JsonResponse",
+      "methods": [],
+      "classes": [],
+      "docstring": "\"\"\"\n    An HTTP response class that consumes data to be serialized to JSON.\n\n    :param data: Data to be dumped into json. By default only ``dict`` objects\n      are allowed to be passed due to a security flaw before ECMAScript 5. See\n      the ``safe`` parameter for more information.\n    :param encoder: Should be a json encoder class. Defaults to\n      ``django.core.serializers.json.DjangoJSONEncoder``.\n    :param safe: Controls if only ``dict`` objects may be serialized. Defaults\n      to ``True``.\n    :param json_dumps_params: A dictionary of kwargs passed to json.dumps().\n    \"\"\""
+    }
+  ]
+}

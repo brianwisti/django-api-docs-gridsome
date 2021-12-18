@@ -1,0 +1,362 @@
+{
+  "functions": [],
+  "classes": [
+    {
+      "name": "SearchVectorExact",
+      "methods": [
+        {
+          "name": "process_rhs",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "qn",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "connection",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "as_sql",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "qn",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "connection",
+              "annotation": null
+            }
+          ]
+        }
+      ],
+      "classes": []
+    },
+    {
+      "name": "SearchVectorField",
+      "methods": [
+        {
+          "name": "db_type",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "connection",
+              "annotation": null
+            }
+          ]
+        }
+      ],
+      "classes": []
+    },
+    {
+      "name": "SearchQueryField",
+      "methods": [
+        {
+          "name": "db_type",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "connection",
+              "annotation": null
+            }
+          ]
+        }
+      ],
+      "classes": []
+    },
+    {
+      "name": "SearchConfig",
+      "methods": [
+        {
+          "name": "from_parameter",
+          "params": [
+            {
+              "prefix": "",
+              "name": "cls",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "config",
+              "annotation": null
+            }
+          ],
+          "decorators": [
+            {
+              "name": "@classmethod"
+            }
+          ]
+        },
+        {
+          "name": "get_source_expressions",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "set_source_expressions",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "exprs",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "as_sql",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "compiler",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "connection",
+              "annotation": null
+            }
+          ]
+        }
+      ],
+      "classes": []
+    },
+    {
+      "name": "SearchVectorCombinable",
+      "methods": [],
+      "classes": []
+    },
+    {
+      "name": "SearchVector",
+      "methods": [
+        {
+          "name": "resolve_expression",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "query",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "allow_joins",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "reuse",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "summarize",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "for_save",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "as_sql",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "compiler",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "connection",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "function",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "template",
+              "annotation": null
+            }
+          ]
+        }
+      ],
+      "classes": []
+    },
+    {
+      "name": "CombinedSearchVector",
+      "methods": [],
+      "classes": []
+    },
+    {
+      "name": "SearchQueryCombinable",
+      "methods": [],
+      "classes": []
+    },
+    {
+      "name": "SearchQuery",
+      "methods": [
+        {
+          "name": "as_sql",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "compiler",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "connection",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "function",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "template",
+              "annotation": null
+            }
+          ]
+        }
+      ],
+      "classes": []
+    },
+    {
+      "name": "CombinedSearchQuery",
+      "methods": [],
+      "classes": []
+    },
+    {
+      "name": "SearchRank",
+      "methods": [],
+      "classes": []
+    },
+    {
+      "name": "SearchHeadline",
+      "methods": [
+        {
+          "name": "as_sql",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "compiler",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "connection",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "function",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "template",
+              "annotation": null
+            }
+          ]
+        }
+      ],
+      "classes": []
+    },
+    {
+      "name": "TrigramBase",
+      "methods": [],
+      "classes": []
+    },
+    {
+      "name": "TrigramWordBase",
+      "methods": [],
+      "classes": []
+    },
+    {
+      "name": "TrigramSimilarity",
+      "methods": [],
+      "classes": []
+    },
+    {
+      "name": "TrigramDistance",
+      "methods": [],
+      "classes": []
+    },
+    {
+      "name": "TrigramWordDistance",
+      "methods": [],
+      "classes": []
+    },
+    {
+      "name": "TrigramWordSimilarity",
+      "methods": [],
+      "classes": []
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "functions": [],
+  "classes": [
+    {
+      "name": "SQLCompiler",
+      "methods": [
+        {
+          "name": "as_subquery_condition",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "alias",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "columns",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "compiler",
+              "annotation": null
+            }
+          ]
+        }
+      ],
+      "classes": []
+    },
+    {
+      "name": "SQLInsertCompiler",
+      "methods": [],
+      "classes": []
+    },
+    {
+      "name": "SQLDeleteCompiler",
+      "methods": [
+        {
+          "name": "as_sql",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ]
+        }
+      ],
+      "classes": []
+    },
+    {
+      "name": "SQLUpdateCompiler",
+      "methods": [
+        {
+          "name": "as_sql",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ]
+        }
+      ],
+      "classes": []
+    },
+    {
+      "name": "SQLAggregateCompiler",
+      "methods": [],
+      "classes": []
+    }
+  ]
+}

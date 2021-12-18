@@ -1,0 +1,265 @@
+{
+  "functions": [
+    {
+      "name": "pretty_name",
+      "params": [
+        {
+          "prefix": "",
+          "name": "name",
+          "annotation": null
+        }
+      ],
+      "docstring": "\"\"\"Convert 'first_name' to 'First name'.\"\"\""
+    },
+    {
+      "name": "flatatt",
+      "params": [
+        {
+          "prefix": "",
+          "name": "attrs",
+          "annotation": null
+        }
+      ],
+      "docstring": "\"\"\"\n    Convert a dictionary of attributes to a single string.\n    The returned string will contain a leading space followed by key=\"value\",\n    XML-style pairs. In the case of a boolean value, the key will appear\n    without a value. It is assumed that the keys do not need to be\n    XML-escaped. If the passed dictionary is empty, then return an empty\n    string.\n\n    The result is passed through 'mark_safe' (by way of 'format_html_join').\n    \"\"\""
+    },
+    {
+      "name": "from_current_timezone",
+      "params": [
+        {
+          "prefix": "",
+          "name": "value",
+          "annotation": null
+        }
+      ],
+      "docstring": "\"\"\"\n    When time zone support is enabled, convert naive datetimes\n    entered in the current time zone to aware datetimes.\n    \"\"\""
+    },
+    {
+      "name": "to_current_timezone",
+      "params": [
+        {
+          "prefix": "",
+          "name": "value",
+          "annotation": null
+        }
+      ],
+      "docstring": "\"\"\"\n    When time zone support is enabled, convert aware datetimes\n    to naive datetimes in the current time zone for display.\n    \"\"\""
+    }
+  ],
+  "classes": [
+    {
+      "name": "RenderableMixin",
+      "methods": [
+        {
+          "name": "get_context",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "render",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "template_name",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "context",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "renderer",
+              "annotation": null
+            }
+          ]
+        }
+      ],
+      "classes": []
+    },
+    {
+      "name": "RenderableFormMixin",
+      "methods": [
+        {
+          "name": "as_p",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"Render as <p> elements.\"\"\""
+        },
+        {
+          "name": "as_table",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"Render as <tr> elements excluding the surrounding <table> tag.\"\"\""
+        },
+        {
+          "name": "as_ul",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"Render as <li> elements excluding the surrounding <ul> tag.\"\"\""
+        }
+      ],
+      "classes": []
+    },
+    {
+      "name": "RenderableErrorMixin",
+      "methods": [
+        {
+          "name": "as_json",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "escape_html",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "as_text",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "as_ul",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ]
+        }
+      ],
+      "classes": []
+    },
+    {
+      "name": "ErrorDict",
+      "methods": [
+        {
+          "name": "as_data",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "get_json_data",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "escape_html",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "get_context",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ]
+        }
+      ],
+      "classes": [],
+      "docstring": "\"\"\"\n    A collection of errors that knows how to display itself in various formats.\n\n    The dictionary keys are the field names, and the values are the errors.\n    \"\"\""
+    },
+    {
+      "name": "ErrorList",
+      "methods": [
+        {
+          "name": "as_data",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "copy",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "get_json_data",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "escape_html",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "get_context",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ]
+        }
+      ],
+      "classes": [],
+      "docstring": "\"\"\"\n    A collection of errors that knows how to display itself in various formats.\n    \"\"\""
+    }
+  ]
+}

@@ -1,0 +1,488 @@
+{
+  "functions": [
+    {
+      "name": "rfc2822_date",
+      "params": [
+        {
+          "prefix": "",
+          "name": "date",
+          "annotation": null
+        }
+      ]
+    },
+    {
+      "name": "rfc3339_date",
+      "params": [
+        {
+          "prefix": "",
+          "name": "date",
+          "annotation": null
+        }
+      ]
+    },
+    {
+      "name": "get_tag_uri",
+      "params": [
+        {
+          "prefix": "",
+          "name": "url",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "date",
+          "annotation": null
+        }
+      ],
+      "docstring": "\"\"\"\n    Create a TagURI.\n\n    See https://web.archive.org/web/20110514113830/http://diveintomark.org/archives/2004/05/28/howto-atom-id\n    \"\"\""
+    }
+  ],
+  "classes": [
+    {
+      "name": "SyndicationFeed",
+      "methods": [
+        {
+          "name": "add_item",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "title",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "link",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "description",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "author_email",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "author_name",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "author_link",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "pubdate",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "comments",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "unique_id",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "unique_id_is_permalink",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "categories",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "item_copyright",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "ttl",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "updateddate",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "enclosures",
+              "annotation": null
+            },
+            {
+              "prefix": "**",
+              "name": "kwargs",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        Add an item to the feed. All args are expected to be strings except\n        pubdate and updateddate, which are datetime.datetime objects, and\n        enclosures, which is an iterable of instances of the Enclosure class.\n        \"\"\""
+        },
+        {
+          "name": "num_items",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "root_attributes",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        Return extra attributes to place on the root (i.e. feed/channel) element.\n        Called from write().\n        \"\"\""
+        },
+        {
+          "name": "add_root_elements",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "handler",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        Add elements in the root (i.e. feed/channel) element. Called\n        from write().\n        \"\"\""
+        },
+        {
+          "name": "item_attributes",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "item",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        Return extra attributes to place on each item (i.e. item/entry) element.\n        \"\"\""
+        },
+        {
+          "name": "add_item_elements",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "handler",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "item",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        Add elements on each item (i.e. item/entry) element.\n        \"\"\""
+        },
+        {
+          "name": "write",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "outfile",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "encoding",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        Output the feed in the given encoding to outfile, which is a file-like\n        object. Subclasses should override this.\n        \"\"\""
+        },
+        {
+          "name": "writeString",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "encoding",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        Return the feed in the given encoding as a string.\n        \"\"\""
+        },
+        {
+          "name": "latest_post_date",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        Return the latest item's pubdate or updateddate. If no items\n        have either of these attributes this return the current UTC date/time.\n        \"\"\""
+        }
+      ],
+      "classes": [],
+      "docstring": "\"Base class for all syndication feeds. Subclasses should provide write()\""
+    },
+    {
+      "name": "Enclosure",
+      "methods": [],
+      "classes": [],
+      "docstring": "\"\"\"An RSS enclosure\"\"\""
+    },
+    {
+      "name": "RssFeed",
+      "methods": [
+        {
+          "name": "write",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "outfile",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "encoding",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "rss_attributes",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "write_items",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "handler",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "add_root_elements",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "handler",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "endChannelElement",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "handler",
+              "annotation": null
+            }
+          ]
+        }
+      ],
+      "classes": []
+    },
+    {
+      "name": "RssUserland091Feed",
+      "methods": [
+        {
+          "name": "add_item_elements",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "handler",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "item",
+              "annotation": null
+            }
+          ]
+        }
+      ],
+      "classes": []
+    },
+    {
+      "name": "Rss201rev2Feed",
+      "methods": [
+        {
+          "name": "add_item_elements",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "handler",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "item",
+              "annotation": null
+            }
+          ]
+        }
+      ],
+      "classes": []
+    },
+    {
+      "name": "Atom1Feed",
+      "methods": [
+        {
+          "name": "write",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "outfile",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "encoding",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "root_attributes",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "add_root_elements",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "handler",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "write_items",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "handler",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "add_item_elements",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "handler",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "item",
+              "annotation": null
+            }
+          ]
+        }
+      ],
+      "classes": []
+    }
+  ],
+  "doc": "\"\"\"\nSyndication feed generation library -- used for generating RSS, etc.\n\nSample usage:\n\n>>> from django.utils import feedgenerator\n>>> feed = feedgenerator.Rss201rev2Feed(\n...     title=\"Poynter E-Media Tidbits\",\n...     link=\"http://www.poynter.org/column.asp?id=31\",\n...     description=\"A group blog by the sharpest minds in online media/journalism/publishing.\",\n...     language=\"en\",\n... )\n>>> feed.add_item(\n...     title=\"Hello\",\n...     link=\"http://www.holovaty.com/test/\",\n...     description=\"Testing.\"\n... )\n>>> with open('test.rss', 'w') as fp:\n...     feed.write(fp, 'utf-8')\n\nFor definitions of the different versions of RSS, see:\nhttps://web.archive.org/web/20110718035220/http://diveintomark.org/archives/2004/02/04/incompatible-rss\n\"\"\""
+}

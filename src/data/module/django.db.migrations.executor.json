@@ -1,0 +1,173 @@
+{
+  "functions": [],
+  "classes": [
+    {
+      "name": "MigrationExecutor",
+      "methods": [
+        {
+          "name": "migration_plan",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "targets",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "clean_start",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        Given a set of targets, return a list of (Migration instance, backwards?).\n        \"\"\""
+        },
+        {
+          "name": "migrate",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "targets",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "plan",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "state",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "fake",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "fake_initial",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        Migrate the database up to the given targets.\n\n        Django first needs to create all project states before a migration is\n        (un)applied and in a second step run all the database operations.\n        \"\"\""
+        },
+        {
+          "name": "apply_migration",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "state",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "migration",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "fake",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "fake_initial",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"Run a migration forwards.\"\"\""
+        },
+        {
+          "name": "record_migration",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "migration",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "unapply_migration",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "state",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "migration",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "fake",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"Run a migration backwards.\"\"\""
+        },
+        {
+          "name": "check_replacements",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        Mark replacement migrations applied if their replaced set all are.\n\n        Do this unconditionally on every migrate, rather than just when\n        migrations are applied or unapplied, to correctly handle the case\n        when a new squash migration is pushed to a deployment that already had\n        all its replaced migrations applied. In this case no new migration will\n        be applied, but the applied state of the squashed migration must be\n        maintained.\n        \"\"\""
+        },
+        {
+          "name": "detect_soft_applied",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "project_state",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "migration",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        Test whether a migration has been implicitly applied - that the\n        tables or columns it would create exist. This is intended only for use\n        on initial migrations (as it only looks for CreateModel and AddField).\n        \"\"\""
+        }
+      ],
+      "classes": [],
+      "docstring": "\"\"\"\n    End-to-end migration execution - load migrations and run them up or down\n    to a specified set of targets.\n    \"\"\""
+    }
+  ]
+}

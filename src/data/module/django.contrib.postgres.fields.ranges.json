@@ -1,0 +1,513 @@
+{
+  "functions": [],
+  "classes": [
+    {
+      "name": "RangeBoundary",
+      "methods": [
+        {
+          "name": "as_sql",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "compiler",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "connection",
+              "annotation": null
+            }
+          ]
+        }
+      ],
+      "classes": [],
+      "docstring": "\"\"\"A class that represents range boundaries.\"\"\""
+    },
+    {
+      "name": "RangeOperators",
+      "methods": [],
+      "classes": []
+    },
+    {
+      "name": "RangeField",
+      "methods": [
+        {
+          "name": "model",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ],
+          "decorators": [
+            {
+              "name": "@property"
+            }
+          ]
+        },
+        {
+          "name": "model",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "model",
+              "annotation": null
+            }
+          ],
+          "decorators": [
+            {
+              "name": "@model.setter"
+            }
+          ]
+        },
+        {
+          "name": "get_prep_value",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "value",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "to_python",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "value",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "set_attributes_from_name",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "name",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "value_to_string",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "obj",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "formfield",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "**",
+              "name": "kwargs",
+              "annotation": null
+            }
+          ]
+        }
+      ],
+      "classes": []
+    },
+    {
+      "name": "IntegerRangeField",
+      "methods": [
+        {
+          "name": "db_type",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "connection",
+              "annotation": null
+            }
+          ]
+        }
+      ],
+      "classes": []
+    },
+    {
+      "name": "BigIntegerRangeField",
+      "methods": [
+        {
+          "name": "db_type",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "connection",
+              "annotation": null
+            }
+          ]
+        }
+      ],
+      "classes": []
+    },
+    {
+      "name": "DecimalRangeField",
+      "methods": [
+        {
+          "name": "db_type",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "connection",
+              "annotation": null
+            }
+          ]
+        }
+      ],
+      "classes": []
+    },
+    {
+      "name": "DateTimeRangeField",
+      "methods": [
+        {
+          "name": "db_type",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "connection",
+              "annotation": null
+            }
+          ]
+        }
+      ],
+      "classes": []
+    },
+    {
+      "name": "DateRangeField",
+      "methods": [
+        {
+          "name": "db_type",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "connection",
+              "annotation": null
+            }
+          ]
+        }
+      ],
+      "classes": []
+    },
+    {
+      "name": "DateTimeRangeContains",
+      "methods": [
+        {
+          "name": "process_rhs",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "compiler",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "connection",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "as_postgresql",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "compiler",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "connection",
+              "annotation": null
+            }
+          ]
+        }
+      ],
+      "classes": [],
+      "docstring": "\"\"\"\n    Lookup for Date/DateTimeRange containment to cast the rhs to the correct\n    type.\n    \"\"\""
+    },
+    {
+      "name": "RangeContainedBy",
+      "methods": [
+        {
+          "name": "process_rhs",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "compiler",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "connection",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "process_lhs",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "compiler",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "connection",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "get_prep_lookup",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ]
+        }
+      ],
+      "classes": []
+    },
+    {
+      "name": "FullyLessThan",
+      "methods": [],
+      "classes": [],
+      "decorators": [
+        {
+          "name": "@RangeField.register_lookup"
+        }
+      ]
+    },
+    {
+      "name": "FullGreaterThan",
+      "methods": [],
+      "classes": [],
+      "decorators": [
+        {
+          "name": "@RangeField.register_lookup"
+        }
+      ]
+    },
+    {
+      "name": "NotLessThan",
+      "methods": [],
+      "classes": [],
+      "decorators": [
+        {
+          "name": "@RangeField.register_lookup"
+        }
+      ]
+    },
+    {
+      "name": "NotGreaterThan",
+      "methods": [],
+      "classes": [],
+      "decorators": [
+        {
+          "name": "@RangeField.register_lookup"
+        }
+      ]
+    },
+    {
+      "name": "AdjacentToLookup",
+      "methods": [],
+      "classes": [],
+      "decorators": [
+        {
+          "name": "@RangeField.register_lookup"
+        }
+      ]
+    },
+    {
+      "name": "RangeStartsWith",
+      "methods": [
+        {
+          "name": "output_field",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ],
+          "decorators": [
+            {
+              "name": "@property"
+            }
+          ]
+        }
+      ],
+      "classes": [],
+      "decorators": [
+        {
+          "name": "@RangeField.register_lookup"
+        }
+      ]
+    },
+    {
+      "name": "RangeEndsWith",
+      "methods": [
+        {
+          "name": "output_field",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ],
+          "decorators": [
+            {
+              "name": "@property"
+            }
+          ]
+        }
+      ],
+      "classes": [],
+      "decorators": [
+        {
+          "name": "@RangeField.register_lookup"
+        }
+      ]
+    },
+    {
+      "name": "IsEmpty",
+      "methods": [],
+      "classes": [],
+      "decorators": [
+        {
+          "name": "@RangeField.register_lookup"
+        }
+      ]
+    },
+    {
+      "name": "LowerInclusive",
+      "methods": [],
+      "classes": [],
+      "decorators": [
+        {
+          "name": "@RangeField.register_lookup"
+        }
+      ]
+    },
+    {
+      "name": "LowerInfinite",
+      "methods": [],
+      "classes": [],
+      "decorators": [
+        {
+          "name": "@RangeField.register_lookup"
+        }
+      ]
+    },
+    {
+      "name": "UpperInclusive",
+      "methods": [],
+      "classes": [],
+      "decorators": [
+        {
+          "name": "@RangeField.register_lookup"
+        }
+      ]
+    },
+    {
+      "name": "UpperInfinite",
+      "methods": [],
+      "classes": [],
+      "decorators": [
+        {
+          "name": "@RangeField.register_lookup"
+        }
+      ]
+    }
+  ]
+}

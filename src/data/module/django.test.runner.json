@@ -1,0 +1,1054 @@
+{
+  "functions": [
+    {
+      "name": "get_max_test_processes",
+      "params": [],
+      "docstring": "\"\"\"\n    The maximum number of test processes when using the --parallel option.\n    \"\"\""
+    },
+    {
+      "name": "parallel_type",
+      "params": [
+        {
+          "prefix": "",
+          "name": "value",
+          "annotation": null
+        }
+      ],
+      "docstring": "\"\"\"Parse value passed to the --parallel option.\"\"\""
+    },
+    {
+      "name": "try_importing",
+      "params": [
+        {
+          "prefix": "",
+          "name": "label",
+          "annotation": null
+        }
+      ],
+      "docstring": "\"\"\"\n    Try importing a test label, and return (is_importable, is_package).\n\n    Relative labels like \".\" and \"..\" are seen as directories.\n    \"\"\""
+    },
+    {
+      "name": "find_top_level",
+      "params": [
+        {
+          "prefix": "",
+          "name": "top_level",
+          "annotation": null
+        }
+      ]
+    },
+    {
+      "name": "shuffle_tests",
+      "params": [
+        {
+          "prefix": "",
+          "name": "tests",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "shuffler",
+          "annotation": null
+        }
+      ],
+      "docstring": "\"\"\"\n    Return an iterator over the given tests in a shuffled order, keeping tests\n    next to other tests of their class.\n\n    `tests` should be an iterable of tests.\n    \"\"\""
+    },
+    {
+      "name": "reorder_test_bin",
+      "params": [
+        {
+          "prefix": "",
+          "name": "tests",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "shuffler",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "reverse",
+          "annotation": null
+        }
+      ],
+      "docstring": "\"\"\"\n    Return an iterator that reorders the given tests, keeping tests next to\n    other tests of their class.\n\n    `tests` should be an iterable of tests that supports reversed().\n    \"\"\""
+    },
+    {
+      "name": "reorder_tests",
+      "params": [
+        {
+          "prefix": "",
+          "name": "tests",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "classes",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "reverse",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "shuffler",
+          "annotation": null
+        }
+      ],
+      "docstring": "\"\"\"\n    Reorder an iterable of tests, grouping by the given TestCase classes.\n\n    This function also removes any duplicates and reorders so that tests of the\n    same type are consecutive.\n\n    The result is returned as an iterator. `classes` is a sequence of types.\n    Tests that are instances of `classes[0]` are grouped first, followed by\n    instances of `classes[1]`, etc. Tests that are not instances of any of the\n    classes are grouped last.\n\n    If `reverse` is True, the tests within each `classes` group are reversed,\n    but without reversing the order of `classes` itself.\n\n    The `shuffler` argument is an optional instance of this module's `Shuffler`\n    class. If provided, tests will be shuffled within each `classes` group, but\n    keeping tests with other tests of their TestCase class. Reversing is\n    applied after shuffling to allow reversing the same random order.\n    \"\"\""
+    },
+    {
+      "name": "partition_suite_by_case",
+      "params": [
+        {
+          "prefix": "",
+          "name": "suite",
+          "annotation": null
+        }
+      ],
+      "docstring": "\"\"\"Partition a test suite by test case, preserving the order of tests.\"\"\""
+    },
+    {
+      "name": "test_match_tags",
+      "params": [
+        {
+          "prefix": "",
+          "name": "test",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "tags",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "exclude_tags",
+          "annotation": null
+        }
+      ]
+    },
+    {
+      "name": "filter_tests_by_tags",
+      "params": [
+        {
+          "prefix": "",
+          "name": "tests",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "tags",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "exclude_tags",
+          "annotation": null
+        }
+      ],
+      "docstring": "\"\"\"Return the matching tests as an iterator.\"\"\""
+    }
+  ],
+  "classes": [
+    {
+      "name": "DebugSQLTextTestResult",
+      "methods": [
+        {
+          "name": "startTest",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "test",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "stopTest",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "test",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "addError",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "test",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "err",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "addFailure",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "test",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "err",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "addSubTest",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "test",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "subtest",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "err",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "printErrorList",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "flavour",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "errors",
+              "annotation": null
+            }
+          ]
+        }
+      ],
+      "classes": []
+    },
+    {
+      "name": "PDBDebugResult",
+      "methods": [
+        {
+          "name": "addError",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "test",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "err",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "addFailure",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "test",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "err",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "addSubTest",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "test",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "subtest",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "err",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "debug",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "error",
+              "annotation": null
+            }
+          ]
+        }
+      ],
+      "classes": [],
+      "docstring": "\"\"\"\n    Custom result class that triggers a PDB session when an error or failure\n    occurs.\n    \"\"\""
+    },
+    {
+      "name": "DummyList",
+      "methods": [
+        {
+          "name": "append",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "item",
+              "annotation": null
+            }
+          ]
+        }
+      ],
+      "classes": [],
+      "docstring": "\"\"\"\n    Dummy list class for faking storage of results in unittest.TestResult.\n    \"\"\""
+    },
+    {
+      "name": "RemoteTestResult",
+      "methods": [
+        {
+          "name": "test_index",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ],
+          "decorators": [
+            {
+              "name": "@property"
+            }
+          ]
+        },
+        {
+          "name": "check_picklable",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "test",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "err",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "check_subtest_picklable",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "test",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "subtest",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "startTestRun",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "stopTestRun",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "startTest",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "test",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "stopTest",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "test",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "addError",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "test",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "err",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "addFailure",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "test",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "err",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "addSubTest",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "test",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "subtest",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "err",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "addSuccess",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "test",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "addSkip",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "test",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "reason",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "addExpectedFailure",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "test",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "err",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "addUnexpectedSuccess",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "test",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "wasSuccessful",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"Tells whether or not this result was a success.\"\"\""
+        }
+      ],
+      "classes": [],
+      "docstring": "\"\"\"\n    Extend unittest.TestResult to record events in the child processes so they\n    can be replayed in the parent process. Events include things like which\n    tests succeeded or failed.\n    \"\"\""
+    },
+    {
+      "name": "RemoteTestRunner",
+      "methods": [
+        {
+          "name": "run",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "test",
+              "annotation": null
+            }
+          ]
+        }
+      ],
+      "classes": [],
+      "docstring": "\"\"\"\n    Run tests and record everything but don't display anything.\n\n    The implementation matches the unpythonic coding style of unittest2.\n    \"\"\""
+    },
+    {
+      "name": "ParallelTestSuite",
+      "methods": [
+        {
+          "name": "run",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "result",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        Distribute test cases across workers.\n\n        Return an identifier of each test case with its result in order to use\n        imap_unordered to show results as soon as they're available.\n\n        To minimize pickling errors when getting results from workers:\n\n        - pass back numeric indexes in self.subsuites instead of tests\n        - make tracebacks picklable with tblib, if available\n\n        Even with tblib, errors may still occur for dynamically created\n        exception classes which cannot be unpickled.\n        \"\"\""
+        }
+      ],
+      "classes": [],
+      "docstring": "\"\"\"\n    Run a series of tests in parallel in several processes.\n\n    While the unittest module's documentation implies that orchestrating the\n    execution of tests is the responsibility of the test runner, in practice,\n    it appears that TestRunner classes are more concerned with formatting and\n    displaying test results.\n\n    Since there are fewer use cases for customizing TestSuite than TestRunner,\n    implementing parallelization at the level of the TestSuite improves\n    interoperability with existing custom test runners. A single instance of a\n    test runner can still collect results from all tests without being aware\n    that they have been run in parallel.\n    \"\"\""
+    },
+    {
+      "name": "Shuffler",
+      "methods": [
+        {
+          "name": "seed_display",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ],
+          "decorators": [
+            {
+              "name": "@property"
+            }
+          ]
+        },
+        {
+          "name": "shuffle",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "items",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "key",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        Return a new list of the items in a shuffled order.\n\n        The `key` is a function that accepts an item in `items` and returns\n        a string unique for that item that can be viewed as a string id. The\n        order of the return value is deterministic. It depends on the seed\n        and key function but not on the original order.\n        \"\"\""
+        }
+      ],
+      "classes": [],
+      "docstring": "\"\"\"\n    This class implements shuffling with a special consistency property.\n    Consistency means that, for a given seed and key function, if two sets of\n    items are shuffled, the resulting order will agree on the intersection of\n    the two sets. For example, if items are removed from an original set, the\n    shuffled order for the new set will be the shuffled order of the original\n    set restricted to the smaller set.\n    \"\"\""
+    },
+    {
+      "name": "DiscoverRunner",
+      "methods": [
+        {
+          "name": "add_arguments",
+          "params": [
+            {
+              "prefix": "",
+              "name": "cls",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "parser",
+              "annotation": null
+            }
+          ],
+          "decorators": [
+            {
+              "name": "@classmethod"
+            }
+          ]
+        },
+        {
+          "name": "shuffle_seed",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ],
+          "decorators": [
+            {
+              "name": "@property"
+            }
+          ]
+        },
+        {
+          "name": "log",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "msg",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "level",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        Log the message at the given logging level (the default is INFO).\n\n        If a logger isn't set, the message is instead printed to the console,\n        respecting the configured verbosity. A verbosity of 0 prints no output,\n        a verbosity of 1 prints INFO and above, and a verbosity of 2 or higher\n        prints all levels.\n        \"\"\""
+        },
+        {
+          "name": "setup_test_environment",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "**",
+              "name": "kwargs",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "setup_shuffler",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "load_with_patterns",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ],
+          "decorators": [
+            {
+              "name": "@contextmanager"
+            }
+          ]
+        },
+        {
+          "name": "load_tests_for_label",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "label",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "discover_kwargs",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "build_suite",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "test_labels",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "extra_tests",
+              "annotation": null
+            },
+            {
+              "prefix": "**",
+              "name": "kwargs",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "setup_databases",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "**",
+              "name": "kwargs",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "get_resultclass",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "get_test_runner_kwargs",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "run_checks",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "databases",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "run_suite",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "suite",
+              "annotation": null
+            },
+            {
+              "prefix": "**",
+              "name": "kwargs",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "teardown_databases",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "old_config",
+              "annotation": null
+            },
+            {
+              "prefix": "**",
+              "name": "kwargs",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"Destroy all the non-mirror databases.\"\"\""
+        },
+        {
+          "name": "teardown_test_environment",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "**",
+              "name": "kwargs",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "suite_result",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "suite",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "result",
+              "annotation": null
+            },
+            {
+              "prefix": "**",
+              "name": "kwargs",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "get_databases",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "suite",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "run_tests",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "test_labels",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "extra_tests",
+              "annotation": null
+            },
+            {
+              "prefix": "**",
+              "name": "kwargs",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        Run the unit tests for all the test labels in the provided list.\n\n        Test labels should be dotted Python paths to test modules, test\n        classes, or test methods.\n\n        Return the number of tests that failed.\n        \"\"\""
+        }
+      ],
+      "classes": [],
+      "docstring": "\"\"\"A Django test runner that uses unittest2 test discovery.\"\"\""
+    }
+  ]
+}

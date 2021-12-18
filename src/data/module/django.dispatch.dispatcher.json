@@ -1,0 +1,143 @@
+{
+  "functions": [
+    {
+      "name": "receiver",
+      "params": [
+        {
+          "prefix": "",
+          "name": "signal",
+          "annotation": null
+        },
+        {
+          "prefix": "**",
+          "name": "kwargs",
+          "annotation": null
+        }
+      ],
+      "docstring": "\"\"\"\n    A decorator for connecting receivers to signals. Used by passing in the\n    signal (or list of signals) and keyword arguments to connect::\n\n        @receiver(post_save, sender=MyModel)\n        def signal_receiver(sender, **kwargs):\n            ...\n\n        @receiver([post_save, post_delete], sender=MyModel)\n        def signals_receiver(sender, **kwargs):\n            ...\n    \"\"\""
+    }
+  ],
+  "classes": [
+    {
+      "name": "Signal",
+      "methods": [
+        {
+          "name": "connect",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "receiver",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "sender",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "weak",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "dispatch_uid",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        Connect receiver to sender for signal.\n\n        Arguments:\n\n            receiver\n                A function or an instance method which is to receive signals.\n                Receivers must be hashable objects.\n\n                If weak is True, then receiver must be weak referenceable.\n\n                Receivers must be able to accept keyword arguments.\n\n                If a receiver is connected with a dispatch_uid argument, it\n                will not be added if another receiver was already connected\n                with that dispatch_uid.\n\n            sender\n                The sender to which the receiver should respond. Must either be\n                a Python object, or None to receive events from any sender.\n\n            weak\n                Whether to use weak references to the receiver. By default, the\n                module will attempt to use weak references to the receiver\n                objects. If this parameter is false, then strong references will\n                be used.\n\n            dispatch_uid\n                An identifier used to uniquely identify a particular instance of\n                a receiver. This will usually be a string, though it may be\n                anything hashable.\n        \"\"\""
+        },
+        {
+          "name": "disconnect",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "receiver",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "sender",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "dispatch_uid",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        Disconnect receiver from sender for signal.\n\n        If weak references are used, disconnect need not be called. The receiver\n        will be removed from dispatch automatically.\n\n        Arguments:\n\n            receiver\n                The registered receiver to disconnect. May be none if\n                dispatch_uid is specified.\n\n            sender\n                The registered sender to disconnect\n\n            dispatch_uid\n                the unique identifier of the receiver to disconnect\n        \"\"\""
+        },
+        {
+          "name": "has_listeners",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "sender",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "send",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "sender",
+              "annotation": null
+            },
+            {
+              "prefix": "**",
+              "name": "named",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        Send signal from sender to all connected receivers.\n\n        If any receiver raises an error, the error propagates back through send,\n        terminating the dispatch loop. So it's possible that all receivers\n        won't be called if an error is raised.\n\n        Arguments:\n\n            sender\n                The sender of the signal. Either a specific object or None.\n\n            named\n                Named arguments which will be passed to receivers.\n\n        Return a list of tuple pairs [(receiver, response), ... ].\n        \"\"\""
+        },
+        {
+          "name": "send_robust",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "sender",
+              "annotation": null
+            },
+            {
+              "prefix": "**",
+              "name": "named",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        Send signal from sender to all connected receivers catching errors.\n\n        Arguments:\n\n            sender\n                The sender of the signal. Can be any Python object (normally one\n                registered with a connect if you actually want something to\n                occur).\n\n            named\n                Named arguments which will be passed to receivers.\n\n        Return a list of tuple pairs [(receiver, response), ... ].\n\n        If any receiver raises an error (specifically any subclass of\n        Exception), return the error instance as the result for that receiver.\n        \"\"\""
+        }
+      ],
+      "classes": [],
+      "docstring": "\"\"\"\n    Base class for all signals\n\n    Internal attributes:\n\n        receivers\n            { receiverkey (id) : weakref(receiver) }\n    \"\"\""
+    }
+  ]
+}

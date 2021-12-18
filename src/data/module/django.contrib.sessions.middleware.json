@@ -1,0 +1,47 @@
+{
+  "functions": [],
+  "classes": [
+    {
+      "name": "SessionMiddleware",
+      "methods": [
+        {
+          "name": "process_request",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "request",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "process_response",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "request",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "response",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        If request.session was modified, or if the configuration is to save the\n        session every time, save the changes and set a session cookie or delete\n        the session cookie if the session has been emptied.\n        \"\"\""
+        }
+      ],
+      "classes": []
+    }
+  ]
+}

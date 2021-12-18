@@ -1,0 +1,217 @@
+{
+  "functions": [],
+  "classes": [
+    {
+      "name": "GroupAdmin",
+      "methods": [
+        {
+          "name": "formfield_for_manytomany",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "db_field",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "request",
+              "annotation": null
+            },
+            {
+              "prefix": "**",
+              "name": "kwargs",
+              "annotation": null
+            }
+          ]
+        }
+      ],
+      "classes": [],
+      "decorators": [
+        {
+          "name": "@admin.register(Group)"
+        }
+      ]
+    },
+    {
+      "name": "UserAdmin",
+      "methods": [
+        {
+          "name": "get_fieldsets",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "request",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "obj",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "get_form",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "request",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "obj",
+              "annotation": null
+            },
+            {
+              "prefix": "**",
+              "name": "kwargs",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        Use special form during user creation\n        \"\"\""
+        },
+        {
+          "name": "get_urls",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "lookup_allowed",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "lookup",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "value",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "add_view",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "request",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "form_url",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "extra_context",
+              "annotation": null
+            }
+          ],
+          "decorators": [
+            {
+              "name": "@sensitive_post_parameters_m"
+            },
+            {
+              "name": "@csrf_protect_m"
+            }
+          ]
+        },
+        {
+          "name": "user_change_password",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "request",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "id",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "form_url",
+              "annotation": null
+            }
+          ],
+          "decorators": [
+            {
+              "name": "@sensitive_post_parameters_m"
+            }
+          ]
+        },
+        {
+          "name": "response_add",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "request",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "obj",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "post_url_continue",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        Determine the HttpResponse for the add_view stage. It mostly defers to\n        its superclass implementation but is customized because the User model\n        has a slightly different workflow.\n        \"\"\""
+        }
+      ],
+      "classes": [],
+      "decorators": [
+        {
+          "name": "@admin.register(User)"
+        }
+      ]
+    }
+  ]
+}

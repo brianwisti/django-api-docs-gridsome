@@ -1,0 +1,164 @@
+{
+  "functions": [
+    {
+      "name": "endswith_cr",
+      "params": [
+        {
+          "prefix": "",
+          "name": "line",
+          "annotation": null
+        }
+      ],
+      "docstring": "\"\"\"Return True if line (a text or bytestring) ends with '\\r'.\"\"\""
+    },
+    {
+      "name": "endswith_lf",
+      "params": [
+        {
+          "prefix": "",
+          "name": "line",
+          "annotation": null
+        }
+      ],
+      "docstring": "\"\"\"Return True if line (a text or bytestring) ends with '\\n'.\"\"\""
+    },
+    {
+      "name": "equals_lf",
+      "params": [
+        {
+          "prefix": "",
+          "name": "line",
+          "annotation": null
+        }
+      ],
+      "docstring": "\"\"\"Return True if line (a text or bytestring) equals '\\n'.\"\"\""
+    }
+  ],
+  "classes": [
+    {
+      "name": "File",
+      "methods": [
+        {
+          "name": "size",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ],
+          "decorators": [
+            {
+              "name": "@cached_property"
+            }
+          ]
+        },
+        {
+          "name": "chunks",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "chunk_size",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        Read the file and yield chunks of ``chunk_size`` bytes (defaults to\n        ``File.DEFAULT_CHUNK_SIZE``).\n        \"\"\""
+        },
+        {
+          "name": "multiple_chunks",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "chunk_size",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        Return ``True`` if you can expect multiple chunks.\n\n        NB: If a particular file representation is in memory, subclasses should\n        always return ``False`` -- there's no good reason to read from memory in\n        chunks.\n        \"\"\""
+        },
+        {
+          "name": "open",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "mode",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "close",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ]
+        }
+      ],
+      "classes": []
+    },
+    {
+      "name": "ContentFile",
+      "methods": [
+        {
+          "name": "open",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "mode",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "close",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "write",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "data",
+              "annotation": null
+            }
+          ]
+        }
+      ],
+      "classes": [],
+      "docstring": "\"\"\"\n    A File-like object that takes just raw content, rather than an actual file.\n    \"\"\""
+    }
+  ]
+}

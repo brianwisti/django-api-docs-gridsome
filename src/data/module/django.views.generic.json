@@ -1,0 +1,11 @@
+{
+  "functions": [],
+  "classes": [
+    {
+      "name": "GenericViewError",
+      "methods": [],
+      "classes": [],
+      "docstring": "\"\"\"A problem in a generic view.\"\"\""
+    }
+  ]
+}

@@ -1,0 +1,1021 @@
+{
+  "functions": [
+    {
+      "name": "closing_iterator_wrapper",
+      "params": [
+        {
+          "prefix": "",
+          "name": "iterable",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "close",
+          "annotation": null
+        }
+      ]
+    },
+    {
+      "name": "conditional_content_removal",
+      "params": [
+        {
+          "prefix": "",
+          "name": "request",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "response",
+          "annotation": null
+        }
+      ],
+      "docstring": "\"\"\"\n    Simulate the behavior of most web servers by removing the content of\n    responses for HEAD requests, 1xx, 204, and 304 responses. Ensure\n    compliance with RFC 7230, section 3.3.3.\n    \"\"\""
+    },
+    {
+      "name": "store_rendered_templates",
+      "params": [
+        {
+          "prefix": "",
+          "name": "store",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "signal",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "sender",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "template",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "context",
+          "annotation": null
+        },
+        {
+          "prefix": "**",
+          "name": "kwargs",
+          "annotation": null
+        }
+      ],
+      "docstring": "\"\"\"\n    Store templates and contexts that are rendered.\n\n    The context is copied so that it is an accurate representation at the time\n    of rendering.\n    \"\"\""
+    },
+    {
+      "name": "encode_multipart",
+      "params": [
+        {
+          "prefix": "",
+          "name": "boundary",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "data",
+          "annotation": null
+        }
+      ],
+      "docstring": "\"\"\"\n    Encode multipart POST data from a dictionary of form values.\n\n    The key will be used as the form data name; the value will be transmitted\n    as content. If the value is a file, the contents of the file will be sent\n    as an application/octet-stream; otherwise, str(value) will be sent.\n    \"\"\""
+    },
+    {
+      "name": "encode_file",
+      "params": [
+        {
+          "prefix": "",
+          "name": "boundary",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "key",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "file",
+          "annotation": null
+        }
+      ]
+    }
+  ],
+  "classes": [
+    {
+      "name": "RedirectCycleError",
+      "methods": [],
+      "classes": [],
+      "docstring": "\"\"\"The test client has been asked to follow a redirect loop.\"\"\""
+    },
+    {
+      "name": "FakePayload",
+      "methods": [
+        {
+          "name": "read",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "num_bytes",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "write",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "content",
+              "annotation": null
+            }
+          ]
+        }
+      ],
+      "classes": [],
+      "docstring": "\"\"\"\n    A wrapper around BytesIO that restricts what can be read since data from\n    the network can't be sought and cannot be read outside of its content\n    length. This makes sure that views can't do anything under the test client\n    that wouldn't work in real life.\n    \"\"\""
+    },
+    {
+      "name": "ClientHandler",
+      "methods": [],
+      "classes": [],
+      "docstring": "\"\"\"\n    An HTTP Handler that can be used for testing purposes. Use the WSGI\n    interface to compose requests, but return the raw HttpResponse object with\n    the originating WSGIRequest attached to its ``wsgi_request`` attribute.\n    \"\"\""
+    },
+    {
+      "name": "AsyncClientHandler",
+      "methods": [],
+      "classes": [],
+      "docstring": "\"\"\"An async version of ClientHandler.\"\"\""
+    },
+    {
+      "name": "RequestFactory",
+      "methods": [
+        {
+          "name": "request",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "**",
+              "name": "request",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"Construct a generic request object.\""
+        },
+        {
+          "name": "get",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "path",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "data",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "secure",
+              "annotation": null
+            },
+            {
+              "prefix": "**",
+              "name": "extra",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"Construct a GET request.\"\"\""
+        },
+        {
+          "name": "post",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "path",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "data",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "content_type",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "secure",
+              "annotation": null
+            },
+            {
+              "prefix": "**",
+              "name": "extra",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"Construct a POST request.\"\"\""
+        },
+        {
+          "name": "head",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "path",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "data",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "secure",
+              "annotation": null
+            },
+            {
+              "prefix": "**",
+              "name": "extra",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"Construct a HEAD request.\"\"\""
+        },
+        {
+          "name": "trace",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "path",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "secure",
+              "annotation": null
+            },
+            {
+              "prefix": "**",
+              "name": "extra",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"Construct a TRACE request.\"\"\""
+        },
+        {
+          "name": "options",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "path",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "data",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "content_type",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "secure",
+              "annotation": null
+            },
+            {
+              "prefix": "**",
+              "name": "extra",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"Construct an OPTIONS request.\""
+        },
+        {
+          "name": "put",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "path",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "data",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "content_type",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "secure",
+              "annotation": null
+            },
+            {
+              "prefix": "**",
+              "name": "extra",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"Construct a PUT request.\"\"\""
+        },
+        {
+          "name": "patch",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "path",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "data",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "content_type",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "secure",
+              "annotation": null
+            },
+            {
+              "prefix": "**",
+              "name": "extra",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"Construct a PATCH request.\"\"\""
+        },
+        {
+          "name": "delete",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "path",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "data",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "content_type",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "secure",
+              "annotation": null
+            },
+            {
+              "prefix": "**",
+              "name": "extra",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"Construct a DELETE request.\"\"\""
+        },
+        {
+          "name": "generic",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "method",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "path",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "data",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "content_type",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "secure",
+              "annotation": null
+            },
+            {
+              "prefix": "**",
+              "name": "extra",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"Construct an arbitrary HTTP request.\"\"\""
+        }
+      ],
+      "classes": [],
+      "docstring": "\"\"\"\n    Class that lets you create mock Request objects for use in testing.\n\n    Usage:\n\n    rf = RequestFactory()\n    get_request = rf.get('/hello/')\n    post_request = rf.post('/submit/', {'foo': 'bar'})\n\n    Once you have a request object you can pass it to any view function,\n    just as if that view had been hooked up using a URLconf.\n    \"\"\""
+    },
+    {
+      "name": "AsyncRequestFactory",
+      "methods": [
+        {
+          "name": "request",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "**",
+              "name": "request",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"Construct a generic request object.\"\"\""
+        },
+        {
+          "name": "generic",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "method",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "path",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "data",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "content_type",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "secure",
+              "annotation": null
+            },
+            {
+              "prefix": "**",
+              "name": "extra",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"Construct an arbitrary HTTP request.\"\"\""
+        }
+      ],
+      "classes": [],
+      "docstring": "\"\"\"\n    Class that lets you create mock ASGI-like Request objects for use in\n    testing. Usage:\n\n    rf = AsyncRequestFactory()\n    get_request = await rf.get('/hello/')\n    post_request = await rf.post('/submit/', {'foo': 'bar'})\n\n    Once you have a request object you can pass it to any view function,\n    including synchronous ones. The reason we have a separate class here is:\n    a) this makes ASGIRequest subclasses, and\n    b) AsyncTestClient can subclass it.\n    \"\"\""
+    },
+    {
+      "name": "ClientMixin",
+      "methods": [
+        {
+          "name": "store_exc_info",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "**",
+              "name": "kwargs",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"Store exceptions when they are generated by a view.\"\"\""
+        },
+        {
+          "name": "check_exception",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "response",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        Look for a signaled exception, clear the current context exception\n        data, re-raise the signaled exception, and clear the signaled exception\n        from the local cache.\n        \"\"\""
+        },
+        {
+          "name": "session",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ],
+          "decorators": [
+            {
+              "name": "@property"
+            }
+          ],
+          "docstring": "\"\"\"Return the current session variables.\"\"\""
+        },
+        {
+          "name": "login",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "**",
+              "name": "credentials",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        Set the Factory to appear as if it has successfully logged into a site.\n\n        Return True if login is possible or False if the provided credentials\n        are incorrect.\n        \"\"\""
+        },
+        {
+          "name": "force_login",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "user",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "backend",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "logout",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"Log out the user by removing the cookies and session object.\"\"\""
+        }
+      ],
+      "classes": [],
+      "docstring": "\"\"\"\n    Mixin with common methods between Client and AsyncClient.\n    \"\"\""
+    },
+    {
+      "name": "Client",
+      "methods": [
+        {
+          "name": "request",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "**",
+              "name": "request",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        The master request method. Compose the environment dictionary and pass\n        to the handler, return the result of the handler. Assume defaults for\n        the query environment, which can be overridden using the arguments to\n        the request.\n        \"\"\""
+        },
+        {
+          "name": "get",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "path",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "data",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "follow",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "secure",
+              "annotation": null
+            },
+            {
+              "prefix": "**",
+              "name": "extra",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"Request a response from the server using GET.\"\"\""
+        },
+        {
+          "name": "post",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "path",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "data",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "content_type",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "follow",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "secure",
+              "annotation": null
+            },
+            {
+              "prefix": "**",
+              "name": "extra",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"Request a response from the server using POST.\"\"\""
+        },
+        {
+          "name": "head",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "path",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "data",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "follow",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "secure",
+              "annotation": null
+            },
+            {
+              "prefix": "**",
+              "name": "extra",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"Request a response from the server using HEAD.\"\"\""
+        },
+        {
+          "name": "options",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "path",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "data",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "content_type",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "follow",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "secure",
+              "annotation": null
+            },
+            {
+              "prefix": "**",
+              "name": "extra",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"Request a response from the server using OPTIONS.\"\"\""
+        },
+        {
+          "name": "put",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "path",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "data",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "content_type",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "follow",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "secure",
+              "annotation": null
+            },
+            {
+              "prefix": "**",
+              "name": "extra",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"Send a resource to the server using PUT.\"\"\""
+        },
+        {
+          "name": "patch",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "path",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "data",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "content_type",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "follow",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "secure",
+              "annotation": null
+            },
+            {
+              "prefix": "**",
+              "name": "extra",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"Send a resource to the server using PATCH.\"\"\""
+        },
+        {
+          "name": "delete",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "path",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "data",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "content_type",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "follow",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "secure",
+              "annotation": null
+            },
+            {
+              "prefix": "**",
+              "name": "extra",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"Send a DELETE request to the server.\"\"\""
+        },
+        {
+          "name": "trace",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "path",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "data",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "follow",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "secure",
+              "annotation": null
+            },
+            {
+              "prefix": "**",
+              "name": "extra",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"Send a TRACE request to the server.\"\"\""
+        }
+      ],
+      "classes": [],
+      "docstring": "\"\"\"\n    A class that can act as a client for testing purposes.\n\n    It allows the user to compose GET and POST requests, and\n    obtain the response that the server gave to those requests.\n    The server Response objects are annotated with the details\n    of the contexts and templates that were rendered during the\n    process of serving the request.\n\n    Client objects are stateful - they will retain cookie (and\n    thus session) details for the lifetime of the Client instance.\n\n    This is not intended as a replacement for Twill/Selenium or\n    the like - it is here to allow testing against the\n    contexts and templates produced by a view, rather than the\n    HTML rendered to the end-user.\n    \"\"\""
+    },
+    {
+      "name": "AsyncClient",
+      "methods": [
+        {
+          "name": "request",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "**",
+              "name": "request",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        The master request method. Compose the scope dictionary and pass to the\n        handler, return the result of the handler. Assume defaults for the\n        query environment, which can be overridden using the arguments to the\n        request.\n        \"\"\""
+        }
+      ],
+      "classes": [],
+      "docstring": "\"\"\"\n    An async version of Client that creates ASGIRequests and calls through an\n    async request path.\n\n    Does not currently support \"follow\" on its methods.\n    \"\"\""
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "functions": [
+    {
+      "name": "complain",
+      "params": [
+        {
+          "prefix": "*",
+          "name": "args",
+          "annotation": null
+        },
+        {
+          "prefix": "**",
+          "name": "kwargs",
+          "annotation": null
+        }
+      ]
+    },
+    {
+      "name": "ignore",
+      "params": [
+        {
+          "prefix": "*",
+          "name": "args",
+          "annotation": null
+        },
+        {
+          "prefix": "**",
+          "name": "kwargs",
+          "annotation": null
+        }
+      ]
+    }
+  ],
+  "classes": [
+    {
+      "name": "DatabaseOperations",
+      "methods": [],
+      "classes": []
+    },
+    {
+      "name": "DatabaseClient",
+      "methods": [],
+      "classes": []
+    },
+    {
+      "name": "DatabaseCreation",
+      "methods": [],
+      "classes": []
+    },
+    {
+      "name": "DatabaseIntrospection",
+      "methods": [],
+      "classes": []
+    },
+    {
+      "name": "DatabaseWrapper",
+      "methods": [
+        {
+          "name": "is_usable",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ]
+        }
+      ],
+      "classes": []
+    }
+  ],
+  "doc": "\"\"\"\nDummy database backend for Django.\n\nDjango uses this if the database ENGINE setting is empty (None or empty string).\n\nEach of these API functions, except connection.close(), raise\nImproperlyConfigured.\n\"\"\""
+}

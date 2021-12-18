@@ -1,0 +1,27 @@
+{
+  "functions": [],
+  "classes": [
+    {
+      "name": "CurrentSiteMiddleware",
+      "methods": [
+        {
+          "name": "process_request",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "request",
+              "annotation": null
+            }
+          ]
+        }
+      ],
+      "classes": [],
+      "docstring": "\"\"\"\n    Middleware that sets `site` attribute to request object.\n    \"\"\""
+    }
+  ]
+}

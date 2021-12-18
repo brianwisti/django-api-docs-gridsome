@@ -1,0 +1,368 @@
+{
+  "functions": [
+    {
+      "name": "load_handler",
+      "params": [
+        {
+          "prefix": "",
+          "name": "path",
+          "annotation": null
+        },
+        {
+          "prefix": "*",
+          "name": "args",
+          "annotation": null
+        },
+        {
+          "prefix": "**",
+          "name": "kwargs",
+          "annotation": null
+        }
+      ],
+      "docstring": "\"\"\"\n    Given a path to a handler, return an instance of that handler.\n\n    E.g.::\n        >>> from django.http import HttpRequest\n        >>> request = HttpRequest()\n        >>> load_handler('django.core.files.uploadhandler.TemporaryFileUploadHandler', request)\n        <TemporaryFileUploadHandler object at 0x...>\n    \"\"\""
+    }
+  ],
+  "classes": [
+    {
+      "name": "UploadFileException",
+      "methods": [],
+      "classes": [],
+      "docstring": "\"\"\"\n    Any error having to do with uploading files.\n    \"\"\""
+    },
+    {
+      "name": "StopUpload",
+      "methods": [],
+      "classes": [],
+      "docstring": "\"\"\"\n    This exception is raised when an upload must abort.\n    \"\"\""
+    },
+    {
+      "name": "SkipFile",
+      "methods": [],
+      "classes": [],
+      "docstring": "\"\"\"\n    This exception is raised by an upload handler that wants to skip a given file.\n    \"\"\""
+    },
+    {
+      "name": "StopFutureHandlers",
+      "methods": [],
+      "classes": [],
+      "docstring": "\"\"\"\n    Upload handlers that have handled a file and do not want future handlers to\n    run should raise this exception instead of returning None.\n    \"\"\""
+    },
+    {
+      "name": "FileUploadHandler",
+      "methods": [
+        {
+          "name": "handle_raw_input",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "input_data",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "META",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "content_length",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "boundary",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "encoding",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        Handle the raw input from the client.\n\n        Parameters:\n\n            :input_data:\n                An object that supports reading via .read().\n            :META:\n                ``request.META``.\n            :content_length:\n                The (integer) value of the Content-Length header from the\n                client.\n            :boundary: The boundary from the Content-Type header. Be sure to\n                prepend two '--'.\n        \"\"\""
+        },
+        {
+          "name": "new_file",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "field_name",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "file_name",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "content_type",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "content_length",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "charset",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "content_type_extra",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        Signal that a new file has been started.\n\n        Warning: As with any data from the client, you should not trust\n        content_length (and sometimes won't even get it).\n        \"\"\""
+        },
+        {
+          "name": "receive_data_chunk",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "raw_data",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "start",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        Receive data from the streamed upload parser. ``start`` is the position\n        in the file of the chunk.\n        \"\"\""
+        },
+        {
+          "name": "file_complete",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "file_size",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        Signal that a file has completed. File size corresponds to the actual\n        size accumulated by all the chunks.\n\n        Subclasses should return a valid ``UploadedFile`` object.\n        \"\"\""
+        },
+        {
+          "name": "upload_complete",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        Signal that the upload is complete. Subclasses should perform cleanup\n        that is necessary for this handler.\n        \"\"\""
+        },
+        {
+          "name": "upload_interrupted",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        Signal that the upload was interrupted. Subclasses should perform\n        cleanup that is necessary for this handler.\n        \"\"\""
+        }
+      ],
+      "classes": [],
+      "docstring": "\"\"\"\n    Base class for streaming upload handlers.\n    \"\"\""
+    },
+    {
+      "name": "TemporaryFileUploadHandler",
+      "methods": [
+        {
+          "name": "new_file",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "*",
+              "name": "args",
+              "annotation": null
+            },
+            {
+              "prefix": "**",
+              "name": "kwargs",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        Create the file object to append to as data is coming in.\n        \"\"\""
+        },
+        {
+          "name": "receive_data_chunk",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "raw_data",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "start",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "file_complete",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "file_size",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "upload_interrupted",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ]
+        }
+      ],
+      "classes": [],
+      "docstring": "\"\"\"\n    Upload handler that streams data into a temporary file.\n    \"\"\""
+    },
+    {
+      "name": "MemoryFileUploadHandler",
+      "methods": [
+        {
+          "name": "handle_raw_input",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "input_data",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "META",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "content_length",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "boundary",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "encoding",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        Use the content_length to signal whether or not this handler should be\n        used.\n        \"\"\""
+        },
+        {
+          "name": "new_file",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "*",
+              "name": "args",
+              "annotation": null
+            },
+            {
+              "prefix": "**",
+              "name": "kwargs",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "receive_data_chunk",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "raw_data",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "start",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"Add the data to the BytesIO file.\"\"\""
+        },
+        {
+          "name": "file_complete",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "file_size",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"Return a file object if this handler is activated.\"\"\""
+        }
+      ],
+      "classes": [],
+      "docstring": "\"\"\"\n    File upload handler to stream uploads into memory (used for small files).\n    \"\"\""
+    }
+  ],
+  "doc": "\"\"\"\nBase file upload handler classes, and the built-in concrete subclasses\n\"\"\""
+}

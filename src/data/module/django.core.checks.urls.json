@@ -1,0 +1,98 @@
+{
+  "functions": [
+    {
+      "name": "check_url_config",
+      "params": [
+        {
+          "prefix": "",
+          "name": "app_configs",
+          "annotation": null
+        },
+        {
+          "prefix": "**",
+          "name": "kwargs",
+          "annotation": null
+        }
+      ],
+      "decorators": [
+        {
+          "name": "@register(Tags.urls)"
+        }
+      ]
+    },
+    {
+      "name": "check_resolver",
+      "params": [
+        {
+          "prefix": "",
+          "name": "resolver",
+          "annotation": null
+        }
+      ],
+      "docstring": "\"\"\"\n    Recursively check the resolver.\n    \"\"\""
+    },
+    {
+      "name": "check_url_namespaces_unique",
+      "params": [
+        {
+          "prefix": "",
+          "name": "app_configs",
+          "annotation": null
+        },
+        {
+          "prefix": "**",
+          "name": "kwargs",
+          "annotation": null
+        }
+      ],
+      "decorators": [
+        {
+          "name": "@register(Tags.urls)"
+        }
+      ],
+      "docstring": "\"\"\"\n    Warn if URL namespaces used in applications aren't unique.\n    \"\"\""
+    },
+    {
+      "name": "get_warning_for_invalid_pattern",
+      "params": [
+        {
+          "prefix": "",
+          "name": "pattern",
+          "annotation": null
+        }
+      ],
+      "docstring": "\"\"\"\n    Return a list containing a warning that the pattern is invalid.\n\n    describe_pattern() cannot be used here, because we cannot rely on the\n    urlpattern having regex or name attributes.\n    \"\"\""
+    },
+    {
+      "name": "check_url_settings",
+      "params": [
+        {
+          "prefix": "",
+          "name": "app_configs",
+          "annotation": null
+        },
+        {
+          "prefix": "**",
+          "name": "kwargs",
+          "annotation": null
+        }
+      ],
+      "decorators": [
+        {
+          "name": "@register(Tags.urls)"
+        }
+      ]
+    },
+    {
+      "name": "E006",
+      "params": [
+        {
+          "prefix": "",
+          "name": "name",
+          "annotation": null
+        }
+      ]
+    }
+  ],
+  "classes": []
+}

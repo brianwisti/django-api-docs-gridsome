@@ -1,0 +1,16 @@
+{
+  "functions": [
+    {
+      "name": "make_hashable",
+      "params": [
+        {
+          "prefix": "",
+          "name": "value",
+          "annotation": null
+        }
+      ],
+      "docstring": "\"\"\"\n    Attempt to make value hashable or raise a TypeError if it fails.\n\n    The returned value should generate the same hash for equal values.\n    \"\"\""
+    }
+  ],
+  "classes": []
+}

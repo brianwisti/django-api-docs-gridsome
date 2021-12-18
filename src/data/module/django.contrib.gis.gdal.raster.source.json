@@ -1,0 +1,466 @@
+{
+  "functions": [],
+  "classes": [
+    {
+      "name": "TransformPoint",
+      "methods": [
+        {
+          "name": "x",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ],
+          "decorators": [
+            {
+              "name": "@property"
+            }
+          ]
+        },
+        {
+          "name": "x",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "value",
+              "annotation": null
+            }
+          ],
+          "decorators": [
+            {
+              "name": "@x.setter"
+            }
+          ]
+        },
+        {
+          "name": "y",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ],
+          "decorators": [
+            {
+              "name": "@property"
+            }
+          ]
+        },
+        {
+          "name": "y",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "value",
+              "annotation": null
+            }
+          ],
+          "decorators": [
+            {
+              "name": "@y.setter"
+            }
+          ]
+        }
+      ],
+      "classes": []
+    },
+    {
+      "name": "GDALRaster",
+      "methods": [
+        {
+          "name": "vsi_buffer",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ],
+          "decorators": [
+            {
+              "name": "@property"
+            }
+          ]
+        },
+        {
+          "name": "is_vsi_based",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ],
+          "decorators": [
+            {
+              "name": "@cached_property"
+            }
+          ]
+        },
+        {
+          "name": "name",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ],
+          "decorators": [
+            {
+              "name": "@property"
+            }
+          ],
+          "docstring": "\"\"\"\n        Return the name of this raster. Corresponds to filename\n        for file-based rasters.\n        \"\"\""
+        },
+        {
+          "name": "driver",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ],
+          "decorators": [
+            {
+              "name": "@cached_property"
+            }
+          ],
+          "docstring": "\"\"\"\n        Return the GDAL Driver used for this raster.\n        \"\"\""
+        },
+        {
+          "name": "width",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ],
+          "decorators": [
+            {
+              "name": "@property"
+            }
+          ],
+          "docstring": "\"\"\"\n        Width (X axis) in pixels.\n        \"\"\""
+        },
+        {
+          "name": "height",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ],
+          "decorators": [
+            {
+              "name": "@property"
+            }
+          ],
+          "docstring": "\"\"\"\n        Height (Y axis) in pixels.\n        \"\"\""
+        },
+        {
+          "name": "srs",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ],
+          "decorators": [
+            {
+              "name": "@property"
+            }
+          ],
+          "docstring": "\"\"\"\n        Return the SpatialReference used in this GDALRaster.\n        \"\"\""
+        },
+        {
+          "name": "srs",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "value",
+              "annotation": null
+            }
+          ],
+          "decorators": [
+            {
+              "name": "@srs.setter"
+            }
+          ],
+          "docstring": "\"\"\"\n        Set the spatial reference used in this GDALRaster. The input can be\n        a SpatialReference or any parameter accepted by the SpatialReference\n        constructor.\n        \"\"\""
+        },
+        {
+          "name": "srid",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ],
+          "decorators": [
+            {
+              "name": "@property"
+            }
+          ],
+          "docstring": "\"\"\"\n        Shortcut to access the srid of this GDALRaster.\n        \"\"\""
+        },
+        {
+          "name": "srid",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "value",
+              "annotation": null
+            }
+          ],
+          "decorators": [
+            {
+              "name": "@srid.setter"
+            }
+          ],
+          "docstring": "\"\"\"\n        Shortcut to set this GDALRaster's srs from an srid.\n        \"\"\""
+        },
+        {
+          "name": "geotransform",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ],
+          "decorators": [
+            {
+              "name": "@property"
+            }
+          ],
+          "docstring": "\"\"\"\n        Return the geotransform of the data source.\n        Return the default geotransform if it does not exist or has not been\n        set previously. The default is [0.0, 1.0, 0.0, 0.0, 0.0, -1.0].\n        \"\"\""
+        },
+        {
+          "name": "geotransform",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "values",
+              "annotation": null
+            }
+          ],
+          "decorators": [
+            {
+              "name": "@geotransform.setter"
+            }
+          ],
+          "docstring": "\"Set the geotransform for the data source.\""
+        },
+        {
+          "name": "origin",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ],
+          "decorators": [
+            {
+              "name": "@property"
+            }
+          ],
+          "docstring": "\"\"\"\n        Coordinates of the raster origin.\n        \"\"\""
+        },
+        {
+          "name": "scale",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ],
+          "decorators": [
+            {
+              "name": "@property"
+            }
+          ],
+          "docstring": "\"\"\"\n        Pixel scale in units of the raster projection.\n        \"\"\""
+        },
+        {
+          "name": "skew",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ],
+          "decorators": [
+            {
+              "name": "@property"
+            }
+          ],
+          "docstring": "\"\"\"\n        Skew of pixels (rotation parameters).\n        \"\"\""
+        },
+        {
+          "name": "extent",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ],
+          "decorators": [
+            {
+              "name": "@property"
+            }
+          ],
+          "docstring": "\"\"\"\n        Return the extent as a 4-tuple (xmin, ymin, xmax, ymax).\n        \"\"\""
+        },
+        {
+          "name": "bands",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ],
+          "decorators": [
+            {
+              "name": "@property"
+            }
+          ]
+        },
+        {
+          "name": "warp",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "ds_input",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "resampling",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "max_error",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        Return a warped GDALRaster with the given input characteristics.\n\n        The input is expected to be a dictionary containing the parameters\n        of the target raster. Allowed values are width, height, SRID, origin,\n        scale, skew, datatype, driver, and name (filename).\n\n        By default, the warp functions keeps all parameters equal to the values\n        of the original source raster. For the name of the target raster, the\n        name of the source raster will be used and appended with\n        _copy. + source_driver_name.\n\n        In addition, the resampling algorithm can be specified with the \"resampling\"\n        input parameter. The default is NearestNeighbor. For a list of all options\n        consult the GDAL_RESAMPLE_ALGORITHMS constant.\n        \"\"\""
+        },
+        {
+          "name": "clone",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "name",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"Return a clone of this GDALRaster.\"\"\""
+        },
+        {
+          "name": "transform",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "srs",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "driver",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "name",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "resampling",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "max_error",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        Return a copy of this raster reprojected into the given spatial\n        reference system.\n        \"\"\""
+        },
+        {
+          "name": "info",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ],
+          "decorators": [
+            {
+              "name": "@property"
+            }
+          ],
+          "docstring": "\"\"\"\n        Return information about this raster in a string format equivalent\n        to the output of the gdalinfo command line utility.\n        \"\"\""
+        }
+      ],
+      "classes": [],
+      "docstring": "\"\"\"\n    Wrap a raster GDAL Data Source object.\n    \"\"\""
+    }
+  ]
+}

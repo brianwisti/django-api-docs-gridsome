@@ -1,0 +1,316 @@
+{
+  "functions": [
+    {
+      "name": "gettext_noop",
+      "params": [
+        {
+          "prefix": "",
+          "name": "message",
+          "annotation": null
+        }
+      ]
+    },
+    {
+      "name": "gettext",
+      "params": [
+        {
+          "prefix": "",
+          "name": "message",
+          "annotation": null
+        }
+      ]
+    },
+    {
+      "name": "ngettext",
+      "params": [
+        {
+          "prefix": "",
+          "name": "singular",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "plural",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "number",
+          "annotation": null
+        }
+      ]
+    },
+    {
+      "name": "pgettext",
+      "params": [
+        {
+          "prefix": "",
+          "name": "context",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "message",
+          "annotation": null
+        }
+      ]
+    },
+    {
+      "name": "npgettext",
+      "params": [
+        {
+          "prefix": "",
+          "name": "context",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "singular",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "plural",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "number",
+          "annotation": null
+        }
+      ]
+    },
+    {
+      "name": "lazy_number",
+      "params": [
+        {
+          "prefix": "",
+          "name": "func",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "resultclass",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "number",
+          "annotation": null
+        },
+        {
+          "prefix": "**",
+          "name": "kwargs",
+          "annotation": null
+        }
+      ]
+    },
+    {
+      "name": "ngettext_lazy",
+      "params": [
+        {
+          "prefix": "",
+          "name": "singular",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "plural",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "number",
+          "annotation": null
+        }
+      ]
+    },
+    {
+      "name": "npgettext_lazy",
+      "params": [
+        {
+          "prefix": "",
+          "name": "context",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "singular",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "plural",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "number",
+          "annotation": null
+        }
+      ]
+    },
+    {
+      "name": "activate",
+      "params": [
+        {
+          "prefix": "",
+          "name": "language",
+          "annotation": null
+        }
+      ]
+    },
+    {
+      "name": "deactivate",
+      "params": []
+    },
+    {
+      "name": "get_language",
+      "params": []
+    },
+    {
+      "name": "get_language_bidi",
+      "params": []
+    },
+    {
+      "name": "check_for_language",
+      "params": [
+        {
+          "prefix": "",
+          "name": "lang_code",
+          "annotation": null
+        }
+      ]
+    },
+    {
+      "name": "to_language",
+      "params": [
+        {
+          "prefix": "",
+          "name": "locale",
+          "annotation": null
+        }
+      ],
+      "docstring": "\"\"\"Turn a locale name (en_US) into a language name (en-us).\"\"\""
+    },
+    {
+      "name": "to_locale",
+      "params": [
+        {
+          "prefix": "",
+          "name": "language",
+          "annotation": null
+        }
+      ],
+      "docstring": "\"\"\"Turn a language name (en-us) into a locale name (en_US).\"\"\""
+    },
+    {
+      "name": "get_language_from_request",
+      "params": [
+        {
+          "prefix": "",
+          "name": "request",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "check_path",
+          "annotation": null
+        }
+      ]
+    },
+    {
+      "name": "get_language_from_path",
+      "params": [
+        {
+          "prefix": "",
+          "name": "path",
+          "annotation": null
+        }
+      ]
+    },
+    {
+      "name": "get_supported_language_variant",
+      "params": [
+        {
+          "prefix": "",
+          "name": "lang_code",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "strict",
+          "annotation": null
+        }
+      ]
+    },
+    {
+      "name": "templatize",
+      "params": [
+        {
+          "prefix": "",
+          "name": "src",
+          "annotation": null
+        },
+        {
+          "prefix": "**",
+          "name": "kwargs",
+          "annotation": null
+        }
+      ]
+    },
+    {
+      "name": "deactivate_all",
+      "params": []
+    },
+    {
+      "name": "get_language_info",
+      "params": [
+        {
+          "prefix": "",
+          "name": "lang_code",
+          "annotation": null
+        }
+      ]
+    },
+    {
+      "name": "trim_whitespace",
+      "params": [
+        {
+          "prefix": "",
+          "name": "s",
+          "annotation": null
+        }
+      ]
+    },
+    {
+      "name": "round_away_from_one",
+      "params": [
+        {
+          "prefix": "",
+          "name": "value",
+          "annotation": null
+        }
+      ]
+    }
+  ],
+  "classes": [
+    {
+      "name": "TranslatorCommentWarning",
+      "methods": [],
+      "classes": []
+    },
+    {
+      "name": "Trans",
+      "methods": [],
+      "classes": [],
+      "docstring": "\"\"\"\n    The purpose of this class is to store the actual translation function upon\n    receiving the first call to that function. After this is done, changes to\n    USE_I18N will have no effect to which function is served upon request. If\n    your tests rely on changing USE_I18N, you can delete all the functions\n    from _trans.__dict__.\n\n    Note that storing the function with setattr will have a noticeable\n    performance effect, as access to the function goes the normal path,\n    instead of using __getattr__.\n    \"\"\""
+    },
+    {
+      "name": "override",
+      "methods": [],
+      "classes": []
+    }
+  ],
+  "doc": "\"\"\"\nInternationalization support.\n\"\"\""
+}

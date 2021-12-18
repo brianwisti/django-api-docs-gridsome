@@ -1,0 +1,134 @@
+{
+  "functions": [
+    {
+      "name": "inject_rename_contenttypes_operations",
+      "params": [
+        {
+          "prefix": "",
+          "name": "plan",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "apps",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "using",
+          "annotation": null
+        },
+        {
+          "prefix": "**",
+          "name": "kwargs",
+          "annotation": null
+        }
+      ],
+      "docstring": "\"\"\"\n    Insert a `RenameContentType` operation after every planned `RenameModel`\n    operation.\n    \"\"\""
+    },
+    {
+      "name": "get_contenttypes_and_models",
+      "params": [
+        {
+          "prefix": "",
+          "name": "app_config",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "using",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "ContentType",
+          "annotation": null
+        }
+      ]
+    },
+    {
+      "name": "create_contenttypes",
+      "params": [
+        {
+          "prefix": "",
+          "name": "app_config",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "verbosity",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "interactive",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "using",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "apps",
+          "annotation": null
+        },
+        {
+          "prefix": "**",
+          "name": "kwargs",
+          "annotation": null
+        }
+      ],
+      "docstring": "\"\"\"\n    Create content types for models in the given app.\n    \"\"\""
+    }
+  ],
+  "classes": [
+    {
+      "name": "RenameContentType",
+      "methods": [
+        {
+          "name": "rename_forward",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "apps",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "schema_editor",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "rename_backward",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "apps",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "schema_editor",
+              "annotation": null
+            }
+          ]
+        }
+      ],
+      "classes": []
+    }
+  ]
+}

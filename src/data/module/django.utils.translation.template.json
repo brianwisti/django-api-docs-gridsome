@@ -1,0 +1,37 @@
+{
+  "functions": [
+    {
+      "name": "blankout",
+      "params": [
+        {
+          "prefix": "",
+          "name": "src",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "char",
+          "annotation": null
+        }
+      ],
+      "docstring": "\"\"\"\n    Change every non-whitespace character to the given char.\n    Used in the templatize function.\n    \"\"\""
+    },
+    {
+      "name": "templatize",
+      "params": [
+        {
+          "prefix": "",
+          "name": "src",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "origin",
+          "annotation": null
+        }
+      ],
+      "docstring": "\"\"\"\n    Turn a Django template into something that is understood by xgettext. It\n    does so by translating the Django translation tags into standard gettext\n    function invocations.\n    \"\"\""
+    }
+  ],
+  "classes": []
+}

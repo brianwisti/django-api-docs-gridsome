@@ -1,0 +1,154 @@
+{
+  "functions": [
+    {
+      "name": "lazy",
+      "params": [
+        {
+          "prefix": "",
+          "name": "func",
+          "annotation": null
+        },
+        {
+          "prefix": "*",
+          "name": "resultclasses",
+          "annotation": null
+        }
+      ],
+      "docstring": "\"\"\"\n    Turn any callable into a lazy evaluated callable. result classes or types\n    is required -- at least one is needed so that the automatic forcing of\n    the lazy evaluation code is triggered. Results are not memoized; the\n    function is evaluated on every access.\n    \"\"\""
+    },
+    {
+      "name": "lazystr",
+      "params": [
+        {
+          "prefix": "",
+          "name": "text",
+          "annotation": null
+        }
+      ],
+      "docstring": "\"\"\"\n    Shortcut for the common case of a lazy callable that returns str.\n    \"\"\""
+    },
+    {
+      "name": "keep_lazy",
+      "params": [
+        {
+          "prefix": "*",
+          "name": "resultclasses",
+          "annotation": null
+        }
+      ],
+      "docstring": "\"\"\"\n    A decorator that allows a function to be called with one or more lazy\n    arguments. If none of the args are lazy, the function is evaluated\n    immediately, otherwise a __proxy__ is returned that will evaluate the\n    function when needed.\n    \"\"\""
+    },
+    {
+      "name": "keep_lazy_text",
+      "params": [
+        {
+          "prefix": "",
+          "name": "func",
+          "annotation": null
+        }
+      ],
+      "docstring": "\"\"\"\n    A decorator for functions that accept lazy arguments and return text.\n    \"\"\""
+    },
+    {
+      "name": "new_method_proxy",
+      "params": [
+        {
+          "prefix": "",
+          "name": "func",
+          "annotation": null
+        }
+      ]
+    },
+    {
+      "name": "unpickle_lazyobject",
+      "params": [
+        {
+          "prefix": "",
+          "name": "wrapped",
+          "annotation": null
+        }
+      ],
+      "docstring": "\"\"\"\n    Used to unpickle lazy objects. Just return its argument, which will be the\n    wrapped object.\n    \"\"\""
+    },
+    {
+      "name": "partition",
+      "params": [
+        {
+          "prefix": "",
+          "name": "predicate",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "values",
+          "annotation": null
+        }
+      ],
+      "docstring": "\"\"\"\n    Split the values into two sets, based on the return value of the function\n    (True/False). e.g.:\n\n        >>> partition(lambda x: x > 3, range(5))\n        [0, 1, 2, 3], [4]\n    \"\"\""
+    }
+  ],
+  "classes": [
+    {
+      "name": "cached_property",
+      "methods": [
+        {
+          "name": "func",
+          "params": [
+            {
+              "prefix": "",
+              "name": "instance",
+              "annotation": null
+            }
+          ],
+          "decorators": [
+            {
+              "name": "@staticmethod"
+            }
+          ]
+        }
+      ],
+      "classes": [],
+      "docstring": "\"\"\"\n    Decorator that converts a method with a single self argument into a\n    property cached on the instance.\n\n    A cached property can be made out of an existing method:\n    (e.g. ``url = cached_property(get_absolute_url)``).\n    The optional ``name`` argument is obsolete as of Python 3.6 and will be\n    deprecated in Django 4.0 (#30127).\n    \"\"\""
+    },
+    {
+      "name": "classproperty",
+      "methods": [
+        {
+          "name": "getter",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "method",
+              "annotation": null
+            }
+          ]
+        }
+      ],
+      "classes": [],
+      "docstring": "\"\"\"\n    Decorator that converts a method with a single cls argument into a property\n    that can be accessed directly from the class.\n    \"\"\""
+    },
+    {
+      "name": "Promise",
+      "methods": [],
+      "classes": [],
+      "docstring": "\"\"\"\n    Base class for the proxy class created in the closure of the lazy function.\n    It's used to recognize promises in code.\n    \"\"\""
+    },
+    {
+      "name": "LazyObject",
+      "methods": [],
+      "classes": [],
+      "docstring": "\"\"\"\n    A wrapper for another class that can be used to delay instantiation of the\n    wrapped class.\n\n    By subclassing, you have the opportunity to intercept and alter the\n    instantiation. If you don't need to do that, use SimpleLazyObject.\n    \"\"\""
+    },
+    {
+      "name": "SimpleLazyObject",
+      "methods": [],
+      "classes": [],
+      "docstring": "\"\"\"\n    A lazy object initialized from any function.\n\n    Designed for compound objects of unknown type. For builtins or objects of\n    known type, use django.utils.functional.lazy.\n    \"\"\""
+    }
+  ]
+}

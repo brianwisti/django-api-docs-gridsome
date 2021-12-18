@@ -1,0 +1,58 @@
+{
+  "functions": [],
+  "classes": [
+    {
+      "name": "BaseDatabaseFeatures",
+      "methods": [
+        {
+          "name": "supports_explaining_query_execution",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ],
+          "decorators": [
+            {
+              "name": "@cached_property"
+            }
+          ],
+          "docstring": "\"\"\"Does this backend support explaining query execution?\"\"\""
+        },
+        {
+          "name": "supports_transactions",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ],
+          "decorators": [
+            {
+              "name": "@cached_property"
+            }
+          ],
+          "docstring": "\"\"\"Confirm support for transactions.\"\"\""
+        },
+        {
+          "name": "allows_group_by_selected_pks_on_model",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "model",
+              "annotation": null
+            }
+          ]
+        }
+      ],
+      "classes": []
+    }
+  ]
+}

@@ -1,0 +1,108 @@
+{
+  "functions": [
+    {
+      "name": "module_to_dict",
+      "params": [
+        {
+          "prefix": "",
+          "name": "module",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "omittable",
+          "annotation": null
+        }
+      ],
+      "docstring": "\"\"\"Convert a module namespace to a Python dictionary.\"\"\""
+    }
+  ],
+  "classes": [
+    {
+      "name": "Command",
+      "methods": [
+        {
+          "name": "add_arguments",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "parser",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "handle",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "**",
+              "name": "options",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "output_hash",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "user_settings",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "default_settings",
+              "annotation": null
+            },
+            {
+              "prefix": "**",
+              "name": "options",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "output_unified",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "user_settings",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "default_settings",
+              "annotation": null
+            },
+            {
+              "prefix": "**",
+              "name": "options",
+              "annotation": null
+            }
+          ]
+        }
+      ],
+      "classes": []
+    }
+  ]
+}

@@ -1,0 +1,231 @@
+{
+  "functions": [],
+  "classes": [
+    {
+      "name": "UnorderedObjectListWarning",
+      "methods": [],
+      "classes": []
+    },
+    {
+      "name": "InvalidPage",
+      "methods": [],
+      "classes": []
+    },
+    {
+      "name": "PageNotAnInteger",
+      "methods": [],
+      "classes": []
+    },
+    {
+      "name": "EmptyPage",
+      "methods": [],
+      "classes": []
+    },
+    {
+      "name": "Paginator",
+      "methods": [
+        {
+          "name": "validate_number",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "number",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"Validate the given 1-based page number.\"\"\""
+        },
+        {
+          "name": "get_page",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "number",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        Return a valid page, even if the page argument isn't a number or isn't\n        in range.\n        \"\"\""
+        },
+        {
+          "name": "page",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "number",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"Return a Page object for the given 1-based page number.\"\"\""
+        },
+        {
+          "name": "count",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ],
+          "decorators": [
+            {
+              "name": "@cached_property"
+            }
+          ],
+          "docstring": "\"\"\"Return the total number of objects, across all pages.\"\"\""
+        },
+        {
+          "name": "num_pages",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ],
+          "decorators": [
+            {
+              "name": "@cached_property"
+            }
+          ],
+          "docstring": "\"\"\"Return the total number of pages.\"\"\""
+        },
+        {
+          "name": "page_range",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ],
+          "decorators": [
+            {
+              "name": "@property"
+            }
+          ],
+          "docstring": "\"\"\"\n        Return a 1-based range of pages for iterating through within\n        a template for loop.\n        \"\"\""
+        },
+        {
+          "name": "get_elided_page_range",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "number",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "on_each_side",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "on_ends",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        Return a 1-based range of pages with some values elided.\n\n        If the page range is larger than a given size, the whole range is not\n        provided and a compact form is returned instead, e.g. for a paginator\n        with 50 pages, if page 43 were the current page, the output, with the\n        default arguments, would be:\n\n            1, 2, \u2026, 40, 41, 42, 43, 44, 45, 46, \u2026, 49, 50.\n        \"\"\""
+        }
+      ],
+      "classes": []
+    },
+    {
+      "name": "Page",
+      "methods": [
+        {
+          "name": "has_next",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "has_previous",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "has_other_pages",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "next_page_number",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "previous_page_number",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "start_index",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        Return the 1-based index of the first object on this page,\n        relative to total objects in the paginator.\n        \"\"\""
+        },
+        {
+          "name": "end_index",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        Return the 1-based index of the last object on this page,\n        relative to total objects found (hits).\n        \"\"\""
+        }
+      ],
+      "classes": []
+    }
+  ]
+}

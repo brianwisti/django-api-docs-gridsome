@@ -1,0 +1,71 @@
+{
+  "functions": [],
+  "classes": [
+    {
+      "name": "DatabaseFeatures",
+      "methods": [
+        {
+          "name": "introspected_field_types",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ],
+          "decorators": [
+            {
+              "name": "@cached_property"
+            }
+          ]
+        },
+        {
+          "name": "is_postgresql_11",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ],
+          "decorators": [
+            {
+              "name": "@cached_property"
+            }
+          ]
+        },
+        {
+          "name": "is_postgresql_12",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ],
+          "decorators": [
+            {
+              "name": "@cached_property"
+            }
+          ]
+        },
+        {
+          "name": "is_postgresql_13",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ],
+          "decorators": [
+            {
+              "name": "@cached_property"
+            }
+          ]
+        }
+      ],
+      "classes": []
+    }
+  ]
+}

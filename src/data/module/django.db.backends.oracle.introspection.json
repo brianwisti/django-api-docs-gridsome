@@ -1,0 +1,206 @@
+{
+  "functions": [],
+  "classes": [
+    {
+      "name": "DatabaseIntrospection",
+      "methods": [
+        {
+          "name": "data_types_reverse",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ],
+          "decorators": [
+            {
+              "name": "# Maps type objects to Django Field types.\n    @cached_property"
+            }
+          ]
+        },
+        {
+          "name": "get_field_type",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "data_type",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "description",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "get_table_list",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "cursor",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"Return a list of table and view names in the current database.\"\"\""
+        },
+        {
+          "name": "get_table_description",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "cursor",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "table_name",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        Return a description of the table with the DB-API cursor.description\n        interface.\n        \"\"\""
+        },
+        {
+          "name": "identifier_converter",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "name",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"Identifier comparison is case insensitive under Oracle.\"\"\""
+        },
+        {
+          "name": "get_sequences",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "cursor",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "table_name",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "table_fields",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "get_relations",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "cursor",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "table_name",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        Return a dictionary of {field_name: (field_name_other_table, other_table)}\n        representing all relationships to the given table.\n        \"\"\""
+        },
+        {
+          "name": "get_key_columns",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "cursor",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "table_name",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "get_primary_key_column",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "cursor",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "table_name",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "get_constraints",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "cursor",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "table_name",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        Retrieve any constraints or keys (unique, pk, fk, check, index) across\n        one or more columns.\n        \"\"\""
+        }
+      ],
+      "classes": []
+    }
+  ]
+}

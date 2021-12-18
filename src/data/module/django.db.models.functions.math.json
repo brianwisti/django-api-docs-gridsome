@@ -1,0 +1,419 @@
+{
+  "functions": [],
+  "classes": [
+    {
+      "name": "Abs",
+      "methods": [],
+      "classes": []
+    },
+    {
+      "name": "ACos",
+      "methods": [],
+      "classes": []
+    },
+    {
+      "name": "ASin",
+      "methods": [],
+      "classes": []
+    },
+    {
+      "name": "ATan",
+      "methods": [],
+      "classes": []
+    },
+    {
+      "name": "ATan2",
+      "methods": [
+        {
+          "name": "as_sqlite",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "compiler",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "connection",
+              "annotation": null
+            },
+            {
+              "prefix": "**",
+              "name": "extra_context",
+              "annotation": null
+            }
+          ]
+        }
+      ],
+      "classes": []
+    },
+    {
+      "name": "Ceil",
+      "methods": [
+        {
+          "name": "as_oracle",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "compiler",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "connection",
+              "annotation": null
+            },
+            {
+              "prefix": "**",
+              "name": "extra_context",
+              "annotation": null
+            }
+          ]
+        }
+      ],
+      "classes": []
+    },
+    {
+      "name": "Cos",
+      "methods": [],
+      "classes": []
+    },
+    {
+      "name": "Cot",
+      "methods": [
+        {
+          "name": "as_oracle",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "compiler",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "connection",
+              "annotation": null
+            },
+            {
+              "prefix": "**",
+              "name": "extra_context",
+              "annotation": null
+            }
+          ]
+        }
+      ],
+      "classes": []
+    },
+    {
+      "name": "Degrees",
+      "methods": [
+        {
+          "name": "as_oracle",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "compiler",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "connection",
+              "annotation": null
+            },
+            {
+              "prefix": "**",
+              "name": "extra_context",
+              "annotation": null
+            }
+          ]
+        }
+      ],
+      "classes": []
+    },
+    {
+      "name": "Exp",
+      "methods": [],
+      "classes": []
+    },
+    {
+      "name": "Floor",
+      "methods": [],
+      "classes": []
+    },
+    {
+      "name": "Ln",
+      "methods": [],
+      "classes": []
+    },
+    {
+      "name": "Log",
+      "methods": [
+        {
+          "name": "as_sqlite",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "compiler",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "connection",
+              "annotation": null
+            },
+            {
+              "prefix": "**",
+              "name": "extra_context",
+              "annotation": null
+            }
+          ]
+        }
+      ],
+      "classes": []
+    },
+    {
+      "name": "Mod",
+      "methods": [],
+      "classes": []
+    },
+    {
+      "name": "Pi",
+      "methods": [
+        {
+          "name": "as_oracle",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "compiler",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "connection",
+              "annotation": null
+            },
+            {
+              "prefix": "**",
+              "name": "extra_context",
+              "annotation": null
+            }
+          ]
+        }
+      ],
+      "classes": []
+    },
+    {
+      "name": "Power",
+      "methods": [],
+      "classes": []
+    },
+    {
+      "name": "Radians",
+      "methods": [
+        {
+          "name": "as_oracle",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "compiler",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "connection",
+              "annotation": null
+            },
+            {
+              "prefix": "**",
+              "name": "extra_context",
+              "annotation": null
+            }
+          ]
+        }
+      ],
+      "classes": []
+    },
+    {
+      "name": "Random",
+      "methods": [
+        {
+          "name": "as_mysql",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "compiler",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "connection",
+              "annotation": null
+            },
+            {
+              "prefix": "**",
+              "name": "extra_context",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "as_oracle",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "compiler",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "connection",
+              "annotation": null
+            },
+            {
+              "prefix": "**",
+              "name": "extra_context",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "as_sqlite",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "compiler",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "connection",
+              "annotation": null
+            },
+            {
+              "prefix": "**",
+              "name": "extra_context",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "get_group_by_cols",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "alias",
+              "annotation": null
+            }
+          ]
+        }
+      ],
+      "classes": []
+    },
+    {
+      "name": "Round",
+      "methods": [
+        {
+          "name": "as_sqlite",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "compiler",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "connection",
+              "annotation": null
+            },
+            {
+              "prefix": "**",
+              "name": "extra_context",
+              "annotation": null
+            }
+          ]
+        }
+      ],
+      "classes": []
+    },
+    {
+      "name": "Sign",
+      "methods": [],
+      "classes": []
+    },
+    {
+      "name": "Sin",
+      "methods": [],
+      "classes": []
+    },
+    {
+      "name": "Sqrt",
+      "methods": [],
+      "classes": []
+    },
+    {
+      "name": "Tan",
+      "methods": [],
+      "classes": []
+    }
+  ]
+}

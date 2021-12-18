@@ -1,0 +1,26 @@
+{
+  "functions": [],
+  "classes": [
+    {
+      "name": "ArraySubquery",
+      "methods": [
+        {
+          "name": "output_field",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ],
+          "decorators": [
+            {
+              "name": "@cached_property"
+            }
+          ]
+        }
+      ],
+      "classes": []
+    }
+  ]
+}

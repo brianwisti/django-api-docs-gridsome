@@ -1,0 +1,86 @@
+{
+  "functions": [
+    {
+      "name": "get_user",
+      "params": [
+        {
+          "prefix": "",
+          "name": "request",
+          "annotation": null
+        }
+      ]
+    }
+  ],
+  "classes": [
+    {
+      "name": "AuthenticationMiddleware",
+      "methods": [
+        {
+          "name": "process_request",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "request",
+              "annotation": null
+            }
+          ]
+        }
+      ],
+      "classes": []
+    },
+    {
+      "name": "RemoteUserMiddleware",
+      "methods": [
+        {
+          "name": "process_request",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "request",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "clean_username",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "username",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "request",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        Allow the backend to clean the username, if the backend defines a\n        clean_username method.\n        \"\"\""
+        }
+      ],
+      "classes": [],
+      "docstring": "\"\"\"\n    Middleware for utilizing web-server-provided authentication.\n\n    If request.user is not authenticated, then this middleware attempts to\n    authenticate the username passed in the ``REMOTE_USER`` request header.\n    If authentication is successful, the user is automatically logged in to\n    persist the user in the session.\n\n    The header used is configurable and defaults to ``REMOTE_USER``.  Subclass\n    this class and change the ``header`` attribute if you need to use a\n    different header.\n    \"\"\""
+    },
+    {
+      "name": "PersistentRemoteUserMiddleware",
+      "methods": [],
+      "classes": [],
+      "docstring": "\"\"\"\n    Middleware for web-server provided authentication on logon pages.\n\n    Like RemoteUserMiddleware but keeps the user authenticated even if\n    the header (``REMOTE_USER``) is not found in the request. Useful\n    for setups when the external authentication via ``REMOTE_USER``\n    is only expected to happen on some \"logon\" URL and the rest of\n    the application wants to use Django's authentication mechanism.\n    \"\"\""
+    }
+  ]
+}

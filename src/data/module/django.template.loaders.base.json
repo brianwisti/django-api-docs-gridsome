@@ -1,0 +1,59 @@
+{
+  "functions": [],
+  "classes": [
+    {
+      "name": "Loader",
+      "methods": [
+        {
+          "name": "get_template",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "template_name",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "skip",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        Call self.get_template_sources() and return a Template object for\n        the first template matching template_name. If skip is provided, ignore\n        template origins in skip. This is used to avoid recursion during\n        template extending.\n        \"\"\""
+        },
+        {
+          "name": "get_template_sources",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "template_name",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        An iterator that yields possible matching template paths for a\n        template name.\n        \"\"\""
+        },
+        {
+          "name": "reset",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        Reset any state maintained by the loader instance (e.g. cached\n        templates or cached loader modules).\n        \"\"\""
+        }
+      ],
+      "classes": []
+    }
+  ]
+}

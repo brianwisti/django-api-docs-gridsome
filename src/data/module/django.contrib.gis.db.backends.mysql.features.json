@@ -1,0 +1,56 @@
+{
+  "functions": [],
+  "classes": [
+    {
+      "name": "DatabaseFeatures",
+      "methods": [
+        {
+          "name": "empty_intersection_returns_none",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ],
+          "decorators": [
+            {
+              "name": "@cached_property"
+            }
+          ]
+        },
+        {
+          "name": "supports_geometry_field_unique_index",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ],
+          "decorators": [
+            {
+              "name": "@cached_property"
+            }
+          ]
+        },
+        {
+          "name": "django_test_skips",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ],
+          "decorators": [
+            {
+              "name": "@cached_property"
+            }
+          ]
+        }
+      ],
+      "classes": []
+    }
+  ]
+}

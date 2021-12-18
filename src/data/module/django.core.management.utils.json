@@ -1,0 +1,111 @@
+{
+  "functions": [
+    {
+      "name": "popen_wrapper",
+      "params": [
+        {
+          "prefix": "",
+          "name": "args",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "stdout_encoding",
+          "annotation": null
+        }
+      ],
+      "docstring": "\"\"\"\n    Friendly wrapper around Popen.\n\n    Return stdout output, stderr output, and OS status code.\n    \"\"\""
+    },
+    {
+      "name": "handle_extensions",
+      "params": [
+        {
+          "prefix": "",
+          "name": "extensions",
+          "annotation": null
+        }
+      ],
+      "docstring": "\"\"\"\n    Organize multiple extensions that are separated with commas or passed by\n    using --extension/-e multiple times.\n\n    For example: running 'django-admin makemessages -e js,txt -e xhtml -a'\n    would result in an extension list: ['.js', '.txt', '.xhtml']\n\n    >>> handle_extensions(['.html', 'html,js,py,py,py,.py', 'py,.py'])\n    {'.html', '.js', '.py'}\n    >>> handle_extensions(['.html, txt,.tpl'])\n    {'.html', '.tpl', '.txt'}\n    \"\"\""
+    },
+    {
+      "name": "find_command",
+      "params": [
+        {
+          "prefix": "",
+          "name": "cmd",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "path",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "pathext",
+          "annotation": null
+        }
+      ]
+    },
+    {
+      "name": "get_random_secret_key",
+      "params": [],
+      "docstring": "\"\"\"\n    Return a 50 character random string usable as a SECRET_KEY setting value.\n    \"\"\""
+    },
+    {
+      "name": "parse_apps_and_model_labels",
+      "params": [
+        {
+          "prefix": "",
+          "name": "labels",
+          "annotation": null
+        }
+      ],
+      "docstring": "\"\"\"\n    Parse a list of \"app_label.ModelName\" or \"app_label\" strings into actual\n    objects and return a two-element tuple:\n        (set of model classes, set of app_configs).\n    Raise a CommandError if some specified models or apps don't exist.\n    \"\"\""
+    },
+    {
+      "name": "get_command_line_option",
+      "params": [
+        {
+          "prefix": "",
+          "name": "argv",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "option",
+          "annotation": null
+        }
+      ],
+      "docstring": "\"\"\"\n    Return the value of a command line option (which should include leading\n    dashes, e.g. '--testrunner') from an argument list. Return None if the\n    option wasn't passed or if the argument list couldn't be parsed.\n    \"\"\""
+    },
+    {
+      "name": "normalize_path_patterns",
+      "params": [
+        {
+          "prefix": "",
+          "name": "patterns",
+          "annotation": null
+        }
+      ],
+      "docstring": "\"\"\"Normalize an iterable of glob style patterns based on OS.\"\"\""
+    },
+    {
+      "name": "is_ignored_path",
+      "params": [
+        {
+          "prefix": "",
+          "name": "path",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "ignore_patterns",
+          "annotation": null
+        }
+      ],
+      "docstring": "\"\"\"\n    Check if the given path should be ignored or not based on matching\n    one of the glob style `ignore_patterns`.\n    \"\"\""
+    }
+  ],
+  "classes": []
+}

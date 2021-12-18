@@ -1,0 +1,21 @@
+{
+  "functions": [],
+  "classes": [
+    {
+      "name": "RangeSerializer",
+      "methods": [
+        {
+          "name": "serialize",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ]
+        }
+      ],
+      "classes": []
+    }
+  ]
+}

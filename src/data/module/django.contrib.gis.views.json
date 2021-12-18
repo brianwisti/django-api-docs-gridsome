@@ -1,0 +1,26 @@
+{
+  "functions": [
+    {
+      "name": "feed",
+      "params": [
+        {
+          "prefix": "",
+          "name": "request",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "url",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "feed_dict",
+          "annotation": null
+        }
+      ],
+      "docstring": "\"\"\"Provided for backwards compatibility.\"\"\""
+    }
+  ],
+  "classes": []
+}

@@ -1,0 +1,26 @@
+{
+  "functions": [],
+  "classes": [
+    {
+      "name": "PostGISSchemaEditor",
+      "methods": [
+        {
+          "name": "geo_quote_name",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "name",
+              "annotation": null
+            }
+          ]
+        }
+      ],
+      "classes": []
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "functions": [],
+  "classes": [
+    {
+      "name": "AuthConfig",
+      "methods": [
+        {
+          "name": "ready",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ]
+        }
+      ],
+      "classes": []
+    }
+  ]
+}

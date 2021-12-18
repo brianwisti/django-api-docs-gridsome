@@ -1,0 +1,65 @@
+{
+  "functions": [
+    {
+      "name": "check_csrf_middleware",
+      "params": [
+        {
+          "prefix": "",
+          "name": "app_configs",
+          "annotation": null
+        },
+        {
+          "prefix": "**",
+          "name": "kwargs",
+          "annotation": null
+        }
+      ],
+      "decorators": [
+        {
+          "name": "@register(Tags.security, deploy=True)"
+        }
+      ]
+    },
+    {
+      "name": "check_csrf_cookie_secure",
+      "params": [
+        {
+          "prefix": "",
+          "name": "app_configs",
+          "annotation": null
+        },
+        {
+          "prefix": "**",
+          "name": "kwargs",
+          "annotation": null
+        }
+      ],
+      "decorators": [
+        {
+          "name": "@register(Tags.security, deploy=True)"
+        }
+      ]
+    },
+    {
+      "name": "check_csrf_failure_view",
+      "params": [
+        {
+          "prefix": "",
+          "name": "app_configs",
+          "annotation": null
+        },
+        {
+          "prefix": "**",
+          "name": "kwargs",
+          "annotation": null
+        }
+      ],
+      "decorators": [
+        {
+          "name": "@register(Tags.security)"
+        }
+      ]
+    }
+  ],
+  "classes": []
+}

@@ -1,0 +1,58 @@
+{
+  "functions": [
+    {
+      "name": "csrf_exempt",
+      "params": [
+        {
+          "prefix": "",
+          "name": "view_func",
+          "annotation": null
+        }
+      ],
+      "docstring": "\"\"\"Mark a view function as being exempt from the CSRF view protection.\"\"\""
+    }
+  ],
+  "classes": [
+    {
+      "name": "_EnsureCsrfToken",
+      "methods": [],
+      "classes": []
+    },
+    {
+      "name": "_EnsureCsrfCookie",
+      "methods": [
+        {
+          "name": "process_view",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "request",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "callback",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "callback_args",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "callback_kwargs",
+              "annotation": null
+            }
+          ]
+        }
+      ],
+      "classes": []
+    }
+  ]
+}

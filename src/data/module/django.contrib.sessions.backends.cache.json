@@ -1,0 +1,107 @@
+{
+  "functions": [],
+  "classes": [
+    {
+      "name": "SessionStore",
+      "methods": [
+        {
+          "name": "cache_key",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ],
+          "decorators": [
+            {
+              "name": "@property"
+            }
+          ]
+        },
+        {
+          "name": "load",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "create",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "save",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "must_create",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "exists",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "session_key",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "delete",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "session_key",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "clear_expired",
+          "params": [
+            {
+              "prefix": "",
+              "name": "cls",
+              "annotation": null
+            }
+          ],
+          "decorators": [
+            {
+              "name": "@classmethod"
+            }
+          ]
+        }
+      ],
+      "classes": [],
+      "docstring": "\"\"\"\n    A cache-based session store.\n    \"\"\""
+    }
+  ]
+}

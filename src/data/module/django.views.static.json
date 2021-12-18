@@ -1,0 +1,68 @@
+{
+  "functions": [
+    {
+      "name": "serve",
+      "params": [
+        {
+          "prefix": "",
+          "name": "request",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "path",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "document_root",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "show_indexes",
+          "annotation": null
+        }
+      ],
+      "docstring": "\"\"\"\n    Serve static files below a given point in the directory structure.\n\n    To use, put a URL pattern such as::\n\n        from django.views.static import serve\n\n        path('<path:path>', serve, {'document_root': '/path/to/my/files/'})\n\n    in your URLconf. You must provide the ``document_root`` param. You may\n    also set ``show_indexes`` to ``True`` if you'd like to serve a basic index\n    of the directory.  This index view will use the template hardcoded below,\n    but if you'd like to override it, you can create a template called\n    ``static/directory_index.html``.\n    \"\"\""
+    },
+    {
+      "name": "directory_index",
+      "params": [
+        {
+          "prefix": "",
+          "name": "path",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "fullpath",
+          "annotation": null
+        }
+      ]
+    },
+    {
+      "name": "was_modified_since",
+      "params": [
+        {
+          "prefix": "",
+          "name": "header",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "mtime",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "size",
+          "annotation": null
+        }
+      ],
+      "docstring": "\"\"\"\n    Was something modified since the user last downloaded it?\n\n    header\n      This is the value of the If-Modified-Since header.  If this is None,\n      I'll just return True.\n\n    mtime\n      This is the modification time of the item we're talking about.\n\n    size\n      This is the size of the item we're talking about.\n    \"\"\""
+    }
+  ],
+  "classes": [],
+  "doc": "\"\"\"\nViews and functions for serving static files. These are only to be used\nduring development, and SHOULD NOT be used in a production setting.\n\"\"\""
+}

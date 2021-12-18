@@ -1,0 +1,220 @@
+{
+  "functions": [
+    {
+      "name": "normalize_whitespace",
+      "params": [
+        {
+          "prefix": "",
+          "name": "string",
+          "annotation": null
+        }
+      ]
+    },
+    {
+      "name": "normalize_attributes",
+      "params": [
+        {
+          "prefix": "",
+          "name": "attributes",
+          "annotation": null
+        }
+      ]
+    },
+    {
+      "name": "parse_html",
+      "params": [
+        {
+          "prefix": "",
+          "name": "html",
+          "annotation": null
+        }
+      ],
+      "docstring": "\"\"\"\n    Take a string that contains HTML and turn it into a Python object structure\n    that can be easily compared against other HTML on semantic equivalence.\n    Syntactical differences like which quotation is used on arguments will be\n    ignored.\n    \"\"\""
+    }
+  ],
+  "classes": [
+    {
+      "name": "Element",
+      "methods": [
+        {
+          "name": "append",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "element",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "finalize",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "count",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "element",
+              "annotation": null
+            }
+          ]
+        }
+      ],
+      "classes": []
+    },
+    {
+      "name": "RootElement",
+      "methods": [],
+      "classes": []
+    },
+    {
+      "name": "HTMLParseError",
+      "methods": [],
+      "classes": []
+    },
+    {
+      "name": "Parser",
+      "methods": [
+        {
+          "name": "error",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "msg",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "format_position",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "position",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "element",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "current",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ],
+          "decorators": [
+            {
+              "name": "@property"
+            }
+          ]
+        },
+        {
+          "name": "handle_startendtag",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "tag",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "attrs",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "handle_starttag",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "tag",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "attrs",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "handle_endtag",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "tag",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "handle_data",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "data",
+              "annotation": null
+            }
+          ]
+        }
+      ],
+      "classes": []
+    }
+  ],
+  "doc": "\"\"\"Compare two HTML documents.\"\"\""
+}

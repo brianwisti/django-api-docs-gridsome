@@ -1,0 +1,27 @@
+{
+  "functions": [
+    {
+      "name": "auth",
+      "params": [
+        {
+          "prefix": "",
+          "name": "request",
+          "annotation": null
+        }
+      ],
+      "docstring": "\"\"\"\n    Return context variables required by apps that use Django's authentication\n    system.\n\n    If there is no 'user' attribute in the request, use AnonymousUser (from\n    django.contrib.auth).\n    \"\"\""
+    }
+  ],
+  "classes": [
+    {
+      "name": "PermLookupDict",
+      "methods": [],
+      "classes": []
+    },
+    {
+      "name": "PermWrapper",
+      "methods": [],
+      "classes": []
+    }
+  ]
+}

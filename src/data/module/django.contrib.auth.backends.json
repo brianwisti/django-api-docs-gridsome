@@ -1,0 +1,445 @@
+{
+  "functions": [],
+  "classes": [
+    {
+      "name": "BaseBackend",
+      "methods": [
+        {
+          "name": "authenticate",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "request",
+              "annotation": null
+            },
+            {
+              "prefix": "**",
+              "name": "kwargs",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "get_user",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "user_id",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "get_user_permissions",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "user_obj",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "obj",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "get_group_permissions",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "user_obj",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "obj",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "get_all_permissions",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "user_obj",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "obj",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "has_perm",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "user_obj",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "perm",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "obj",
+              "annotation": null
+            }
+          ]
+        }
+      ],
+      "classes": []
+    },
+    {
+      "name": "ModelBackend",
+      "methods": [
+        {
+          "name": "authenticate",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "request",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "username",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "password",
+              "annotation": null
+            },
+            {
+              "prefix": "**",
+              "name": "kwargs",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "user_can_authenticate",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "user",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        Reject users with is_active=False. Custom user models that don't have\n        that attribute are allowed.\n        \"\"\""
+        },
+        {
+          "name": "get_user_permissions",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "user_obj",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "obj",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        Return a set of permission strings the user `user_obj` has from their\n        `user_permissions`.\n        \"\"\""
+        },
+        {
+          "name": "get_group_permissions",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "user_obj",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "obj",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        Return a set of permission strings the user `user_obj` has from the\n        groups they belong.\n        \"\"\""
+        },
+        {
+          "name": "get_all_permissions",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "user_obj",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "obj",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "has_perm",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "user_obj",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "perm",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "obj",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "has_module_perms",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "user_obj",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "app_label",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        Return True if user_obj has any permissions in the given app_label.\n        \"\"\""
+        },
+        {
+          "name": "with_perm",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "perm",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "is_active",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "include_superusers",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "obj",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        Return users that have permission \"perm\". By default, filter out\n        inactive users and include superusers.\n        \"\"\""
+        },
+        {
+          "name": "get_user",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "user_id",
+              "annotation": null
+            }
+          ]
+        }
+      ],
+      "classes": [],
+      "docstring": "\"\"\"\n    Authenticates against settings.AUTH_USER_MODEL.\n    \"\"\""
+    },
+    {
+      "name": "AllowAllUsersModelBackend",
+      "methods": [
+        {
+          "name": "user_can_authenticate",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "user",
+              "annotation": null
+            }
+          ]
+        }
+      ],
+      "classes": []
+    },
+    {
+      "name": "RemoteUserBackend",
+      "methods": [
+        {
+          "name": "authenticate",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "request",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "remote_user",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        The username passed as ``remote_user`` is considered trusted. Return\n        the ``User`` object with the given username. Create a new ``User``\n        object if ``create_unknown_user`` is ``True``.\n\n        Return None if ``create_unknown_user`` is ``False`` and a ``User``\n        object with the given username is not found in the database.\n        \"\"\""
+        },
+        {
+          "name": "clean_username",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "username",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        Perform any cleaning on the \"username\" prior to using it to get or\n        create the user object.  Return the cleaned username.\n\n        By default, return the username unchanged.\n        \"\"\""
+        },
+        {
+          "name": "configure_user",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "request",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "user",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        Configure a user after creation and return the updated user.\n\n        By default, return the user unmodified.\n        \"\"\""
+        }
+      ],
+      "classes": [],
+      "docstring": "\"\"\"\n    This backend is to be used in conjunction with the ``RemoteUserMiddleware``\n    found in the middleware module of this package, and is used when the server\n    is handling authentication outside of Django.\n\n    By default, the ``authenticate`` method creates ``User`` objects for\n    usernames that don't already exist in the database.  Subclasses can disable\n    this behavior by setting the ``create_unknown_user`` attribute to\n    ``False``.\n    \"\"\""
+    },
+    {
+      "name": "AllowAllUsersRemoteUserBackend",
+      "methods": [
+        {
+          "name": "user_can_authenticate",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "user",
+              "annotation": null
+            }
+          ]
+        }
+      ],
+      "classes": []
+    }
+  ]
+}

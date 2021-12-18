@@ -1,0 +1,394 @@
+{
+  "functions": [],
+  "classes": [
+    {
+      "name": "Cast",
+      "methods": [
+        {
+          "name": "as_sql",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "compiler",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "connection",
+              "annotation": null
+            },
+            {
+              "prefix": "**",
+              "name": "extra_context",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "as_sqlite",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "compiler",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "connection",
+              "annotation": null
+            },
+            {
+              "prefix": "**",
+              "name": "extra_context",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "as_mysql",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "compiler",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "connection",
+              "annotation": null
+            },
+            {
+              "prefix": "**",
+              "name": "extra_context",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "as_postgresql",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "compiler",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "connection",
+              "annotation": null
+            },
+            {
+              "prefix": "**",
+              "name": "extra_context",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "as_oracle",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "compiler",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "connection",
+              "annotation": null
+            },
+            {
+              "prefix": "**",
+              "name": "extra_context",
+              "annotation": null
+            }
+          ]
+        }
+      ],
+      "classes": [],
+      "docstring": "\"\"\"Coerce an expression to a new field type.\"\"\""
+    },
+    {
+      "name": "Coalesce",
+      "methods": [
+        {
+          "name": "empty_result_set_value",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ],
+          "decorators": [
+            {
+              "name": "@property"
+            }
+          ]
+        },
+        {
+          "name": "as_oracle",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "compiler",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "connection",
+              "annotation": null
+            },
+            {
+              "prefix": "**",
+              "name": "extra_context",
+              "annotation": null
+            }
+          ]
+        }
+      ],
+      "classes": [],
+      "docstring": "\"\"\"Return, from left to right, the first non-null expression.\"\"\""
+    },
+    {
+      "name": "Collate",
+      "methods": [
+        {
+          "name": "as_sql",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "compiler",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "connection",
+              "annotation": null
+            },
+            {
+              "prefix": "**",
+              "name": "extra_context",
+              "annotation": null
+            }
+          ]
+        }
+      ],
+      "classes": []
+    },
+    {
+      "name": "Greatest",
+      "methods": [
+        {
+          "name": "as_sqlite",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "compiler",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "connection",
+              "annotation": null
+            },
+            {
+              "prefix": "**",
+              "name": "extra_context",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"Use the MAX function on SQLite.\"\"\""
+        }
+      ],
+      "classes": [],
+      "docstring": "\"\"\"\n    Return the maximum expression.\n\n    If any expression is null the return value is database-specific:\n    On PostgreSQL, the maximum not-null expression is returned.\n    On MySQL, Oracle, and SQLite, if any expression is null, null is returned.\n    \"\"\""
+    },
+    {
+      "name": "JSONObject",
+      "methods": [
+        {
+          "name": "as_sql",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "compiler",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "connection",
+              "annotation": null
+            },
+            {
+              "prefix": "**",
+              "name": "extra_context",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "as_postgresql",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "compiler",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "connection",
+              "annotation": null
+            },
+            {
+              "prefix": "**",
+              "name": "extra_context",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "as_oracle",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "compiler",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "connection",
+              "annotation": null
+            },
+            {
+              "prefix": "**",
+              "name": "extra_context",
+              "annotation": null
+            }
+          ]
+        }
+      ],
+      "classes": []
+    },
+    {
+      "name": "Least",
+      "methods": [
+        {
+          "name": "as_sqlite",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "compiler",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "connection",
+              "annotation": null
+            },
+            {
+              "prefix": "**",
+              "name": "extra_context",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"Use the MIN function on SQLite.\"\"\""
+        }
+      ],
+      "classes": [],
+      "docstring": "\"\"\"\n    Return the minimum expression.\n\n    If any expression is null the return value is database-specific:\n    On PostgreSQL, return the minimum not-null expression.\n    On MySQL, Oracle, and SQLite, if any expression is null, return null.\n    \"\"\""
+    },
+    {
+      "name": "NullIf",
+      "methods": [
+        {
+          "name": "as_oracle",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "compiler",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "connection",
+              "annotation": null
+            },
+            {
+              "prefix": "**",
+              "name": "extra_context",
+              "annotation": null
+            }
+          ]
+        }
+      ],
+      "classes": []
+    }
+  ],
+  "doc": "\"\"\"Database functions that do comparisons or type conversions.\"\"\""
+}

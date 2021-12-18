@@ -1,0 +1,32 @@
+{
+  "functions": [
+    {
+      "name": "serve",
+      "params": [
+        {
+          "prefix": "",
+          "name": "request",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "path",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "insecure",
+          "annotation": null
+        },
+        {
+          "prefix": "**",
+          "name": "kwargs",
+          "annotation": null
+        }
+      ],
+      "docstring": "\"\"\"\n    Serve static files below a given point in the directory structure or\n    from locations inferred from the staticfiles finders.\n\n    To use, put a URL pattern such as::\n\n        from django.contrib.staticfiles import views\n\n        path('<path:path>', views.serve)\n\n    in your URLconf.\n\n    It uses the django.views.static.serve() view to serve the found files.\n    \"\"\""
+    }
+  ],
+  "classes": [],
+  "doc": "\"\"\"\nViews and functions for serving static files. These are only to be used during\ndevelopment, and SHOULD NOT be used in a production setting.\n\n\"\"\""
+}

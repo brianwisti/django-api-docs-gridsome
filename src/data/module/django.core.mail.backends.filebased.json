@@ -1,0 +1,47 @@
+{
+  "functions": [],
+  "classes": [
+    {
+      "name": "EmailBackend",
+      "methods": [
+        {
+          "name": "write_message",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "message",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "open",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "close",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ]
+        }
+      ],
+      "classes": []
+    }
+  ],
+  "doc": "\"\"\"Email backend that writes messages to a file.\"\"\""
+}

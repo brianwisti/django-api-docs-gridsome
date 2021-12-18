@@ -1,0 +1,93 @@
+{
+  "functions": [
+    {
+      "name": "load_geos",
+      "params": []
+    },
+    {
+      "name": "notice_h",
+      "params": [
+        {
+          "prefix": "",
+          "name": "fmt",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "lst",
+          "annotation": null
+        }
+      ]
+    },
+    {
+      "name": "error_h",
+      "params": [
+        {
+          "prefix": "",
+          "name": "fmt",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "lst",
+          "annotation": null
+        }
+      ]
+    },
+    {
+      "name": "geos_version",
+      "params": [],
+      "docstring": "\"\"\"Return the string version of the GEOS library.\"\"\""
+    },
+    {
+      "name": "geos_version_tuple",
+      "params": [],
+      "docstring": "\"\"\"Return the GEOS version as a tuple (major, minor, subminor).\"\"\""
+    }
+  ],
+  "classes": [
+    {
+      "name": "GEOSGeom_t",
+      "methods": [],
+      "classes": []
+    },
+    {
+      "name": "GEOSPrepGeom_t",
+      "methods": [],
+      "classes": []
+    },
+    {
+      "name": "GEOSCoordSeq_t",
+      "methods": [],
+      "classes": []
+    },
+    {
+      "name": "GEOSContextHandle_t",
+      "methods": [],
+      "classes": []
+    },
+    {
+      "name": "GEOSFuncFactory",
+      "methods": [
+        {
+          "name": "func",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ],
+          "decorators": [
+            {
+              "name": "@cached_property"
+            }
+          ]
+        }
+      ],
+      "classes": [],
+      "docstring": "\"\"\"\n    Lazy loading of GEOS functions.\n    \"\"\""
+    }
+  ],
+  "doc": "\"\"\"\n This module houses the ctypes initialization procedures, as well\n as the notice and error handler function callbacks (get called\n when an error occurs in GEOS).\n\n This module also houses GEOS Pointer utilities, including\n get_pointer_arr(), and GEOM_PTR.\n\"\"\""
+}

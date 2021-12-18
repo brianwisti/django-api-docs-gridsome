@@ -1,0 +1,125 @@
+{
+  "functions": [
+    {
+      "name": "get_view_name",
+      "params": [
+        {
+          "prefix": "",
+          "name": "view_func",
+          "annotation": null
+        }
+      ]
+    },
+    {
+      "name": "parse_docstring",
+      "params": [
+        {
+          "prefix": "",
+          "name": "docstring",
+          "annotation": null
+        }
+      ],
+      "docstring": "\"\"\"\n    Parse out the parts of a docstring.  Return (title, body, metadata).\n    \"\"\""
+    },
+    {
+      "name": "parse_rst",
+      "params": [
+        {
+          "prefix": "",
+          "name": "text",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "default_reference_context",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "thing_being_parsed",
+          "annotation": null
+        }
+      ],
+      "docstring": "\"\"\"\n    Convert the string from reST to an XHTML fragment.\n    \"\"\""
+    },
+    {
+      "name": "create_reference_role",
+      "params": [
+        {
+          "prefix": "",
+          "name": "rolename",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "urlbase",
+          "annotation": null
+        }
+      ]
+    },
+    {
+      "name": "default_reference_role",
+      "params": [
+        {
+          "prefix": "",
+          "name": "name",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "rawtext",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "text",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "lineno",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "inliner",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "options",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "content",
+          "annotation": null
+        }
+      ]
+    },
+    {
+      "name": "replace_named_groups",
+      "params": [
+        {
+          "prefix": "",
+          "name": "pattern",
+          "annotation": null
+        }
+      ],
+      "docstring": "r\"\"\"\n    Find named groups in `pattern` and replace them with the group name. E.g.,\n    1. ^(?P<a>\\w+)/b/(\\w+)$ ==> ^<a>/b/(\\w+)$\n    2. ^(?P<a>\\w+)/b/(?P<c>\\w+)/$ ==> ^<a>/b/<c>/$\n    3. ^(?P<a>\\w+)/b/(\\w+) ==> ^<a>/b/(\\w+)\n    4. ^(?P<a>\\w+)/b/(?P<c>\\w+) ==> ^<a>/b/<c>\n    \"\"\""
+    },
+    {
+      "name": "replace_unnamed_groups",
+      "params": [
+        {
+          "prefix": "",
+          "name": "pattern",
+          "annotation": null
+        }
+      ],
+      "docstring": "r\"\"\"\n    Find unnamed groups in `pattern` and replace them with '<var>'. E.g.,\n    1. ^(?P<a>\\w+)/b/(\\w+)$ ==> ^(?P<a>\\w+)/b/<var>$\n    2. ^(?P<a>\\w+)/b/((x|y)\\w+)$ ==> ^(?P<a>\\w+)/b/<var>$\n    3. ^(?P<a>\\w+)/b/(\\w+) ==> ^(?P<a>\\w+)/b/<var>\n    4. ^(?P<a>\\w+)/b/((x|y)\\w+) ==> ^(?P<a>\\w+)/b/<var>\n    \"\"\""
+    }
+  ],
+  "classes": [],
+  "doc": "\"Misc. utility functions/classes for admin documentation generator.\""
+}

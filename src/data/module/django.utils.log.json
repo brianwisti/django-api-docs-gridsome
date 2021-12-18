@@ -1,0 +1,235 @@
+{
+  "functions": [
+    {
+      "name": "configure_logging",
+      "params": [
+        {
+          "prefix": "",
+          "name": "logging_config",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "logging_settings",
+          "annotation": null
+        }
+      ]
+    },
+    {
+      "name": "log_response",
+      "params": [
+        {
+          "prefix": "",
+          "name": "message",
+          "annotation": null
+        },
+        {
+          "prefix": "*",
+          "name": "args",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "response",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "request",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "logger",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "level",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "exc_info",
+          "annotation": null
+        }
+      ],
+      "docstring": "\"\"\"\n    Log errors based on HttpResponse status.\n\n    Log 5xx responses as errors and 4xx responses as warnings (unless a level\n    is given as a keyword argument). The HttpResponse status_code and the\n    request are passed to the logger's extra parameter.\n    \"\"\""
+    }
+  ],
+  "classes": [
+    {
+      "name": "AdminEmailHandler",
+      "methods": [
+        {
+          "name": "emit",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "record",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "send_mail",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "subject",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "message",
+              "annotation": null
+            },
+            {
+              "prefix": "*",
+              "name": "args",
+              "annotation": null
+            },
+            {
+              "prefix": "**",
+              "name": "kwargs",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "connection",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "format_subject",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "subject",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        Escape CR and LF characters.\n        \"\"\""
+        }
+      ],
+      "classes": [],
+      "docstring": "\"\"\"An exception log handler that emails log entries to site admins.\n\n    If the request is passed as the first argument to the log record,\n    request data will be provided in the email report.\n    \"\"\""
+    },
+    {
+      "name": "CallbackFilter",
+      "methods": [
+        {
+          "name": "filter",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "record",
+              "annotation": null
+            }
+          ]
+        }
+      ],
+      "classes": [],
+      "docstring": "\"\"\"\n    A logging filter that checks the return value of a given callable (which\n    takes the record-to-be-logged as its only parameter) to decide whether to\n    log a record.\n    \"\"\""
+    },
+    {
+      "name": "RequireDebugFalse",
+      "methods": [
+        {
+          "name": "filter",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "record",
+              "annotation": null
+            }
+          ]
+        }
+      ],
+      "classes": []
+    },
+    {
+      "name": "RequireDebugTrue",
+      "methods": [
+        {
+          "name": "filter",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "record",
+              "annotation": null
+            }
+          ]
+        }
+      ],
+      "classes": []
+    },
+    {
+      "name": "ServerFormatter",
+      "methods": [
+        {
+          "name": "format",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "record",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "uses_server_time",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ]
+        }
+      ],
+      "classes": []
+    }
+  ]
+}

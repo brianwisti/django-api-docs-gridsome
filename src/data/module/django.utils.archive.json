@@ -1,0 +1,257 @@
+{
+  "functions": [
+    {
+      "name": "extract",
+      "params": [
+        {
+          "prefix": "",
+          "name": "path",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "to_path",
+          "annotation": null
+        }
+      ],
+      "docstring": "\"\"\"\n    Unpack the tar or zip file at the specified path to the directory\n    specified by to_path.\n    \"\"\""
+    }
+  ],
+  "classes": [
+    {
+      "name": "ArchiveException",
+      "methods": [],
+      "classes": [],
+      "docstring": "\"\"\"\n    Base exception class for all archive errors.\n    \"\"\""
+    },
+    {
+      "name": "UnrecognizedArchiveFormat",
+      "methods": [],
+      "classes": [],
+      "docstring": "\"\"\"\n    Error raised when passed file is not a recognized archive format.\n    \"\"\""
+    },
+    {
+      "name": "Archive",
+      "methods": [
+        {
+          "name": "extract",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "to_path",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "list",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "close",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ]
+        }
+      ],
+      "classes": [],
+      "docstring": "\"\"\"\n    The external API class that encapsulates an archive implementation.\n    \"\"\""
+    },
+    {
+      "name": "BaseArchive",
+      "methods": [
+        {
+          "name": "split_leading_dir",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "path",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "has_leading_dir",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "paths",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        Return True if all the paths have the same leading path name\n        (i.e., everything is in one subdirectory in an archive).\n        \"\"\""
+        },
+        {
+          "name": "target_filename",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "to_path",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "name",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "extract",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "list",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ]
+        }
+      ],
+      "classes": [],
+      "docstring": "\"\"\"\n    Base Archive class.  Implementations should inherit this class.\n    \"\"\""
+    },
+    {
+      "name": "TarArchive",
+      "methods": [
+        {
+          "name": "list",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "*",
+              "name": "args",
+              "annotation": null
+            },
+            {
+              "prefix": "**",
+              "name": "kwargs",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "extract",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "to_path",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "close",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ]
+        }
+      ],
+      "classes": []
+    },
+    {
+      "name": "ZipArchive",
+      "methods": [
+        {
+          "name": "list",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "*",
+              "name": "args",
+              "annotation": null
+            },
+            {
+              "prefix": "**",
+              "name": "kwargs",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "extract",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "to_path",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "close",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ]
+        }
+      ],
+      "classes": []
+    }
+  ],
+  "doc": "\"\"\"\nBased on \"python-archive\" -- https://pypi.org/project/python-archive/\n\nCopyright (c) 2010 Gary Wilson Jr. <gary.wilson@gmail.com> and contributors.\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in\nall copies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN\nTHE SOFTWARE.\n\"\"\""
+}

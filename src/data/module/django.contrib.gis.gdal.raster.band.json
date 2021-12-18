@@ -1,0 +1,271 @@
+{
+  "functions": [],
+  "classes": [
+    {
+      "name": "GDALBand",
+      "methods": [
+        {
+          "name": "description",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ],
+          "decorators": [
+            {
+              "name": "@property"
+            }
+          ],
+          "docstring": "\"\"\"\n        Return the description string of the band.\n        \"\"\""
+        },
+        {
+          "name": "width",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ],
+          "decorators": [
+            {
+              "name": "@property"
+            }
+          ],
+          "docstring": "\"\"\"\n        Width (X axis) in pixels of the band.\n        \"\"\""
+        },
+        {
+          "name": "height",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ],
+          "decorators": [
+            {
+              "name": "@property"
+            }
+          ],
+          "docstring": "\"\"\"\n        Height (Y axis) in pixels of the band.\n        \"\"\""
+        },
+        {
+          "name": "pixel_count",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ],
+          "decorators": [
+            {
+              "name": "@property"
+            }
+          ],
+          "docstring": "\"\"\"\n        Return the total number of pixels in this band.\n        \"\"\""
+        },
+        {
+          "name": "statistics",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "refresh",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "approximate",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        Compute statistics on the pixel values of this band.\n\n        The return value is a tuple with the following structure:\n        (minimum, maximum, mean, standard deviation).\n\n        If approximate=True, the statistics may be computed based on overviews\n        or a subset of image tiles.\n\n        If refresh=True, the statistics will be computed from the data directly,\n        and the cache will be updated where applicable.\n\n        For empty bands (where all pixel values are nodata), all statistics\n        values are returned as None.\n\n        For raster formats using Persistent Auxiliary Metadata (PAM) services,\n        the statistics might be cached in an auxiliary file.\n        \"\"\""
+        },
+        {
+          "name": "min",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ],
+          "decorators": [
+            {
+              "name": "@property"
+            }
+          ],
+          "docstring": "\"\"\"\n        Return the minimum pixel value for this band.\n        \"\"\""
+        },
+        {
+          "name": "max",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ],
+          "decorators": [
+            {
+              "name": "@property"
+            }
+          ],
+          "docstring": "\"\"\"\n        Return the maximum pixel value for this band.\n        \"\"\""
+        },
+        {
+          "name": "mean",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ],
+          "decorators": [
+            {
+              "name": "@property"
+            }
+          ],
+          "docstring": "\"\"\"\n        Return the mean of all pixel values of this band.\n        \"\"\""
+        },
+        {
+          "name": "std",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ],
+          "decorators": [
+            {
+              "name": "@property"
+            }
+          ],
+          "docstring": "\"\"\"\n        Return the standard deviation of all pixel values of this band.\n        \"\"\""
+        },
+        {
+          "name": "nodata_value",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ],
+          "decorators": [
+            {
+              "name": "@property"
+            }
+          ],
+          "docstring": "\"\"\"\n        Return the nodata value for this band, or None if it isn't set.\n        \"\"\""
+        },
+        {
+          "name": "nodata_value",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "value",
+              "annotation": null
+            }
+          ],
+          "decorators": [
+            {
+              "name": "@nodata_value.setter"
+            }
+          ],
+          "docstring": "\"\"\"\n        Set the nodata value for this band.\n        \"\"\""
+        },
+        {
+          "name": "datatype",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "as_string",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        Return the GDAL Pixel Datatype for this band.\n        \"\"\""
+        },
+        {
+          "name": "color_interp",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "as_string",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"Return the GDAL color interpretation for this band.\"\"\""
+        },
+        {
+          "name": "data",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "data",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "offset",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "size",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "shape",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "as_memoryview",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        Read or writes pixel values for this band. Blocks of data can\n        be accessed by specifying the width, height and offset of the\n        desired block. The same specification can be used to update\n        parts of a raster by providing an array of values.\n\n        Allowed input data types are bytes, memoryview, list, tuple, and array.\n        \"\"\""
+        }
+      ],
+      "classes": [],
+      "docstring": "\"\"\"\n    Wrap a GDAL raster band, needs to be obtained from a GDALRaster object.\n    \"\"\""
+    },
+    {
+      "name": "BandList",
+      "methods": [],
+      "classes": []
+    }
+  ]
+}

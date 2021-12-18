@@ -1,0 +1,88 @@
+{
+  "functions": [],
+  "classes": [
+    {
+      "name": "Command",
+      "methods": [
+        {
+          "name": "add_arguments",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "parser",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "handle",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "*",
+              "name": "app_labels",
+              "annotation": null
+            },
+            {
+              "prefix": "**",
+              "name": "options",
+              "annotation": null
+            }
+          ],
+          "decorators": [
+            {
+              "name": "@no_translations"
+            }
+          ]
+        },
+        {
+          "name": "write_migration_files",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "changes",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        Take a changes dict and write them out as migration files.\n        \"\"\""
+        },
+        {
+          "name": "handle_merge",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "loader",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "conflicts",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        Handles merging together conflicted migrations interactively,\n        if it's safe; otherwise, advises on how to fix it.\n        \"\"\""
+        }
+      ],
+      "classes": []
+    }
+  ]
+}

@@ -1,0 +1,157 @@
+{
+  "functions": [
+    {
+      "name": "get_token",
+      "params": [
+        {
+          "prefix": "",
+          "name": "request",
+          "annotation": null
+        }
+      ],
+      "docstring": "\"\"\"\n    Return the CSRF token required for a POST form. The token is an\n    alphanumeric value. A new token is created if one is not already set.\n\n    A side effect of calling this function is to make the csrf_protect\n    decorator and the CsrfViewMiddleware add a CSRF cookie and a 'Vary: Cookie'\n    header to the outgoing response.  For this reason, you may need to use this\n    function lazily, as is done by the csrf context processor.\n    \"\"\""
+    },
+    {
+      "name": "rotate_token",
+      "params": [
+        {
+          "prefix": "",
+          "name": "request",
+          "annotation": null
+        }
+      ],
+      "docstring": "\"\"\"\n    Change the CSRF token in use for a request - should be done on login\n    for security purposes.\n    \"\"\""
+    }
+  ],
+  "classes": [
+    {
+      "name": "InvalidTokenFormat",
+      "methods": [],
+      "classes": []
+    },
+    {
+      "name": "RejectRequest",
+      "methods": [],
+      "classes": []
+    },
+    {
+      "name": "CsrfViewMiddleware",
+      "methods": [
+        {
+          "name": "csrf_trusted_origins_hosts",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ],
+          "decorators": [
+            {
+              "name": "@cached_property"
+            }
+          ]
+        },
+        {
+          "name": "allowed_origins_exact",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ],
+          "decorators": [
+            {
+              "name": "@cached_property"
+            }
+          ]
+        },
+        {
+          "name": "allowed_origin_subdomains",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ],
+          "decorators": [
+            {
+              "name": "@cached_property"
+            }
+          ],
+          "docstring": "\"\"\"\n        A mapping of allowed schemes to list of allowed netlocs, where all\n        subdomains of the netloc are allowed.\n        \"\"\""
+        },
+        {
+          "name": "process_request",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "request",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "process_view",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "request",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "callback",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "callback_args",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "callback_kwargs",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "process_response",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "request",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "response",
+              "annotation": null
+            }
+          ]
+        }
+      ],
+      "classes": [],
+      "docstring": "\"\"\"\n    Require a present and correct csrfmiddlewaretoken for POST requests that\n    have a CSRF cookie, and set an outgoing CSRF cookie.\n\n    This middleware should be used in conjunction with the {% csrf_token %}\n    template tag.\n    \"\"\""
+    }
+  ],
+  "doc": "\"\"\"\nCross Site Request Forgery Middleware.\n\nThis module provides a middleware that implements protection\nagainst request forgeries from other sites.\n\"\"\""
+}

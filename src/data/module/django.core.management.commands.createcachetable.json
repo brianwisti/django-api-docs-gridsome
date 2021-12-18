@@ -1,0 +1,71 @@
+{
+  "functions": [],
+  "classes": [
+    {
+      "name": "Command",
+      "methods": [
+        {
+          "name": "add_arguments",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "parser",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "handle",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "*",
+              "name": "tablenames",
+              "annotation": null
+            },
+            {
+              "prefix": "**",
+              "name": "options",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "create_table",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "database",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "tablename",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "dry_run",
+              "annotation": null
+            }
+          ]
+        }
+      ],
+      "classes": []
+    }
+  ]
+}

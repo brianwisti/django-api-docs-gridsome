@@ -1,0 +1,16 @@
+{
+  "functions": [
+    {
+      "name": "parse_cookie",
+      "params": [
+        {
+          "prefix": "",
+          "name": "cookie",
+          "annotation": null
+        }
+      ],
+      "docstring": "\"\"\"\n    Return a dictionary parsed from a `Cookie:` header string.\n    \"\"\""
+    }
+  ],
+  "classes": []
+}

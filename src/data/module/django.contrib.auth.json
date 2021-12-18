@@ -1,0 +1,120 @@
+{
+  "functions": [
+    {
+      "name": "load_backend",
+      "params": [
+        {
+          "prefix": "",
+          "name": "path",
+          "annotation": null
+        }
+      ]
+    },
+    {
+      "name": "get_backends",
+      "params": []
+    },
+    {
+      "name": "authenticate",
+      "params": [
+        {
+          "prefix": "",
+          "name": "request",
+          "annotation": null
+        },
+        {
+          "prefix": "**",
+          "name": "credentials",
+          "annotation": null
+        }
+      ],
+      "decorators": [
+        {
+          "name": "@sensitive_variables('credentials')"
+        }
+      ],
+      "docstring": "\"\"\"\n    If the given credentials are valid, return a User object.\n    \"\"\""
+    },
+    {
+      "name": "login",
+      "params": [
+        {
+          "prefix": "",
+          "name": "request",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "user",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "backend",
+          "annotation": null
+        }
+      ],
+      "docstring": "\"\"\"\n    Persist a user id and a backend in the request. This way a user doesn't\n    have to reauthenticate on every request. Note that data set during\n    the anonymous session is retained when the user logs in.\n    \"\"\""
+    },
+    {
+      "name": "logout",
+      "params": [
+        {
+          "prefix": "",
+          "name": "request",
+          "annotation": null
+        }
+      ],
+      "docstring": "\"\"\"\n    Remove the authenticated user's ID from the request and flush their session\n    data.\n    \"\"\""
+    },
+    {
+      "name": "get_user_model",
+      "params": [],
+      "docstring": "\"\"\"\n    Return the User model that is active in this project.\n    \"\"\""
+    },
+    {
+      "name": "get_user",
+      "params": [
+        {
+          "prefix": "",
+          "name": "request",
+          "annotation": null
+        }
+      ],
+      "docstring": "\"\"\"\n    Return the user model instance associated with the given request session.\n    If no user is retrieved, return an instance of `AnonymousUser`.\n    \"\"\""
+    },
+    {
+      "name": "get_permission_codename",
+      "params": [
+        {
+          "prefix": "",
+          "name": "action",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "opts",
+          "annotation": null
+        }
+      ],
+      "docstring": "\"\"\"\n    Return the codename of the permission for the specified action.\n    \"\"\""
+    },
+    {
+      "name": "update_session_auth_hash",
+      "params": [
+        {
+          "prefix": "",
+          "name": "request",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "user",
+          "annotation": null
+        }
+      ],
+      "docstring": "\"\"\"\n    Updating a user's password logs out all sessions for the user.\n\n    Take the current request and the updated user object from which the new\n    session hash will be derived and update the session hash appropriately to\n    prevent a password change from logging out the session from which the\n    password was changed.\n    \"\"\""
+    }
+  ],
+  "classes": []
+}

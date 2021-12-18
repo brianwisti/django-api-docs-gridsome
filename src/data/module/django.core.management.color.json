@@ -1,0 +1,49 @@
+{
+  "functions": [
+    {
+      "name": "supports_color",
+      "params": [],
+      "docstring": "\"\"\"\n    Return True if the running system's terminal supports color,\n    and False otherwise.\n    \"\"\""
+    },
+    {
+      "name": "make_style",
+      "params": [
+        {
+          "prefix": "",
+          "name": "config_string",
+          "annotation": null
+        }
+      ],
+      "docstring": "\"\"\"\n    Create a Style object from the given config_string.\n\n    If config_string is empty django.utils.termcolors.DEFAULT_PALETTE is used.\n    \"\"\""
+    },
+    {
+      "name": "no_style",
+      "params": [],
+      "decorators": [
+        {
+          "name": "@functools.lru_cache(maxsize=None)"
+        }
+      ],
+      "docstring": "\"\"\"\n    Return a Style object with no color scheme.\n    \"\"\""
+    },
+    {
+      "name": "color_style",
+      "params": [
+        {
+          "prefix": "",
+          "name": "force_color",
+          "annotation": null
+        }
+      ],
+      "docstring": "\"\"\"\n    Return a Style object from the Django color scheme.\n    \"\"\""
+    }
+  ],
+  "classes": [
+    {
+      "name": "Style",
+      "methods": [],
+      "classes": []
+    }
+  ],
+  "doc": "\"\"\"\nSets up the terminal color scheme.\n\"\"\""
+}

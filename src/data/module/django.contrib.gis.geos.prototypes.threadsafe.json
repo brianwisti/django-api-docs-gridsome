@@ -1,0 +1,22 @@
+{
+  "functions": [],
+  "classes": [
+    {
+      "name": "GEOSContextHandle",
+      "methods": [],
+      "classes": [],
+      "docstring": "\"\"\"Represent a GEOS context handle.\"\"\""
+    },
+    {
+      "name": "GEOSContext",
+      "methods": [],
+      "classes": []
+    },
+    {
+      "name": "GEOSFunc",
+      "methods": [],
+      "classes": [],
+      "docstring": "\"\"\"\n    Serve as a wrapper for GEOS C Functions. Use thread-safe function\n    variants when available.\n    \"\"\""
+    }
+  ]
+}

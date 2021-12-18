@@ -1,0 +1,175 @@
+{
+  "functions": [
+    {
+      "name": "Deserializer",
+      "params": [
+        {
+          "prefix": "",
+          "name": "object_list",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "using",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "ignorenonexistent",
+          "annotation": null
+        },
+        {
+          "prefix": "**",
+          "name": "options",
+          "annotation": null
+        }
+      ],
+      "docstring": "\"\"\"\n    Deserialize simple Python objects back into Django ORM instances.\n\n    It's expected that you pass the Python objects themselves (instead of a\n    stream or a string) to the constructor\n    \"\"\""
+    }
+  ],
+  "classes": [
+    {
+      "name": "Serializer",
+      "methods": [
+        {
+          "name": "start_serialization",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "end_serialization",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "start_object",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "obj",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "end_object",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "obj",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "get_dump_object",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "obj",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "handle_field",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "obj",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "field",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "handle_fk_field",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "obj",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "field",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "handle_m2m_field",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "obj",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "field",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "getvalue",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ]
+        }
+      ],
+      "classes": [],
+      "docstring": "\"\"\"\n    Serialize a QuerySet to basic Python objects.\n    \"\"\""
+    }
+  ],
+  "doc": "\"\"\"\nA Python \"serializer\". Doesn't do much serializing per se -- just converts to\nand from basic Python data types (lists, dicts, strings, etc.). Useful as a basis for\nother serializers.\n\"\"\""
+}

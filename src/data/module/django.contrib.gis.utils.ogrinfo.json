@@ -1,0 +1,22 @@
+{
+  "functions": [
+    {
+      "name": "ogrinfo",
+      "params": [
+        {
+          "prefix": "",
+          "name": "data_source",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "num_features",
+          "annotation": null
+        }
+      ],
+      "docstring": "\"\"\"\n    Walk the available layers in the supplied `data_source`, displaying\n    the fields for the first `num_features` features.\n    \"\"\""
+    }
+  ],
+  "classes": [],
+  "doc": "\"\"\"\nThis module includes some utility functions for inspecting the layout\nof a GDAL data source -- the functionality is analogous to the output\nproduced by the `ogrinfo` utility.\n\"\"\""
+}

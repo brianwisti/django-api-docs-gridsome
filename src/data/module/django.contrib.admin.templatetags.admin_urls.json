@@ -1,0 +1,70 @@
+{
+  "functions": [
+    {
+      "name": "admin_urlname",
+      "params": [
+        {
+          "prefix": "",
+          "name": "value",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "arg",
+          "annotation": null
+        }
+      ],
+      "decorators": [
+        {
+          "name": "@register.filter"
+        }
+      ]
+    },
+    {
+      "name": "admin_urlquote",
+      "params": [
+        {
+          "prefix": "",
+          "name": "value",
+          "annotation": null
+        }
+      ],
+      "decorators": [
+        {
+          "name": "@register.filter"
+        }
+      ]
+    },
+    {
+      "name": "add_preserved_filters",
+      "params": [
+        {
+          "prefix": "",
+          "name": "context",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "url",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "popup",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "to_field",
+          "annotation": null
+        }
+      ],
+      "decorators": [
+        {
+          "name": "@register.simple_tag(takes_context=True)"
+        }
+      ]
+    }
+  ],
+  "classes": []
+}

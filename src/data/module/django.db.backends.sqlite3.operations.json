@@ -1,0 +1,685 @@
+{
+  "functions": [],
+  "classes": [
+    {
+      "name": "DatabaseOperations",
+      "methods": [
+        {
+          "name": "bulk_batch_size",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "fields",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "objs",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        SQLite has a compile-time default (SQLITE_LIMIT_VARIABLE_NUMBER) of\n        999 variables per query.\n\n        If there's only a single field to insert, the limit is 500\n        (SQLITE_MAX_COMPOUND_SELECT).\n        \"\"\""
+        },
+        {
+          "name": "check_expression_support",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "expression",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "date_extract_sql",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "lookup_type",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "field_name",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        Support EXTRACT with a user-defined function django_date_extract()\n        that's registered in connect(). Use single quotes because this is a\n        string and could otherwise cause a collision with a field name.\n        \"\"\""
+        },
+        {
+          "name": "fetch_returned_insert_rows",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "cursor",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        Given a cursor object that has just performed an INSERT...RETURNING\n        statement into a table, return the list of returned data.\n        \"\"\""
+        },
+        {
+          "name": "format_for_duration_arithmetic",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "sql",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"Do nothing since formatting is handled in the custom function.\"\"\""
+        },
+        {
+          "name": "date_trunc_sql",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "lookup_type",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "field_name",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "tzname",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "time_trunc_sql",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "lookup_type",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "field_name",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "tzname",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "datetime_cast_date_sql",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "field_name",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "tzname",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "datetime_cast_time_sql",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "field_name",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "tzname",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "datetime_extract_sql",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "lookup_type",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "field_name",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "tzname",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "datetime_trunc_sql",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "lookup_type",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "field_name",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "tzname",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "time_extract_sql",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "lookup_type",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "field_name",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "pk_default_value",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "last_executed_query",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "cursor",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "sql",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "params",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "quote_name",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "name",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "no_limit_value",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "sql_flush",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "style",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "tables",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "reset_sequences",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "allow_cascade",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "sequence_reset_by_name_sql",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "style",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "sequences",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "adapt_datetimefield_value",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "value",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "adapt_timefield_value",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "value",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "get_db_converters",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "expression",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "convert_datetimefield_value",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "value",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "expression",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "connection",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "convert_datefield_value",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "value",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "expression",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "connection",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "convert_timefield_value",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "value",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "expression",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "connection",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "get_decimalfield_converter",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "expression",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "convert_uuidfield_value",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "value",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "expression",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "connection",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "convert_booleanfield_value",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "value",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "expression",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "connection",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "bulk_insert_sql",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "fields",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "placeholder_rows",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "combine_expression",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "connector",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "sub_expressions",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "combine_duration_expression",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "connector",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "sub_expressions",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "integer_field_range",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "internal_type",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "subtract_temporals",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "internal_type",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "lhs",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "rhs",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "insert_statement",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "ignore_conflicts",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "return_insert_columns",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "fields",
+              "annotation": null
+            }
+          ]
+        }
+      ],
+      "classes": []
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "functions": [
+    {
+      "name": "deconstructible",
+      "params": [
+        {
+          "prefix": "*",
+          "name": "args",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "path",
+          "annotation": null
+        }
+      ],
+      "docstring": "\"\"\"\n    Class decorator that allows the decorated class to be serialized\n    by the migrations subsystem.\n\n    The `path` kwarg specifies the import path.\n    \"\"\""
+    }
+  ],
+  "classes": []
+}

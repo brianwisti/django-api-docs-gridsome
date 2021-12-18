@@ -1,0 +1,356 @@
+{
+  "functions": [],
+  "classes": [
+    {
+      "name": "TimezoneMixin",
+      "methods": [
+        {
+          "name": "get_tzname",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ]
+        }
+      ],
+      "classes": []
+    },
+    {
+      "name": "Extract",
+      "methods": [
+        {
+          "name": "as_sql",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "compiler",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "connection",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "resolve_expression",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "query",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "allow_joins",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "reuse",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "summarize",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "for_save",
+              "annotation": null
+            }
+          ]
+        }
+      ],
+      "classes": []
+    },
+    {
+      "name": "ExtractYear",
+      "methods": [],
+      "classes": []
+    },
+    {
+      "name": "ExtractIsoYear",
+      "methods": [],
+      "classes": [],
+      "docstring": "\"\"\"Return the ISO-8601 week-numbering year.\"\"\""
+    },
+    {
+      "name": "ExtractMonth",
+      "methods": [],
+      "classes": []
+    },
+    {
+      "name": "ExtractDay",
+      "methods": [],
+      "classes": []
+    },
+    {
+      "name": "ExtractWeek",
+      "methods": [],
+      "classes": [],
+      "docstring": "\"\"\"\n    Return 1-52 or 53, based on ISO-8601, i.e., Monday is the first of the\n    week.\n    \"\"\""
+    },
+    {
+      "name": "ExtractWeekDay",
+      "methods": [],
+      "classes": [],
+      "docstring": "\"\"\"\n    Return Sunday=1 through Saturday=7.\n\n    To replicate this in Python: (mydatetime.isoweekday() % 7) + 1\n    \"\"\""
+    },
+    {
+      "name": "ExtractIsoWeekDay",
+      "methods": [],
+      "classes": [],
+      "docstring": "\"\"\"Return Monday=1 through Sunday=7, based on ISO-8601.\"\"\""
+    },
+    {
+      "name": "ExtractQuarter",
+      "methods": [],
+      "classes": []
+    },
+    {
+      "name": "ExtractHour",
+      "methods": [],
+      "classes": []
+    },
+    {
+      "name": "ExtractMinute",
+      "methods": [],
+      "classes": []
+    },
+    {
+      "name": "ExtractSecond",
+      "methods": [],
+      "classes": []
+    },
+    {
+      "name": "Now",
+      "methods": [
+        {
+          "name": "as_postgresql",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "compiler",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "connection",
+              "annotation": null
+            },
+            {
+              "prefix": "**",
+              "name": "extra_context",
+              "annotation": null
+            }
+          ]
+        }
+      ],
+      "classes": []
+    },
+    {
+      "name": "TruncBase",
+      "methods": [
+        {
+          "name": "as_sql",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "compiler",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "connection",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "resolve_expression",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "query",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "allow_joins",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "reuse",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "summarize",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "for_save",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "convert_value",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "value",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "expression",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "connection",
+              "annotation": null
+            }
+          ]
+        }
+      ],
+      "classes": []
+    },
+    {
+      "name": "Trunc",
+      "methods": [],
+      "classes": []
+    },
+    {
+      "name": "TruncYear",
+      "methods": [],
+      "classes": []
+    },
+    {
+      "name": "TruncQuarter",
+      "methods": [],
+      "classes": []
+    },
+    {
+      "name": "TruncMonth",
+      "methods": [],
+      "classes": []
+    },
+    {
+      "name": "TruncWeek",
+      "methods": [],
+      "classes": [],
+      "docstring": "\"\"\"Truncate to midnight on the Monday of the week.\"\"\""
+    },
+    {
+      "name": "TruncDay",
+      "methods": [],
+      "classes": []
+    },
+    {
+      "name": "TruncDate",
+      "methods": [
+        {
+          "name": "as_sql",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "compiler",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "connection",
+              "annotation": null
+            }
+          ]
+        }
+      ],
+      "classes": []
+    },
+    {
+      "name": "TruncTime",
+      "methods": [
+        {
+          "name": "as_sql",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "compiler",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "connection",
+              "annotation": null
+            }
+          ]
+        }
+      ],
+      "classes": []
+    },
+    {
+      "name": "TruncHour",
+      "methods": [],
+      "classes": []
+    },
+    {
+      "name": "TruncMinute",
+      "methods": [],
+      "classes": []
+    },
+    {
+      "name": "TruncSecond",
+      "methods": [],
+      "classes": []
+    }
+  ]
+}

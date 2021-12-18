@@ -1,0 +1,21 @@
+{
+  "functions": [],
+  "classes": [
+    {
+      "name": "ContentTypesConfig",
+      "methods": [
+        {
+          "name": "ready",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ]
+        }
+      ],
+      "classes": []
+    }
+  ]
+}

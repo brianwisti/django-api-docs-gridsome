@@ -1,0 +1,191 @@
+{
+  "functions": [
+    {
+      "name": "add_domain",
+      "params": [
+        {
+          "prefix": "",
+          "name": "domain",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "url",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "secure",
+          "annotation": null
+        }
+      ]
+    }
+  ],
+  "classes": [
+    {
+      "name": "FeedDoesNotExist",
+      "methods": [],
+      "classes": []
+    },
+    {
+      "name": "Feed",
+      "methods": [
+        {
+          "name": "item_title",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "item",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "item_description",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "item",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "item_link",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "item",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "item_enclosures",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "item",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "feed_extra_kwargs",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "obj",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        Return an extra keyword arguments dictionary that is used when\n        initializing the feed generator.\n        \"\"\""
+        },
+        {
+          "name": "item_extra_kwargs",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "item",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        Return an extra keyword arguments dictionary that is used with\n        the `add_item` call of the feed generator.\n        \"\"\""
+        },
+        {
+          "name": "get_object",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "request",
+              "annotation": null
+            },
+            {
+              "prefix": "*",
+              "name": "args",
+              "annotation": null
+            },
+            {
+              "prefix": "**",
+              "name": "kwargs",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "get_context_data",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "**",
+              "name": "kwargs",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        Return a dictionary to use as extra context if either\n        ``self.description_template`` or ``self.item_template`` are used.\n\n        Default implementation preserves the old behavior\n        of using {'obj': item, 'site': current_site} as the context.\n        \"\"\""
+        },
+        {
+          "name": "get_feed",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "obj",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "request",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        Return a feedgenerator.DefaultFeed object, fully populated, for\n        this feed. Raise FeedDoesNotExist for invalid parameters.\n        \"\"\""
+        }
+      ],
+      "classes": []
+    }
+  ]
+}

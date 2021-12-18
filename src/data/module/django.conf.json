@@ -1,0 +1,114 @@
+{
+  "functions": [],
+  "classes": [
+    {
+      "name": "SettingsReference",
+      "methods": [],
+      "classes": [],
+      "docstring": "\"\"\"\n    String subclass which references a current settings value. It's treated as\n    the value in memory but serializes to a settings.NAME attribute reference.\n    \"\"\""
+    },
+    {
+      "name": "LazySettings",
+      "methods": [
+        {
+          "name": "configure",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "default_settings",
+              "annotation": null
+            },
+            {
+              "prefix": "**",
+              "name": "options",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        Called to manually configure the settings. The 'default_settings'\n        parameter sets where to retrieve any unspecified values from (its\n        argument must support attribute access (__getattr__)).\n        \"\"\""
+        },
+        {
+          "name": "configured",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ],
+          "decorators": [
+            {
+              "name": "@property"
+            }
+          ],
+          "docstring": "\"\"\"Return True if the settings have already been configured.\"\"\""
+        },
+        {
+          "name": "USE_L10N",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ],
+          "decorators": [
+            {
+              "name": "@property"
+            }
+          ]
+        }
+      ],
+      "classes": [],
+      "docstring": "\"\"\"\n    A lazy proxy for either global Django settings or a custom settings object.\n    The user can manually configure settings prior to using them. Otherwise,\n    Django uses the settings module pointed to by DJANGO_SETTINGS_MODULE.\n    \"\"\""
+    },
+    {
+      "name": "Settings",
+      "methods": [
+        {
+          "name": "is_overridden",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "setting",
+              "annotation": null
+            }
+          ]
+        }
+      ],
+      "classes": []
+    },
+    {
+      "name": "UserSettingsHolder",
+      "methods": [
+        {
+          "name": "is_overridden",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "setting",
+              "annotation": null
+            }
+          ]
+        }
+      ],
+      "classes": [],
+      "docstring": "\"\"\"Holder for user configured settings.\"\"\""
+    }
+  ],
+  "doc": "\"\"\"\nSettings and configuration for Django.\n\nRead values from the module specified by the DJANGO_SETTINGS_MODULE environment\nvariable, and then from django.conf.global_settings; see the global_settings.py\nfor a list of all possible variables.\n\"\"\""
+}

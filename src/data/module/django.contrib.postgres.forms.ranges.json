@@ -1,0 +1,88 @@
+{
+  "functions": [],
+  "classes": [
+    {
+      "name": "RangeWidget",
+      "methods": [
+        {
+          "name": "decompress",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "value",
+              "annotation": null
+            }
+          ]
+        }
+      ],
+      "classes": []
+    },
+    {
+      "name": "HiddenRangeWidget",
+      "methods": [],
+      "classes": [],
+      "docstring": "\"\"\"A widget that splits input into two <input type=\"hidden\"> inputs.\"\"\""
+    },
+    {
+      "name": "BaseRangeField",
+      "methods": [
+        {
+          "name": "prepare_value",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "value",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "compress",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "values",
+              "annotation": null
+            }
+          ]
+        }
+      ],
+      "classes": []
+    },
+    {
+      "name": "IntegerRangeField",
+      "methods": [],
+      "classes": []
+    },
+    {
+      "name": "DecimalRangeField",
+      "methods": [],
+      "classes": []
+    },
+    {
+      "name": "DateTimeRangeField",
+      "methods": [],
+      "classes": []
+    },
+    {
+      "name": "DateRangeField",
+      "methods": [],
+      "classes": []
+    }
+  ]
+}

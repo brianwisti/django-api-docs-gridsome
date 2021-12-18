@@ -1,0 +1,39 @@
+{
+  "functions": [],
+  "classes": [
+    {
+      "name": "SimpleAdminConfig",
+      "methods": [
+        {
+          "name": "ready",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ]
+        }
+      ],
+      "classes": [],
+      "docstring": "\"\"\"Simple AppConfig which does not do automatic discovery.\"\"\""
+    },
+    {
+      "name": "AdminConfig",
+      "methods": [
+        {
+          "name": "ready",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ]
+        }
+      ],
+      "classes": [],
+      "docstring": "\"\"\"The default AppConfig for admin which does autodiscovery.\"\"\""
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "functions": [],
+  "classes": [
+    {
+      "name": "RedirectAdmin",
+      "methods": [],
+      "classes": [],
+      "decorators": [
+        {
+          "name": "@admin.register(Redirect)"
+        }
+      ]
+    }
+  ]
+}

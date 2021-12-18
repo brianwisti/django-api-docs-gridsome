@@ -1,0 +1,383 @@
+{
+  "functions": [
+    {
+      "name": "wkt_r",
+      "params": []
+    },
+    {
+      "name": "wkt_w",
+      "params": [
+        {
+          "prefix": "",
+          "name": "dim",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "trim",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "precision",
+          "annotation": null
+        }
+      ]
+    },
+    {
+      "name": "wkb_r",
+      "params": []
+    },
+    {
+      "name": "wkb_w",
+      "params": [
+        {
+          "prefix": "",
+          "name": "dim",
+          "annotation": null
+        }
+      ]
+    },
+    {
+      "name": "ewkb_w",
+      "params": [
+        {
+          "prefix": "",
+          "name": "dim",
+          "annotation": null
+        }
+      ]
+    }
+  ],
+  "classes": [
+    {
+      "name": "WKTReader_st",
+      "methods": [],
+      "classes": []
+    },
+    {
+      "name": "WKTWriter_st",
+      "methods": [],
+      "classes": []
+    },
+    {
+      "name": "WKBReader_st",
+      "methods": [],
+      "classes": []
+    },
+    {
+      "name": "WKBWriter_st",
+      "methods": [],
+      "classes": []
+    },
+    {
+      "name": "WKBReadFunc",
+      "methods": [],
+      "classes": []
+    },
+    {
+      "name": "WKBWriteFunc",
+      "methods": [],
+      "classes": []
+    },
+    {
+      "name": "WKBWriterGet",
+      "methods": [],
+      "classes": []
+    },
+    {
+      "name": "WKBWriterSet",
+      "methods": [],
+      "classes": []
+    },
+    {
+      "name": "IOBase",
+      "methods": [],
+      "classes": [],
+      "docstring": "\"Base class for GEOS I/O objects.\""
+    },
+    {
+      "name": "_WKTReader",
+      "methods": [
+        {
+          "name": "read",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "wkt",
+              "annotation": null
+            }
+          ]
+        }
+      ],
+      "classes": []
+    },
+    {
+      "name": "_WKBReader",
+      "methods": [
+        {
+          "name": "read",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "wkb",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"Return a _pointer_ to C GEOS Geometry object from the given WKB.\""
+        }
+      ],
+      "classes": []
+    },
+    {
+      "name": "WKTWriter",
+      "methods": [
+        {
+          "name": "write",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "geom",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"Return the WKT representation of the given geometry.\""
+        },
+        {
+          "name": "outdim",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ],
+          "decorators": [
+            {
+              "name": "@property"
+            }
+          ]
+        },
+        {
+          "name": "outdim",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "new_dim",
+              "annotation": null
+            }
+          ],
+          "decorators": [
+            {
+              "name": "@outdim.setter"
+            }
+          ]
+        },
+        {
+          "name": "trim",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ],
+          "decorators": [
+            {
+              "name": "@property"
+            }
+          ]
+        },
+        {
+          "name": "trim",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "flag",
+              "annotation": null
+            }
+          ],
+          "decorators": [
+            {
+              "name": "@trim.setter"
+            }
+          ]
+        },
+        {
+          "name": "precision",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ],
+          "decorators": [
+            {
+              "name": "@property"
+            }
+          ]
+        },
+        {
+          "name": "precision",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "precision",
+              "annotation": null
+            }
+          ],
+          "decorators": [
+            {
+              "name": "@precision.setter"
+            }
+          ]
+        }
+      ],
+      "classes": []
+    },
+    {
+      "name": "WKBWriter",
+      "methods": [
+        {
+          "name": "write",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "geom",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"Return the WKB representation of the given geometry.\""
+        },
+        {
+          "name": "write_hex",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "geom",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"Return the HEXEWKB representation of the given geometry.\""
+        },
+        {
+          "name": "outdim",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ],
+          "decorators": [
+            {
+              "name": "# Property for getting/setting the output dimension.\n    @property"
+            }
+          ]
+        },
+        {
+          "name": "outdim",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "new_dim",
+              "annotation": null
+            }
+          ],
+          "decorators": [
+            {
+              "name": "@outdim.setter"
+            }
+          ]
+        },
+        {
+          "name": "srid",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ],
+          "decorators": [
+            {
+              "name": "# Property for getting/setting the include srid flag.\n    @property"
+            }
+          ]
+        },
+        {
+          "name": "srid",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "include",
+              "annotation": null
+            }
+          ],
+          "decorators": [
+            {
+              "name": "@srid.setter"
+            }
+          ]
+        }
+      ],
+      "classes": []
+    },
+    {
+      "name": "ThreadLocalIO",
+      "methods": [],
+      "classes": []
+    }
+  ]
+}

@@ -1,0 +1,264 @@
+{
+  "functions": [
+    {
+      "name": "get_return_data_type",
+      "params": [
+        {
+          "prefix": "",
+          "name": "func_name",
+          "annotation": null
+        }
+      ],
+      "docstring": "\"\"\"Return a somewhat-helpful data type given a function name\"\"\""
+    },
+    {
+      "name": "get_readable_field_data_type",
+      "params": [
+        {
+          "prefix": "",
+          "name": "field",
+          "annotation": null
+        }
+      ],
+      "docstring": "\"\"\"\n    Return the description for a given field type, if it exists. Fields'\n    descriptions can contain format strings, which will be interpolated with\n    the values of field.__dict__ before being output.\n    \"\"\""
+    },
+    {
+      "name": "extract_views_from_urlpatterns",
+      "params": [
+        {
+          "prefix": "",
+          "name": "urlpatterns",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "base",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "namespace",
+          "annotation": null
+        }
+      ],
+      "docstring": "\"\"\"\n    Return a list of views from a list of urlpatterns.\n\n    Each object in the returned list is a two-tuple: (view_func, regex)\n    \"\"\""
+    },
+    {
+      "name": "simplify_regex",
+      "params": [
+        {
+          "prefix": "",
+          "name": "pattern",
+          "annotation": null
+        }
+      ],
+      "docstring": "r\"\"\"\n    Clean up urlpattern regexes into something more readable by humans. For\n    example, turn \"^(?P<sport_slug>\\w+)/athletes/(?P<athlete_slug>\\w+)/$\"\n    into \"/<sport_slug>/athletes/<athlete_slug>/\".\n    \"\"\""
+    }
+  ],
+  "classes": [
+    {
+      "name": "BaseAdminDocsView",
+      "methods": [
+        {
+          "name": "dispatch",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "request",
+              "annotation": null
+            },
+            {
+              "prefix": "*",
+              "name": "args",
+              "annotation": null
+            },
+            {
+              "prefix": "**",
+              "name": "kwargs",
+              "annotation": null
+            }
+          ],
+          "decorators": [
+            {
+              "name": "@method_decorator(staff_member_required)"
+            }
+          ]
+        },
+        {
+          "name": "get_context_data",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "**",
+              "name": "kwargs",
+              "annotation": null
+            }
+          ]
+        }
+      ],
+      "classes": [],
+      "docstring": "\"\"\"\n    Base view for admindocs views.\n    \"\"\""
+    },
+    {
+      "name": "BookmarkletsView",
+      "methods": [],
+      "classes": []
+    },
+    {
+      "name": "TemplateTagIndexView",
+      "methods": [
+        {
+          "name": "get_context_data",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "**",
+              "name": "kwargs",
+              "annotation": null
+            }
+          ]
+        }
+      ],
+      "classes": []
+    },
+    {
+      "name": "TemplateFilterIndexView",
+      "methods": [
+        {
+          "name": "get_context_data",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "**",
+              "name": "kwargs",
+              "annotation": null
+            }
+          ]
+        }
+      ],
+      "classes": []
+    },
+    {
+      "name": "ViewIndexView",
+      "methods": [
+        {
+          "name": "get_context_data",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "**",
+              "name": "kwargs",
+              "annotation": null
+            }
+          ]
+        }
+      ],
+      "classes": []
+    },
+    {
+      "name": "ViewDetailView",
+      "methods": [
+        {
+          "name": "get_context_data",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "**",
+              "name": "kwargs",
+              "annotation": null
+            }
+          ]
+        }
+      ],
+      "classes": []
+    },
+    {
+      "name": "ModelIndexView",
+      "methods": [
+        {
+          "name": "get_context_data",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "**",
+              "name": "kwargs",
+              "annotation": null
+            }
+          ]
+        }
+      ],
+      "classes": []
+    },
+    {
+      "name": "ModelDetailView",
+      "methods": [
+        {
+          "name": "get_context_data",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "**",
+              "name": "kwargs",
+              "annotation": null
+            }
+          ]
+        }
+      ],
+      "classes": []
+    },
+    {
+      "name": "TemplateDetailView",
+      "methods": [
+        {
+          "name": "get_context_data",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "**",
+              "name": "kwargs",
+              "annotation": null
+            }
+          ]
+        }
+      ],
+      "classes": []
+    }
+  ]
+}

@@ -1,0 +1,106 @@
+{
+  "functions": [
+    {
+      "name": "Deserializer",
+      "params": [
+        {
+          "prefix": "",
+          "name": "stream_or_string",
+          "annotation": null
+        },
+        {
+          "prefix": "**",
+          "name": "options",
+          "annotation": null
+        }
+      ],
+      "docstring": "\"\"\"Deserialize a stream or string of YAML data.\"\"\""
+    }
+  ],
+  "classes": [
+    {
+      "name": "DjangoSafeDumper",
+      "methods": [
+        {
+          "name": "represent_decimal",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "data",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "represent_ordered_dict",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "data",
+              "annotation": null
+            }
+          ]
+        }
+      ],
+      "classes": []
+    },
+    {
+      "name": "Serializer",
+      "methods": [
+        {
+          "name": "handle_field",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "obj",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "field",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "end_serialization",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "getvalue",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ]
+        }
+      ],
+      "classes": [],
+      "docstring": "\"\"\"Convert a queryset to YAML.\"\"\""
+    }
+  ],
+  "doc": "\"\"\"\nYAML serializer.\n\nRequires PyYaml (https://pyyaml.org/), but that's checked for in __init__.\n\"\"\""
+}

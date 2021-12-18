@@ -1,0 +1,129 @@
+{
+  "functions": [
+    {
+      "name": "resolve",
+      "params": [
+        {
+          "prefix": "",
+          "name": "path",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "urlconf",
+          "annotation": null
+        }
+      ]
+    },
+    {
+      "name": "reverse",
+      "params": [
+        {
+          "prefix": "",
+          "name": "viewname",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "urlconf",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "args",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "kwargs",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "current_app",
+          "annotation": null
+        }
+      ]
+    },
+    {
+      "name": "clear_url_caches",
+      "params": []
+    },
+    {
+      "name": "set_script_prefix",
+      "params": [
+        {
+          "prefix": "",
+          "name": "prefix",
+          "annotation": null
+        }
+      ],
+      "docstring": "\"\"\"\n    Set the script prefix for the current thread.\n    \"\"\""
+    },
+    {
+      "name": "get_script_prefix",
+      "params": [],
+      "docstring": "\"\"\"\n    Return the currently active script prefix. Useful for client code that\n    wishes to construct their own URLs manually (although accessing the request\n    instance is normally going to be a lot cleaner).\n    \"\"\""
+    },
+    {
+      "name": "clear_script_prefix",
+      "params": [],
+      "docstring": "\"\"\"\n    Unset the script prefix for the current thread.\n    \"\"\""
+    },
+    {
+      "name": "set_urlconf",
+      "params": [
+        {
+          "prefix": "",
+          "name": "urlconf_name",
+          "annotation": null
+        }
+      ],
+      "docstring": "\"\"\"\n    Set the URLconf for the current thread (overriding the default one in\n    settings). If urlconf_name is None, revert back to the default.\n    \"\"\""
+    },
+    {
+      "name": "get_urlconf",
+      "params": [
+        {
+          "prefix": "",
+          "name": "default",
+          "annotation": null
+        }
+      ],
+      "docstring": "\"\"\"\n    Return the root URLconf to use for the current thread if it has been\n    changed from the default one.\n    \"\"\""
+    },
+    {
+      "name": "is_valid_path",
+      "params": [
+        {
+          "prefix": "",
+          "name": "path",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "urlconf",
+          "annotation": null
+        }
+      ],
+      "docstring": "\"\"\"\n    Return the ResolverMatch if the given path resolves against the default URL\n    resolver, False otherwise. This is a convenience method to make working\n    with \"is this a match?\" cases easier, avoiding try...except blocks.\n    \"\"\""
+    },
+    {
+      "name": "translate_url",
+      "params": [
+        {
+          "prefix": "",
+          "name": "url",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "lang_code",
+          "annotation": null
+        }
+      ],
+      "docstring": "\"\"\"\n    Given a URL (absolute or relative), try to get its translated version in\n    the `lang_code` language (either by i18n_patterns or by translated regex).\n    Return the original URL if no translated version is found.\n    \"\"\""
+    }
+  ],
+  "classes": []
+}

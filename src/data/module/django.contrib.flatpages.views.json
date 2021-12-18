@@ -1,0 +1,42 @@
+{
+  "functions": [
+    {
+      "name": "flatpage",
+      "params": [
+        {
+          "prefix": "",
+          "name": "request",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "url",
+          "annotation": null
+        }
+      ],
+      "docstring": "\"\"\"\n    Public interface to the flat page view.\n\n    Models: `flatpages.flatpages`\n    Templates: Uses the template defined by the ``template_name`` field,\n        or :template:`flatpages/default.html` if template_name is not defined.\n    Context:\n        flatpage\n            `flatpages.flatpages` object\n    \"\"\""
+    },
+    {
+      "name": "render_flatpage",
+      "params": [
+        {
+          "prefix": "",
+          "name": "request",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "f",
+          "annotation": null
+        }
+      ],
+      "decorators": [
+        {
+          "name": "@csrf_protect"
+        }
+      ],
+      "docstring": "\"\"\"\n    Internal interface to the flat page view.\n    \"\"\""
+    }
+  ],
+  "classes": []
+}

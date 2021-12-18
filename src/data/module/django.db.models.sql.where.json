@@ -1,0 +1,341 @@
+{
+  "functions": [],
+  "classes": [
+    {
+      "name": "WhereNode",
+      "methods": [
+        {
+          "name": "split_having",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "negated",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        Return two possibly None nodes: one for those parts of self that\n        should be included in the WHERE clause and one for those parts of\n        self that must be included in the HAVING clause.\n        \"\"\""
+        },
+        {
+          "name": "as_sql",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "compiler",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "connection",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        Return the SQL version of the where clause and the value to be\n        substituted in. Return '', [] if this node matches everything,\n        None, [] if this node is empty, and raise EmptyResultSet if this\n        node can't match anything.\n        \"\"\""
+        },
+        {
+          "name": "get_group_by_cols",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "alias",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "get_source_expressions",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "set_source_expressions",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "children",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "relabel_aliases",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "change_map",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        Relabel the alias values of any children. 'change_map' is a dictionary\n        mapping old (current) alias values to the new values.\n        \"\"\""
+        },
+        {
+          "name": "clone",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        Create a clone of the tree. Must only be called on root nodes (nodes\n        with empty subtree_parents). Childs must be either (Constraint, lookup,\n        value) tuples, or objects supporting .clone().\n        \"\"\""
+        },
+        {
+          "name": "relabeled_clone",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "change_map",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "copy",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "contains_aggregate",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ],
+          "decorators": [
+            {
+              "name": "@cached_property"
+            }
+          ]
+        },
+        {
+          "name": "contains_over_clause",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ],
+          "decorators": [
+            {
+              "name": "@cached_property"
+            }
+          ]
+        },
+        {
+          "name": "resolve_expression",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "*",
+              "name": "args",
+              "annotation": null
+            },
+            {
+              "prefix": "**",
+              "name": "kwargs",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "output_field",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ],
+          "decorators": [
+            {
+              "name": "@cached_property"
+            }
+          ]
+        },
+        {
+          "name": "select_format",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "compiler",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "sql",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "params",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "get_db_converters",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "connection",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "get_lookup",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "lookup",
+              "annotation": null
+            }
+          ]
+        }
+      ],
+      "classes": [],
+      "docstring": "\"\"\"\n    An SQL WHERE clause.\n\n    The class is tied to the Query class that created it (in order to create\n    the correct SQL).\n\n    A child is usually an expression producing boolean values. Most likely the\n    expression is a Lookup instance.\n\n    However, a child could also be any class with as_sql() and either\n    relabeled_clone() method or relabel_aliases() and clone() methods and\n    contains_aggregate attribute.\n    \"\"\""
+    },
+    {
+      "name": "NothingNode",
+      "methods": [
+        {
+          "name": "as_sql",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "compiler",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "connection",
+              "annotation": null
+            }
+          ]
+        }
+      ],
+      "classes": [],
+      "docstring": "\"\"\"A node that matches nothing.\"\"\""
+    },
+    {
+      "name": "ExtraWhere",
+      "methods": [
+        {
+          "name": "as_sql",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "compiler",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "connection",
+              "annotation": null
+            }
+          ]
+        }
+      ],
+      "classes": []
+    },
+    {
+      "name": "SubqueryConstraint",
+      "methods": [
+        {
+          "name": "as_sql",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "compiler",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "connection",
+              "annotation": null
+            }
+          ]
+        }
+      ],
+      "classes": []
+    }
+  ],
+  "doc": "\"\"\"\nCode to manage the creation and SQL rendering of 'where' constraints.\n\"\"\""
+}

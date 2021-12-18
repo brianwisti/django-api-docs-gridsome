@@ -1,0 +1,37 @@
+{
+  "functions": [
+    {
+      "name": "i18n_patterns",
+      "params": [
+        {
+          "prefix": "*",
+          "name": "urls",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "prefix_default_language",
+          "annotation": null
+        }
+      ],
+      "docstring": "\"\"\"\n    Add the language code prefix to every URL pattern within this function.\n    This may only be used in the root URLconf, not in an included URLconf.\n    \"\"\""
+    },
+    {
+      "name": "is_language_prefix_patterns_used",
+      "params": [
+        {
+          "prefix": "",
+          "name": "urlconf",
+          "annotation": null
+        }
+      ],
+      "decorators": [
+        {
+          "name": "@functools.lru_cache(maxsize=None)"
+        }
+      ],
+      "docstring": "\"\"\"\n    Return a tuple of two booleans: (\n        `True` if i18n_patterns() (LocalePrefixPattern) is used in the URLconf,\n        `True` if the default language should be prefixed\n    )\n    \"\"\""
+    }
+  ],
+  "classes": []
+}

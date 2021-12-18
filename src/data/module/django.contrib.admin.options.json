@@ -1,0 +1,2033 @@
+{
+  "functions": [
+    {
+      "name": "get_content_type_for_model",
+      "params": [
+        {
+          "prefix": "",
+          "name": "obj",
+          "annotation": null
+        }
+      ]
+    },
+    {
+      "name": "get_ul_class",
+      "params": [
+        {
+          "prefix": "",
+          "name": "radio_style",
+          "annotation": null
+        }
+      ]
+    }
+  ],
+  "classes": [
+    {
+      "name": "IncorrectLookupParameters",
+      "methods": [],
+      "classes": []
+    },
+    {
+      "name": "BaseModelAdmin",
+      "methods": [
+        {
+          "name": "check",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "**",
+              "name": "kwargs",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "formfield_for_dbfield",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "db_field",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "request",
+              "annotation": null
+            },
+            {
+              "prefix": "**",
+              "name": "kwargs",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        Hook for specifying the form Field instance for a given database Field\n        instance.\n\n        If kwargs are given, they're passed to the form Field's constructor.\n        \"\"\""
+        },
+        {
+          "name": "formfield_for_choice_field",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "db_field",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "request",
+              "annotation": null
+            },
+            {
+              "prefix": "**",
+              "name": "kwargs",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        Get a form Field for a database Field that has declared choices.\n        \"\"\""
+        },
+        {
+          "name": "get_field_queryset",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "db",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "db_field",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "request",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        If the ModelAdmin specifies ordering, the queryset should respect that\n        ordering.  Otherwise don't specify the queryset, let the field decide\n        (return None in that case).\n        \"\"\""
+        },
+        {
+          "name": "formfield_for_foreignkey",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "db_field",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "request",
+              "annotation": null
+            },
+            {
+              "prefix": "**",
+              "name": "kwargs",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        Get a form Field for a ForeignKey.\n        \"\"\""
+        },
+        {
+          "name": "formfield_for_manytomany",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "db_field",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "request",
+              "annotation": null
+            },
+            {
+              "prefix": "**",
+              "name": "kwargs",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        Get a form Field for a ManyToManyField.\n        \"\"\""
+        },
+        {
+          "name": "get_autocomplete_fields",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "request",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        Return a list of ForeignKey and/or ManyToMany fields which should use\n        an autocomplete widget.\n        \"\"\""
+        },
+        {
+          "name": "get_view_on_site_url",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "obj",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "get_empty_value_display",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        Return the empty_value_display set on ModelAdmin or AdminSite.\n        \"\"\""
+        },
+        {
+          "name": "get_exclude",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "request",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "obj",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        Hook for specifying exclude.\n        \"\"\""
+        },
+        {
+          "name": "get_fields",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "request",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "obj",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        Hook for specifying fields.\n        \"\"\""
+        },
+        {
+          "name": "get_fieldsets",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "request",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "obj",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        Hook for specifying fieldsets.\n        \"\"\""
+        },
+        {
+          "name": "get_inlines",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "request",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "obj",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"Hook for specifying custom inlines.\"\"\""
+        },
+        {
+          "name": "get_ordering",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "request",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        Hook for specifying field ordering.\n        \"\"\""
+        },
+        {
+          "name": "get_readonly_fields",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "request",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "obj",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        Hook for specifying custom readonly fields.\n        \"\"\""
+        },
+        {
+          "name": "get_prepopulated_fields",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "request",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "obj",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        Hook for specifying custom prepopulated fields.\n        \"\"\""
+        },
+        {
+          "name": "get_queryset",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "request",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        Return a QuerySet of all model instances that can be edited by the\n        admin site. This is used by changelist_view.\n        \"\"\""
+        },
+        {
+          "name": "get_sortable_by",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "request",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"Hook for specifying which fields can be sorted in the changelist.\"\"\""
+        },
+        {
+          "name": "lookup_allowed",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "lookup",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "value",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "to_field_allowed",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "request",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "to_field",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        Return True if the model associated with this admin should be\n        allowed to be referenced by the specified field.\n        \"\"\""
+        },
+        {
+          "name": "has_add_permission",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "request",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        Return True if the given request has permission to add an object.\n        Can be overridden by the user in subclasses.\n        \"\"\""
+        },
+        {
+          "name": "has_change_permission",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "request",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "obj",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        Return True if the given request has permission to change the given\n        Django model instance, the default implementation doesn't examine the\n        `obj` parameter.\n\n        Can be overridden by the user in subclasses. In such case it should\n        return True if the given request has permission to change the `obj`\n        model instance. If `obj` is None, this should return True if the given\n        request has permission to change *any* object of the given type.\n        \"\"\""
+        },
+        {
+          "name": "has_delete_permission",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "request",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "obj",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        Return True if the given request has permission to change the given\n        Django model instance, the default implementation doesn't examine the\n        `obj` parameter.\n\n        Can be overridden by the user in subclasses. In such case it should\n        return True if the given request has permission to delete the `obj`\n        model instance. If `obj` is None, this should return True if the given\n        request has permission to delete *any* object of the given type.\n        \"\"\""
+        },
+        {
+          "name": "has_view_permission",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "request",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "obj",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        Return True if the given request has permission to view the given\n        Django model instance. The default implementation doesn't examine the\n        `obj` parameter.\n\n        If overridden by the user in subclasses, it should return True if the\n        given request has permission to view the `obj` model instance. If `obj`\n        is None, it should return True if the request has permission to view\n        any object of the given type.\n        \"\"\""
+        },
+        {
+          "name": "has_view_or_change_permission",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "request",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "obj",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "has_module_permission",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "request",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        Return True if the given request has any permission in the given\n        app label.\n\n        Can be overridden by the user in subclasses. In such case it should\n        return True if the given request has permission to view the module on\n        the admin index page and access the module's index page. Overriding it\n        does not restrict access to the add, change or delete views. Use\n        `ModelAdmin.has_(add|change|delete)_permission` for that.\n        \"\"\""
+        }
+      ],
+      "classes": [],
+      "docstring": "\"\"\"Functionality common to both ModelAdmin and InlineAdmin.\"\"\""
+    },
+    {
+      "name": "ModelAdmin",
+      "methods": [
+        {
+          "name": "get_inline_instances",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "request",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "obj",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "get_urls",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "urls",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ],
+          "decorators": [
+            {
+              "name": "@property"
+            }
+          ]
+        },
+        {
+          "name": "media",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ],
+          "decorators": [
+            {
+              "name": "@property"
+            }
+          ]
+        },
+        {
+          "name": "get_model_perms",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "request",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        Return a dict of all perms for this model. This dict has the keys\n        ``add``, ``change``, ``delete``, and ``view`` mapping to the True/False\n        for each of those actions.\n        \"\"\""
+        },
+        {
+          "name": "get_form",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "request",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "obj",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "change",
+              "annotation": null
+            },
+            {
+              "prefix": "**",
+              "name": "kwargs",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        Return a Form class for use in the admin add view. This is used by\n        add_view and change_view.\n        \"\"\""
+        },
+        {
+          "name": "get_changelist",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "request",
+              "annotation": null
+            },
+            {
+              "prefix": "**",
+              "name": "kwargs",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        Return the ChangeList class for use on the changelist page.\n        \"\"\""
+        },
+        {
+          "name": "get_changelist_instance",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "request",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        Return a `ChangeList` instance based on `request`. May raise\n        `IncorrectLookupParameters`.\n        \"\"\""
+        },
+        {
+          "name": "get_object",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "request",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "object_id",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "from_field",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        Return an instance matching the field and value provided, the primary\n        key is used if no field is provided. Return ``None`` if no match is\n        found or the object_id fails validation.\n        \"\"\""
+        },
+        {
+          "name": "get_changelist_form",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "request",
+              "annotation": null
+            },
+            {
+              "prefix": "**",
+              "name": "kwargs",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        Return a Form class for use in the Formset on the changelist page.\n        \"\"\""
+        },
+        {
+          "name": "get_changelist_formset",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "request",
+              "annotation": null
+            },
+            {
+              "prefix": "**",
+              "name": "kwargs",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        Return a FormSet class for use on the changelist page if list_editable\n        is used.\n        \"\"\""
+        },
+        {
+          "name": "get_formsets_with_inlines",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "request",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "obj",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        Yield formsets and the corresponding inlines.\n        \"\"\""
+        },
+        {
+          "name": "get_paginator",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "request",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "queryset",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "per_page",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "orphans",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "allow_empty_first_page",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "log_addition",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "request",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "obj",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "message",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        Log that an object has been successfully added.\n\n        The default implementation creates an admin LogEntry object.\n        \"\"\""
+        },
+        {
+          "name": "log_change",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "request",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "obj",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "message",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        Log that an object has been successfully changed.\n\n        The default implementation creates an admin LogEntry object.\n        \"\"\""
+        },
+        {
+          "name": "log_deletion",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "request",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "obj",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "object_repr",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        Log that an object will be deleted. Note that this method must be\n        called before the deletion.\n\n        The default implementation creates an admin LogEntry object.\n        \"\"\""
+        },
+        {
+          "name": "action_checkbox",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "obj",
+              "annotation": null
+            }
+          ],
+          "decorators": [
+            {
+              "name": "@display(description=mark_safe('<input type=\"checkbox\" id=\"action-toggle\">'))"
+            }
+          ],
+          "docstring": "\"\"\"\n        A list_display column containing a checkbox widget.\n        \"\"\""
+        },
+        {
+          "name": "get_actions",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "request",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        Return a dictionary mapping the names of all actions for this\n        ModelAdmin to a tuple of (callable, name, description) for each action.\n        \"\"\""
+        },
+        {
+          "name": "get_action_choices",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "request",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "default_choices",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        Return a list of choices for use in a form object.  Each choice is a\n        tuple (name, description).\n        \"\"\""
+        },
+        {
+          "name": "get_action",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "action",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        Return a given action from a parameter, which can either be a callable,\n        or the name of a method on the ModelAdmin.  Return is a tuple of\n        (callable, name, description).\n        \"\"\""
+        },
+        {
+          "name": "get_list_display",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "request",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        Return a sequence containing the fields to be displayed on the\n        changelist.\n        \"\"\""
+        },
+        {
+          "name": "get_list_display_links",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "request",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "list_display",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        Return a sequence containing the fields to be displayed as links\n        on the changelist. The list_display parameter is the list of fields\n        returned by get_list_display().\n        \"\"\""
+        },
+        {
+          "name": "get_list_filter",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "request",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        Return a sequence containing the fields to be displayed as filters in\n        the right sidebar of the changelist page.\n        \"\"\""
+        },
+        {
+          "name": "get_list_select_related",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "request",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        Return a list of fields to add to the select_related() part of the\n        changelist items query.\n        \"\"\""
+        },
+        {
+          "name": "get_search_fields",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "request",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        Return a sequence containing the fields to be searched whenever\n        somebody submits a search query.\n        \"\"\""
+        },
+        {
+          "name": "get_search_results",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "request",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "queryset",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "search_term",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        Return a tuple containing a queryset to implement the search\n        and a boolean indicating if the results may contain duplicates.\n        \"\"\""
+        },
+        {
+          "name": "get_preserved_filters",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "request",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        Return the preserved filters querystring.\n        \"\"\""
+        },
+        {
+          "name": "construct_change_message",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "request",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "form",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "formsets",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "add",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        Construct a JSON structure describing changes from a changed object.\n        \"\"\""
+        },
+        {
+          "name": "message_user",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "request",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "message",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "level",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "extra_tags",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "fail_silently",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        Send a message to the user. The default implementation\n        posts a message using the django.contrib.messages backend.\n\n        Exposes almost the same API as messages.add_message(), but accepts the\n        positional arguments in a different order to maintain backwards\n        compatibility. For convenience, it accepts the `level` argument as\n        a string rather than the usual level number.\n        \"\"\""
+        },
+        {
+          "name": "save_form",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "request",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "form",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "change",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        Given a ModelForm return an unsaved instance. ``change`` is True if\n        the object is being changed, and False if it's being added.\n        \"\"\""
+        },
+        {
+          "name": "save_model",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "request",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "obj",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "form",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "change",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        Given a model instance save it to the database.\n        \"\"\""
+        },
+        {
+          "name": "delete_model",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "request",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "obj",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        Given a model instance delete it from the database.\n        \"\"\""
+        },
+        {
+          "name": "delete_queryset",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "request",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "queryset",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"Given a queryset, delete it from the database.\"\"\""
+        },
+        {
+          "name": "save_formset",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "request",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "form",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "formset",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "change",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        Given an inline formset save it to the database.\n        \"\"\""
+        },
+        {
+          "name": "save_related",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "request",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "form",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "formsets",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "change",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        Given the ``HttpRequest``, the parent ``ModelForm`` instance, the\n        list of inline formsets and a boolean value based on whether the\n        parent is being added or changed, save the related objects to the\n        database. Note that at this point save_form() and save_model() have\n        already been called.\n        \"\"\""
+        },
+        {
+          "name": "render_change_form",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "request",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "context",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "add",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "change",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "form_url",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "obj",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "response_add",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "request",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "obj",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "post_url_continue",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        Determine the HttpResponse for the add_view stage.\n        \"\"\""
+        },
+        {
+          "name": "response_change",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "request",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "obj",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        Determine the HttpResponse for the change_view stage.\n        \"\"\""
+        },
+        {
+          "name": "response_post_save_add",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "request",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "obj",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        Figure out where to redirect after the 'Save' button has been pressed\n        when adding a new object.\n        \"\"\""
+        },
+        {
+          "name": "response_post_save_change",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "request",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "obj",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        Figure out where to redirect after the 'Save' button has been pressed\n        when editing an existing object.\n        \"\"\""
+        },
+        {
+          "name": "response_action",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "request",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "queryset",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        Handle an admin action. This is called if a request is POSTed to the\n        changelist; it returns an HttpResponse if the action was handled, and\n        None otherwise.\n        \"\"\""
+        },
+        {
+          "name": "response_delete",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "request",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "obj_display",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "obj_id",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        Determine the HttpResponse for the delete_view stage.\n        \"\"\""
+        },
+        {
+          "name": "render_delete_form",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "request",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "context",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "get_inline_formsets",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "request",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "formsets",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "inline_instances",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "obj",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "get_changeform_initial_data",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "request",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        Get the initial form data from the request's GET params.\n        \"\"\""
+        },
+        {
+          "name": "changeform_view",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "request",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "object_id",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "form_url",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "extra_context",
+              "annotation": null
+            }
+          ],
+          "decorators": [
+            {
+              "name": "@csrf_protect_m"
+            }
+          ]
+        },
+        {
+          "name": "add_view",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "request",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "form_url",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "extra_context",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "change_view",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "request",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "object_id",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "form_url",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "extra_context",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "changelist_view",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "request",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "extra_context",
+              "annotation": null
+            }
+          ],
+          "decorators": [
+            {
+              "name": "@csrf_protect_m"
+            }
+          ],
+          "docstring": "\"\"\"\n        The 'change list' admin view for this model.\n        \"\"\""
+        },
+        {
+          "name": "get_deleted_objects",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "objs",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "request",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        Hook for customizing the delete process for the delete view and the\n        \"delete selected\" action.\n        \"\"\""
+        },
+        {
+          "name": "delete_view",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "request",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "object_id",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "extra_context",
+              "annotation": null
+            }
+          ],
+          "decorators": [
+            {
+              "name": "@csrf_protect_m"
+            }
+          ]
+        },
+        {
+          "name": "history_view",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "request",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "object_id",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "extra_context",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"The 'history' admin view for this model.\""
+        },
+        {
+          "name": "get_formset_kwargs",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "request",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "obj",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "inline",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "prefix",
+              "annotation": null
+            }
+          ]
+        }
+      ],
+      "classes": [],
+      "docstring": "\"\"\"Encapsulate all admin options and functionality for a given model.\"\"\""
+    },
+    {
+      "name": "InlineModelAdmin",
+      "methods": [
+        {
+          "name": "media",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ],
+          "decorators": [
+            {
+              "name": "@property"
+            }
+          ]
+        },
+        {
+          "name": "get_extra",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "request",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "obj",
+              "annotation": null
+            },
+            {
+              "prefix": "**",
+              "name": "kwargs",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"Hook for customizing the number of extra inline forms.\"\"\""
+        },
+        {
+          "name": "get_min_num",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "request",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "obj",
+              "annotation": null
+            },
+            {
+              "prefix": "**",
+              "name": "kwargs",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"Hook for customizing the min number of inline forms.\"\"\""
+        },
+        {
+          "name": "get_max_num",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "request",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "obj",
+              "annotation": null
+            },
+            {
+              "prefix": "**",
+              "name": "kwargs",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"Hook for customizing the max number of extra inline forms.\"\"\""
+        },
+        {
+          "name": "get_formset",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "request",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "obj",
+              "annotation": null
+            },
+            {
+              "prefix": "**",
+              "name": "kwargs",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"Return a BaseInlineFormSet class for use in admin add/change views.\"\"\""
+        },
+        {
+          "name": "get_queryset",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "request",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "has_add_permission",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "request",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "obj",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "has_change_permission",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "request",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "obj",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "has_delete_permission",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "request",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "obj",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "has_view_permission",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "request",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "obj",
+              "annotation": null
+            }
+          ]
+        }
+      ],
+      "classes": [],
+      "docstring": "\"\"\"\n    Options for inline editing of ``model`` instances.\n\n    Provide ``fk_name`` to specify the attribute name of the ``ForeignKey``\n    from ``model`` to its parent. This is required if ``model`` has more than\n    one ``ForeignKey`` to its parent.\n    \"\"\""
+    },
+    {
+      "name": "StackedInline",
+      "methods": [],
+      "classes": []
+    },
+    {
+      "name": "TabularInline",
+      "methods": [],
+      "classes": []
+    }
+  ]
+}

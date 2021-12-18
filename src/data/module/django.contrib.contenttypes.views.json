@@ -1,0 +1,26 @@
+{
+  "functions": [
+    {
+      "name": "shortcut",
+      "params": [
+        {
+          "prefix": "",
+          "name": "request",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "content_type_id",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "object_id",
+          "annotation": null
+        }
+      ],
+      "docstring": "\"\"\"\n    Redirect to an object's page based on a content-type ID and an object ID.\n    \"\"\""
+    }
+  ],
+  "classes": []
+}

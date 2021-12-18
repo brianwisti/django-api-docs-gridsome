@@ -1,0 +1,160 @@
+{
+  "functions": [],
+  "classes": [
+    {
+      "name": "CommonMiddleware",
+      "methods": [
+        {
+          "name": "process_request",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "request",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        Check for denied User-Agents and rewrite the URL based on\n        settings.APPEND_SLASH and settings.PREPEND_WWW\n        \"\"\""
+        },
+        {
+          "name": "should_redirect_with_slash",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "request",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        Return True if settings.APPEND_SLASH is True and appending a slash to\n        the request path turns an invalid path into a valid one.\n        \"\"\""
+        },
+        {
+          "name": "get_full_path_with_slash",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "request",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        Return the full path of the request with a trailing slash appended.\n\n        Raise a RuntimeError if settings.DEBUG is True and request.method is\n        POST, PUT, or PATCH.\n        \"\"\""
+        },
+        {
+          "name": "process_response",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "request",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "response",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        When the status code of the response is 404, it may redirect to a path\n        with an appended slash if should_redirect_with_slash() returns True.\n        \"\"\""
+        }
+      ],
+      "classes": [],
+      "docstring": "\"\"\"\n    \"Common\" middleware for taking care of some basic operations:\n\n        - Forbid access to User-Agents in settings.DISALLOWED_USER_AGENTS\n\n        - URL rewriting: Based on the APPEND_SLASH and PREPEND_WWW settings,\n          append missing slashes and/or prepends missing \"www.\"s.\n\n            - If APPEND_SLASH is set and the initial URL doesn't end with a\n              slash, and it is not found in urlpatterns, form a new URL by\n              appending a slash at the end. If this new URL is found in\n              urlpatterns, return an HTTP redirect to this new URL; otherwise\n              process the initial URL as usual.\n\n          This behavior can be customized by subclassing CommonMiddleware and\n          overriding the response_redirect_class attribute.\n    \"\"\""
+    },
+    {
+      "name": "BrokenLinkEmailsMiddleware",
+      "methods": [
+        {
+          "name": "process_response",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "request",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "response",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"Send broken link emails for relevant 404 NOT FOUND responses.\"\"\""
+        },
+        {
+          "name": "is_internal_request",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "domain",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "referer",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        Return True if the referring URL is the same domain as the current\n        request.\n        \"\"\""
+        },
+        {
+          "name": "is_ignorable_request",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "request",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "uri",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "domain",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "referer",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        Return True if the given request *shouldn't* notify the site managers\n        according to project settings or in situations outlined by the inline\n        comments.\n        \"\"\""
+        }
+      ],
+      "classes": []
+    }
+  ]
+}

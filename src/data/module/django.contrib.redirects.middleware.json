@@ -1,0 +1,31 @@
+{
+  "functions": [],
+  "classes": [
+    {
+      "name": "RedirectFallbackMiddleware",
+      "methods": [
+        {
+          "name": "process_response",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "request",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "response",
+              "annotation": null
+            }
+          ]
+        }
+      ],
+      "classes": []
+    }
+  ]
+}

@@ -1,0 +1,281 @@
+{
+  "functions": [
+    {
+      "name": "paginator_number",
+      "params": [
+        {
+          "prefix": "",
+          "name": "cl",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "i",
+          "annotation": null
+        }
+      ],
+      "decorators": [
+        {
+          "name": "@register.simple_tag"
+        }
+      ],
+      "docstring": "\"\"\"\n    Generate an individual page index link in a paginated list.\n    \"\"\""
+    },
+    {
+      "name": "pagination",
+      "params": [
+        {
+          "prefix": "",
+          "name": "cl",
+          "annotation": null
+        }
+      ],
+      "docstring": "\"\"\"\n    Generate the series of links to the pages in a paginated list.\n    \"\"\""
+    },
+    {
+      "name": "pagination_tag",
+      "params": [
+        {
+          "prefix": "",
+          "name": "parser",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "token",
+          "annotation": null
+        }
+      ],
+      "decorators": [
+        {
+          "name": "@register.tag(name='pagination')"
+        }
+      ]
+    },
+    {
+      "name": "result_headers",
+      "params": [
+        {
+          "prefix": "",
+          "name": "cl",
+          "annotation": null
+        }
+      ],
+      "docstring": "\"\"\"\n    Generate the list column headers.\n    \"\"\""
+    },
+    {
+      "name": "items_for_result",
+      "params": [
+        {
+          "prefix": "",
+          "name": "cl",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "result",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "form",
+          "annotation": null
+        }
+      ],
+      "docstring": "\"\"\"\n    Generate the actual list of data.\n    \"\"\""
+    },
+    {
+      "name": "results",
+      "params": [
+        {
+          "prefix": "",
+          "name": "cl",
+          "annotation": null
+        }
+      ]
+    },
+    {
+      "name": "result_hidden_fields",
+      "params": [
+        {
+          "prefix": "",
+          "name": "cl",
+          "annotation": null
+        }
+      ]
+    },
+    {
+      "name": "result_list",
+      "params": [
+        {
+          "prefix": "",
+          "name": "cl",
+          "annotation": null
+        }
+      ],
+      "docstring": "\"\"\"\n    Display the headers and data list together.\n    \"\"\""
+    },
+    {
+      "name": "result_list_tag",
+      "params": [
+        {
+          "prefix": "",
+          "name": "parser",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "token",
+          "annotation": null
+        }
+      ],
+      "decorators": [
+        {
+          "name": "@register.tag(name='result_list')"
+        }
+      ]
+    },
+    {
+      "name": "date_hierarchy",
+      "params": [
+        {
+          "prefix": "",
+          "name": "cl",
+          "annotation": null
+        }
+      ],
+      "docstring": "\"\"\"\n    Display the date hierarchy for date drill-down functionality.\n    \"\"\""
+    },
+    {
+      "name": "date_hierarchy_tag",
+      "params": [
+        {
+          "prefix": "",
+          "name": "parser",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "token",
+          "annotation": null
+        }
+      ],
+      "decorators": [
+        {
+          "name": "@register.tag(name='date_hierarchy')"
+        }
+      ]
+    },
+    {
+      "name": "search_form",
+      "params": [
+        {
+          "prefix": "",
+          "name": "cl",
+          "annotation": null
+        }
+      ],
+      "docstring": "\"\"\"\n    Display a search form for searching the list.\n    \"\"\""
+    },
+    {
+      "name": "search_form_tag",
+      "params": [
+        {
+          "prefix": "",
+          "name": "parser",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "token",
+          "annotation": null
+        }
+      ],
+      "decorators": [
+        {
+          "name": "@register.tag(name='search_form')"
+        }
+      ]
+    },
+    {
+      "name": "admin_list_filter",
+      "params": [
+        {
+          "prefix": "",
+          "name": "cl",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "spec",
+          "annotation": null
+        }
+      ],
+      "decorators": [
+        {
+          "name": "@register.simple_tag"
+        }
+      ]
+    },
+    {
+      "name": "admin_actions",
+      "params": [
+        {
+          "prefix": "",
+          "name": "context",
+          "annotation": null
+        }
+      ],
+      "docstring": "\"\"\"\n    Track the number of times the action field has been rendered on the page,\n    so we know which value to use.\n    \"\"\""
+    },
+    {
+      "name": "admin_actions_tag",
+      "params": [
+        {
+          "prefix": "",
+          "name": "parser",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "token",
+          "annotation": null
+        }
+      ],
+      "decorators": [
+        {
+          "name": "@register.tag(name='admin_actions')"
+        }
+      ]
+    },
+    {
+      "name": "change_list_object_tools_tag",
+      "params": [
+        {
+          "prefix": "",
+          "name": "parser",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "token",
+          "annotation": null
+        }
+      ],
+      "decorators": [
+        {
+          "name": "@register.tag(name='change_list_object_tools')"
+        }
+      ],
+      "docstring": "\"\"\"Display the row of change list object tools.\"\"\""
+    }
+  ],
+  "classes": [
+    {
+      "name": "ResultList",
+      "methods": [],
+      "classes": [],
+      "docstring": "\"\"\"\n    Wrapper class used to return items in a list_editable changelist, annotated\n    with the form object for error reporting purposes. Needed to maintain\n    backwards compatibility with existing admin templates.\n    \"\"\""
+    }
+  ]
+}

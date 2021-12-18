@@ -1,0 +1,27 @@
+{
+  "functions": [
+    {
+      "name": "vary_on_headers",
+      "params": [
+        {
+          "prefix": "*",
+          "name": "headers",
+          "annotation": null
+        }
+      ],
+      "docstring": "\"\"\"\n    A view decorator that adds the specified headers to the Vary header of the\n    response. Usage:\n\n       @vary_on_headers('Cookie', 'Accept-language')\n       def index(request):\n           ...\n\n    Note that the header names are not case-sensitive.\n    \"\"\""
+    },
+    {
+      "name": "vary_on_cookie",
+      "params": [
+        {
+          "prefix": "",
+          "name": "func",
+          "annotation": null
+        }
+      ],
+      "docstring": "\"\"\"\n    A view decorator that adds \"Cookie\" to the Vary header of a response. This\n    indicates that a page's contents depends on cookies. Usage:\n\n        @vary_on_cookie\n        def index(request):\n            ...\n    \"\"\""
+    }
+  ],
+  "classes": []
+}

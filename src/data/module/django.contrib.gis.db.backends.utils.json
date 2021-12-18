@@ -1,0 +1,58 @@
+{
+  "functions": [],
+  "classes": [
+    {
+      "name": "SpatialOperator",
+      "methods": [
+        {
+          "name": "default_template",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ],
+          "decorators": [
+            {
+              "name": "@property"
+            }
+          ]
+        },
+        {
+          "name": "as_sql",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "connection",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "lookup",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "template_params",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "sql_params",
+              "annotation": null
+            }
+          ]
+        }
+      ],
+      "classes": [],
+      "docstring": "\"\"\"\n    Class encapsulating the behavior specific to a GIS operation (used by lookups).\n    \"\"\""
+    }
+  ],
+  "doc": "\"\"\"\nA collection of utility routines and classes used by the spatial\nbackends.\n\"\"\""
+}

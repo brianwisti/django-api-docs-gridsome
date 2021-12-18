@@ -1,0 +1,35 @@
+{
+  "functions": [
+    {
+      "name": "check_generic_foreign_keys",
+      "params": [
+        {
+          "prefix": "",
+          "name": "app_configs",
+          "annotation": null
+        },
+        {
+          "prefix": "**",
+          "name": "kwargs",
+          "annotation": null
+        }
+      ]
+    },
+    {
+      "name": "check_model_name_lengths",
+      "params": [
+        {
+          "prefix": "",
+          "name": "app_configs",
+          "annotation": null
+        },
+        {
+          "prefix": "**",
+          "name": "kwargs",
+          "annotation": null
+        }
+      ]
+    }
+  ],
+  "classes": []
+}

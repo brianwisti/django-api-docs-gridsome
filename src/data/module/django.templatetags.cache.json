@@ -1,0 +1,48 @@
+{
+  "functions": [
+    {
+      "name": "do_cache",
+      "params": [
+        {
+          "prefix": "",
+          "name": "parser",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "token",
+          "annotation": null
+        }
+      ],
+      "decorators": [
+        {
+          "name": "@register.tag('cache')"
+        }
+      ],
+      "docstring": "\"\"\"\n    This will cache the contents of a template fragment for a given amount\n    of time.\n\n    Usage::\n\n        {% load cache %}\n        {% cache [expire_time] [fragment_name] %}\n            .. some expensive processing ..\n        {% endcache %}\n\n    This tag also supports varying by a list of arguments::\n\n        {% load cache %}\n        {% cache [expire_time] [fragment_name] [var1] [var2] .. %}\n            .. some expensive processing ..\n        {% endcache %}\n\n    Optionally the cache to use may be specified thus::\n\n        {% cache ....  using=\"cachename\" %}\n\n    Each unique set of arguments will result in a unique cache entry.\n    \"\"\""
+    }
+  ],
+  "classes": [
+    {
+      "name": "CacheNode",
+      "methods": [
+        {
+          "name": "render",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "context",
+              "annotation": null
+            }
+          ]
+        }
+      ],
+      "classes": []
+    }
+  ]
+}

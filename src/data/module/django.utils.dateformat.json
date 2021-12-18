@@ -1,0 +1,501 @@
+{
+  "functions": [
+    {
+      "name": "format",
+      "params": [
+        {
+          "prefix": "",
+          "name": "value",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "format_string",
+          "annotation": null
+        }
+      ],
+      "docstring": "\"Convenience function\""
+    },
+    {
+      "name": "time_format",
+      "params": [
+        {
+          "prefix": "",
+          "name": "value",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "format_string",
+          "annotation": null
+        }
+      ],
+      "docstring": "\"Convenience function\""
+    }
+  ],
+  "classes": [
+    {
+      "name": "Formatter",
+      "methods": [
+        {
+          "name": "format",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "formatstr",
+              "annotation": null
+            }
+          ]
+        }
+      ],
+      "classes": []
+    },
+    {
+      "name": "TimeFormat",
+      "methods": [
+        {
+          "name": "a",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"'a.m.' or 'p.m.'\""
+        },
+        {
+          "name": "A",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"'AM' or 'PM'\""
+        },
+        {
+          "name": "e",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        Timezone name.\n\n        If timezone information is not available, return an empty string.\n        \"\"\""
+        },
+        {
+          "name": "f",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        Time, in 12-hour hours and minutes, with minutes left off if they're\n        zero.\n        Examples: '1', '1:30', '2:05', '2'\n        Proprietary extension.\n        \"\"\""
+        },
+        {
+          "name": "g",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"Hour, 12-hour format without leading zeros; i.e. '1' to '12'\""
+        },
+        {
+          "name": "G",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"Hour, 24-hour format without leading zeros; i.e. '0' to '23'\""
+        },
+        {
+          "name": "h",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"Hour, 12-hour format; i.e. '01' to '12'\""
+        },
+        {
+          "name": "H",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"Hour, 24-hour format; i.e. '00' to '23'\""
+        },
+        {
+          "name": "i",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"Minutes; i.e. '00' to '59'\""
+        },
+        {
+          "name": "O",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        Difference to Greenwich time in hours; e.g. '+0200', '-0430'.\n\n        If timezone information is not available, return an empty string.\n        \"\"\""
+        },
+        {
+          "name": "P",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        Time, in 12-hour hours, minutes and 'a.m.'/'p.m.', with minutes left off\n        if they're zero and the strings 'midnight' and 'noon' if appropriate.\n        Examples: '1 a.m.', '1:30 p.m.', 'midnight', 'noon', '12:30 p.m.'\n        Proprietary extension.\n        \"\"\""
+        },
+        {
+          "name": "s",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"Seconds; i.e. '00' to '59'\""
+        },
+        {
+          "name": "T",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        Time zone of this machine; e.g. 'EST' or 'MDT'.\n\n        If timezone information is not available, return an empty string.\n        \"\"\""
+        },
+        {
+          "name": "u",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"Microseconds; i.e. '000000' to '999999'\""
+        },
+        {
+          "name": "Z",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        Time zone offset in seconds (i.e. '-43200' to '43200'). The offset for\n        timezones west of UTC is always negative, and for those east of UTC is\n        always positive.\n\n        If timezone information is not available, return an empty string.\n        \"\"\""
+        }
+      ],
+      "classes": []
+    },
+    {
+      "name": "DateFormat",
+      "methods": [
+        {
+          "name": "b",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"Month, textual, 3 letters, lowercase; e.g. 'jan'\""
+        },
+        {
+          "name": "c",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        ISO 8601 Format\n        Example : '2008-01-02T10:30:00.000123'\n        \"\"\""
+        },
+        {
+          "name": "d",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"Day of the month, 2 digits with leading zeros; i.e. '01' to '31'\""
+        },
+        {
+          "name": "D",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"Day of the week, textual, 3 letters; e.g. 'Fri'\""
+        },
+        {
+          "name": "E",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"Alternative month names as required by some locales. Proprietary extension.\""
+        },
+        {
+          "name": "F",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"Month, textual, long; e.g. 'January'\""
+        },
+        {
+          "name": "I",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"'1' if daylight saving time, '0' otherwise.\""
+        },
+        {
+          "name": "j",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"Day of the month without leading zeros; i.e. '1' to '31'\""
+        },
+        {
+          "name": "l",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"Day of the week, textual, long; e.g. 'Friday'\""
+        },
+        {
+          "name": "L",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"Boolean for whether it is a leap year; i.e. True or False\""
+        },
+        {
+          "name": "m",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"Month; i.e. '01' to '12'\""
+        },
+        {
+          "name": "M",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"Month, textual, 3 letters; e.g. 'Jan'\""
+        },
+        {
+          "name": "n",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"Month without leading zeros; i.e. '1' to '12'\""
+        },
+        {
+          "name": "N",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"Month abbreviation in Associated Press style. Proprietary extension.\""
+        },
+        {
+          "name": "o",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"ISO 8601 year number matching the ISO week number (W)\""
+        },
+        {
+          "name": "r",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"RFC 5322 formatted date; e.g. 'Thu, 21 Dec 2000 16:01:07 +0200'\""
+        },
+        {
+          "name": "S",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"English ordinal suffix for the day of the month, 2 characters; i.e. 'st', 'nd', 'rd' or 'th'\""
+        },
+        {
+          "name": "t",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"Number of days in the given month; i.e. '28' to '31'\""
+        },
+        {
+          "name": "U",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"Seconds since the Unix epoch (January 1 1970 00:00:00 GMT)\""
+        },
+        {
+          "name": "w",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"Day of the week, numeric, i.e. '0' (Sunday) to '6' (Saturday)\""
+        },
+        {
+          "name": "W",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"ISO-8601 week number of year, weeks starting on Monday\""
+        },
+        {
+          "name": "y",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"Year, 2 digits with leading zeros; e.g. '99'.\"\"\""
+        },
+        {
+          "name": "Y",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"Year, 4 digits with leading zeros; e.g. '1999'.\"\"\""
+        },
+        {
+          "name": "z",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"Day of the year, i.e. 1 to 366.\"\"\""
+        }
+      ],
+      "classes": []
+    }
+  ],
+  "doc": "\"\"\"\nPHP date() style date formatting\nSee http://www.php.net/date for format strings\n\nUsage:\n>>> import datetime\n>>> d = datetime.datetime.now()\n>>> df = DateFormat(d)\n>>> print(df.format('jS F Y H:i'))\n7th October 2003 11:39\n>>>\n\"\"\""
+}

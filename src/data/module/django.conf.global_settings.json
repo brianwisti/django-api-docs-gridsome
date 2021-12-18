@@ -1,0 +1,16 @@
+{
+  "functions": [
+    {
+      "name": "gettext_noop",
+      "params": [
+        {
+          "prefix": "",
+          "name": "s",
+          "annotation": null
+        }
+      ]
+    }
+  ],
+  "classes": [],
+  "doc": "\"\"\"\nDefault Django settings. Override these with settings in the module pointed to\nby the DJANGO_SETTINGS_MODULE environment variable.\n\"\"\""
+}

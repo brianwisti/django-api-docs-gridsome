@@ -1,0 +1,41 @@
+{
+  "functions": [],
+  "classes": [
+    {
+      "name": "DatabaseFeatures",
+      "methods": [
+        {
+          "name": "supports_area_geodetic",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ],
+          "decorators": [
+            {
+              "name": "@cached_property"
+            }
+          ]
+        },
+        {
+          "name": "django_test_skips",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ],
+          "decorators": [
+            {
+              "name": "@cached_property"
+            }
+          ]
+        }
+      ],
+      "classes": []
+    }
+  ]
+}

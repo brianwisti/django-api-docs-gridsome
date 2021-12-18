@@ -1,0 +1,29 @@
+{
+  "functions": [],
+  "classes": [
+    {
+      "name": "EmailBackend",
+      "methods": [
+        {
+          "name": "send_messages",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "messages",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"Redirect messages to the dummy outbox\"\"\""
+        }
+      ],
+      "classes": [],
+      "docstring": "\"\"\"\n    An email backend for use during test sessions.\n\n    The test connection stores email messages in a dummy outbox,\n    rather than sending them out on the wire.\n\n    The dummy outbox is accessible through the outbox instance attribute.\n    \"\"\""
+    }
+  ],
+  "doc": "\"\"\"\nBackend for test environment.\n\"\"\""
+}

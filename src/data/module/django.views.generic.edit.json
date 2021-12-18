@@ -1,0 +1,530 @@
+{
+  "functions": [],
+  "classes": [
+    {
+      "name": "FormMixin",
+      "methods": [
+        {
+          "name": "get_initial",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"Return the initial data to use for forms on this view.\"\"\""
+        },
+        {
+          "name": "get_prefix",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"Return the prefix to use for forms.\"\"\""
+        },
+        {
+          "name": "get_form_class",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"Return the form class to use.\"\"\""
+        },
+        {
+          "name": "get_form",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "form_class",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"Return an instance of the form to be used in this view.\"\"\""
+        },
+        {
+          "name": "get_form_kwargs",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"Return the keyword arguments for instantiating the form.\"\"\""
+        },
+        {
+          "name": "get_success_url",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"Return the URL to redirect to after processing a valid form.\"\"\""
+        },
+        {
+          "name": "form_valid",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "form",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"If the form is valid, redirect to the supplied URL.\"\"\""
+        },
+        {
+          "name": "form_invalid",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "form",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"If the form is invalid, render the invalid form.\"\"\""
+        },
+        {
+          "name": "get_context_data",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "**",
+              "name": "kwargs",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"Insert the form into the context dict.\"\"\""
+        }
+      ],
+      "classes": [],
+      "docstring": "\"\"\"Provide a way to show and handle a form in a request.\"\"\""
+    },
+    {
+      "name": "ModelFormMixin",
+      "methods": [
+        {
+          "name": "get_form_class",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"Return the form class to use in this view.\"\"\""
+        },
+        {
+          "name": "get_form_kwargs",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"Return the keyword arguments for instantiating the form.\"\"\""
+        },
+        {
+          "name": "get_success_url",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"Return the URL to redirect to after processing a valid form.\"\"\""
+        },
+        {
+          "name": "form_valid",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "form",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"If the form is valid, save the associated model.\"\"\""
+        }
+      ],
+      "classes": [],
+      "docstring": "\"\"\"Provide a way to show and handle a ModelForm in a request.\"\"\""
+    },
+    {
+      "name": "ProcessFormView",
+      "methods": [
+        {
+          "name": "get",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "request",
+              "annotation": null
+            },
+            {
+              "prefix": "*",
+              "name": "args",
+              "annotation": null
+            },
+            {
+              "prefix": "**",
+              "name": "kwargs",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"Handle GET requests: instantiate a blank version of the form.\"\"\""
+        },
+        {
+          "name": "post",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "request",
+              "annotation": null
+            },
+            {
+              "prefix": "*",
+              "name": "args",
+              "annotation": null
+            },
+            {
+              "prefix": "**",
+              "name": "kwargs",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        Handle POST requests: instantiate a form instance with the passed\n        POST variables and then check if it's valid.\n        \"\"\""
+        },
+        {
+          "name": "put",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "*",
+              "name": "args",
+              "annotation": null
+            },
+            {
+              "prefix": "**",
+              "name": "kwargs",
+              "annotation": null
+            }
+          ]
+        }
+      ],
+      "classes": [],
+      "docstring": "\"\"\"Render a form on GET and processes it on POST.\"\"\""
+    },
+    {
+      "name": "BaseFormView",
+      "methods": [],
+      "classes": [],
+      "docstring": "\"\"\"A base view for displaying a form.\"\"\""
+    },
+    {
+      "name": "FormView",
+      "methods": [],
+      "classes": [],
+      "docstring": "\"\"\"A view for displaying a form and rendering a template response.\"\"\""
+    },
+    {
+      "name": "BaseCreateView",
+      "methods": [
+        {
+          "name": "get",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "request",
+              "annotation": null
+            },
+            {
+              "prefix": "*",
+              "name": "args",
+              "annotation": null
+            },
+            {
+              "prefix": "**",
+              "name": "kwargs",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "post",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "request",
+              "annotation": null
+            },
+            {
+              "prefix": "*",
+              "name": "args",
+              "annotation": null
+            },
+            {
+              "prefix": "**",
+              "name": "kwargs",
+              "annotation": null
+            }
+          ]
+        }
+      ],
+      "classes": [],
+      "docstring": "\"\"\"\n    Base view for creating a new object instance.\n\n    Using this base class requires subclassing to provide a response mixin.\n    \"\"\""
+    },
+    {
+      "name": "CreateView",
+      "methods": [],
+      "classes": [],
+      "docstring": "\"\"\"\n    View for creating a new object, with a response rendered by a template.\n    \"\"\""
+    },
+    {
+      "name": "BaseUpdateView",
+      "methods": [
+        {
+          "name": "get",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "request",
+              "annotation": null
+            },
+            {
+              "prefix": "*",
+              "name": "args",
+              "annotation": null
+            },
+            {
+              "prefix": "**",
+              "name": "kwargs",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "post",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "request",
+              "annotation": null
+            },
+            {
+              "prefix": "*",
+              "name": "args",
+              "annotation": null
+            },
+            {
+              "prefix": "**",
+              "name": "kwargs",
+              "annotation": null
+            }
+          ]
+        }
+      ],
+      "classes": [],
+      "docstring": "\"\"\"\n    Base view for updating an existing object.\n\n    Using this base class requires subclassing to provide a response mixin.\n    \"\"\""
+    },
+    {
+      "name": "UpdateView",
+      "methods": [],
+      "classes": [],
+      "docstring": "\"\"\"View for updating an object, with a response rendered by a template.\"\"\""
+    },
+    {
+      "name": "DeletionMixin",
+      "methods": [
+        {
+          "name": "delete",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "request",
+              "annotation": null
+            },
+            {
+              "prefix": "*",
+              "name": "args",
+              "annotation": null
+            },
+            {
+              "prefix": "**",
+              "name": "kwargs",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        Call the delete() method on the fetched object and then redirect to the\n        success URL.\n        \"\"\""
+        },
+        {
+          "name": "post",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "request",
+              "annotation": null
+            },
+            {
+              "prefix": "*",
+              "name": "args",
+              "annotation": null
+            },
+            {
+              "prefix": "**",
+              "name": "kwargs",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "get_success_url",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ]
+        }
+      ],
+      "classes": [],
+      "docstring": "\"\"\"Provide the ability to delete objects.\"\"\""
+    },
+    {
+      "name": "DeleteViewCustomDeleteWarning",
+      "methods": [],
+      "classes": []
+    },
+    {
+      "name": "BaseDeleteView",
+      "methods": [
+        {
+          "name": "post",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "request",
+              "annotation": null
+            },
+            {
+              "prefix": "*",
+              "name": "args",
+              "annotation": null
+            },
+            {
+              "prefix": "**",
+              "name": "kwargs",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "form_valid",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "form",
+              "annotation": null
+            }
+          ]
+        }
+      ],
+      "classes": [],
+      "docstring": "\"\"\"\n    Base view for deleting an object.\n\n    Using this base class requires subclassing to provide a response mixin.\n    \"\"\""
+    },
+    {
+      "name": "DeleteView",
+      "methods": [],
+      "classes": [],
+      "docstring": "\"\"\"\n    View for deleting an object retrieved with self.get_object(), with a\n    response rendered by a template.\n    \"\"\""
+    }
+  ]
+}

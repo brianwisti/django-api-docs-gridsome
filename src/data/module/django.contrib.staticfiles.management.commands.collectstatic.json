@@ -1,0 +1,209 @@
+{
+  "functions": [],
+  "classes": [
+    {
+      "name": "Command",
+      "methods": [
+        {
+          "name": "local",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ],
+          "decorators": [
+            {
+              "name": "@cached_property"
+            }
+          ]
+        },
+        {
+          "name": "add_arguments",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "parser",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "set_options",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "**",
+              "name": "options",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        Set instance variables based on an options dict\n        \"\"\""
+        },
+        {
+          "name": "collect",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        Perform the bulk of the work of collectstatic.\n\n        Split off from handle() to facilitate testing.\n        \"\"\""
+        },
+        {
+          "name": "handle",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "**",
+              "name": "options",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "log",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "msg",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "level",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        Small log helper\n        \"\"\""
+        },
+        {
+          "name": "is_local_storage",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "clear_dir",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "path",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        Delete the given relative path using the destination storage backend.\n        \"\"\""
+        },
+        {
+          "name": "delete_file",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "path",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "prefixed_path",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "source_storage",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        Check if the target file should be deleted if it already exists.\n        \"\"\""
+        },
+        {
+          "name": "link_file",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "path",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "prefixed_path",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "source_storage",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        Attempt to link ``path``\n        \"\"\""
+        },
+        {
+          "name": "copy_file",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "path",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "prefixed_path",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "source_storage",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        Attempt to copy ``path`` with storage\n        \"\"\""
+        }
+      ],
+      "classes": [],
+      "docstring": "\"\"\"\n    Copies or symlinks static files from different locations to the\n    settings.STATIC_ROOT.\n    \"\"\""
+    }
+  ]
+}

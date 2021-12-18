@@ -1,0 +1,25 @@
+{
+  "functions": [
+    {
+      "name": "check_setting_file_upload_temp_dir",
+      "params": [
+        {
+          "prefix": "",
+          "name": "app_configs",
+          "annotation": null
+        },
+        {
+          "prefix": "**",
+          "name": "kwargs",
+          "annotation": null
+        }
+      ],
+      "decorators": [
+        {
+          "name": "@register(Tags.files)"
+        }
+      ]
+    }
+  ],
+  "classes": []
+}

@@ -1,0 +1,23 @@
+{
+  "functions": [],
+  "classes": [
+    {
+      "name": "InvalidSessionKey",
+      "methods": [],
+      "classes": [],
+      "docstring": "\"\"\"Invalid characters in session key\"\"\""
+    },
+    {
+      "name": "SuspiciousSession",
+      "methods": [],
+      "classes": [],
+      "docstring": "\"\"\"The session may be tampered with\"\"\""
+    },
+    {
+      "name": "SessionInterrupted",
+      "methods": [],
+      "classes": [],
+      "docstring": "\"\"\"The session was interrupted.\"\"\""
+    }
+  ]
+}

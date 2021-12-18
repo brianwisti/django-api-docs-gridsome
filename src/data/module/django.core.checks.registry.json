@@ -1,0 +1,124 @@
+{
+  "functions": [],
+  "classes": [
+    {
+      "name": "Tags",
+      "methods": [],
+      "classes": [],
+      "docstring": "\"\"\"\n    Built-in tags for internal checks.\n    \"\"\""
+    },
+    {
+      "name": "CheckRegistry",
+      "methods": [
+        {
+          "name": "register",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "check",
+              "annotation": null
+            },
+            {
+              "prefix": "*",
+              "name": "tags",
+              "annotation": null
+            },
+            {
+              "prefix": "**",
+              "name": "kwargs",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        Can be used as a function or a decorator. Register given function\n        `f` labeled with given `tags`. The function should receive **kwargs\n        and return list of Errors and Warnings.\n\n        Example::\n\n            registry = CheckRegistry()\n            @registry.register('mytag', 'anothertag')\n            def my_check(app_configs, **kwargs):\n                # ... perform checks and collect `errors` ...\n                return errors\n            # or\n            registry.register(my_check, 'mytag', 'anothertag')\n        \"\"\""
+        },
+        {
+          "name": "run_checks",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "app_configs",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "tags",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "include_deployment_checks",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "databases",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        Run all registered checks and return list of Errors and Warnings.\n        \"\"\""
+        },
+        {
+          "name": "tag_exists",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "tag",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "include_deployment_checks",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "tags_available",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "deployment_checks",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "get_checks",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "include_deployment_checks",
+              "annotation": null
+            }
+          ]
+        }
+      ],
+      "classes": []
+    }
+  ]
+}

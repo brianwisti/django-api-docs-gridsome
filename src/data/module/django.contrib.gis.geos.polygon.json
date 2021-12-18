@@ -1,0 +1,80 @@
+{
+  "functions": [],
+  "classes": [
+    {
+      "name": "Polygon",
+      "methods": [
+        {
+          "name": "from_bbox",
+          "params": [
+            {
+              "prefix": "",
+              "name": "cls",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "bbox",
+              "annotation": null
+            }
+          ],
+          "decorators": [
+            {
+              "name": "@classmethod"
+            }
+          ],
+          "docstring": "\"Construct a Polygon from a bounding box (4-tuple).\""
+        },
+        {
+          "name": "num_interior_rings",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ],
+          "decorators": [
+            {
+              "name": "# #### Polygon Properties ####\n    @property"
+            }
+          ],
+          "docstring": "\"Return the number of interior rings.\""
+        },
+        {
+          "name": "tuple",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ],
+          "decorators": [
+            {
+              "name": "@property"
+            }
+          ],
+          "docstring": "\"Get the tuple for each ring in this Polygon.\""
+        },
+        {
+          "name": "kml",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ],
+          "decorators": [
+            {
+              "name": "@property"
+            }
+          ],
+          "docstring": "\"Return the KML representation of this Polygon.\""
+        }
+      ],
+      "classes": []
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "functions": [
+    {
+      "name": "get_template_directories",
+      "params": []
+    },
+    {
+      "name": "reset_loaders",
+      "params": []
+    },
+    {
+      "name": "watch_for_template_changes",
+      "params": [
+        {
+          "prefix": "",
+          "name": "sender",
+          "annotation": null
+        },
+        {
+          "prefix": "**",
+          "name": "kwargs",
+          "annotation": null
+        }
+      ],
+      "decorators": [
+        {
+          "name": "@receiver(autoreload_started, dispatch_uid='template_loaders_watch_changes')"
+        }
+      ]
+    },
+    {
+      "name": "template_changed",
+      "params": [
+        {
+          "prefix": "",
+          "name": "sender",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "file_path",
+          "annotation": null
+        },
+        {
+          "prefix": "**",
+          "name": "kwargs",
+          "annotation": null
+        }
+      ],
+      "decorators": [
+        {
+          "name": "@receiver(file_changed, dispatch_uid='template_loaders_file_changed')"
+        }
+      ]
+    }
+  ],
+  "classes": []
+}

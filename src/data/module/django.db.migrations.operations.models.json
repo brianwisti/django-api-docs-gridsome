@@ -1,0 +1,1781 @@
+{
+  "functions": [],
+  "classes": [
+    {
+      "name": "ModelOperation",
+      "methods": [
+        {
+          "name": "name_lower",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ],
+          "decorators": [
+            {
+              "name": "@cached_property"
+            }
+          ]
+        },
+        {
+          "name": "references_model",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "name",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "app_label",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "reduce",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "operation",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "app_label",
+              "annotation": null
+            }
+          ]
+        }
+      ],
+      "classes": []
+    },
+    {
+      "name": "CreateModel",
+      "methods": [
+        {
+          "name": "deconstruct",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "state_forwards",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "app_label",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "state",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "database_forwards",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "app_label",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "schema_editor",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "from_state",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "to_state",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "database_backwards",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "app_label",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "schema_editor",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "from_state",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "to_state",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "describe",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "migration_name_fragment",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ],
+          "decorators": [
+            {
+              "name": "@property"
+            }
+          ]
+        },
+        {
+          "name": "references_model",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "name",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "app_label",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "reduce",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "operation",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "app_label",
+              "annotation": null
+            }
+          ]
+        }
+      ],
+      "classes": [],
+      "docstring": "\"\"\"Create a model's table.\"\"\""
+    },
+    {
+      "name": "DeleteModel",
+      "methods": [
+        {
+          "name": "deconstruct",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "state_forwards",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "app_label",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "state",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "database_forwards",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "app_label",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "schema_editor",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "from_state",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "to_state",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "database_backwards",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "app_label",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "schema_editor",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "from_state",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "to_state",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "references_model",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "name",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "app_label",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "describe",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "migration_name_fragment",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ],
+          "decorators": [
+            {
+              "name": "@property"
+            }
+          ]
+        }
+      ],
+      "classes": [],
+      "docstring": "\"\"\"Drop a model's table.\"\"\""
+    },
+    {
+      "name": "RenameModel",
+      "methods": [
+        {
+          "name": "old_name_lower",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ],
+          "decorators": [
+            {
+              "name": "@cached_property"
+            }
+          ]
+        },
+        {
+          "name": "new_name_lower",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ],
+          "decorators": [
+            {
+              "name": "@cached_property"
+            }
+          ]
+        },
+        {
+          "name": "deconstruct",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "state_forwards",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "app_label",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "state",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "database_forwards",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "app_label",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "schema_editor",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "from_state",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "to_state",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "database_backwards",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "app_label",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "schema_editor",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "from_state",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "to_state",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "references_model",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "name",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "app_label",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "describe",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "migration_name_fragment",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ],
+          "decorators": [
+            {
+              "name": "@property"
+            }
+          ]
+        },
+        {
+          "name": "reduce",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "operation",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "app_label",
+              "annotation": null
+            }
+          ]
+        }
+      ],
+      "classes": [],
+      "docstring": "\"\"\"Rename a model.\"\"\""
+    },
+    {
+      "name": "ModelOptionOperation",
+      "methods": [
+        {
+          "name": "reduce",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "operation",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "app_label",
+              "annotation": null
+            }
+          ]
+        }
+      ],
+      "classes": []
+    },
+    {
+      "name": "AlterModelTable",
+      "methods": [
+        {
+          "name": "deconstruct",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "state_forwards",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "app_label",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "state",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "database_forwards",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "app_label",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "schema_editor",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "from_state",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "to_state",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "database_backwards",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "app_label",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "schema_editor",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "from_state",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "to_state",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "describe",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "migration_name_fragment",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ],
+          "decorators": [
+            {
+              "name": "@property"
+            }
+          ]
+        }
+      ],
+      "classes": [],
+      "docstring": "\"\"\"Rename a model's table.\"\"\""
+    },
+    {
+      "name": "AlterTogetherOptionOperation",
+      "methods": [
+        {
+          "name": "option_value",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ],
+          "decorators": [
+            {
+              "name": "@cached_property"
+            }
+          ]
+        },
+        {
+          "name": "deconstruct",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "state_forwards",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "app_label",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "state",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "database_forwards",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "app_label",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "schema_editor",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "from_state",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "to_state",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "database_backwards",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "app_label",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "schema_editor",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "from_state",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "to_state",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "references_field",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "model_name",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "name",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "app_label",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "describe",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "migration_name_fragment",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ],
+          "decorators": [
+            {
+              "name": "@property"
+            }
+          ]
+        }
+      ],
+      "classes": []
+    },
+    {
+      "name": "AlterUniqueTogether",
+      "methods": [],
+      "classes": [],
+      "docstring": "\"\"\"\n    Change the value of unique_together to the target one.\n    Input value of unique_together must be a set of tuples.\n    \"\"\""
+    },
+    {
+      "name": "AlterIndexTogether",
+      "methods": [],
+      "classes": [],
+      "docstring": "\"\"\"\n    Change the value of index_together to the target one.\n    Input value of index_together must be a set of tuples.\n    \"\"\""
+    },
+    {
+      "name": "AlterOrderWithRespectTo",
+      "methods": [
+        {
+          "name": "deconstruct",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "state_forwards",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "app_label",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "state",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "database_forwards",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "app_label",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "schema_editor",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "from_state",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "to_state",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "database_backwards",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "app_label",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "schema_editor",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "from_state",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "to_state",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "references_field",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "model_name",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "name",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "app_label",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "describe",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "migration_name_fragment",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ],
+          "decorators": [
+            {
+              "name": "@property"
+            }
+          ]
+        }
+      ],
+      "classes": [],
+      "docstring": "\"\"\"Represent a change with the order_with_respect_to option.\"\"\""
+    },
+    {
+      "name": "AlterModelOptions",
+      "methods": [
+        {
+          "name": "deconstruct",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "state_forwards",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "app_label",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "state",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "database_forwards",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "app_label",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "schema_editor",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "from_state",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "to_state",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "database_backwards",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "app_label",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "schema_editor",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "from_state",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "to_state",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "describe",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "migration_name_fragment",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ],
+          "decorators": [
+            {
+              "name": "@property"
+            }
+          ]
+        }
+      ],
+      "classes": [],
+      "docstring": "\"\"\"\n    Set new model options that don't directly affect the database schema\n    (like verbose_name, permissions, ordering). Python code in migrations\n    may still need them.\n    \"\"\""
+    },
+    {
+      "name": "AlterModelManagers",
+      "methods": [
+        {
+          "name": "deconstruct",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "state_forwards",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "app_label",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "state",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "database_forwards",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "app_label",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "schema_editor",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "from_state",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "to_state",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "database_backwards",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "app_label",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "schema_editor",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "from_state",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "to_state",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "describe",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "migration_name_fragment",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ],
+          "decorators": [
+            {
+              "name": "@property"
+            }
+          ]
+        }
+      ],
+      "classes": [],
+      "docstring": "\"\"\"Alter the model's managers.\"\"\""
+    },
+    {
+      "name": "IndexOperation",
+      "methods": [
+        {
+          "name": "model_name_lower",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ],
+          "decorators": [
+            {
+              "name": "@cached_property"
+            }
+          ]
+        }
+      ],
+      "classes": []
+    },
+    {
+      "name": "AddIndex",
+      "methods": [
+        {
+          "name": "state_forwards",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "app_label",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "state",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "database_forwards",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "app_label",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "schema_editor",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "from_state",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "to_state",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "database_backwards",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "app_label",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "schema_editor",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "from_state",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "to_state",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "deconstruct",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "describe",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "migration_name_fragment",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ],
+          "decorators": [
+            {
+              "name": "@property"
+            }
+          ]
+        }
+      ],
+      "classes": [],
+      "docstring": "\"\"\"Add an index on a model.\"\"\""
+    },
+    {
+      "name": "RemoveIndex",
+      "methods": [
+        {
+          "name": "state_forwards",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "app_label",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "state",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "database_forwards",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "app_label",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "schema_editor",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "from_state",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "to_state",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "database_backwards",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "app_label",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "schema_editor",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "from_state",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "to_state",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "deconstruct",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "describe",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "migration_name_fragment",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ],
+          "decorators": [
+            {
+              "name": "@property"
+            }
+          ]
+        }
+      ],
+      "classes": [],
+      "docstring": "\"\"\"Remove an index from a model.\"\"\""
+    },
+    {
+      "name": "AddConstraint",
+      "methods": [
+        {
+          "name": "state_forwards",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "app_label",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "state",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "database_forwards",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "app_label",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "schema_editor",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "from_state",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "to_state",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "database_backwards",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "app_label",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "schema_editor",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "from_state",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "to_state",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "deconstruct",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "describe",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "migration_name_fragment",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ],
+          "decorators": [
+            {
+              "name": "@property"
+            }
+          ]
+        }
+      ],
+      "classes": []
+    },
+    {
+      "name": "RemoveConstraint",
+      "methods": [
+        {
+          "name": "state_forwards",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "app_label",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "state",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "database_forwards",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "app_label",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "schema_editor",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "from_state",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "to_state",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "database_backwards",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "app_label",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "schema_editor",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "from_state",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "to_state",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "deconstruct",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "describe",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "migration_name_fragment",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ],
+          "decorators": [
+            {
+              "name": "@property"
+            }
+          ]
+        }
+      ],
+      "classes": []
+    }
+  ]
+}

@@ -1,0 +1,364 @@
+{
+  "functions": [
+    {
+      "name": "builtin_template_path",
+      "params": [
+        {
+          "prefix": "",
+          "name": "name",
+          "annotation": null
+        }
+      ],
+      "docstring": "\"\"\"\n    Return a path to a builtin template.\n\n    Avoid calling this function at the module level or in a class-definition\n    because __file__ may not exist, e.g. in frozen environments.\n    \"\"\""
+    },
+    {
+      "name": "technical_500_response",
+      "params": [
+        {
+          "prefix": "",
+          "name": "request",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "exc_type",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "exc_value",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "tb",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "status_code",
+          "annotation": null
+        }
+      ],
+      "docstring": "\"\"\"\n    Create a technical server error response. The last three arguments are\n    the values returned from sys.exc_info() and friends.\n    \"\"\""
+    },
+    {
+      "name": "get_default_exception_reporter_filter",
+      "params": [],
+      "decorators": [
+        {
+          "name": "@functools.lru_cache()"
+        }
+      ]
+    },
+    {
+      "name": "get_exception_reporter_filter",
+      "params": [
+        {
+          "prefix": "",
+          "name": "request",
+          "annotation": null
+        }
+      ]
+    },
+    {
+      "name": "get_exception_reporter_class",
+      "params": [
+        {
+          "prefix": "",
+          "name": "request",
+          "annotation": null
+        }
+      ]
+    },
+    {
+      "name": "technical_404_response",
+      "params": [
+        {
+          "prefix": "",
+          "name": "request",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "exception",
+          "annotation": null
+        }
+      ],
+      "docstring": "\"\"\"Create a technical 404 error response. `exception` is the Http404.\"\"\""
+    },
+    {
+      "name": "default_urlconf",
+      "params": [
+        {
+          "prefix": "",
+          "name": "request",
+          "annotation": null
+        }
+      ],
+      "docstring": "\"\"\"Create an empty URLconf 404 error response.\"\"\""
+    }
+  ],
+  "classes": [
+    {
+      "name": "ExceptionCycleWarning",
+      "methods": [],
+      "classes": []
+    },
+    {
+      "name": "CallableSettingWrapper",
+      "methods": [],
+      "classes": [],
+      "docstring": "\"\"\"\n    Object to wrap callable appearing in settings.\n    * Not to call in the debug page (#21345).\n    * Not to break the debug page if the callable forbidding to set attributes\n      (#23070).\n    \"\"\""
+    },
+    {
+      "name": "SafeExceptionReporterFilter",
+      "methods": [
+        {
+          "name": "cleanse_setting",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "key",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "value",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        Cleanse an individual setting key/value of sensitive content. If the\n        value is a dictionary, recursively cleanse the keys in that dictionary.\n        \"\"\""
+        },
+        {
+          "name": "get_safe_settings",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        Return a dictionary of the settings module with values of sensitive\n        settings replaced with stars (*********).\n        \"\"\""
+        },
+        {
+          "name": "get_safe_request_meta",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "request",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        Return a dictionary of request.META with sensitive values redacted.\n        \"\"\""
+        },
+        {
+          "name": "is_active",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "request",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        This filter is to add safety in production environments (i.e. DEBUG\n        is False). If DEBUG is True then your site is not safe anyway.\n        This hook is provided as a convenience to easily activate or\n        deactivate the filter on a per request basis.\n        \"\"\""
+        },
+        {
+          "name": "get_cleansed_multivaluedict",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "request",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "multivaluedict",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        Replace the keys in a MultiValueDict marked as sensitive with stars.\n        This mitigates leaking sensitive POST parameters if something like\n        request.POST['nonexistent_key'] throws an exception (#21098).\n        \"\"\""
+        },
+        {
+          "name": "get_post_parameters",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "request",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        Replace the values of POST parameters marked as sensitive with\n        stars (*********).\n        \"\"\""
+        },
+        {
+          "name": "cleanse_special_types",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "request",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "value",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "get_traceback_frame_variables",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "request",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "tb_frame",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        Replace the values of variables marked as sensitive with\n        stars (*********).\n        \"\"\""
+        }
+      ],
+      "classes": [],
+      "docstring": "\"\"\"\n    Use annotations made by the sensitive_post_parameters and\n    sensitive_variables decorators to filter out sensitive information.\n    \"\"\""
+    },
+    {
+      "name": "ExceptionReporter",
+      "methods": [
+        {
+          "name": "html_template_path",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ],
+          "decorators": [
+            {
+              "name": "@property"
+            }
+          ]
+        },
+        {
+          "name": "text_template_path",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ],
+          "decorators": [
+            {
+              "name": "@property"
+            }
+          ]
+        },
+        {
+          "name": "get_traceback_data",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"Return a dictionary containing traceback information.\"\"\""
+        },
+        {
+          "name": "get_traceback_html",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"Return HTML version of debug 500 HTTP error page.\"\"\""
+        },
+        {
+          "name": "get_traceback_text",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"Return plain text version of debug 500 HTTP error page.\"\"\""
+        },
+        {
+          "name": "get_traceback_frames",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "get_exception_traceback_frames",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "exc_value",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "tb",
+              "annotation": null
+            }
+          ]
+        }
+      ],
+      "classes": [],
+      "docstring": "\"\"\"Organize and coordinate reporting on exceptions.\"\"\""
+    }
+  ]
+}

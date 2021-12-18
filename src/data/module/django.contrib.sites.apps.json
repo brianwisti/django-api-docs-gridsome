@@ -1,0 +1,21 @@
+{
+  "functions": [],
+  "classes": [
+    {
+      "name": "SitesConfig",
+      "methods": [
+        {
+          "name": "ready",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ]
+        }
+      ],
+      "classes": []
+    }
+  ]
+}

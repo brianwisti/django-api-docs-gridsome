@@ -1,0 +1,265 @@
+{
+  "functions": [
+    {
+      "name": "check_security_middleware",
+      "params": [
+        {
+          "prefix": "",
+          "name": "app_configs",
+          "annotation": null
+        },
+        {
+          "prefix": "**",
+          "name": "kwargs",
+          "annotation": null
+        }
+      ],
+      "decorators": [
+        {
+          "name": "@register(Tags.security, deploy=True)"
+        }
+      ]
+    },
+    {
+      "name": "check_xframe_options_middleware",
+      "params": [
+        {
+          "prefix": "",
+          "name": "app_configs",
+          "annotation": null
+        },
+        {
+          "prefix": "**",
+          "name": "kwargs",
+          "annotation": null
+        }
+      ],
+      "decorators": [
+        {
+          "name": "@register(Tags.security, deploy=True)"
+        }
+      ]
+    },
+    {
+      "name": "check_sts",
+      "params": [
+        {
+          "prefix": "",
+          "name": "app_configs",
+          "annotation": null
+        },
+        {
+          "prefix": "**",
+          "name": "kwargs",
+          "annotation": null
+        }
+      ],
+      "decorators": [
+        {
+          "name": "@register(Tags.security, deploy=True)"
+        }
+      ]
+    },
+    {
+      "name": "check_sts_include_subdomains",
+      "params": [
+        {
+          "prefix": "",
+          "name": "app_configs",
+          "annotation": null
+        },
+        {
+          "prefix": "**",
+          "name": "kwargs",
+          "annotation": null
+        }
+      ],
+      "decorators": [
+        {
+          "name": "@register(Tags.security, deploy=True)"
+        }
+      ]
+    },
+    {
+      "name": "check_sts_preload",
+      "params": [
+        {
+          "prefix": "",
+          "name": "app_configs",
+          "annotation": null
+        },
+        {
+          "prefix": "**",
+          "name": "kwargs",
+          "annotation": null
+        }
+      ],
+      "decorators": [
+        {
+          "name": "@register(Tags.security, deploy=True)"
+        }
+      ]
+    },
+    {
+      "name": "check_content_type_nosniff",
+      "params": [
+        {
+          "prefix": "",
+          "name": "app_configs",
+          "annotation": null
+        },
+        {
+          "prefix": "**",
+          "name": "kwargs",
+          "annotation": null
+        }
+      ],
+      "decorators": [
+        {
+          "name": "@register(Tags.security, deploy=True)"
+        }
+      ]
+    },
+    {
+      "name": "check_ssl_redirect",
+      "params": [
+        {
+          "prefix": "",
+          "name": "app_configs",
+          "annotation": null
+        },
+        {
+          "prefix": "**",
+          "name": "kwargs",
+          "annotation": null
+        }
+      ],
+      "decorators": [
+        {
+          "name": "@register(Tags.security, deploy=True)"
+        }
+      ]
+    },
+    {
+      "name": "check_secret_key",
+      "params": [
+        {
+          "prefix": "",
+          "name": "app_configs",
+          "annotation": null
+        },
+        {
+          "prefix": "**",
+          "name": "kwargs",
+          "annotation": null
+        }
+      ],
+      "decorators": [
+        {
+          "name": "@register(Tags.security, deploy=True)"
+        }
+      ]
+    },
+    {
+      "name": "check_debug",
+      "params": [
+        {
+          "prefix": "",
+          "name": "app_configs",
+          "annotation": null
+        },
+        {
+          "prefix": "**",
+          "name": "kwargs",
+          "annotation": null
+        }
+      ],
+      "decorators": [
+        {
+          "name": "@register(Tags.security, deploy=True)"
+        }
+      ]
+    },
+    {
+      "name": "check_xframe_deny",
+      "params": [
+        {
+          "prefix": "",
+          "name": "app_configs",
+          "annotation": null
+        },
+        {
+          "prefix": "**",
+          "name": "kwargs",
+          "annotation": null
+        }
+      ],
+      "decorators": [
+        {
+          "name": "@register(Tags.security, deploy=True)"
+        }
+      ]
+    },
+    {
+      "name": "check_allowed_hosts",
+      "params": [
+        {
+          "prefix": "",
+          "name": "app_configs",
+          "annotation": null
+        },
+        {
+          "prefix": "**",
+          "name": "kwargs",
+          "annotation": null
+        }
+      ],
+      "decorators": [
+        {
+          "name": "@register(Tags.security, deploy=True)"
+        }
+      ]
+    },
+    {
+      "name": "check_referrer_policy",
+      "params": [
+        {
+          "prefix": "",
+          "name": "app_configs",
+          "annotation": null
+        },
+        {
+          "prefix": "**",
+          "name": "kwargs",
+          "annotation": null
+        }
+      ],
+      "decorators": [
+        {
+          "name": "@register(Tags.security, deploy=True)"
+        }
+      ]
+    },
+    {
+      "name": "check_cross_origin_opener_policy",
+      "params": [
+        {
+          "prefix": "",
+          "name": "app_configs",
+          "annotation": null
+        },
+        {
+          "prefix": "**",
+          "name": "kwargs",
+          "annotation": null
+        }
+      ],
+      "decorators": [
+        {
+          "name": "@register(Tags.security, deploy=True)"
+        }
+      ]
+    }
+  ],
+  "classes": []
+}

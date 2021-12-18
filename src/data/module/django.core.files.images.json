@@ -1,0 +1,60 @@
+{
+  "functions": [
+    {
+      "name": "get_image_dimensions",
+      "params": [
+        {
+          "prefix": "",
+          "name": "file_or_path",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "close",
+          "annotation": null
+        }
+      ],
+      "docstring": "\"\"\"\n    Return the (width, height) of an image, given an open file or a path.  Set\n    'close' to True to close the file at the end if it is initially in an open\n    state.\n    \"\"\""
+    }
+  ],
+  "classes": [
+    {
+      "name": "ImageFile",
+      "methods": [
+        {
+          "name": "width",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ],
+          "decorators": [
+            {
+              "name": "@property"
+            }
+          ]
+        },
+        {
+          "name": "height",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ],
+          "decorators": [
+            {
+              "name": "@property"
+            }
+          ]
+        }
+      ],
+      "classes": [],
+      "docstring": "\"\"\"\n    A mixin for use alongside django.core.files.base.File, which provides\n    additional features for dealing with images.\n    \"\"\""
+    }
+  ],
+  "doc": "\"\"\"\nUtility functions for handling images.\n\nRequires Pillow as you might imagine.\n\"\"\""
+}

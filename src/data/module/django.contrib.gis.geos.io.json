@@ -1,0 +1,50 @@
+{
+  "functions": [],
+  "classes": [
+    {
+      "name": "WKBReader",
+      "methods": [
+        {
+          "name": "read",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "wkb",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"Return a GEOSGeometry for the given WKB buffer.\""
+        }
+      ],
+      "classes": []
+    },
+    {
+      "name": "WKTReader",
+      "methods": [
+        {
+          "name": "read",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "wkt",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"Return a GEOSGeometry for the given WKT string.\""
+        }
+      ],
+      "classes": []
+    }
+  ],
+  "doc": "\"\"\"\nModule that holds classes for performing I/O operations on GEOS geometry\nobjects.  Specifically, this has Python implementations of WKB/WKT\nreader and writer classes.\n\"\"\""
+}

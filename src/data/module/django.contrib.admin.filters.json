@@ -1,0 +1,569 @@
+{
+  "functions": [],
+  "classes": [
+    {
+      "name": "ListFilter",
+      "methods": [
+        {
+          "name": "has_output",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        Return True if some choices would be output for this filter.\n        \"\"\""
+        },
+        {
+          "name": "choices",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "changelist",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        Return choices ready to be output in the template.\n\n        `changelist` is the ChangeList to be displayed.\n        \"\"\""
+        },
+        {
+          "name": "queryset",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "request",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "queryset",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        Return the filtered queryset.\n        \"\"\""
+        },
+        {
+          "name": "expected_parameters",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        Return the list of parameter names that are expected from the\n        request's query string and that will be used by this filter.\n        \"\"\""
+        }
+      ],
+      "classes": []
+    },
+    {
+      "name": "SimpleListFilter",
+      "methods": [
+        {
+          "name": "has_output",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "value",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        Return the value (in string format) provided in the request's\n        query string for this filter, if any, or None if the value wasn't\n        provided.\n        \"\"\""
+        },
+        {
+          "name": "lookups",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "request",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "model_admin",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        Must be overridden to return a list of tuples (value, verbose value)\n        \"\"\""
+        },
+        {
+          "name": "expected_parameters",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "choices",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "changelist",
+              "annotation": null
+            }
+          ]
+        }
+      ],
+      "classes": []
+    },
+    {
+      "name": "FieldListFilter",
+      "methods": [
+        {
+          "name": "has_output",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "queryset",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "request",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "queryset",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "register",
+          "params": [
+            {
+              "prefix": "",
+              "name": "cls",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "test",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "list_filter_class",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "take_priority",
+              "annotation": null
+            }
+          ],
+          "decorators": [
+            {
+              "name": "@classmethod"
+            }
+          ]
+        },
+        {
+          "name": "create",
+          "params": [
+            {
+              "prefix": "",
+              "name": "cls",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "field",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "request",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "params",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "model",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "model_admin",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "field_path",
+              "annotation": null
+            }
+          ],
+          "decorators": [
+            {
+              "name": "@classmethod"
+            }
+          ]
+        }
+      ],
+      "classes": []
+    },
+    {
+      "name": "RelatedFieldListFilter",
+      "methods": [
+        {
+          "name": "include_empty_choice",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ],
+          "decorators": [
+            {
+              "name": "@property"
+            }
+          ],
+          "docstring": "\"\"\"\n        Return True if a \"(None)\" choice should be included, which filters\n        out everything except empty relationships.\n        \"\"\""
+        },
+        {
+          "name": "has_output",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "expected_parameters",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "field_admin_ordering",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "field",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "request",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "model_admin",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        Return the model admin's ordering for related field, if provided.\n        \"\"\""
+        },
+        {
+          "name": "field_choices",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "field",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "request",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "model_admin",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "choices",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "changelist",
+              "annotation": null
+            }
+          ]
+        }
+      ],
+      "classes": []
+    },
+    {
+      "name": "BooleanFieldListFilter",
+      "methods": [
+        {
+          "name": "expected_parameters",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "choices",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "changelist",
+              "annotation": null
+            }
+          ]
+        }
+      ],
+      "classes": []
+    },
+    {
+      "name": "ChoicesFieldListFilter",
+      "methods": [
+        {
+          "name": "expected_parameters",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "choices",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "changelist",
+              "annotation": null
+            }
+          ]
+        }
+      ],
+      "classes": []
+    },
+    {
+      "name": "DateFieldListFilter",
+      "methods": [
+        {
+          "name": "expected_parameters",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "choices",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "changelist",
+              "annotation": null
+            }
+          ]
+        }
+      ],
+      "classes": []
+    },
+    {
+      "name": "AllValuesFieldListFilter",
+      "methods": [
+        {
+          "name": "expected_parameters",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "choices",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "changelist",
+              "annotation": null
+            }
+          ]
+        }
+      ],
+      "classes": []
+    },
+    {
+      "name": "RelatedOnlyFieldListFilter",
+      "methods": [
+        {
+          "name": "field_choices",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "field",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "request",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "model_admin",
+              "annotation": null
+            }
+          ]
+        }
+      ],
+      "classes": []
+    },
+    {
+      "name": "EmptyFieldListFilter",
+      "methods": [
+        {
+          "name": "queryset",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "request",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "queryset",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "expected_parameters",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "choices",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "changelist",
+              "annotation": null
+            }
+          ]
+        }
+      ],
+      "classes": []
+    }
+  ],
+  "doc": "\"\"\"\nThis encapsulates the logic for displaying filters in the Django admin.\nFilters are specified in models with the \"list_filter\" option.\n\nEach filter subclass knows how to display a filter for a field that passes a\ncertain test -- e.g. being a DateField or ForeignKey.\n\"\"\""
+}

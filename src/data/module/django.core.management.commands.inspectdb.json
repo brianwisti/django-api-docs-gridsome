@@ -1,0 +1,144 @@
+{
+  "functions": [],
+  "classes": [
+    {
+      "name": "Command",
+      "methods": [
+        {
+          "name": "add_arguments",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "parser",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "handle",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "**",
+              "name": "options",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "handle_inspection",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "options",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "normalize_col_name",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "col_name",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "used_column_names",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "is_relation",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        Modify the column name to make it Python-compatible as a field name\n        \"\"\""
+        },
+        {
+          "name": "get_field_type",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "connection",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "table_name",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "row",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        Given the database connection, the table name, and the cursor row\n        description, this routine will return the given field type name, as\n        well as any additional keyword parameters and notes for the field.\n        \"\"\""
+        },
+        {
+          "name": "get_meta",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "table_name",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "constraints",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "column_to_field_name",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "is_view",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "is_partition",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        Return a sequence comprising the lines of code necessary\n        to construct the inner Meta class for the model corresponding\n        to the given database table name.\n        \"\"\""
+        }
+      ],
+      "classes": []
+    }
+  ]
+}

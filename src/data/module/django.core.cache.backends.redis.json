@@ -1,0 +1,539 @@
+{
+  "functions": [],
+  "classes": [
+    {
+      "name": "RedisSerializer",
+      "methods": [
+        {
+          "name": "dumps",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "obj",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "loads",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "data",
+              "annotation": null
+            }
+          ]
+        }
+      ],
+      "classes": []
+    },
+    {
+      "name": "RedisCacheClient",
+      "methods": [
+        {
+          "name": "get_client",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "key",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "write",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "add",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "key",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "value",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "timeout",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "get",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "key",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "default",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "set",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "key",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "value",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "timeout",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "touch",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "key",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "timeout",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "delete",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "key",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "get_many",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "keys",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "has_key",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "key",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "incr",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "key",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "delta",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "set_many",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "data",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "timeout",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "delete_many",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "keys",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "clear",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ]
+        }
+      ],
+      "classes": []
+    },
+    {
+      "name": "RedisCache",
+      "methods": [
+        {
+          "name": "get_backend_timeout",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "timeout",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "add",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "key",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "value",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "timeout",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "version",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "get",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "key",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "default",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "version",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "set",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "key",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "value",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "timeout",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "version",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "touch",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "key",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "timeout",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "version",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "delete",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "key",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "version",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "get_many",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "keys",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "version",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "has_key",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "key",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "version",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "incr",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "key",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "delta",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "version",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "set_many",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "data",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "timeout",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "version",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "delete_many",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "keys",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "version",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "clear",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ]
+        }
+      ],
+      "classes": []
+    }
+  ],
+  "doc": "\"\"\"Redis cache backend.\"\"\""
+}

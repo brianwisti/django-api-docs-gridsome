@@ -1,0 +1,643 @@
+{
+  "functions": [
+    {
+      "name": "linebreak_iter",
+      "params": [
+        {
+          "prefix": "",
+          "name": "template_source",
+          "annotation": null
+        }
+      ]
+    },
+    {
+      "name": "render_value_in_context",
+      "params": [
+        {
+          "prefix": "",
+          "name": "value",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "context",
+          "annotation": null
+        }
+      ],
+      "docstring": "\"\"\"\n    Convert any value to a string to become part of a rendered template. This\n    means escaping, if required, and conversion to a string. If value is a\n    string, it's expected to already be translated.\n    \"\"\""
+    },
+    {
+      "name": "token_kwargs",
+      "params": [
+        {
+          "prefix": "",
+          "name": "bits",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "parser",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "support_legacy",
+          "annotation": null
+        }
+      ],
+      "docstring": "\"\"\"\n    Parse token keyword arguments and return a dictionary of the arguments\n    retrieved from the ``bits`` token list.\n\n    `bits` is a list containing the remainder of the token (split by spaces)\n    that is to be checked for arguments. Valid arguments are removed from this\n    list.\n\n    `support_legacy` - if True, the legacy format ``1 as foo`` is accepted.\n    Otherwise, only the standard ``foo=1`` format is allowed.\n\n    There is no requirement for all remaining token ``bits`` to be keyword\n    arguments, so return the dictionary as soon as an invalid argument format\n    is reached.\n    \"\"\""
+    }
+  ],
+  "classes": [
+    {
+      "name": "TokenType",
+      "methods": [],
+      "classes": []
+    },
+    {
+      "name": "VariableDoesNotExist",
+      "methods": [],
+      "classes": []
+    },
+    {
+      "name": "Origin",
+      "methods": [
+        {
+          "name": "loader_name",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ],
+          "decorators": [
+            {
+              "name": "@property"
+            }
+          ]
+        }
+      ],
+      "classes": []
+    },
+    {
+      "name": "Template",
+      "methods": [
+        {
+          "name": "render",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "context",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"Display stage -- can be called many times\""
+        },
+        {
+          "name": "compile_nodelist",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        Parse and compile the template source into a nodelist. If debug\n        is True and an exception occurs during parsing, the exception is\n        annotated with contextual line information where it occurred in the\n        template source.\n        \"\"\""
+        },
+        {
+          "name": "get_exception_info",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "exception",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "token",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        Return a dictionary containing contextual line information of where\n        the exception occurred in the template. The following information is\n        provided:\n\n        message\n            The message of the exception raised.\n\n        source_lines\n            The lines before, after, and including the line the exception\n            occurred on.\n\n        line\n            The line number the exception occurred on.\n\n        before, during, after\n            The line the exception occurred on split into three parts:\n            1. The content before the token that raised the error.\n            2. The token that raised the error.\n            3. The content after the token that raised the error.\n\n        total\n            The number of lines in source_lines.\n\n        top\n            The line number where source_lines starts.\n\n        bottom\n            The line number where source_lines ends.\n\n        start\n            The start position of the token in the template source.\n\n        end\n            The end position of the token in the template source.\n        \"\"\""
+        }
+      ],
+      "classes": []
+    },
+    {
+      "name": "Token",
+      "methods": [
+        {
+          "name": "split_contents",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ]
+        }
+      ],
+      "classes": []
+    },
+    {
+      "name": "Lexer",
+      "methods": [
+        {
+          "name": "tokenize",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        Return a list of tokens from a given template_string.\n        \"\"\""
+        },
+        {
+          "name": "create_token",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "token_string",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "position",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "lineno",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "in_tag",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        Convert the given token string into a new Token object and return it.\n        If in_tag is True, we are processing something that matched a tag,\n        otherwise it should be treated as a literal string.\n        \"\"\""
+        }
+      ],
+      "classes": []
+    },
+    {
+      "name": "DebugLexer",
+      "methods": [
+        {
+          "name": "tokenize",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        Split a template string into tokens and annotates each token with its\n        start and end position in the source. This is slower than the default\n        lexer so only use it when debug is True.\n        \"\"\""
+        }
+      ],
+      "classes": []
+    },
+    {
+      "name": "Parser",
+      "methods": [
+        {
+          "name": "parse",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "parse_until",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        Iterate through the parser tokens and compiles each one into a node.\n\n        If parse_until is provided, parsing will stop once one of the\n        specified tokens has been reached. This is formatted as a list of\n        tokens, e.g. ['elif', 'else', 'endif']. If no matching token is\n        reached, raise an exception with the unclosed block tag details.\n        \"\"\""
+        },
+        {
+          "name": "skip_past",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "endtag",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "extend_nodelist",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "nodelist",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "node",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "token",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "error",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "token",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "e",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        Return an exception annotated with the originating token. Since the\n        parser can be called recursively, check if a token is already set. This\n        ensures the innermost token is highlighted if an exception occurs,\n        e.g. a compile error within the body of an if statement.\n        \"\"\""
+        },
+        {
+          "name": "invalid_block_tag",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "token",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "command",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "parse_until",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "unclosed_block_tag",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "parse_until",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "next_token",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "prepend_token",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "token",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "delete_first_token",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "add_library",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "lib",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "compile_filter",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "token",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        Convenient wrapper for FilterExpression\n        \"\"\""
+        },
+        {
+          "name": "find_filter",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "filter_name",
+              "annotation": null
+            }
+          ]
+        }
+      ],
+      "classes": []
+    },
+    {
+      "name": "FilterExpression",
+      "methods": [
+        {
+          "name": "resolve",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "context",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "ignore_failures",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "args_check",
+          "params": [
+            {
+              "prefix": "",
+              "name": "name",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "func",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "provided",
+              "annotation": null
+            }
+          ]
+        }
+      ],
+      "classes": [],
+      "docstring": "\"\"\"\n    Parse a variable token and its optional filters (all as a single string),\n    and return a list of tuples of the filter name and arguments.\n    Sample::\n\n        >>> token = 'variable|default:\"Default value\"|date:\"Y-m-d\"'\n        >>> p = Parser('')\n        >>> fe = FilterExpression(token, p)\n        >>> len(fe.filters)\n        2\n        >>> fe.var\n        <Variable: 'variable'>\n    \"\"\""
+    },
+    {
+      "name": "Variable",
+      "methods": [
+        {
+          "name": "resolve",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "context",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"Resolve this variable against a given context.\"\"\""
+        }
+      ],
+      "classes": [],
+      "docstring": "\"\"\"\n    A template variable, resolvable against a given context. The variable may\n    be a hard-coded string (if it begins and ends with single or double quote\n    marks)::\n\n        >>> c = {'article': {'section':'News'}}\n        >>> Variable('article.section').resolve(c)\n        'News'\n        >>> Variable('article').resolve(c)\n        {'section': 'News'}\n        >>> class AClass: pass\n        >>> c = AClass()\n        >>> c.article = AClass()\n        >>> c.article.section = 'News'\n\n    (The example assumes VARIABLE_ATTRIBUTE_SEPARATOR is '.')\n    \"\"\""
+    },
+    {
+      "name": "Node",
+      "methods": [
+        {
+          "name": "render",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "context",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        Return the node rendered as a string.\n        \"\"\""
+        },
+        {
+          "name": "render_annotated",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "context",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        Render the node. If debug is True and an exception occurs during\n        rendering, the exception is annotated with contextual line information\n        where it occurred in the template. For internal usage this method is\n        preferred over using the render method directly.\n        \"\"\""
+        },
+        {
+          "name": "get_nodes_by_type",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "nodetype",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        Return a list of all nodes (within this node and its nodelist)\n        of the given type\n        \"\"\""
+        }
+      ],
+      "classes": []
+    },
+    {
+      "name": "NodeList",
+      "methods": [
+        {
+          "name": "render",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "context",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "get_nodes_by_type",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "nodetype",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"Return a list of all nodes of the given type\""
+        }
+      ],
+      "classes": []
+    },
+    {
+      "name": "TextNode",
+      "methods": [
+        {
+          "name": "render",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "context",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "render_annotated",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "context",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        Return the given value.\n\n        The default implementation of this method handles exceptions raised\n        during rendering, which is not necessary for text nodes.\n        \"\"\""
+        }
+      ],
+      "classes": []
+    },
+    {
+      "name": "VariableNode",
+      "methods": [
+        {
+          "name": "render",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "context",
+              "annotation": null
+            }
+          ]
+        }
+      ],
+      "classes": []
+    }
+  ],
+  "doc": "\"\"\"\nThis is the Django template system.\n\nHow it works:\n\nThe Lexer.tokenize() method converts a template string (i.e., a string\ncontaining markup with custom template tags) to tokens, which can be either\nplain text (TokenType.TEXT), variables (TokenType.VAR), or block statements\n(TokenType.BLOCK).\n\nThe Parser() class takes a list of tokens in its constructor, and its parse()\nmethod returns a compiled template -- which is, under the hood, a list of\nNode objects.\n\nEach Node is responsible for creating some sort of output -- e.g. simple text\n(TextNode), variable values in a given context (VariableNode), results of basic\nlogic (IfNode), results of looping (ForNode), or anything else. The core Node\ntypes are TextNode, VariableNode, IfNode and ForNode, but plugin modules can\ndefine their own custom node types.\n\nEach Node has a render() method, which takes a Context and returns a string of\nthe rendered node. For example, the render() method of a Variable Node returns\nthe variable's value as a string. The render() method of a ForNode returns the\nrendered output of whatever was inside the loop, recursively.\n\nThe Template class is a convenient wrapper that takes care of template\ncompilation and rendering.\n\nUsage:\n\nThe only thing you should ever use directly in this file is the Template class.\nCreate a compiled template object with a template_string, then call render()\nwith a context. In the compilation stage, the TemplateSyntaxError exception\nwill be raised if the template doesn't have proper syntax.\n\nSample code:\n\n>>> from django import template\n>>> s = '<html>{% if test %}<h1>{{ varvalue }}</h1>{% endif %}</html>'\n>>> t = template.Template(s)\n\n(t is now a compiled template, and its render() method can be called multiple\ntimes with multiple contexts)\n\n>>> c = template.Context({'test':True, 'varvalue': 'Hello'})\n>>> t.render(c)\n'<html><h1>Hello</h1></html>'\n>>> c = template.Context({'test':False, 'varvalue': 'Hello'})\n>>> t.render(c)\n'<html></html>'\n\"\"\""
+}

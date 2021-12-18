@@ -1,0 +1,526 @@
+{
+  "functions": [],
+  "classes": [
+    {
+      "name": "AxisOrder",
+      "methods": [],
+      "classes": []
+    },
+    {
+      "name": "SpatialReference",
+      "methods": [
+        {
+          "name": "attr_value",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "target",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "index",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        The attribute value for the given target node (e.g. 'PROJCS'). The index\n        keyword specifies an index of the child node to return.\n        \"\"\""
+        },
+        {
+          "name": "auth_name",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "target",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"Return the authority name for the given string target node.\""
+        },
+        {
+          "name": "auth_code",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "target",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"Return the authority code for the given string target node.\""
+        },
+        {
+          "name": "clone",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"Return a clone of this SpatialReference object.\""
+        },
+        {
+          "name": "from_esri",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"Morph this SpatialReference from ESRI's format to EPSG.\""
+        },
+        {
+          "name": "identify_epsg",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        This method inspects the WKT of this SpatialReference, and will\n        add EPSG authority nodes where an EPSG identifier is applicable.\n        \"\"\""
+        },
+        {
+          "name": "to_esri",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"Morph this SpatialReference to ESRI's format.\""
+        },
+        {
+          "name": "validate",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"Check to see if the given spatial reference is valid.\""
+        },
+        {
+          "name": "name",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ],
+          "decorators": [
+            {
+              "name": "# #### Name & SRID properties ####\n    @property"
+            }
+          ],
+          "docstring": "\"Return the name of this Spatial Reference.\""
+        },
+        {
+          "name": "srid",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ],
+          "decorators": [
+            {
+              "name": "@property"
+            }
+          ],
+          "docstring": "\"Return the SRID of top-level authority, or None if undefined.\""
+        },
+        {
+          "name": "linear_name",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ],
+          "decorators": [
+            {
+              "name": "# #### Unit Properties ####\n    @property"
+            }
+          ],
+          "docstring": "\"Return the name of the linear units.\""
+        },
+        {
+          "name": "linear_units",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ],
+          "decorators": [
+            {
+              "name": "@property"
+            }
+          ],
+          "docstring": "\"Return the value of the linear units.\""
+        },
+        {
+          "name": "angular_name",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ],
+          "decorators": [
+            {
+              "name": "@property"
+            }
+          ],
+          "docstring": "\"Return the name of the angular units.\""
+        },
+        {
+          "name": "angular_units",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ],
+          "decorators": [
+            {
+              "name": "@property"
+            }
+          ],
+          "docstring": "\"Return the value of the angular units.\""
+        },
+        {
+          "name": "units",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ],
+          "decorators": [
+            {
+              "name": "@property"
+            }
+          ],
+          "docstring": "\"\"\"\n        Return a 2-tuple of the units value and the units name. Automatically\n        determine whether to return the linear or angular units.\n        \"\"\""
+        },
+        {
+          "name": "ellipsoid",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ],
+          "decorators": [
+            {
+              "name": "# #### Spheroid/Ellipsoid Properties ####\n    @property"
+            }
+          ],
+          "docstring": "\"\"\"\n        Return a tuple of the ellipsoid parameters:\n         (semimajor axis, semiminor axis, and inverse flattening)\n        \"\"\""
+        },
+        {
+          "name": "semi_major",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ],
+          "decorators": [
+            {
+              "name": "@property"
+            }
+          ],
+          "docstring": "\"Return the Semi Major Axis for this Spatial Reference.\""
+        },
+        {
+          "name": "semi_minor",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ],
+          "decorators": [
+            {
+              "name": "@property"
+            }
+          ],
+          "docstring": "\"Return the Semi Minor Axis for this Spatial Reference.\""
+        },
+        {
+          "name": "inverse_flattening",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ],
+          "decorators": [
+            {
+              "name": "@property"
+            }
+          ],
+          "docstring": "\"Return the Inverse Flattening for this Spatial Reference.\""
+        },
+        {
+          "name": "geographic",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ],
+          "decorators": [
+            {
+              "name": "# #### Boolean Properties ####\n    @property"
+            }
+          ],
+          "docstring": "\"\"\"\n        Return True if this SpatialReference is geographic\n         (root node is GEOGCS).\n        \"\"\""
+        },
+        {
+          "name": "local",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ],
+          "decorators": [
+            {
+              "name": "@property"
+            }
+          ],
+          "docstring": "\"Return True if this SpatialReference is local (root node is LOCAL_CS).\""
+        },
+        {
+          "name": "projected",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ],
+          "decorators": [
+            {
+              "name": "@property"
+            }
+          ],
+          "docstring": "\"\"\"\n        Return True if this SpatialReference is a projected coordinate system\n         (root node is PROJCS).\n        \"\"\""
+        },
+        {
+          "name": "import_epsg",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "epsg",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"Import the Spatial Reference from the EPSG code (an integer).\""
+        },
+        {
+          "name": "import_proj",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "proj",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"Import the Spatial Reference from a PROJ string.\"\"\""
+        },
+        {
+          "name": "import_user_input",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "user_input",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"Import the Spatial Reference from the given user input string.\""
+        },
+        {
+          "name": "import_wkt",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "wkt",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"Import the Spatial Reference from OGC WKT (string)\""
+        },
+        {
+          "name": "import_xml",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "xml",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"Import the Spatial Reference from an XML string.\""
+        },
+        {
+          "name": "wkt",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ],
+          "decorators": [
+            {
+              "name": "# #### Export Properties ####\n    @property"
+            }
+          ],
+          "docstring": "\"Return the WKT representation of this Spatial Reference.\""
+        },
+        {
+          "name": "pretty_wkt",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "simplify",
+              "annotation": null
+            }
+          ],
+          "decorators": [
+            {
+              "name": "@property"
+            }
+          ],
+          "docstring": "\"Return the 'pretty' representation of the WKT.\""
+        },
+        {
+          "name": "proj",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ],
+          "decorators": [
+            {
+              "name": "@property"
+            }
+          ],
+          "docstring": "\"\"\"Return the PROJ representation for this Spatial Reference.\"\"\""
+        },
+        {
+          "name": "proj4",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ],
+          "decorators": [
+            {
+              "name": "@property"
+            }
+          ],
+          "docstring": "\"Alias for proj().\""
+        },
+        {
+          "name": "xml",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "dialect",
+              "annotation": null
+            }
+          ],
+          "decorators": [
+            {
+              "name": "@property"
+            }
+          ],
+          "docstring": "\"Return the XML representation of this Spatial Reference.\""
+        }
+      ],
+      "classes": [],
+      "docstring": "\"\"\"\n    A wrapper for the OGRSpatialReference object. According to the GDAL web site,\n    the SpatialReference object \"provide[s] services to represent coordinate\n    systems (projections and datums) and to transform between them.\"\n    \"\"\""
+    },
+    {
+      "name": "CoordTransform",
+      "methods": [],
+      "classes": [],
+      "docstring": "\"The coordinate system transformation object.\""
+    }
+  ],
+  "doc": "\"\"\"\n  The Spatial Reference class, represents OGR Spatial Reference objects.\n\n  Example:\n  >>> from django.contrib.gis.gdal import SpatialReference\n  >>> srs = SpatialReference('WGS84')\n  >>> print(srs)\n  GEOGCS[\"WGS 84\",\n      DATUM[\"WGS_1984\",\n          SPHEROID[\"WGS 84\",6378137,298.257223563,\n              AUTHORITY[\"EPSG\",\"7030\"]],\n          TOWGS84[0,0,0,0,0,0,0],\n          AUTHORITY[\"EPSG\",\"6326\"]],\n      PRIMEM[\"Greenwich\",0,\n          AUTHORITY[\"EPSG\",\"8901\"]],\n      UNIT[\"degree\",0.01745329251994328,\n          AUTHORITY[\"EPSG\",\"9122\"]],\n      AUTHORITY[\"EPSG\",\"4326\"]]\n  >>> print(srs.proj)\n  +proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs\n  >>> print(srs.ellipsoid)\n  (6378137.0, 6356752.3142451793, 298.25722356300003)\n  >>> print(srs.projected, srs.geographic)\n  False True\n  >>> srs.import_epsg(32140)\n  >>> print(srs.name)\n  NAD83 / Texas South Central\n\"\"\""
+}

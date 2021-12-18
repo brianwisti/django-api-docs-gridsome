@@ -1,0 +1,48 @@
+{
+  "functions": [],
+  "classes": [
+    {
+      "name": "OpenLayersWidget",
+      "methods": [
+        {
+          "name": "get_context",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "name",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "value",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "attrs",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "map_options",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"Build the map options hash for the OpenLayers template.\"\"\""
+        }
+      ],
+      "classes": [],
+      "docstring": "\"\"\"\n    Render an OpenLayers map using the WKT of the geometry.\n    \"\"\""
+    }
+  ]
+}

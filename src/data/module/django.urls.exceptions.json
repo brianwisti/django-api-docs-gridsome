@@ -1,0 +1,15 @@
+{
+  "functions": [],
+  "classes": [
+    {
+      "name": "Resolver404",
+      "methods": [],
+      "classes": []
+    },
+    {
+      "name": "NoReverseMatch",
+      "methods": [],
+      "classes": []
+    }
+  ]
+}

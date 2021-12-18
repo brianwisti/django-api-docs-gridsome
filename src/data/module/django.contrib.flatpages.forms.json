@@ -1,0 +1,37 @@
+{
+  "functions": [],
+  "classes": [
+    {
+      "name": "FlatpageForm",
+      "methods": [
+        {
+          "name": "clean_url",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "clean",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "Meta",
+          "methods": [],
+          "classes": []
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,120 @@
+{
+  "functions": [],
+  "classes": [
+    {
+      "name": "UploadedFile",
+      "methods": [],
+      "classes": [],
+      "docstring": "\"\"\"\n    An abstract uploaded file (``TemporaryUploadedFile`` and\n    ``InMemoryUploadedFile`` are the built-in concrete subclasses).\n\n    An ``UploadedFile`` object behaves somewhat like a file object and\n    represents some file data that the user submitted with a form.\n    \"\"\""
+    },
+    {
+      "name": "TemporaryUploadedFile",
+      "methods": [
+        {
+          "name": "temporary_file_path",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"Return the full path of this file.\"\"\""
+        },
+        {
+          "name": "close",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ]
+        }
+      ],
+      "classes": [],
+      "docstring": "\"\"\"\n    A file uploaded to a temporary location (i.e. stream-to-disk).\n    \"\"\""
+    },
+    {
+      "name": "InMemoryUploadedFile",
+      "methods": [
+        {
+          "name": "open",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "mode",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "chunks",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "chunk_size",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "multiple_chunks",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "chunk_size",
+              "annotation": null
+            }
+          ]
+        }
+      ],
+      "classes": [],
+      "docstring": "\"\"\"\n    A file uploaded into memory (i.e. stream-to-memory).\n    \"\"\""
+    },
+    {
+      "name": "SimpleUploadedFile",
+      "methods": [
+        {
+          "name": "from_dict",
+          "params": [
+            {
+              "prefix": "",
+              "name": "cls",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "file_dict",
+              "annotation": null
+            }
+          ],
+          "decorators": [
+            {
+              "name": "@classmethod"
+            }
+          ],
+          "docstring": "\"\"\"\n        Create a SimpleUploadedFile object from a dictionary with keys:\n           - filename\n           - content-type\n           - content\n        \"\"\""
+        }
+      ],
+      "classes": [],
+      "docstring": "\"\"\"\n    A simple representation of a file, which just has content, size, and a name.\n    \"\"\""
+    }
+  ],
+  "doc": "\"\"\"\nClasses representing uploaded files.\n\"\"\""
+}

@@ -1,0 +1,1586 @@
+{
+  "functions": [
+    {
+      "name": "media_property",
+      "params": [
+        {
+          "prefix": "",
+          "name": "cls",
+          "annotation": null
+        }
+      ]
+    },
+    {
+      "name": "boolean_check",
+      "params": [
+        {
+          "prefix": "",
+          "name": "v",
+          "annotation": null
+        }
+      ]
+    }
+  ],
+  "classes": [
+    {
+      "name": "MediaOrderConflictWarning",
+      "methods": [],
+      "classes": []
+    },
+    {
+      "name": "Media",
+      "methods": [
+        {
+          "name": "render",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "render_js",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "render_css",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "absolute_path",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "path",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        Given a relative or absolute path to a static asset, return an absolute\n        path. An absolute path will be returned unchanged while a relative path\n        will be passed to django.templatetags.static.static().\n        \"\"\""
+        },
+        {
+          "name": "merge",
+          "params": [
+            {
+              "prefix": "*",
+              "name": "lists",
+              "annotation": null
+            }
+          ],
+          "decorators": [
+            {
+              "name": "@staticmethod"
+            }
+          ],
+          "docstring": "\"\"\"\n        Merge lists while trying to keep the relative order of the elements.\n        Warn if the lists have the same elements in a different relative order.\n\n        For static assets it can be important to have them included in the DOM\n        in a certain order. In JavaScript you may not be able to reference a\n        global or in CSS you might want to override a style.\n        \"\"\""
+        }
+      ],
+      "classes": [],
+      "decorators": [
+        {
+          "name": "@html_safe"
+        }
+      ]
+    },
+    {
+      "name": "MediaDefiningClass",
+      "methods": [],
+      "classes": [],
+      "docstring": "\"\"\"\n    Metaclass for classes that can have media definitions.\n    \"\"\""
+    },
+    {
+      "name": "Widget",
+      "methods": [
+        {
+          "name": "is_hidden",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ],
+          "decorators": [
+            {
+              "name": "@property"
+            }
+          ]
+        },
+        {
+          "name": "subwidgets",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "name",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "value",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "attrs",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "format_value",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "value",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        Return a value as it should appear when rendered in a template.\n        \"\"\""
+        },
+        {
+          "name": "get_context",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "name",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "value",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "attrs",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "render",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "name",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "value",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "attrs",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "renderer",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"Render the widget as an HTML string.\"\"\""
+        },
+        {
+          "name": "build_attrs",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "base_attrs",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "extra_attrs",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"Build an attribute dictionary.\"\"\""
+        },
+        {
+          "name": "value_from_datadict",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "data",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "files",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "name",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        Given a dictionary of data and this widget's name, return the value\n        of this widget or None if it's not provided.\n        \"\"\""
+        },
+        {
+          "name": "value_omitted_from_data",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "data",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "files",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "name",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "id_for_label",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "id_",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        Return the HTML ID attribute of this Widget for use by a <label>,\n        given the ID of the field. Return None if no ID is available.\n\n        This hook is necessary because some widgets have multiple HTML\n        elements and, thus, multiple IDs. In that case, this method should\n        return an ID value that corresponds to the first ID in the widget's\n        tags.\n        \"\"\""
+        },
+        {
+          "name": "use_required_attribute",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "initial",
+              "annotation": null
+            }
+          ]
+        }
+      ],
+      "classes": []
+    },
+    {
+      "name": "Input",
+      "methods": [
+        {
+          "name": "get_context",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "name",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "value",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "attrs",
+              "annotation": null
+            }
+          ]
+        }
+      ],
+      "classes": [],
+      "docstring": "\"\"\"\n    Base class for all <input> widgets.\n    \"\"\""
+    },
+    {
+      "name": "TextInput",
+      "methods": [],
+      "classes": []
+    },
+    {
+      "name": "NumberInput",
+      "methods": [],
+      "classes": []
+    },
+    {
+      "name": "EmailInput",
+      "methods": [],
+      "classes": []
+    },
+    {
+      "name": "URLInput",
+      "methods": [],
+      "classes": []
+    },
+    {
+      "name": "PasswordInput",
+      "methods": [
+        {
+          "name": "get_context",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "name",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "value",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "attrs",
+              "annotation": null
+            }
+          ]
+        }
+      ],
+      "classes": []
+    },
+    {
+      "name": "HiddenInput",
+      "methods": [],
+      "classes": []
+    },
+    {
+      "name": "MultipleHiddenInput",
+      "methods": [
+        {
+          "name": "get_context",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "name",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "value",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "attrs",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "value_from_datadict",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "data",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "files",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "name",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "format_value",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "value",
+              "annotation": null
+            }
+          ]
+        }
+      ],
+      "classes": [],
+      "docstring": "\"\"\"\n    Handle <input type=\"hidden\"> for fields that have a list\n    of values.\n    \"\"\""
+    },
+    {
+      "name": "FileInput",
+      "methods": [
+        {
+          "name": "format_value",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "value",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"File input never renders a value.\"\"\""
+        },
+        {
+          "name": "value_from_datadict",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "data",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "files",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "name",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"File widgets take data from FILES, not POST\""
+        },
+        {
+          "name": "value_omitted_from_data",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "data",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "files",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "name",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "use_required_attribute",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "initial",
+              "annotation": null
+            }
+          ]
+        }
+      ],
+      "classes": []
+    },
+    {
+      "name": "ClearableFileInput",
+      "methods": [
+        {
+          "name": "clear_checkbox_name",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "name",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        Given the name of the file input, return the name of the clear checkbox\n        input.\n        \"\"\""
+        },
+        {
+          "name": "clear_checkbox_id",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "name",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        Given the name of the clear checkbox input, return the HTML id for it.\n        \"\"\""
+        },
+        {
+          "name": "is_initial",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "value",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        Return whether value is considered to be initial value.\n        \"\"\""
+        },
+        {
+          "name": "format_value",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "value",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        Return the file object if it has a defined url attribute.\n        \"\"\""
+        },
+        {
+          "name": "get_context",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "name",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "value",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "attrs",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "value_from_datadict",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "data",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "files",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "name",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "value_omitted_from_data",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "data",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "files",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "name",
+              "annotation": null
+            }
+          ]
+        }
+      ],
+      "classes": []
+    },
+    {
+      "name": "Textarea",
+      "methods": [],
+      "classes": []
+    },
+    {
+      "name": "DateTimeBaseInput",
+      "methods": [
+        {
+          "name": "format_value",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "value",
+              "annotation": null
+            }
+          ]
+        }
+      ],
+      "classes": []
+    },
+    {
+      "name": "DateInput",
+      "methods": [],
+      "classes": []
+    },
+    {
+      "name": "DateTimeInput",
+      "methods": [],
+      "classes": []
+    },
+    {
+      "name": "TimeInput",
+      "methods": [],
+      "classes": []
+    },
+    {
+      "name": "CheckboxInput",
+      "methods": [
+        {
+          "name": "format_value",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "value",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"Only return the 'value' attribute if value isn't empty.\"\"\""
+        },
+        {
+          "name": "get_context",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "name",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "value",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "attrs",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "value_from_datadict",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "data",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "files",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "name",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "value_omitted_from_data",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "data",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "files",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "name",
+              "annotation": null
+            }
+          ]
+        }
+      ],
+      "classes": []
+    },
+    {
+      "name": "ChoiceWidget",
+      "methods": [
+        {
+          "name": "subwidgets",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "name",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "value",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "attrs",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        Yield all \"subwidgets\" of this widget. Used to enable iterating\n        options from a BoundField for choice widgets.\n        \"\"\""
+        },
+        {
+          "name": "options",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "name",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "value",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "attrs",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"Yield a flat list of options for this widgets.\"\"\""
+        },
+        {
+          "name": "optgroups",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "name",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "value",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "attrs",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"Return a list of optgroups for this widget.\"\"\""
+        },
+        {
+          "name": "create_option",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "name",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "value",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "label",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "selected",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "index",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "subindex",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "attrs",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "get_context",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "name",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "value",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "attrs",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "id_for_label",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "id_",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "index",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        Use an incremented id for each option where the main widget\n        references the zero index.\n        \"\"\""
+        },
+        {
+          "name": "value_from_datadict",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "data",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "files",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "name",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "format_value",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "value",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"Return selected values as a list.\"\"\""
+        }
+      ],
+      "classes": []
+    },
+    {
+      "name": "Select",
+      "methods": [
+        {
+          "name": "get_context",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "name",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "value",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "attrs",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "use_required_attribute",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "initial",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        Don't render 'required' if the first <option> has a value, as that's\n        invalid HTML.\n        \"\"\""
+        }
+      ],
+      "classes": []
+    },
+    {
+      "name": "NullBooleanSelect",
+      "methods": [
+        {
+          "name": "format_value",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "value",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "value_from_datadict",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "data",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "files",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "name",
+              "annotation": null
+            }
+          ]
+        }
+      ],
+      "classes": [],
+      "docstring": "\"\"\"\n    A Select Widget intended to be used with NullBooleanField.\n    \"\"\""
+    },
+    {
+      "name": "SelectMultiple",
+      "methods": [
+        {
+          "name": "value_from_datadict",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "data",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "files",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "name",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "value_omitted_from_data",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "data",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "files",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "name",
+              "annotation": null
+            }
+          ]
+        }
+      ],
+      "classes": []
+    },
+    {
+      "name": "RadioSelect",
+      "methods": [
+        {
+          "name": "id_for_label",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "id_",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "index",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        Don't include for=\"field_0\" in <label> to improve accessibility when\n        using a screen reader, in addition clicking such a label would toggle\n        the first input.\n        \"\"\""
+        }
+      ],
+      "classes": []
+    },
+    {
+      "name": "CheckboxSelectMultiple",
+      "methods": [
+        {
+          "name": "use_required_attribute",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "initial",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "value_omitted_from_data",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "data",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "files",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "name",
+              "annotation": null
+            }
+          ]
+        }
+      ],
+      "classes": []
+    },
+    {
+      "name": "MultiWidget",
+      "methods": [
+        {
+          "name": "is_hidden",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ],
+          "decorators": [
+            {
+              "name": "@property"
+            }
+          ]
+        },
+        {
+          "name": "get_context",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "name",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "value",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "attrs",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "id_for_label",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "id_",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "value_from_datadict",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "data",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "files",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "name",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "value_omitted_from_data",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "data",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "files",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "name",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "decompress",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "value",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        Return a list of decompressed values for the given compressed value.\n        The given value can be assumed to be valid, but not necessarily\n        non-empty.\n        \"\"\""
+        },
+        {
+          "name": "needs_multipart_form",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ],
+          "decorators": [
+            {
+              "name": "@property"
+            }
+          ]
+        }
+      ],
+      "classes": [],
+      "docstring": "\"\"\"\n    A widget that is composed of multiple widgets.\n\n    In addition to the values added by Widget.get_context(), this widget\n    adds a list of subwidgets to the context as widget['subwidgets'].\n    These can be looped over and rendered like normal widgets.\n\n    You'll probably want to use this class with MultiValueField.\n    \"\"\""
+    },
+    {
+      "name": "SplitDateTimeWidget",
+      "methods": [
+        {
+          "name": "decompress",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "value",
+              "annotation": null
+            }
+          ]
+        }
+      ],
+      "classes": [],
+      "docstring": "\"\"\"\n    A widget that splits datetime input into two <input type=\"text\"> boxes.\n    \"\"\""
+    },
+    {
+      "name": "SplitHiddenDateTimeWidget",
+      "methods": [],
+      "classes": [],
+      "docstring": "\"\"\"\n    A widget that splits datetime input into two <input type=\"hidden\"> inputs.\n    \"\"\""
+    },
+    {
+      "name": "SelectDateWidget",
+      "methods": [
+        {
+          "name": "get_context",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "name",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "value",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "attrs",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "format_value",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "value",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        Return a dict containing the year, month, and day of the current value.\n        Use dict instead of a datetime to allow invalid dates such as February\n        31 to display correctly.\n        \"\"\""
+        },
+        {
+          "name": "id_for_label",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "id_",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "value_from_datadict",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "data",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "files",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "name",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "value_omitted_from_data",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "data",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "files",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "name",
+              "annotation": null
+            }
+          ]
+        }
+      ],
+      "classes": [],
+      "docstring": "\"\"\"\n    A widget that splits date input into three <select> boxes.\n\n    This also serves as an example of a Widget that has more than one HTML\n    element and hence implements value_from_datadict.\n    \"\"\""
+    }
+  ],
+  "doc": "\"\"\"\nHTML Widget classes\n\"\"\""
+}

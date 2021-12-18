@@ -1,0 +1,207 @@
+{
+  "functions": [],
+  "classes": [
+    {
+      "name": "DeleteQuery",
+      "methods": [
+        {
+          "name": "do_query",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "table",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "where",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "using",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "delete_batch",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "pk_list",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "using",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        Set up and execute delete queries for all the objects in pk_list.\n\n        More than one physical query may be executed if there are a\n        lot of values in pk_list.\n        \"\"\""
+        }
+      ],
+      "classes": [],
+      "docstring": "\"\"\"A DELETE SQL query.\"\"\""
+    },
+    {
+      "name": "UpdateQuery",
+      "methods": [
+        {
+          "name": "clone",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "update_batch",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "pk_list",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "values",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "using",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "add_update_values",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "values",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        Convert a dictionary of field name to value mappings into an update\n        query. This is the entry point for the public update() method on\n        querysets.\n        \"\"\""
+        },
+        {
+          "name": "add_update_fields",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "values_seq",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        Append a sequence of (field, model, value) triples to the internal list\n        that will be used to generate the UPDATE query. Might be more usefully\n        called add_update_targets() to hint at the extra information here.\n        \"\"\""
+        },
+        {
+          "name": "add_related_update",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "model",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "field",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "value",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        Add (name, value) to an update query for an ancestor model.\n\n        Update are coalesced so that only one update query per ancestor is run.\n        \"\"\""
+        },
+        {
+          "name": "get_related_updates",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        Return a list of query objects: one for each update required to an\n        ancestor model. Each query will have the same filtering conditions as\n        the current query but will only update a single table.\n        \"\"\""
+        }
+      ],
+      "classes": [],
+      "docstring": "\"\"\"An UPDATE SQL query.\"\"\""
+    },
+    {
+      "name": "InsertQuery",
+      "methods": [
+        {
+          "name": "insert_values",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "fields",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "objs",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "raw",
+              "annotation": null
+            }
+          ]
+        }
+      ],
+      "classes": []
+    },
+    {
+      "name": "AggregateQuery",
+      "methods": [],
+      "classes": [],
+      "docstring": "\"\"\"\n    Take another query as a parameter to the FROM clause and only select the\n    elements in the provided list.\n    \"\"\""
+    }
+  ],
+  "doc": "\"\"\"\nQuery subclasses which provide extra functionality beyond simple data retrieval.\n\"\"\""
+}

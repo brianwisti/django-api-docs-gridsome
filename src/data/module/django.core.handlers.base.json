@@ -1,0 +1,190 @@
+{
+  "functions": [
+    {
+      "name": "reset_urlconf",
+      "params": [
+        {
+          "prefix": "",
+          "name": "sender",
+          "annotation": null
+        },
+        {
+          "prefix": "**",
+          "name": "kwargs",
+          "annotation": null
+        }
+      ],
+      "docstring": "\"\"\"Reset the URLconf after each request is finished.\"\"\""
+    }
+  ],
+  "classes": [
+    {
+      "name": "BaseHandler",
+      "methods": [
+        {
+          "name": "load_middleware",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "is_async",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        Populate middleware lists from settings.MIDDLEWARE.\n\n        Must be called after the environment is fixed (see __call__ in subclasses).\n        \"\"\""
+        },
+        {
+          "name": "adapt_method_mode",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "is_async",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "method",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "method_is_async",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "debug",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "name",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        Adapt a method to be in the correct \"mode\":\n        - If is_async is False:\n          - Synchronous methods are left alone\n          - Asynchronous methods are wrapped with async_to_sync\n        - If is_async is True:\n          - Synchronous methods are wrapped with sync_to_async()\n          - Asynchronous methods are left alone\n        \"\"\""
+        },
+        {
+          "name": "get_response",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "request",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"Return an HttpResponse object for the given HttpRequest.\"\"\""
+        },
+        {
+          "name": "get_response_async",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "request",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        Asynchronous version of get_response.\n\n        Funneling everything, including WSGI, into a single async\n        get_response() is too slow. Avoid the context switch by using\n        a separate async response path.\n        \"\"\""
+        },
+        {
+          "name": "resolve_request",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "request",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        Retrieve/set the urlconf for the request. Return the view resolved,\n        with its args and kwargs.\n        \"\"\""
+        },
+        {
+          "name": "check_response",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "response",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "callback",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "name",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        Raise an error if the view returned None or an uncalled coroutine.\n        \"\"\""
+        },
+        {
+          "name": "make_view_atomic",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "view",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "process_exception_by_middleware",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "exception",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "request",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        Pass the exception to the exception middleware. If no middleware\n        return a response for this exception, return None.\n        \"\"\""
+        }
+      ],
+      "classes": []
+    }
+  ]
+}

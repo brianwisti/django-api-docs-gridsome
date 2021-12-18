@@ -1,0 +1,43 @@
+{
+  "functions": [],
+  "classes": [
+    {
+      "name": "EmailBackend",
+      "methods": [
+        {
+          "name": "write_message",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "message",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "send_messages",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "email_messages",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"Write all messages to the stream in a thread-safe way.\"\"\""
+        }
+      ],
+      "classes": []
+    }
+  ],
+  "doc": "\"\"\"\nEmail backend that writes messages to console instead of sending them.\n\"\"\""
+}

@@ -1,0 +1,460 @@
+{
+  "functions": [],
+  "classes": [
+    {
+      "name": "AlreadyRegistered",
+      "methods": [],
+      "classes": []
+    },
+    {
+      "name": "NotRegistered",
+      "methods": [],
+      "classes": []
+    },
+    {
+      "name": "AdminSite",
+      "methods": [
+        {
+          "name": "check",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "app_configs",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        Run the system checks on all ModelAdmins, except if they aren't\n        customized at all.\n        \"\"\""
+        },
+        {
+          "name": "register",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "model_or_iterable",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "admin_class",
+              "annotation": null
+            },
+            {
+              "prefix": "**",
+              "name": "options",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        Register the given model(s) with the given admin class.\n\n        The model(s) should be Model classes, not instances.\n\n        If an admin class isn't given, use ModelAdmin (the default admin\n        options). If keyword arguments are given -- e.g., list_display --\n        apply them as options to the admin class.\n\n        If a model is already registered, raise AlreadyRegistered.\n\n        If a model is abstract, raise ImproperlyConfigured.\n        \"\"\""
+        },
+        {
+          "name": "unregister",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "model_or_iterable",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        Unregister the given model(s).\n\n        If a model isn't already registered, raise NotRegistered.\n        \"\"\""
+        },
+        {
+          "name": "is_registered",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "model",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        Check if a model class is registered with this `AdminSite`.\n        \"\"\""
+        },
+        {
+          "name": "add_action",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "action",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "name",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        Register an action to be available globally.\n        \"\"\""
+        },
+        {
+          "name": "disable_action",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "name",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        Disable a globally-registered action. Raise KeyError for invalid names.\n        \"\"\""
+        },
+        {
+          "name": "get_action",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "name",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        Explicitly get a registered global action whether it's enabled or\n        not. Raise KeyError for invalid names.\n        \"\"\""
+        },
+        {
+          "name": "actions",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ],
+          "decorators": [
+            {
+              "name": "@property"
+            }
+          ],
+          "docstring": "\"\"\"\n        Get all the enabled actions as an iterable of (name, func).\n        \"\"\""
+        },
+        {
+          "name": "has_permission",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "request",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        Return True if the given HttpRequest has permission to view\n        *at least one* page in the admin site.\n        \"\"\""
+        },
+        {
+          "name": "admin_view",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "view",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "cacheable",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        Decorator to create an admin view attached to this ``AdminSite``. This\n        wraps the view and provides permission checking by calling\n        ``self.has_permission``.\n\n        You'll want to use this from within ``AdminSite.get_urls()``:\n\n            class MyAdminSite(AdminSite):\n\n                def get_urls(self):\n                    from django.urls import path\n\n                    urls = super().get_urls()\n                    urls += [\n                        path('my_view/', self.admin_view(some_view))\n                    ]\n                    return urls\n\n        By default, admin_views are marked non-cacheable using the\n        ``never_cache`` decorator. If the view can be safely cached, set\n        cacheable=True.\n        \"\"\""
+        },
+        {
+          "name": "get_urls",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "urls",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ],
+          "decorators": [
+            {
+              "name": "@property"
+            }
+          ]
+        },
+        {
+          "name": "each_context",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "request",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        Return a dictionary of variables to put in the template context for\n        *every* page in the admin site.\n\n        For sites running on a subpath, use the SCRIPT_NAME value if site_url\n        hasn't been customized.\n        \"\"\""
+        },
+        {
+          "name": "password_change",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "request",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "extra_context",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        Handle the \"change password\" task -- both form display and validation.\n        \"\"\""
+        },
+        {
+          "name": "password_change_done",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "request",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "extra_context",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        Display the \"success\" page after a password change.\n        \"\"\""
+        },
+        {
+          "name": "i18n_javascript",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "request",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "extra_context",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        Display the i18n JavaScript that the Django admin requires.\n\n        `extra_context` is unused but present for consistency with the other\n        admin views.\n        \"\"\""
+        },
+        {
+          "name": "logout",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "request",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "extra_context",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        Log out the user for the given HttpRequest.\n\n        This should *not* assume the user is already logged in.\n        \"\"\""
+        },
+        {
+          "name": "login",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "request",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "extra_context",
+              "annotation": null
+            }
+          ],
+          "decorators": [
+            {
+              "name": "@method_decorator(never_cache)"
+            }
+          ],
+          "docstring": "\"\"\"\n        Display the login form for the given HttpRequest.\n        \"\"\""
+        },
+        {
+          "name": "autocomplete_view",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "request",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "catch_all_view",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "request",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "url",
+              "annotation": null
+            }
+          ],
+          "decorators": [
+            {
+              "name": "@no_append_slash"
+            }
+          ]
+        },
+        {
+          "name": "get_app_list",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "request",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        Return a sorted list of all the installed apps that have been\n        registered in this site.\n        \"\"\""
+        },
+        {
+          "name": "index",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "request",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "extra_context",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        Display the main admin index page, which lists all of the installed\n        apps that have been registered in this site.\n        \"\"\""
+        },
+        {
+          "name": "app_index",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "request",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "app_label",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "extra_context",
+              "annotation": null
+            }
+          ]
+        }
+      ],
+      "classes": [],
+      "docstring": "\"\"\"\n    An AdminSite object encapsulates an instance of the Django admin application, ready\n    to be hooked in to your URLconf. Models are registered with the AdminSite using the\n    register() method, and the get_urls() method can then be used to access Django view\n    functions that present a full admin interface for the collection of registered\n    models.\n    \"\"\""
+    },
+    {
+      "name": "DefaultAdminSite",
+      "methods": [],
+      "classes": []
+    }
+  ]
+}

@@ -1,0 +1,433 @@
+{
+  "functions": [],
+  "classes": [
+    {
+      "name": "Reference",
+      "methods": [
+        {
+          "name": "references_table",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "table",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        Return whether or not this instance references the specified table.\n        \"\"\""
+        },
+        {
+          "name": "references_column",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "table",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "column",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        Return whether or not this instance references the specified column.\n        \"\"\""
+        },
+        {
+          "name": "rename_table_references",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "old_table",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "new_table",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        Rename all references to the old_name to the new_table.\n        \"\"\""
+        },
+        {
+          "name": "rename_column_references",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "table",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "old_column",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "new_column",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        Rename all references to the old_column to the new_column.\n        \"\"\""
+        }
+      ],
+      "classes": [],
+      "docstring": "\"\"\"Base class that defines the reference interface.\"\"\""
+    },
+    {
+      "name": "Table",
+      "methods": [
+        {
+          "name": "references_table",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "table",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "rename_table_references",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "old_table",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "new_table",
+              "annotation": null
+            }
+          ]
+        }
+      ],
+      "classes": [],
+      "docstring": "\"\"\"Hold a reference to a table.\"\"\""
+    },
+    {
+      "name": "TableColumns",
+      "methods": [
+        {
+          "name": "references_column",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "table",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "column",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "rename_column_references",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "table",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "old_column",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "new_column",
+              "annotation": null
+            }
+          ]
+        }
+      ],
+      "classes": [],
+      "docstring": "\"\"\"Base class for references to multiple columns of a table.\"\"\""
+    },
+    {
+      "name": "Columns",
+      "methods": [],
+      "classes": [],
+      "docstring": "\"\"\"Hold a reference to one or many columns.\"\"\""
+    },
+    {
+      "name": "IndexName",
+      "methods": [],
+      "classes": [],
+      "docstring": "\"\"\"Hold a reference to an index name.\"\"\""
+    },
+    {
+      "name": "IndexColumns",
+      "methods": [],
+      "classes": []
+    },
+    {
+      "name": "ForeignKeyName",
+      "methods": [
+        {
+          "name": "references_table",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "table",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "references_column",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "table",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "column",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "rename_table_references",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "old_table",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "new_table",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "rename_column_references",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "table",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "old_column",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "new_column",
+              "annotation": null
+            }
+          ]
+        }
+      ],
+      "classes": [],
+      "docstring": "\"\"\"Hold a reference to a foreign key name.\"\"\""
+    },
+    {
+      "name": "Statement",
+      "methods": [
+        {
+          "name": "references_table",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "table",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "references_column",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "table",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "column",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "rename_table_references",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "old_table",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "new_table",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "rename_column_references",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "table",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "old_column",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "new_column",
+              "annotation": null
+            }
+          ]
+        }
+      ],
+      "classes": [],
+      "docstring": "\"\"\"\n    Statement template and formatting parameters container.\n\n    Allows keeping a reference to a statement without interpolating identifiers\n    that might have to be adjusted if they're referencing a table or column\n    that is removed\n    \"\"\""
+    },
+    {
+      "name": "Expressions",
+      "methods": [
+        {
+          "name": "rename_table_references",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "old_table",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "new_table",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "rename_column_references",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "table",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "old_column",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "new_column",
+              "annotation": null
+            }
+          ]
+        }
+      ],
+      "classes": []
+    }
+  ],
+  "doc": "\"\"\"\nHelpers to manipulate deferred DDL statements that might need to be adjusted or\ndiscarded within when executing a migration.\n\"\"\""
+}

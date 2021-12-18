@@ -1,0 +1,32 @@
+{
+  "functions": [
+    {
+      "name": "file_move_safe",
+      "params": [
+        {
+          "prefix": "",
+          "name": "old_file_name",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "new_file_name",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "chunk_size",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "allow_overwrite",
+          "annotation": null
+        }
+      ],
+      "docstring": "\"\"\"\n    Move a file from one location to another in the safest way possible.\n\n    First, try ``os.rename``, which is simple but will break across filesystems.\n    If that fails, stream manually from one file to another in pure Python.\n\n    If the destination file exists and ``allow_overwrite`` is ``False``, raise\n    ``FileExistsError``.\n    \"\"\""
+    }
+  ],
+  "classes": [],
+  "doc": "\"\"\"\nMove a file in the safest way possible::\n\n    >>> from django.core.files.move import file_move_safe\n    >>> file_move_safe(\"/tmp/old_file\", \"/tmp/new_file\")\n\"\"\""
+}

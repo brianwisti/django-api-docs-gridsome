@@ -1,0 +1,185 @@
+{
+  "functions": [],
+  "classes": [
+    {
+      "name": "ChangeListSearchForm",
+      "methods": [],
+      "classes": []
+    },
+    {
+      "name": "ChangeList",
+      "methods": [
+        {
+          "name": "get_filters_params",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "params",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        Return all params except IGNORED_PARAMS.\n        \"\"\""
+        },
+        {
+          "name": "get_filters",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "request",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "get_query_string",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "new_params",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "remove",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "get_results",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "request",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "get_ordering_field",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "field_name",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        Return the proper model field name corresponding to the given\n        field_name to use for ordering. field_name may either be the name of a\n        proper model field or the name of a method (on the admin or model) or a\n        callable with the 'admin_order_field' attribute. Return None if no\n        proper model field name can be matched.\n        \"\"\""
+        },
+        {
+          "name": "get_ordering",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "request",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "queryset",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        Return the list of ordering fields for the change list.\n        First check the get_ordering() method in model admin, then check\n        the object's default ordering. Then, any manually-specified ordering\n        from the query string overrides anything. Finally, a deterministic\n        order is guaranteed by calling _get_deterministic_ordering() with the\n        constructed ordering.\n        \"\"\""
+        },
+        {
+          "name": "get_ordering_field_columns",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        Return a dictionary of ordering field column numbers and asc/desc.\n        \"\"\""
+        },
+        {
+          "name": "get_queryset",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "request",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "apply_select_related",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "qs",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "has_related_field_in_list_display",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "url_for_result",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "result",
+              "annotation": null
+            }
+          ]
+        }
+      ],
+      "classes": []
+    }
+  ]
+}

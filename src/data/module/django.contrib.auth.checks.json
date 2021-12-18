@@ -1,0 +1,35 @@
+{
+  "functions": [
+    {
+      "name": "check_user_model",
+      "params": [
+        {
+          "prefix": "",
+          "name": "app_configs",
+          "annotation": null
+        },
+        {
+          "prefix": "**",
+          "name": "kwargs",
+          "annotation": null
+        }
+      ]
+    },
+    {
+      "name": "check_models_permissions",
+      "params": [
+        {
+          "prefix": "",
+          "name": "app_configs",
+          "annotation": null
+        },
+        {
+          "prefix": "**",
+          "name": "kwargs",
+          "annotation": null
+        }
+      ]
+    }
+  ],
+  "classes": []
+}

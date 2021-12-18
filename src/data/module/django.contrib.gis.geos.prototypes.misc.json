@@ -1,0 +1,12 @@
+{
+  "functions": [],
+  "classes": [
+    {
+      "name": "DblFromGeom",
+      "methods": [],
+      "classes": [],
+      "docstring": "\"\"\"\n    Argument is a Geometry, return type is double that is passed\n    in by reference as the last argument.\n    \"\"\""
+    }
+  ],
+  "doc": "\"\"\"\n This module is for the miscellaneous GEOS routines, particularly the\n ones that return the area, distance, and length.\n\"\"\""
+}

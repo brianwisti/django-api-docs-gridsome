@@ -1,0 +1,42 @@
+{
+  "functions": [
+    {
+      "name": "env_func",
+      "params": [
+        {
+          "prefix": "",
+          "name": "f",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "argtypes",
+          "annotation": null
+        }
+      ],
+      "docstring": "\"For getting OGREnvelopes.\""
+    },
+    {
+      "name": "pnt_func",
+      "params": [
+        {
+          "prefix": "",
+          "name": "f",
+          "annotation": null
+        }
+      ],
+      "docstring": "\"For accessing point information.\""
+    },
+    {
+      "name": "topology_func",
+      "params": [
+        {
+          "prefix": "",
+          "name": "f",
+          "annotation": null
+        }
+      ]
+    }
+  ],
+  "classes": []
+}

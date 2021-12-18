@@ -1,0 +1,163 @@
+{
+  "functions": [],
+  "classes": [
+    {
+      "name": "SeleniumTestCaseBase",
+      "methods": [
+        {
+          "name": "import_webdriver",
+          "params": [
+            {
+              "prefix": "",
+              "name": "cls",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "browser",
+              "annotation": null
+            }
+          ],
+          "decorators": [
+            {
+              "name": "@classmethod"
+            }
+          ]
+        },
+        {
+          "name": "import_options",
+          "params": [
+            {
+              "prefix": "",
+              "name": "cls",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "browser",
+              "annotation": null
+            }
+          ],
+          "decorators": [
+            {
+              "name": "@classmethod"
+            }
+          ]
+        },
+        {
+          "name": "get_capability",
+          "params": [
+            {
+              "prefix": "",
+              "name": "cls",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "browser",
+              "annotation": null
+            }
+          ],
+          "decorators": [
+            {
+              "name": "@classmethod"
+            }
+          ]
+        },
+        {
+          "name": "create_options",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "create_webdriver",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ]
+        }
+      ],
+      "classes": []
+    },
+    {
+      "name": "SeleniumTestCase",
+      "methods": [
+        {
+          "name": "live_server_url",
+          "params": [
+            {
+              "prefix": "",
+              "name": "cls",
+              "annotation": null
+            }
+          ],
+          "decorators": [
+            {
+              "name": "@classproperty"
+            }
+          ]
+        },
+        {
+          "name": "allowed_host",
+          "params": [
+            {
+              "prefix": "",
+              "name": "cls",
+              "annotation": null
+            }
+          ],
+          "decorators": [
+            {
+              "name": "@classproperty"
+            }
+          ]
+        },
+        {
+          "name": "setUpClass",
+          "params": [
+            {
+              "prefix": "",
+              "name": "cls",
+              "annotation": null
+            }
+          ],
+          "decorators": [
+            {
+              "name": "@classmethod"
+            }
+          ]
+        },
+        {
+          "name": "disable_implicit_wait",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ],
+          "decorators": [
+            {
+              "name": "@contextmanager"
+            }
+          ],
+          "docstring": "\"\"\"Disable the default implicit wait.\"\"\""
+        }
+      ],
+      "classes": [],
+      "decorators": [
+        {
+          "name": "@tag('selenium')"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "functions": [
+    {
+      "name": "staticfiles_urlpatterns",
+      "params": [
+        {
+          "prefix": "",
+          "name": "prefix",
+          "annotation": null
+        }
+      ],
+      "docstring": "\"\"\"\n    Helper function to return a URL pattern for serving static files.\n    \"\"\""
+    }
+  ],
+  "classes": []
+}

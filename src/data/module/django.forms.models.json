@@ -1,0 +1,1046 @@
+{
+  "functions": [
+    {
+      "name": "construct_instance",
+      "params": [
+        {
+          "prefix": "",
+          "name": "form",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "instance",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "fields",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "exclude",
+          "annotation": null
+        }
+      ],
+      "docstring": "\"\"\"\n    Construct and return a model instance from the bound ``form``'s\n    ``cleaned_data``, but do not save the returned instance to the database.\n    \"\"\""
+    },
+    {
+      "name": "model_to_dict",
+      "params": [
+        {
+          "prefix": "",
+          "name": "instance",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "fields",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "exclude",
+          "annotation": null
+        }
+      ],
+      "docstring": "\"\"\"\n    Return a dict containing the data in ``instance`` suitable for passing as\n    a Form's ``initial`` keyword argument.\n\n    ``fields`` is an optional list of field names. If provided, return only the\n    named.\n\n    ``exclude`` is an optional list of field names. If provided, exclude the\n    named from the returned dict, even if they are listed in the ``fields``\n    argument.\n    \"\"\""
+    },
+    {
+      "name": "apply_limit_choices_to_to_formfield",
+      "params": [
+        {
+          "prefix": "",
+          "name": "formfield",
+          "annotation": null
+        }
+      ],
+      "docstring": "\"\"\"Apply limit_choices_to to the formfield's queryset if needed.\"\"\""
+    },
+    {
+      "name": "fields_for_model",
+      "params": [
+        {
+          "prefix": "",
+          "name": "model",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "fields",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "exclude",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "widgets",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "formfield_callback",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "localized_fields",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "labels",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "help_texts",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "error_messages",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "field_classes",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "apply_limit_choices_to",
+          "annotation": null
+        }
+      ],
+      "docstring": "\"\"\"\n    Return a dictionary containing form fields for the given model.\n\n    ``fields`` is an optional list of field names. If provided, return only the\n    named fields.\n\n    ``exclude`` is an optional list of field names. If provided, exclude the\n    named fields from the returned fields, even if they are listed in the\n    ``fields`` argument.\n\n    ``widgets`` is a dictionary of model field names mapped to a widget.\n\n    ``formfield_callback`` is a callable that takes a model field and returns\n    a form field.\n\n    ``localized_fields`` is a list of names of fields which should be localized.\n\n    ``labels`` is a dictionary of model field names mapped to a label.\n\n    ``help_texts`` is a dictionary of model field names mapped to a help text.\n\n    ``error_messages`` is a dictionary of model field names mapped to a\n    dictionary of error messages.\n\n    ``field_classes`` is a dictionary of model field names mapped to a form\n    field class.\n\n    ``apply_limit_choices_to`` is a boolean indicating if limit_choices_to\n    should be applied to a field's queryset.\n    \"\"\""
+    },
+    {
+      "name": "modelform_factory",
+      "params": [
+        {
+          "prefix": "",
+          "name": "model",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "form",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "fields",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "exclude",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "formfield_callback",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "widgets",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "localized_fields",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "labels",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "help_texts",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "error_messages",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "field_classes",
+          "annotation": null
+        }
+      ],
+      "docstring": "\"\"\"\n    Return a ModelForm containing form fields for the given model. You can\n    optionally pass a `form` argument to use as a starting point for\n    constructing the ModelForm.\n\n    ``fields`` is an optional list of field names. If provided, include only\n    the named fields in the returned fields. If omitted or '__all__', use all\n    fields.\n\n    ``exclude`` is an optional list of field names. If provided, exclude the\n    named fields from the returned fields, even if they are listed in the\n    ``fields`` argument.\n\n    ``widgets`` is a dictionary of model field names mapped to a widget.\n\n    ``localized_fields`` is a list of names of fields which should be localized.\n\n    ``formfield_callback`` is a callable that takes a model field and returns\n    a form field.\n\n    ``labels`` is a dictionary of model field names mapped to a label.\n\n    ``help_texts`` is a dictionary of model field names mapped to a help text.\n\n    ``error_messages`` is a dictionary of model field names mapped to a\n    dictionary of error messages.\n\n    ``field_classes`` is a dictionary of model field names mapped to a form\n    field class.\n    \"\"\""
+    },
+    {
+      "name": "modelformset_factory",
+      "params": [
+        {
+          "prefix": "",
+          "name": "model",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "form",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "formfield_callback",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "formset",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "extra",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "can_delete",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "can_order",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "max_num",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "fields",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "exclude",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "widgets",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "validate_max",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "localized_fields",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "labels",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "help_texts",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "error_messages",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "min_num",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "validate_min",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "field_classes",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "absolute_max",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "can_delete_extra",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "renderer",
+          "annotation": null
+        }
+      ],
+      "docstring": "\"\"\"Return a FormSet class for the given Django model class.\"\"\""
+    },
+    {
+      "name": "inlineformset_factory",
+      "params": [
+        {
+          "prefix": "",
+          "name": "parent_model",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "model",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "form",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "formset",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "fk_name",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "fields",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "exclude",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "extra",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "can_order",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "can_delete",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "max_num",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "formfield_callback",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "widgets",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "validate_max",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "localized_fields",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "labels",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "help_texts",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "error_messages",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "min_num",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "validate_min",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "field_classes",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "absolute_max",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "can_delete_extra",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "renderer",
+          "annotation": null
+        }
+      ],
+      "docstring": "\"\"\"\n    Return an ``InlineFormSet`` for the given kwargs.\n\n    ``fk_name`` must be provided if ``model`` has more than one ``ForeignKey``\n    to ``parent_model``.\n    \"\"\""
+    },
+    {
+      "name": "modelform_defines_fields",
+      "params": [
+        {
+          "prefix": "",
+          "name": "form_class",
+          "annotation": null
+        }
+      ]
+    }
+  ],
+  "classes": [
+    {
+      "name": "ModelFormOptions",
+      "methods": [],
+      "classes": []
+    },
+    {
+      "name": "ModelFormMetaclass",
+      "methods": [],
+      "classes": []
+    },
+    {
+      "name": "BaseModelForm",
+      "methods": [
+        {
+          "name": "clean",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "validate_unique",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        Call the instance's validate_unique() method and update the form's\n        validation errors if any were raised.\n        \"\"\""
+        },
+        {
+          "name": "save",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "commit",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        Save this form's self.instance object if commit=True. Otherwise, add\n        a save_m2m() method to the form which can be called after the instance\n        is saved manually at a later time. Return the model instance.\n        \"\"\""
+        }
+      ],
+      "classes": []
+    },
+    {
+      "name": "ModelForm",
+      "methods": [],
+      "classes": []
+    },
+    {
+      "name": "BaseModelFormSet",
+      "methods": [
+        {
+          "name": "initial_form_count",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"Return the number of forms that are required in this FormSet.\"\"\""
+        },
+        {
+          "name": "get_queryset",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "save_new",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "form",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "commit",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"Save and return a new model instance for the given form.\"\"\""
+        },
+        {
+          "name": "save_existing",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "form",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "instance",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "commit",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"Save and return an existing model instance for the given form.\"\"\""
+        },
+        {
+          "name": "delete_existing",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "obj",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "commit",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"Deletes an existing model instance.\"\"\""
+        },
+        {
+          "name": "save",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "commit",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        Save model instances for every form, adding and changing instances\n        as necessary, and return the list of instances.\n        \"\"\""
+        },
+        {
+          "name": "clean",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "validate_unique",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "get_unique_error_message",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "unique_check",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "get_date_error_message",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "date_check",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "get_form_error",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "save_existing_objects",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "commit",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "save_new_objects",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "commit",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "add_fields",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "form",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "index",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"Add a hidden field for the object's primary key.\"\"\""
+        }
+      ],
+      "classes": [],
+      "docstring": "\"\"\"\n    A ``FormSet`` for editing a queryset and/or adding new objects to it.\n    \"\"\""
+    },
+    {
+      "name": "BaseInlineFormSet",
+      "methods": [
+        {
+          "name": "initial_form_count",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "get_default_prefix",
+          "params": [
+            {
+              "prefix": "",
+              "name": "cls",
+              "annotation": null
+            }
+          ],
+          "decorators": [
+            {
+              "name": "@classmethod"
+            }
+          ]
+        },
+        {
+          "name": "save_new",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "form",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "commit",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "add_fields",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "form",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "index",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "get_unique_error_message",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "unique_check",
+              "annotation": null
+            }
+          ]
+        }
+      ],
+      "classes": [],
+      "docstring": "\"\"\"A formset for child objects related to a parent.\"\"\""
+    },
+    {
+      "name": "InlineForeignKeyField",
+      "methods": [
+        {
+          "name": "clean",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "value",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "has_changed",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "initial",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "data",
+              "annotation": null
+            }
+          ]
+        }
+      ],
+      "classes": [],
+      "docstring": "\"\"\"\n    A basic integer field that deals with validating the given value to a\n    given parent instance in an inline.\n    \"\"\""
+    },
+    {
+      "name": "ModelChoiceIteratorValue",
+      "methods": [],
+      "classes": []
+    },
+    {
+      "name": "ModelChoiceIterator",
+      "methods": [
+        {
+          "name": "choice",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "obj",
+              "annotation": null
+            }
+          ]
+        }
+      ],
+      "classes": []
+    },
+    {
+      "name": "ModelChoiceField",
+      "methods": [
+        {
+          "name": "get_limit_choices_to",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        Return ``limit_choices_to`` for this form field.\n\n        If it is a callable, invoke it and return the result.\n        \"\"\""
+        },
+        {
+          "name": "label_from_instance",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "obj",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        Convert objects into strings and generate the labels for the choices\n        presented by this object. Subclasses can override this method to\n        customize the display of the choices.\n        \"\"\""
+        },
+        {
+          "name": "prepare_value",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "value",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "to_python",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "value",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "validate",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "value",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "has_changed",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "initial",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "data",
+              "annotation": null
+            }
+          ]
+        }
+      ],
+      "classes": [],
+      "docstring": "\"\"\"A ChoiceField whose choices are a model QuerySet.\"\"\""
+    },
+    {
+      "name": "ModelMultipleChoiceField",
+      "methods": [
+        {
+          "name": "to_python",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "value",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "clean",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "value",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "prepare_value",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "value",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "has_changed",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "initial",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "data",
+              "annotation": null
+            }
+          ]
+        }
+      ],
+      "classes": [],
+      "docstring": "\"\"\"A MultipleChoiceField whose choices are a model QuerySet.\"\"\""
+    }
+  ],
+  "doc": "\"\"\"\nHelper functions for creating Form classes from Django models\nand database field objects.\n\"\"\""
+}

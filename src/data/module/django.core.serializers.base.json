@@ -1,0 +1,436 @@
+{
+  "functions": [
+    {
+      "name": "build_instance",
+      "params": [
+        {
+          "prefix": "",
+          "name": "Model",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "data",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "db",
+          "annotation": null
+        }
+      ],
+      "docstring": "\"\"\"\n    Build a model instance.\n\n    If the model instance doesn't have a primary key and the model supports\n    natural keys, try to retrieve it from the database.\n    \"\"\""
+    },
+    {
+      "name": "deserialize_m2m_values",
+      "params": [
+        {
+          "prefix": "",
+          "name": "field",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "field_value",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "using",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "handle_forward_references",
+          "annotation": null
+        }
+      ]
+    },
+    {
+      "name": "deserialize_fk_value",
+      "params": [
+        {
+          "prefix": "",
+          "name": "field",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "field_value",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "using",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "handle_forward_references",
+          "annotation": null
+        }
+      ]
+    }
+  ],
+  "classes": [
+    {
+      "name": "PickleSerializer",
+      "methods": [
+        {
+          "name": "dumps",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "obj",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "loads",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "data",
+              "annotation": null
+            }
+          ]
+        }
+      ],
+      "classes": [],
+      "docstring": "\"\"\"\n    Simple wrapper around pickle to be used in signing.dumps()/loads() and\n    cache backends.\n    \"\"\""
+    },
+    {
+      "name": "SerializerDoesNotExist",
+      "methods": [],
+      "classes": [],
+      "docstring": "\"\"\"The requested serializer was not found.\"\"\""
+    },
+    {
+      "name": "SerializationError",
+      "methods": [],
+      "classes": [],
+      "docstring": "\"\"\"Something bad happened during serialization.\"\"\""
+    },
+    {
+      "name": "DeserializationError",
+      "methods": [
+        {
+          "name": "WithData",
+          "params": [
+            {
+              "prefix": "",
+              "name": "cls",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "original_exc",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "model",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "fk",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "field_value",
+              "annotation": null
+            }
+          ],
+          "decorators": [
+            {
+              "name": "@classmethod"
+            }
+          ],
+          "docstring": "\"\"\"\n        Factory method for creating a deserialization error which has a more\n        explanatory message.\n        \"\"\""
+        }
+      ],
+      "classes": [],
+      "docstring": "\"\"\"Something bad happened during deserialization.\"\"\""
+    },
+    {
+      "name": "M2MDeserializationError",
+      "methods": [],
+      "classes": [],
+      "docstring": "\"\"\"Something bad happened during deserialization of a ManyToManyField.\"\"\""
+    },
+    {
+      "name": "ProgressBar",
+      "methods": [
+        {
+          "name": "update",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "count",
+              "annotation": null
+            }
+          ]
+        }
+      ],
+      "classes": []
+    },
+    {
+      "name": "Serializer",
+      "methods": [
+        {
+          "name": "serialize",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "queryset",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "stream",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "fields",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "use_natural_foreign_keys",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "use_natural_primary_keys",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "progress_output",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "object_count",
+              "annotation": null
+            },
+            {
+              "prefix": "**",
+              "name": "options",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        Serialize a queryset.\n        \"\"\""
+        },
+        {
+          "name": "start_serialization",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        Called when serializing of the queryset starts.\n        \"\"\""
+        },
+        {
+          "name": "end_serialization",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        Called when serializing of the queryset ends.\n        \"\"\""
+        },
+        {
+          "name": "start_object",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "obj",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        Called when serializing of an object starts.\n        \"\"\""
+        },
+        {
+          "name": "end_object",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "obj",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        Called when serializing of an object ends.\n        \"\"\""
+        },
+        {
+          "name": "handle_field",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "obj",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "field",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        Called to handle each individual (non-relational) field on an object.\n        \"\"\""
+        },
+        {
+          "name": "handle_fk_field",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "obj",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "field",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        Called to handle a ForeignKey field.\n        \"\"\""
+        },
+        {
+          "name": "handle_m2m_field",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "obj",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "field",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        Called to handle a ManyToManyField.\n        \"\"\""
+        },
+        {
+          "name": "getvalue",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        Return the fully serialized queryset (or None if the output stream is\n        not seekable).\n        \"\"\""
+        }
+      ],
+      "classes": [],
+      "docstring": "\"\"\"\n    Abstract serializer base class.\n    \"\"\""
+    },
+    {
+      "name": "Deserializer",
+      "methods": [],
+      "classes": [],
+      "docstring": "\"\"\"\n    Abstract base deserializer class.\n    \"\"\""
+    },
+    {
+      "name": "DeserializedObject",
+      "methods": [
+        {
+          "name": "save",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "save_m2m",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "using",
+              "annotation": null
+            },
+            {
+              "prefix": "**",
+              "name": "kwargs",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "save_deferred_fields",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "using",
+              "annotation": null
+            }
+          ]
+        }
+      ],
+      "classes": [],
+      "docstring": "\"\"\"\n    A deserialized model.\n\n    Basically a container for holding the pre-saved deserialized data along\n    with the many-to-many data saved with the object.\n\n    Call ``save()`` to save the object (with the many-to-many data) to the\n    database; call ``save(save_m2m=False)`` to save just the object fields\n    (and not touch the many-to-many stuff.)\n    \"\"\""
+    }
+  ],
+  "doc": "\"\"\"\nModule for abstract serializer/unserializer base classes.\n\"\"\""
+}

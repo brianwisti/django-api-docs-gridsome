@@ -1,0 +1,15 @@
+{
+  "functions": [],
+  "classes": [
+    {
+      "name": "RandomUUID",
+      "methods": [],
+      "classes": []
+    },
+    {
+      "name": "TransactionNow",
+      "methods": [],
+      "classes": []
+    }
+  ]
+}

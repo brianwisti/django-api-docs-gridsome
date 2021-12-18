@@ -1,0 +1,70 @@
+{
+  "functions": [
+    {
+      "name": "std_call",
+      "params": [
+        {
+          "prefix": "",
+          "name": "func",
+          "annotation": null
+        }
+      ],
+      "docstring": "\"\"\"\n    Return the correct STDCALL function for certain OSR routines on Win32\n    platforms.\n    \"\"\""
+    },
+    {
+      "name": "gdal_version",
+      "params": [],
+      "docstring": "\"Return only the GDAL version number information.\""
+    },
+    {
+      "name": "gdal_full_version",
+      "params": [],
+      "docstring": "\"Return the full GDAL version information.\""
+    },
+    {
+      "name": "gdal_version_info",
+      "params": []
+    },
+    {
+      "name": "err_handler",
+      "params": [
+        {
+          "prefix": "",
+          "name": "error_class",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "error_number",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "message",
+          "annotation": null
+        }
+      ]
+    },
+    {
+      "name": "function",
+      "params": [
+        {
+          "prefix": "",
+          "name": "name",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "args",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "restype",
+          "annotation": null
+        }
+      ]
+    }
+  ],
+  "classes": []
+}

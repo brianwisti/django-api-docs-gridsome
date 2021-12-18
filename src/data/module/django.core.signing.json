@@ -1,0 +1,347 @@
+{
+  "functions": [
+    {
+      "name": "b62_encode",
+      "params": [
+        {
+          "prefix": "",
+          "name": "s",
+          "annotation": null
+        }
+      ]
+    },
+    {
+      "name": "b62_decode",
+      "params": [
+        {
+          "prefix": "",
+          "name": "s",
+          "annotation": null
+        }
+      ]
+    },
+    {
+      "name": "b64_encode",
+      "params": [
+        {
+          "prefix": "",
+          "name": "s",
+          "annotation": null
+        }
+      ]
+    },
+    {
+      "name": "b64_decode",
+      "params": [
+        {
+          "prefix": "",
+          "name": "s",
+          "annotation": null
+        }
+      ]
+    },
+    {
+      "name": "base64_hmac",
+      "params": [
+        {
+          "prefix": "",
+          "name": "salt",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "value",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "key",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "algorithm",
+          "annotation": null
+        }
+      ]
+    },
+    {
+      "name": "get_cookie_signer",
+      "params": [
+        {
+          "prefix": "",
+          "name": "salt",
+          "annotation": null
+        }
+      ]
+    },
+    {
+      "name": "dumps",
+      "params": [
+        {
+          "prefix": "",
+          "name": "obj",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "key",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "salt",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "serializer",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "compress",
+          "annotation": null
+        }
+      ],
+      "docstring": "\"\"\"\n    Return URL-safe, hmac signed base64 compressed JSON string. If key is\n    None, use settings.SECRET_KEY instead. The hmac algorithm is the default\n    Signer algorithm.\n\n    If compress is True (not the default), check if compressing using zlib can\n    save some space. Prepend a '.' to signify compression. This is included\n    in the signature, to protect against zip bombs.\n\n    Salt can be used to namespace the hash, so that a signed string is\n    only valid for a given namespace. Leaving this at the default\n    value or re-using a salt value across different parts of your\n    application without good cause is a security risk.\n\n    The serializer is expected to return a bytestring.\n    \"\"\""
+    },
+    {
+      "name": "loads",
+      "params": [
+        {
+          "prefix": "",
+          "name": "s",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "key",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "salt",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "serializer",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "max_age",
+          "annotation": null
+        }
+      ],
+      "docstring": "\"\"\"\n    Reverse of dumps(), raise BadSignature if signature fails.\n\n    The serializer is expected to accept a bytestring.\n    \"\"\""
+    }
+  ],
+  "classes": [
+    {
+      "name": "BadSignature",
+      "methods": [],
+      "classes": [],
+      "docstring": "\"\"\"Signature does not match.\"\"\""
+    },
+    {
+      "name": "SignatureExpired",
+      "methods": [],
+      "classes": [],
+      "docstring": "\"\"\"Signature timestamp is older than required max_age.\"\"\""
+    },
+    {
+      "name": "JSONSerializer",
+      "methods": [
+        {
+          "name": "dumps",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "obj",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "loads",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "data",
+              "annotation": null
+            }
+          ]
+        }
+      ],
+      "classes": [],
+      "docstring": "\"\"\"\n    Simple wrapper around json to be used in signing.dumps and\n    signing.loads.\n    \"\"\""
+    },
+    {
+      "name": "Signer",
+      "methods": [
+        {
+          "name": "signature",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "value",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "sign",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "value",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "unsign",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "signed_value",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "sign_object",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "obj",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "serializer",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "compress",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        Return URL-safe, hmac signed base64 compressed JSON string.\n\n        If compress is True (not the default), check if compressing using zlib\n        can save some space. Prepend a '.' to signify compression. This is\n        included in the signature, to protect against zip bombs.\n\n        The serializer is expected to return a bytestring.\n        \"\"\""
+        },
+        {
+          "name": "unsign_object",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "signed_obj",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "serializer",
+              "annotation": null
+            },
+            {
+              "prefix": "**",
+              "name": "kwargs",
+              "annotation": null
+            }
+          ]
+        }
+      ],
+      "classes": []
+    },
+    {
+      "name": "TimestampSigner",
+      "methods": [
+        {
+          "name": "timestamp",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "sign",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "value",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "unsign",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "value",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "max_age",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        Retrieve original value and check it wasn't signed more\n        than max_age seconds ago.\n        \"\"\""
+        }
+      ],
+      "classes": []
+    }
+  ],
+  "doc": "\"\"\"\nFunctions for creating and restoring url-safe signed JSON objects.\n\nThe format used looks like this:\n\n>>> signing.dumps(\"hello\")\n'ImhlbGxvIg:1QaUZC:YIye-ze3TTx7gtSv422nZA4sgmk'\n\nThere are two components here, separated by a ':'. The first component is a\nURLsafe base64 encoded JSON of the object passed to dumps(). The second\ncomponent is a base64 encoded hmac/SHA1 hash of \"$first_component:$secret\"\n\nsigning.loads(s) checks the signature and returns the deserialized object.\nIf the signature fails, a BadSignature exception is raised.\n\n>>> signing.loads(\"ImhlbGxvIg:1QaUZC:YIye-ze3TTx7gtSv422nZA4sgmk\")\n'hello'\n>>> signing.loads(\"ImhlbGxvIg:1QaUZC:YIye-ze3TTx7gtSv422nZA4sgmk-modified\")\n...\nBadSignature: Signature failed: ImhlbGxvIg:1QaUZC:YIye-ze3TTx7gtSv422nZA4sgmk-modified\n\nYou can optionally compress the JSON prior to base64 encoding it to save\nspace, using the compress=True argument. This checks if compression actually\nhelps and only applies compression if the result is a shorter string:\n\n>>> signing.dumps(list(range(1, 20)), compress=True)\n'.eJwFwcERACAIwLCF-rCiILN47r-GyZVJsNgkxaFxoDgxcOHGxMKD_T7vhAml:1QaUaL:BA0thEZrp4FQVXIXuOvYJtLJSrQ'\n\nThe fact that the string is compressed is signalled by the prefixed '.' at the\nstart of the base64 JSON.\n\nThere are 65 url-safe characters: the 64 used by url-safe base64 and the ':'.\nThese functions make use of all of them.\n\"\"\""
+}

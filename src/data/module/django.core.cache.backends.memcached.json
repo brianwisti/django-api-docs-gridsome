@@ -1,0 +1,423 @@
+{
+  "functions": [],
+  "classes": [
+    {
+      "name": "BaseMemcachedCache",
+      "methods": [
+        {
+          "name": "client_servers",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ],
+          "decorators": [
+            {
+              "name": "@property"
+            }
+          ]
+        },
+        {
+          "name": "get_backend_timeout",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "timeout",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        Memcached deals with long (> 30 days) timeouts in a special\n        way. Call this function to obtain a safe value for your timeout.\n        \"\"\""
+        },
+        {
+          "name": "add",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "key",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "value",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "timeout",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "version",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "get",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "key",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "default",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "version",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "set",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "key",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "value",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "timeout",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "version",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "touch",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "key",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "timeout",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "version",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "delete",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "key",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "version",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "get_many",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "keys",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "version",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "close",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "**",
+              "name": "kwargs",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "incr",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "key",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "delta",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "version",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "set_many",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "data",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "timeout",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "version",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "delete_many",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "keys",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "version",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "clear",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "validate_key",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "key",
+              "annotation": null
+            }
+          ]
+        }
+      ],
+      "classes": []
+    },
+    {
+      "name": "MemcachedCache",
+      "methods": [
+        {
+          "name": "get",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "key",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "default",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "version",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "delete",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "key",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "version",
+              "annotation": null
+            }
+          ]
+        }
+      ],
+      "classes": [],
+      "docstring": "\"An implementation of a cache binding using python-memcached\""
+    },
+    {
+      "name": "PyLibMCCache",
+      "methods": [
+        {
+          "name": "client_servers",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ],
+          "decorators": [
+            {
+              "name": "@property"
+            }
+          ]
+        },
+        {
+          "name": "touch",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "key",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "timeout",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "version",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "close",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "**",
+              "name": "kwargs",
+              "annotation": null
+            }
+          ]
+        }
+      ],
+      "classes": [],
+      "docstring": "\"An implementation of a cache binding using pylibmc\""
+    },
+    {
+      "name": "PyMemcacheCache",
+      "methods": [],
+      "classes": [],
+      "docstring": "\"\"\"An implementation of a cache binding using pymemcache.\"\"\""
+    }
+  ],
+  "doc": "\"Memcached cache backend\""
+}

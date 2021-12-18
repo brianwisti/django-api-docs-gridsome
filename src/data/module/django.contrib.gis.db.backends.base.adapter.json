@@ -1,0 +1,11 @@
+{
+  "functions": [],
+  "classes": [
+    {
+      "name": "WKTAdapter",
+      "methods": [],
+      "classes": [],
+      "docstring": "\"\"\"\n    An adaptor for Geometries sent to the MySQL and Oracle database backends.\n    \"\"\""
+    }
+  ]
+}

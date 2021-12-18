@@ -1,0 +1,225 @@
+{
+  "functions": [],
+  "classes": [
+    {
+      "name": "Layer",
+      "methods": [
+        {
+          "name": "extent",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ],
+          "decorators": [
+            {
+              "name": "# #### Layer properties ####\n    @property"
+            }
+          ],
+          "docstring": "\"Return the extent (an Envelope) of this layer.\""
+        },
+        {
+          "name": "name",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ],
+          "decorators": [
+            {
+              "name": "@property"
+            }
+          ],
+          "docstring": "\"Return the name of this layer in the Data Source.\""
+        },
+        {
+          "name": "num_feat",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "force",
+              "annotation": null
+            }
+          ],
+          "decorators": [
+            {
+              "name": "@property"
+            }
+          ],
+          "docstring": "\"Return the number of features in the Layer.\""
+        },
+        {
+          "name": "num_fields",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ],
+          "decorators": [
+            {
+              "name": "@property"
+            }
+          ],
+          "docstring": "\"Return the number of fields in the Layer.\""
+        },
+        {
+          "name": "geom_type",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ],
+          "decorators": [
+            {
+              "name": "@property"
+            }
+          ],
+          "docstring": "\"Return the geometry type (OGRGeomType) of the Layer.\""
+        },
+        {
+          "name": "srs",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ],
+          "decorators": [
+            {
+              "name": "@property"
+            }
+          ],
+          "docstring": "\"Return the Spatial Reference used in this Layer.\""
+        },
+        {
+          "name": "fields",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ],
+          "decorators": [
+            {
+              "name": "@property"
+            }
+          ],
+          "docstring": "\"\"\"\n        Return a list of string names corresponding to each of the Fields\n        available in this Layer.\n        \"\"\""
+        },
+        {
+          "name": "field_types",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ],
+          "decorators": [
+            {
+              "name": "@property"
+            }
+          ],
+          "docstring": "\"\"\"\n        Return a list of the types of fields in this Layer.  For example,\n        return the list [OFTInteger, OFTReal, OFTString] for an OGR layer that\n        has an integer, a floating-point, and string fields.\n        \"\"\""
+        },
+        {
+          "name": "field_widths",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ],
+          "decorators": [
+            {
+              "name": "@property"
+            }
+          ],
+          "docstring": "\"Return a list of the maximum field widths for the features.\""
+        },
+        {
+          "name": "field_precisions",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ],
+          "decorators": [
+            {
+              "name": "@property"
+            }
+          ],
+          "docstring": "\"Return the field precisions for the features.\""
+        },
+        {
+          "name": "get_fields",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "field_name",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        Return a list containing the given field name for every Feature\n        in the Layer.\n        \"\"\""
+        },
+        {
+          "name": "get_geoms",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "geos",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        Return a list containing the OGRGeometry for every Feature in\n        the Layer.\n        \"\"\""
+        },
+        {
+          "name": "test_capability",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "capability",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        Return a bool indicating whether the this Layer supports the given\n        capability (a string).  Valid capability strings include:\n          'RandomRead', 'SequentialWrite', 'RandomWrite', 'FastSpatialFilter',\n          'FastFeatureCount', 'FastGetExtent', 'CreateField', 'Transactions',\n          'DeleteFeature', and 'FastSetNextByIndex'.\n        \"\"\""
+        }
+      ],
+      "classes": [],
+      "docstring": "\"A class that wraps an OGR Layer, needs to be instantiated from a DataSource object.\""
+    }
+  ]
+}

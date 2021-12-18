@@ -1,0 +1,278 @@
+{
+  "functions": [
+    {
+      "name": "load_backend",
+      "params": [
+        {
+          "prefix": "",
+          "name": "backend_name",
+          "annotation": null
+        }
+      ],
+      "docstring": "\"\"\"\n    Return a database backend's \"base\" module given a fully qualified database\n    backend name, or raise an error if it doesn't exist.\n    \"\"\""
+    }
+  ],
+  "classes": [
+    {
+      "name": "Error",
+      "methods": [],
+      "classes": []
+    },
+    {
+      "name": "InterfaceError",
+      "methods": [],
+      "classes": []
+    },
+    {
+      "name": "DatabaseError",
+      "methods": [],
+      "classes": []
+    },
+    {
+      "name": "DataError",
+      "methods": [],
+      "classes": []
+    },
+    {
+      "name": "OperationalError",
+      "methods": [],
+      "classes": []
+    },
+    {
+      "name": "IntegrityError",
+      "methods": [],
+      "classes": []
+    },
+    {
+      "name": "InternalError",
+      "methods": [],
+      "classes": []
+    },
+    {
+      "name": "ProgrammingError",
+      "methods": [],
+      "classes": []
+    },
+    {
+      "name": "NotSupportedError",
+      "methods": [],
+      "classes": []
+    },
+    {
+      "name": "DatabaseErrorWrapper",
+      "methods": [],
+      "classes": [],
+      "docstring": "\"\"\"\n    Context manager and decorator that reraises backend-specific database\n    exceptions using Django's common wrappers.\n    \"\"\""
+    },
+    {
+      "name": "ConnectionHandler",
+      "methods": [
+        {
+          "name": "configure_settings",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "databases",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "databases",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ],
+          "decorators": [
+            {
+              "name": "@property"
+            }
+          ]
+        },
+        {
+          "name": "ensure_defaults",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "alias",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        Put the defaults into the settings dictionary for a given connection\n        where no settings is provided.\n        \"\"\""
+        },
+        {
+          "name": "prepare_test_settings",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "alias",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        Make sure the test settings are available in the 'TEST' sub-dictionary.\n        \"\"\""
+        },
+        {
+          "name": "create_connection",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "alias",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "close_all",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ]
+        }
+      ],
+      "classes": []
+    },
+    {
+      "name": "ConnectionRouter",
+      "methods": [
+        {
+          "name": "routers",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ],
+          "decorators": [
+            {
+              "name": "@cached_property"
+            }
+          ]
+        },
+        {
+          "name": "allow_relation",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "obj1",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "obj2",
+              "annotation": null
+            },
+            {
+              "prefix": "**",
+              "name": "hints",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "allow_migrate",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "db",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "app_label",
+              "annotation": null
+            },
+            {
+              "prefix": "**",
+              "name": "hints",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "allow_migrate_model",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "db",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "model",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "get_migratable_models",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "app_config",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "db",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "include_auto_created",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"Return app models allowed to be migrated on provided db.\"\"\""
+        }
+      ],
+      "classes": []
+    }
+  ]
+}

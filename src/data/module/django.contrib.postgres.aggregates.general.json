@@ -1,0 +1,87 @@
+{
+  "functions": [],
+  "classes": [
+    {
+      "name": "DeprecatedConvertValueMixin",
+      "methods": [
+        {
+          "name": "convert_value",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "value",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "expression",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "connection",
+              "annotation": null
+            }
+          ]
+        }
+      ],
+      "classes": []
+    },
+    {
+      "name": "ArrayAgg",
+      "methods": [
+        {
+          "name": "output_field",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ],
+          "decorators": [
+            {
+              "name": "@property"
+            }
+          ]
+        }
+      ],
+      "classes": []
+    },
+    {
+      "name": "BitAnd",
+      "methods": [],
+      "classes": []
+    },
+    {
+      "name": "BitOr",
+      "methods": [],
+      "classes": []
+    },
+    {
+      "name": "BoolAnd",
+      "methods": [],
+      "classes": []
+    },
+    {
+      "name": "BoolOr",
+      "methods": [],
+      "classes": []
+    },
+    {
+      "name": "JSONBAgg",
+      "methods": [],
+      "classes": []
+    },
+    {
+      "name": "StringAgg",
+      "methods": [],
+      "classes": []
+    }
+  ]
+}

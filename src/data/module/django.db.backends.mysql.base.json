@@ -1,0 +1,272 @@
+{
+  "functions": [],
+  "classes": [
+    {
+      "name": "CursorWrapper",
+      "methods": [
+        {
+          "name": "execute",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "query",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "args",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "executemany",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "query",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "args",
+              "annotation": null
+            }
+          ]
+        }
+      ],
+      "classes": [],
+      "docstring": "\"\"\"\n    A thin wrapper around MySQLdb's normal cursor class that catches particular\n    exception instances and reraises them with the correct types.\n\n    Implemented as a wrapper, rather than a subclass, so that it isn't stuck\n    to the particular underlying representation returned by Connection.cursor().\n    \"\"\""
+    },
+    {
+      "name": "DatabaseWrapper",
+      "methods": [
+        {
+          "name": "get_connection_params",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "get_new_connection",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "conn_params",
+              "annotation": null
+            }
+          ],
+          "decorators": [
+            {
+              "name": "@async_unsafe"
+            }
+          ]
+        },
+        {
+          "name": "init_connection_state",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "create_cursor",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "name",
+              "annotation": null
+            }
+          ],
+          "decorators": [
+            {
+              "name": "@async_unsafe"
+            }
+          ]
+        },
+        {
+          "name": "disable_constraint_checking",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        Disable foreign key checks, primarily for use in adding rows with\n        forward references. Always return True to indicate constraint checks\n        need to be re-enabled.\n        \"\"\""
+        },
+        {
+          "name": "enable_constraint_checking",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        Re-enable foreign key checks after they have been disabled.\n        \"\"\""
+        },
+        {
+          "name": "check_constraints",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "table_names",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        Check each table name in `table_names` for rows with invalid foreign\n        key references. This method is intended to be used in conjunction with\n        `disable_constraint_checking()` and `enable_constraint_checking()`, to\n        determine if rows with invalid references were entered while constraint\n        checks were off.\n        \"\"\""
+        },
+        {
+          "name": "is_usable",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "display_name",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ],
+          "decorators": [
+            {
+              "name": "@cached_property"
+            }
+          ]
+        },
+        {
+          "name": "data_type_check_constraints",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ],
+          "decorators": [
+            {
+              "name": "@cached_property"
+            }
+          ]
+        },
+        {
+          "name": "mysql_server_data",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ],
+          "decorators": [
+            {
+              "name": "@cached_property"
+            }
+          ]
+        },
+        {
+          "name": "mysql_server_info",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ],
+          "decorators": [
+            {
+              "name": "@cached_property"
+            }
+          ]
+        },
+        {
+          "name": "mysql_version",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ],
+          "decorators": [
+            {
+              "name": "@cached_property"
+            }
+          ]
+        },
+        {
+          "name": "mysql_is_mariadb",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ],
+          "decorators": [
+            {
+              "name": "@cached_property"
+            }
+          ]
+        },
+        {
+          "name": "sql_mode",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ],
+          "decorators": [
+            {
+              "name": "@cached_property"
+            }
+          ]
+        }
+      ],
+      "classes": []
+    }
+  ],
+  "doc": "\"\"\"\nMySQL database backend for Django.\n\nRequires mysqlclient: https://pypi.org/project/mysqlclient/\n\"\"\""
+}

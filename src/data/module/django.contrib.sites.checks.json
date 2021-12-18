@@ -1,0 +1,20 @@
+{
+  "functions": [
+    {
+      "name": "check_site_id",
+      "params": [
+        {
+          "prefix": "",
+          "name": "app_configs",
+          "annotation": null
+        },
+        {
+          "prefix": "**",
+          "name": "kwargs",
+          "annotation": null
+        }
+      ]
+    }
+  ],
+  "classes": []
+}

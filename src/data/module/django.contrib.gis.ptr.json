@@ -1,0 +1,47 @@
+{
+  "functions": [],
+  "classes": [
+    {
+      "name": "CPointerBase",
+      "methods": [
+        {
+          "name": "ptr",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ],
+          "decorators": [
+            {
+              "name": "@property"
+            }
+          ]
+        },
+        {
+          "name": "ptr",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "ptr",
+              "annotation": null
+            }
+          ],
+          "decorators": [
+            {
+              "name": "@ptr.setter"
+            }
+          ]
+        }
+      ],
+      "classes": [],
+      "docstring": "\"\"\"\n    Base class for objects that have a pointer access property\n    that controls access to the underlying C pointer.\n    \"\"\""
+    }
+  ]
+}

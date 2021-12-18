@@ -1,0 +1,15 @@
+{
+  "functions": [],
+  "classes": [
+    {
+      "name": "IntervalToSeconds",
+      "methods": [],
+      "classes": []
+    },
+    {
+      "name": "SecondsToInterval",
+      "methods": [],
+      "classes": []
+    }
+  ]
+}

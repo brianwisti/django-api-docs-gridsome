@@ -1,0 +1,48 @@
+{
+  "functions": [],
+  "classes": [
+    {
+      "name": "MessageMiddleware",
+      "methods": [
+        {
+          "name": "process_request",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "request",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "process_response",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "request",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "response",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        Update the storage backend (i.e., save the messages).\n\n        Raise ValueError if not all messages could be stored and DEBUG is True.\n        \"\"\""
+        }
+      ],
+      "classes": [],
+      "docstring": "\"\"\"\n    Middleware that handles temporary messages.\n    \"\"\""
+    }
+  ]
+}

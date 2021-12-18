@@ -1,0 +1,65 @@
+{
+  "functions": [],
+  "classes": [
+    {
+      "name": "CumeDist",
+      "methods": [],
+      "classes": []
+    },
+    {
+      "name": "DenseRank",
+      "methods": [],
+      "classes": []
+    },
+    {
+      "name": "FirstValue",
+      "methods": [],
+      "classes": []
+    },
+    {
+      "name": "LagLeadFunction",
+      "methods": [],
+      "classes": []
+    },
+    {
+      "name": "Lag",
+      "methods": [],
+      "classes": []
+    },
+    {
+      "name": "LastValue",
+      "methods": [],
+      "classes": []
+    },
+    {
+      "name": "Lead",
+      "methods": [],
+      "classes": []
+    },
+    {
+      "name": "NthValue",
+      "methods": [],
+      "classes": []
+    },
+    {
+      "name": "Ntile",
+      "methods": [],
+      "classes": []
+    },
+    {
+      "name": "PercentRank",
+      "methods": [],
+      "classes": []
+    },
+    {
+      "name": "Rank",
+      "methods": [],
+      "classes": []
+    },
+    {
+      "name": "RowNumber",
+      "methods": [],
+      "classes": []
+    }
+  ]
+}

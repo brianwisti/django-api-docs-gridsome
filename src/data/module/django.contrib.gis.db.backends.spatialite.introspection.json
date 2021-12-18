@@ -1,0 +1,57 @@
+{
+  "functions": [],
+  "classes": [
+    {
+      "name": "GeoFlexibleFieldLookupDict",
+      "methods": [],
+      "classes": [],
+      "docstring": "\"\"\"\n    Subclass that includes updates the `base_data_types_reverse` dict\n    for geometry field types.\n    \"\"\""
+    },
+    {
+      "name": "SpatiaLiteIntrospection",
+      "methods": [
+        {
+          "name": "get_geometry_type",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "table_name",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "description",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "get_constraints",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "cursor",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "table_name",
+              "annotation": null
+            }
+          ]
+        }
+      ],
+      "classes": []
+    }
+  ]
+}

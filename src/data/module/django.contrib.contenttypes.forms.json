@@ -1,0 +1,154 @@
+{
+  "functions": [
+    {
+      "name": "generic_inlineformset_factory",
+      "params": [
+        {
+          "prefix": "",
+          "name": "model",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "form",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "formset",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "ct_field",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "fk_field",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "fields",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "exclude",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "extra",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "can_order",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "can_delete",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "max_num",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "formfield_callback",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "validate_max",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "for_concrete_model",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "min_num",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "validate_min",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "absolute_max",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "can_delete_extra",
+          "annotation": null
+        }
+      ],
+      "docstring": "\"\"\"\n    Return a ``GenericInlineFormSet`` for the given kwargs.\n\n    You must provide ``ct_field`` and ``fk_field`` if they are different from\n    the defaults ``content_type`` and ``object_id`` respectively.\n    \"\"\""
+    }
+  ],
+  "classes": [
+    {
+      "name": "BaseGenericInlineFormSet",
+      "methods": [
+        {
+          "name": "initial_form_count",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "get_default_prefix",
+          "params": [
+            {
+              "prefix": "",
+              "name": "cls",
+              "annotation": null
+            }
+          ],
+          "decorators": [
+            {
+              "name": "@classmethod"
+            }
+          ]
+        },
+        {
+          "name": "save_new",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "form",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "commit",
+              "annotation": null
+            }
+          ]
+        }
+      ],
+      "classes": [],
+      "docstring": "\"\"\"\n    A formset for generic inline objects to a parent.\n    \"\"\""
+    }
+  ]
+}

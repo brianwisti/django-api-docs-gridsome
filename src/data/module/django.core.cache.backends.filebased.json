@@ -1,0 +1,173 @@
+{
+  "functions": [],
+  "classes": [
+    {
+      "name": "FileBasedCache",
+      "methods": [
+        {
+          "name": "add",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "key",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "value",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "timeout",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "version",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "get",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "key",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "default",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "version",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "set",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "key",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "value",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "timeout",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "version",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "touch",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "key",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "timeout",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "version",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "delete",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "key",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "version",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "has_key",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "key",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "version",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "clear",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        Remove all the cache files.\n        \"\"\""
+        }
+      ],
+      "classes": []
+    }
+  ],
+  "doc": "\"File-based cache backend\""
+}

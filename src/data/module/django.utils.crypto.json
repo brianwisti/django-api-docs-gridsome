@@ -1,0 +1,102 @@
+{
+  "functions": [
+    {
+      "name": "salted_hmac",
+      "params": [
+        {
+          "prefix": "",
+          "name": "key_salt",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "value",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "secret",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "algorithm",
+          "annotation": null
+        }
+      ],
+      "docstring": "\"\"\"\n    Return the HMAC of 'value', using a key generated from key_salt and a\n    secret (which defaults to settings.SECRET_KEY). Default algorithm is SHA1,\n    but any algorithm name supported by hashlib can be passed.\n\n    A different key_salt should be passed in for every application of HMAC.\n    \"\"\""
+    },
+    {
+      "name": "get_random_string",
+      "params": [
+        {
+          "prefix": "",
+          "name": "length",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "allowed_chars",
+          "annotation": null
+        }
+      ],
+      "docstring": "\"\"\"\n    Return a securely generated random string.\n\n    The bit length of the returned value can be calculated with the formula:\n        log_2(len(allowed_chars)^length)\n\n    For example, with default `allowed_chars` (26+26+10), this gives:\n      * length: 12, bit length =~ 71 bits\n      * length: 22, bit length =~ 131 bits\n    \"\"\""
+    },
+    {
+      "name": "constant_time_compare",
+      "params": [
+        {
+          "prefix": "",
+          "name": "val1",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "val2",
+          "annotation": null
+        }
+      ],
+      "docstring": "\"\"\"Return True if the two strings are equal, False otherwise.\"\"\""
+    },
+    {
+      "name": "pbkdf2",
+      "params": [
+        {
+          "prefix": "",
+          "name": "password",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "salt",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "iterations",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "dklen",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "digest",
+          "annotation": null
+        }
+      ],
+      "docstring": "\"\"\"Return the hash of password using pbkdf2.\"\"\""
+    }
+  ],
+  "classes": [
+    {
+      "name": "InvalidAlgorithm",
+      "methods": [],
+      "classes": [],
+      "docstring": "\"\"\"Algorithm is not supported by hashlib.\"\"\""
+    }
+  ],
+  "doc": "\"\"\"\nDjango's standard crypto functions and utilities.\n\"\"\""
+}

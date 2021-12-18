@@ -1,0 +1,47 @@
+{
+  "functions": [],
+  "classes": [
+    {
+      "name": "DatabaseValidation",
+      "methods": [
+        {
+          "name": "check",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "**",
+              "name": "kwargs",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "check_field_type",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "field",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "field_type",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        MySQL has the following field length restriction:\n        No character (varchar) fields can have a length exceeding 255\n        characters if they have a unique index on them.\n        MySQL doesn't support a database index on some data types.\n        \"\"\""
+        }
+      ],
+      "classes": []
+    }
+  ]
+}

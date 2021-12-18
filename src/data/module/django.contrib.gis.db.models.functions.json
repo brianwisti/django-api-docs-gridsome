@@ -1,0 +1,781 @@
+{
+  "functions": [],
+  "classes": [
+    {
+      "name": "GeoFuncMixin",
+      "methods": [
+        {
+          "name": "name",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ],
+          "decorators": [
+            {
+              "name": "@property"
+            }
+          ]
+        },
+        {
+          "name": "geo_field",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ],
+          "decorators": [
+            {
+              "name": "@cached_property"
+            }
+          ]
+        },
+        {
+          "name": "as_sql",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "compiler",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "connection",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "function",
+              "annotation": null
+            },
+            {
+              "prefix": "**",
+              "name": "extra_context",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "resolve_expression",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "*",
+              "name": "args",
+              "annotation": null
+            },
+            {
+              "prefix": "**",
+              "name": "kwargs",
+              "annotation": null
+            }
+          ]
+        }
+      ],
+      "classes": []
+    },
+    {
+      "name": "GeoFunc",
+      "methods": [],
+      "classes": []
+    },
+    {
+      "name": "GeomOutputGeoFunc",
+      "methods": [
+        {
+          "name": "output_field",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ],
+          "decorators": [
+            {
+              "name": "@cached_property"
+            }
+          ]
+        }
+      ],
+      "classes": []
+    },
+    {
+      "name": "SQLiteDecimalToFloatMixin",
+      "methods": [
+        {
+          "name": "as_sqlite",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "compiler",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "connection",
+              "annotation": null
+            },
+            {
+              "prefix": "**",
+              "name": "extra_context",
+              "annotation": null
+            }
+          ]
+        }
+      ],
+      "classes": [],
+      "docstring": "\"\"\"\n    By default, Decimal values are converted to str by the SQLite backend, which\n    is not acceptable by the GIS functions expecting numeric values.\n    \"\"\""
+    },
+    {
+      "name": "OracleToleranceMixin",
+      "methods": [
+        {
+          "name": "as_oracle",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "compiler",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "connection",
+              "annotation": null
+            },
+            {
+              "prefix": "**",
+              "name": "extra_context",
+              "annotation": null
+            }
+          ]
+        }
+      ],
+      "classes": []
+    },
+    {
+      "name": "Area",
+      "methods": [
+        {
+          "name": "output_field",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ],
+          "decorators": [
+            {
+              "name": "@cached_property"
+            }
+          ]
+        },
+        {
+          "name": "as_sql",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "compiler",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "connection",
+              "annotation": null
+            },
+            {
+              "prefix": "**",
+              "name": "extra_context",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "as_sqlite",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "compiler",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "connection",
+              "annotation": null
+            },
+            {
+              "prefix": "**",
+              "name": "extra_context",
+              "annotation": null
+            }
+          ]
+        }
+      ],
+      "classes": []
+    },
+    {
+      "name": "Azimuth",
+      "methods": [],
+      "classes": []
+    },
+    {
+      "name": "AsGeoJSON",
+      "methods": [
+        {
+          "name": "as_oracle",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "compiler",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "connection",
+              "annotation": null
+            },
+            {
+              "prefix": "**",
+              "name": "extra_context",
+              "annotation": null
+            }
+          ]
+        }
+      ],
+      "classes": []
+    },
+    {
+      "name": "AsGML",
+      "methods": [
+        {
+          "name": "as_oracle",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "compiler",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "connection",
+              "annotation": null
+            },
+            {
+              "prefix": "**",
+              "name": "extra_context",
+              "annotation": null
+            }
+          ]
+        }
+      ],
+      "classes": []
+    },
+    {
+      "name": "AsKML",
+      "methods": [],
+      "classes": []
+    },
+    {
+      "name": "AsSVG",
+      "methods": [],
+      "classes": []
+    },
+    {
+      "name": "AsWKB",
+      "methods": [],
+      "classes": []
+    },
+    {
+      "name": "AsWKT",
+      "methods": [],
+      "classes": []
+    },
+    {
+      "name": "BoundingCircle",
+      "methods": [
+        {
+          "name": "as_oracle",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "compiler",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "connection",
+              "annotation": null
+            },
+            {
+              "prefix": "**",
+              "name": "extra_context",
+              "annotation": null
+            }
+          ]
+        }
+      ],
+      "classes": []
+    },
+    {
+      "name": "Centroid",
+      "methods": [],
+      "classes": []
+    },
+    {
+      "name": "Difference",
+      "methods": [],
+      "classes": []
+    },
+    {
+      "name": "DistanceResultMixin",
+      "methods": [
+        {
+          "name": "output_field",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ],
+          "decorators": [
+            {
+              "name": "@cached_property"
+            }
+          ]
+        },
+        {
+          "name": "source_is_geography",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ]
+        }
+      ],
+      "classes": []
+    },
+    {
+      "name": "Distance",
+      "methods": [
+        {
+          "name": "as_postgresql",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "compiler",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "connection",
+              "annotation": null
+            },
+            {
+              "prefix": "**",
+              "name": "extra_context",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "as_sqlite",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "compiler",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "connection",
+              "annotation": null
+            },
+            {
+              "prefix": "**",
+              "name": "extra_context",
+              "annotation": null
+            }
+          ]
+        }
+      ],
+      "classes": []
+    },
+    {
+      "name": "Envelope",
+      "methods": [],
+      "classes": []
+    },
+    {
+      "name": "ForcePolygonCW",
+      "methods": [],
+      "classes": []
+    },
+    {
+      "name": "GeoHash",
+      "methods": [
+        {
+          "name": "as_mysql",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "compiler",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "connection",
+              "annotation": null
+            },
+            {
+              "prefix": "**",
+              "name": "extra_context",
+              "annotation": null
+            }
+          ]
+        }
+      ],
+      "classes": []
+    },
+    {
+      "name": "GeometryDistance",
+      "methods": [],
+      "classes": []
+    },
+    {
+      "name": "Intersection",
+      "methods": [],
+      "classes": []
+    },
+    {
+      "name": "IsValid",
+      "methods": [
+        {
+          "name": "as_oracle",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "compiler",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "connection",
+              "annotation": null
+            },
+            {
+              "prefix": "**",
+              "name": "extra_context",
+              "annotation": null
+            }
+          ]
+        }
+      ],
+      "classes": [],
+      "decorators": [
+        {
+          "name": "@BaseSpatialField.register_lookup"
+        }
+      ]
+    },
+    {
+      "name": "Length",
+      "methods": [
+        {
+          "name": "as_sql",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "compiler",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "connection",
+              "annotation": null
+            },
+            {
+              "prefix": "**",
+              "name": "extra_context",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "as_postgresql",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "compiler",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "connection",
+              "annotation": null
+            },
+            {
+              "prefix": "**",
+              "name": "extra_context",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "as_sqlite",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "compiler",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "connection",
+              "annotation": null
+            },
+            {
+              "prefix": "**",
+              "name": "extra_context",
+              "annotation": null
+            }
+          ]
+        }
+      ],
+      "classes": []
+    },
+    {
+      "name": "LineLocatePoint",
+      "methods": [],
+      "classes": []
+    },
+    {
+      "name": "MakeValid",
+      "methods": [],
+      "classes": []
+    },
+    {
+      "name": "MemSize",
+      "methods": [],
+      "classes": []
+    },
+    {
+      "name": "NumGeometries",
+      "methods": [],
+      "classes": []
+    },
+    {
+      "name": "NumPoints",
+      "methods": [],
+      "classes": []
+    },
+    {
+      "name": "Perimeter",
+      "methods": [
+        {
+          "name": "as_postgresql",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "compiler",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "connection",
+              "annotation": null
+            },
+            {
+              "prefix": "**",
+              "name": "extra_context",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "as_sqlite",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "compiler",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "connection",
+              "annotation": null
+            },
+            {
+              "prefix": "**",
+              "name": "extra_context",
+              "annotation": null
+            }
+          ]
+        }
+      ],
+      "classes": []
+    },
+    {
+      "name": "PointOnSurface",
+      "methods": [],
+      "classes": []
+    },
+    {
+      "name": "Reverse",
+      "methods": [],
+      "classes": []
+    },
+    {
+      "name": "Scale",
+      "methods": [],
+      "classes": []
+    },
+    {
+      "name": "SnapToGrid",
+      "methods": [],
+      "classes": []
+    },
+    {
+      "name": "SymDifference",
+      "methods": [],
+      "classes": []
+    },
+    {
+      "name": "Transform",
+      "methods": [],
+      "classes": []
+    },
+    {
+      "name": "Translate",
+      "methods": [
+        {
+          "name": "as_sqlite",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "compiler",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "connection",
+              "annotation": null
+            },
+            {
+              "prefix": "**",
+              "name": "extra_context",
+              "annotation": null
+            }
+          ]
+        }
+      ],
+      "classes": []
+    },
+    {
+      "name": "Union",
+      "methods": [],
+      "classes": []
+    }
+  ]
+}

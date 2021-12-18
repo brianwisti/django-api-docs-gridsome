@@ -1,0 +1,94 @@
+{
+  "functions": [],
+  "classes": [
+    {
+      "name": "SessionStore",
+      "methods": [
+        {
+          "name": "cache_key",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ],
+          "decorators": [
+            {
+              "name": "@property"
+            }
+          ]
+        },
+        {
+          "name": "load",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "exists",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "session_key",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "save",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "must_create",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "delete",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "session_key",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "flush",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        Remove the current session data from the database and regenerate the\n        key.\n        \"\"\""
+        }
+      ],
+      "classes": [],
+      "docstring": "\"\"\"\n    Implement cached, database backed sessions.\n    \"\"\""
+    }
+  ],
+  "doc": "\"\"\"\nCached, database-backed sessions.\n\"\"\""
+}

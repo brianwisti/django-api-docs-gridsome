@@ -1,0 +1,288 @@
+{
+  "functions": [
+    {
+      "name": "parse_bits",
+      "params": [
+        {
+          "prefix": "",
+          "name": "parser",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "bits",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "params",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "varargs",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "varkw",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "defaults",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "kwonly",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "kwonly_defaults",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "takes_context",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "name",
+          "annotation": null
+        }
+      ],
+      "docstring": "\"\"\"\n    Parse bits for template tag helpers simple_tag and inclusion_tag, in\n    particular by detecting syntax errors and by extracting positional and\n    keyword arguments.\n    \"\"\""
+    },
+    {
+      "name": "import_library",
+      "params": [
+        {
+          "prefix": "",
+          "name": "name",
+          "annotation": null
+        }
+      ],
+      "docstring": "\"\"\"\n    Load a Library object from a template tag module.\n    \"\"\""
+    }
+  ],
+  "classes": [
+    {
+      "name": "InvalidTemplateLibrary",
+      "methods": [],
+      "classes": []
+    },
+    {
+      "name": "Library",
+      "methods": [
+        {
+          "name": "tag",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "name",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "compile_function",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "tag_function",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "func",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "filter",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "name",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "filter_func",
+              "annotation": null
+            },
+            {
+              "prefix": "**",
+              "name": "flags",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        Register a callable as a template filter. Example:\n\n        @register.filter\n        def lower(value):\n            return value.lower()\n        \"\"\""
+        },
+        {
+          "name": "filter_function",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "func",
+              "annotation": null
+            },
+            {
+              "prefix": "**",
+              "name": "flags",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "simple_tag",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "func",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "takes_context",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "name",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        Register a callable as a compiled template tag. Example:\n\n        @register.simple_tag\n        def hello(*args, **kwargs):\n            return 'world'\n        \"\"\""
+        },
+        {
+          "name": "inclusion_tag",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "filename",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "func",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "takes_context",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "name",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        Register a callable as an inclusion tag:\n\n        @register.inclusion_tag('results.html')\n        def show_results(poll):\n            choices = poll.choice_set.all()\n            return {'choices': choices}\n        \"\"\""
+        }
+      ],
+      "classes": [],
+      "docstring": "\"\"\"\n    A class for registering template tags and filters. Compiled filter and\n    template tag functions are stored in the filters and tags attributes.\n    The filter, simple_tag, and inclusion_tag methods provide a convenient\n    way to register callables as tags.\n    \"\"\""
+    },
+    {
+      "name": "TagHelperNode",
+      "methods": [
+        {
+          "name": "get_resolved_arguments",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "context",
+              "annotation": null
+            }
+          ]
+        }
+      ],
+      "classes": [],
+      "docstring": "\"\"\"\n    Base class for tag helper nodes such as SimpleNode and InclusionNode.\n    Manages the positional and keyword arguments to be passed to the decorated\n    function.\n    \"\"\""
+    },
+    {
+      "name": "SimpleNode",
+      "methods": [
+        {
+          "name": "render",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "context",
+              "annotation": null
+            }
+          ]
+        }
+      ],
+      "classes": []
+    },
+    {
+      "name": "InclusionNode",
+      "methods": [
+        {
+          "name": "render",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "context",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        Render the specified template and context. Cache the template object\n        in render_context to avoid reparsing and loading when used in a for\n        loop.\n        \"\"\""
+        }
+      ],
+      "classes": []
+    }
+  ]
+}

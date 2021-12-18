@@ -1,0 +1,16 @@
+{
+  "functions": [
+    {
+      "name": "is_iterable",
+      "params": [
+        {
+          "prefix": "",
+          "name": "x",
+          "annotation": null
+        }
+      ],
+      "docstring": "\"An implementation independent way of checking for iterables\""
+    }
+  ],
+  "classes": []
+}

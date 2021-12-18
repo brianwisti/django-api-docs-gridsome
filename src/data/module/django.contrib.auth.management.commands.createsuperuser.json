@@ -1,0 +1,98 @@
+{
+  "functions": [],
+  "classes": [
+    {
+      "name": "NotRunningInTTYException",
+      "methods": [],
+      "classes": []
+    },
+    {
+      "name": "Command",
+      "methods": [
+        {
+          "name": "add_arguments",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "parser",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "execute",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "*",
+              "name": "args",
+              "annotation": null
+            },
+            {
+              "prefix": "**",
+              "name": "options",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "handle",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "*",
+              "name": "args",
+              "annotation": null
+            },
+            {
+              "prefix": "**",
+              "name": "options",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "get_input_data",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "field",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "message",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "default",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        Override this method if you want to customize data inputs or\n        validation exceptions.\n        \"\"\""
+        }
+      ],
+      "classes": []
+    }
+  ],
+  "doc": "\"\"\"\nManagement utility to create superusers.\n\"\"\""
+}

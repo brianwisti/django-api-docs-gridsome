@@ -1,0 +1,48 @@
+{
+  "functions": [
+    {
+      "name": "get_flatpages",
+      "params": [
+        {
+          "prefix": "",
+          "name": "parser",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "token",
+          "annotation": null
+        }
+      ],
+      "decorators": [
+        {
+          "name": "@register.tag"
+        }
+      ],
+      "docstring": "\"\"\"\n    Retrieve all flatpage objects available for the current site and\n    visible to the specific user (or visible to all users if no user is\n    specified). Populate the template context with them in a variable\n    whose name is defined by the ``as`` clause.\n\n    An optional ``for`` clause controls the user whose permissions are used in\n    determining which flatpages are visible.\n\n    An optional argument, ``starts_with``, limits the returned flatpages to\n    those beginning with a particular base URL. This argument can be a variable\n    or a string, as it resolves from the template context.\n\n    Syntax::\n\n        {% get_flatpages ['url_starts_with'] [for user] as context_name %}\n\n    Example usage::\n\n        {% get_flatpages as flatpages %}\n        {% get_flatpages for someuser as flatpages %}\n        {% get_flatpages '/about/' as about_pages %}\n        {% get_flatpages prefix as about_pages %}\n        {% get_flatpages '/about/' for someuser as about_pages %}\n    \"\"\""
+    }
+  ],
+  "classes": [
+    {
+      "name": "FlatpageNode",
+      "methods": [
+        {
+          "name": "render",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "context",
+              "annotation": null
+            }
+          ]
+        }
+      ],
+      "classes": []
+    }
+  ]
+}

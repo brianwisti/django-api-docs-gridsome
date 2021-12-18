@@ -1,0 +1,36 @@
+{
+  "functions": [
+    {
+      "name": "duration_string",
+      "params": [
+        {
+          "prefix": "",
+          "name": "duration",
+          "annotation": null
+        }
+      ],
+      "docstring": "\"\"\"Version of str(timedelta) which is not English specific.\"\"\""
+    },
+    {
+      "name": "duration_iso_string",
+      "params": [
+        {
+          "prefix": "",
+          "name": "duration",
+          "annotation": null
+        }
+      ]
+    },
+    {
+      "name": "duration_microseconds",
+      "params": [
+        {
+          "prefix": "",
+          "name": "delta",
+          "annotation": null
+        }
+      ]
+    }
+  ],
+  "classes": []
+}

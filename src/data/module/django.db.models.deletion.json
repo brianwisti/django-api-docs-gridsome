@@ -1,0 +1,483 @@
+{
+  "functions": [
+    {
+      "name": "CASCADE",
+      "params": [
+        {
+          "prefix": "",
+          "name": "collector",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "field",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "sub_objs",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "using",
+          "annotation": null
+        }
+      ]
+    },
+    {
+      "name": "PROTECT",
+      "params": [
+        {
+          "prefix": "",
+          "name": "collector",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "field",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "sub_objs",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "using",
+          "annotation": null
+        }
+      ]
+    },
+    {
+      "name": "RESTRICT",
+      "params": [
+        {
+          "prefix": "",
+          "name": "collector",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "field",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "sub_objs",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "using",
+          "annotation": null
+        }
+      ]
+    },
+    {
+      "name": "SET",
+      "params": [
+        {
+          "prefix": "",
+          "name": "value",
+          "annotation": null
+        }
+      ]
+    },
+    {
+      "name": "SET_NULL",
+      "params": [
+        {
+          "prefix": "",
+          "name": "collector",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "field",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "sub_objs",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "using",
+          "annotation": null
+        }
+      ]
+    },
+    {
+      "name": "SET_DEFAULT",
+      "params": [
+        {
+          "prefix": "",
+          "name": "collector",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "field",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "sub_objs",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "using",
+          "annotation": null
+        }
+      ]
+    },
+    {
+      "name": "DO_NOTHING",
+      "params": [
+        {
+          "prefix": "",
+          "name": "collector",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "field",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "sub_objs",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "using",
+          "annotation": null
+        }
+      ]
+    },
+    {
+      "name": "get_candidate_relations_to_delete",
+      "params": [
+        {
+          "prefix": "",
+          "name": "opts",
+          "annotation": null
+        }
+      ]
+    }
+  ],
+  "classes": [
+    {
+      "name": "ProtectedError",
+      "methods": [],
+      "classes": []
+    },
+    {
+      "name": "RestrictedError",
+      "methods": [],
+      "classes": []
+    },
+    {
+      "name": "Collector",
+      "methods": [
+        {
+          "name": "add",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "objs",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "source",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "nullable",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "reverse_dependency",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        Add 'objs' to the collection of objects to be deleted.  If the call is\n        the result of a cascade, 'source' should be the model that caused it,\n        and 'nullable' should be set to True if the relation can be null.\n\n        Return a list of all objects that were not already collected.\n        \"\"\""
+        },
+        {
+          "name": "add_dependency",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "model",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "dependency",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "reverse_dependency",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "add_field_update",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "field",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "value",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "objs",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        Schedule a field update. 'objs' must be a homogeneous iterable\n        collection of model instances (e.g. a QuerySet).\n        \"\"\""
+        },
+        {
+          "name": "add_restricted_objects",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "field",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "objs",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "clear_restricted_objects_from_set",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "model",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "objs",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "clear_restricted_objects_from_queryset",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "model",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "qs",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "can_fast_delete",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "objs",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "from_field",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        Determine if the objects in the given queryset-like or single object\n        can be fast-deleted. This can be done if there are no cascades, no\n        parents and no signal listeners for the object class.\n\n        The 'from_field' tells where we are coming from - we need this to\n        determine if the objects are in fact to be deleted. Allow also\n        skipping parent -> child -> parent chain preventing fast delete of\n        the child.\n        \"\"\""
+        },
+        {
+          "name": "get_del_batches",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "objs",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "fields",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        Return the objs in suitably sized batches for the used connection.\n        \"\"\""
+        },
+        {
+          "name": "collect",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "objs",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "source",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "nullable",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "collect_related",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "source_attr",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "reverse_dependency",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "keep_parents",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "fail_on_restricted",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        Add 'objs' to the collection of objects to be deleted as well as all\n        parent instances.  'objs' must be a homogeneous iterable collection of\n        model instances (e.g. a QuerySet).  If 'collect_related' is True,\n        related objects will be handled by their respective on_delete handler.\n\n        If the call is the result of a cascade, 'source' should be the model\n        that caused it and 'nullable' should be set to True, if the relation\n        can be null.\n\n        If 'reverse_dependency' is True, 'source' will be deleted before the\n        current model, rather than after. (Needed for cascading to parent\n        models, the one case in which the cascade follows the forwards\n        direction of an FK rather than the reverse direction.)\n\n        If 'keep_parents' is True, data of parent model's will be not deleted.\n\n        If 'fail_on_restricted' is False, error won't be raised even if it's\n        prohibited to delete such objects due to RESTRICT, that defers\n        restricted object checking in recursive calls where the top-level call\n        may need to collect more objects to determine whether restricted ones\n        can be deleted.\n        \"\"\""
+        },
+        {
+          "name": "related_objects",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "related_model",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "related_fields",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "objs",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        Get a QuerySet of the related model to objs via related fields.\n        \"\"\""
+        },
+        {
+          "name": "instances_with_model",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "sort",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "delete",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ]
+        }
+      ],
+      "classes": []
+    }
+  ]
+}

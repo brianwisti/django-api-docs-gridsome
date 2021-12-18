@@ -1,0 +1,177 @@
+{
+  "functions": [],
+  "classes": [
+    {
+      "name": "DatabaseIntrospection",
+      "methods": [
+        {
+          "name": "get_field_type",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "data_type",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "description",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "get_table_list",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "cursor",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"Return a list of table and view names in the current database.\"\"\""
+        },
+        {
+          "name": "get_table_description",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "cursor",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "table_name",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        Return a description of the table with the DB-API cursor.description\n        interface.\"\n        \"\"\""
+        },
+        {
+          "name": "get_sequences",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "cursor",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "table_name",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "table_fields",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "get_relations",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "cursor",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "table_name",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        Return a dictionary of {field_name: (field_name_other_table, other_table)}\n        representing all relationships to the given table.\n        \"\"\""
+        },
+        {
+          "name": "get_key_columns",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "cursor",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "table_name",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        Return a list of (column_name, referenced_table_name, referenced_column_name)\n        for all key columns in the given table.\n        \"\"\""
+        },
+        {
+          "name": "get_storage_engine",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "cursor",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "table_name",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        Retrieve the storage engine for a given table. Return the default\n        storage engine if the table doesn't exist.\n        \"\"\""
+        },
+        {
+          "name": "get_constraints",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "cursor",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "table_name",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        Retrieve any constraints or keys (unique, pk, fk, check, index) across\n        one or more columns.\n        \"\"\""
+        }
+      ],
+      "classes": []
+    }
+  ]
+}

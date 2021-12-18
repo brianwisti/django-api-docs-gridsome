@@ -1,0 +1,21 @@
+{
+  "functions": [
+    {
+      "name": "check_finders",
+      "params": [
+        {
+          "prefix": "",
+          "name": "app_configs",
+          "annotation": null
+        },
+        {
+          "prefix": "**",
+          "name": "kwargs",
+          "annotation": null
+        }
+      ],
+      "docstring": "\"\"\"Check all registered staticfiles finders.\"\"\""
+    }
+  ],
+  "classes": []
+}

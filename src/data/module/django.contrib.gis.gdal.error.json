@@ -1,0 +1,33 @@
+{
+  "functions": [
+    {
+      "name": "check_err",
+      "params": [
+        {
+          "prefix": "",
+          "name": "code",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "cpl",
+          "annotation": null
+        }
+      ],
+      "docstring": "\"\"\"\n    Check the given CPL/OGRERR and raise an exception where appropriate.\n    \"\"\""
+    }
+  ],
+  "classes": [
+    {
+      "name": "GDALException",
+      "methods": [],
+      "classes": []
+    },
+    {
+      "name": "SRSException",
+      "methods": [],
+      "classes": []
+    }
+  ],
+  "doc": "\"\"\"\n This module houses the GDAL & SRS Exception objects, and the\n check_err() routine which checks the status code returned by\n GDAL/OGR methods.\n\"\"\""
+}

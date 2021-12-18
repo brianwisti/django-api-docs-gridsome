@@ -1,0 +1,279 @@
+{
+  "functions": [
+    {
+      "name": "split_tzname_delta",
+      "params": [
+        {
+          "prefix": "",
+          "name": "tzname",
+          "annotation": null
+        }
+      ],
+      "docstring": "\"\"\"\n    Split a time zone name into a 3-tuple of (name, sign, offset).\n    \"\"\""
+    },
+    {
+      "name": "typecast_date",
+      "params": [
+        {
+          "prefix": "",
+          "name": "s",
+          "annotation": null
+        }
+      ]
+    },
+    {
+      "name": "typecast_time",
+      "params": [
+        {
+          "prefix": "",
+          "name": "s",
+          "annotation": null
+        }
+      ]
+    },
+    {
+      "name": "typecast_timestamp",
+      "params": [
+        {
+          "prefix": "",
+          "name": "s",
+          "annotation": null
+        }
+      ]
+    },
+    {
+      "name": "split_identifier",
+      "params": [
+        {
+          "prefix": "",
+          "name": "identifier",
+          "annotation": null
+        }
+      ],
+      "docstring": "\"\"\"\n    Split an SQL identifier into a two element tuple of (namespace, name).\n\n    The identifier could be a table, column, or sequence name might be prefixed\n    by a namespace.\n    \"\"\""
+    },
+    {
+      "name": "truncate_name",
+      "params": [
+        {
+          "prefix": "",
+          "name": "identifier",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "length",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "hash_len",
+          "annotation": null
+        }
+      ],
+      "docstring": "\"\"\"\n    Shorten an SQL identifier to a repeatable mangled version with the given\n    length.\n\n    If a quote stripped name contains a namespace, e.g. USERNAME\".\"TABLE,\n    truncate the table portion only.\n    \"\"\""
+    },
+    {
+      "name": "names_digest",
+      "params": [
+        {
+          "prefix": "*",
+          "name": "args",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "length",
+          "annotation": null
+        }
+      ],
+      "docstring": "\"\"\"\n    Generate a 32-bit digest of a set of arguments that can be used to shorten\n    identifying names.\n    \"\"\""
+    },
+    {
+      "name": "format_number",
+      "params": [
+        {
+          "prefix": "",
+          "name": "value",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "max_digits",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "decimal_places",
+          "annotation": null
+        }
+      ],
+      "docstring": "\"\"\"\n    Format a number into a string with the requisite number of digits and\n    decimal places.\n    \"\"\""
+    },
+    {
+      "name": "strip_quotes",
+      "params": [
+        {
+          "prefix": "",
+          "name": "table_name",
+          "annotation": null
+        }
+      ],
+      "docstring": "\"\"\"\n    Strip quotes off of quoted table names to make them safe for use in index\n    names, sequence names, etc. For example '\"USER\".\"TABLE\"' (an Oracle naming\n    scheme) becomes 'USER\".\"TABLE'.\n    \"\"\""
+    }
+  ],
+  "classes": [
+    {
+      "name": "CursorWrapper",
+      "methods": [
+        {
+          "name": "callproc",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "procname",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "params",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "kparams",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "execute",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "sql",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "params",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "executemany",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "sql",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "param_list",
+              "annotation": null
+            }
+          ]
+        }
+      ],
+      "classes": []
+    },
+    {
+      "name": "CursorDebugWrapper",
+      "methods": [
+        {
+          "name": "execute",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "sql",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "params",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "executemany",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "sql",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "param_list",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "debug_sql",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "sql",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "params",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "use_last_executed_query",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "many",
+              "annotation": null
+            }
+          ],
+          "decorators": [
+            {
+              "name": "@contextmanager"
+            }
+          ]
+        }
+      ],
+      "classes": []
+    }
+  ]
+}

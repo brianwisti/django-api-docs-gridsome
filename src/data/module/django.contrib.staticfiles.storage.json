@@ -1,0 +1,279 @@
+{
+  "functions": [],
+  "classes": [
+    {
+      "name": "StaticFilesStorage",
+      "methods": [
+        {
+          "name": "path",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "name",
+              "annotation": null
+            }
+          ]
+        }
+      ],
+      "classes": [],
+      "docstring": "\"\"\"\n    Standard file system storage for static files.\n\n    The defaults for ``location`` and ``base_url`` are\n    ``STATIC_ROOT`` and ``STATIC_URL``.\n    \"\"\""
+    },
+    {
+      "name": "HashedFilesMixin",
+      "methods": [
+        {
+          "name": "file_hash",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "name",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "content",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        Return a hash of the file with the given name and optional content.\n        \"\"\""
+        },
+        {
+          "name": "hashed_name",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "name",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "content",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "filename",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "url",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "name",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "force",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        Return the non-hashed URL in DEBUG mode.\n        \"\"\""
+        },
+        {
+          "name": "url_converter",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "name",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "hashed_files",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "template",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        Return the custom URL converter for the given file name.\n        \"\"\""
+        },
+        {
+          "name": "post_process",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "paths",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "dry_run",
+              "annotation": null
+            },
+            {
+              "prefix": "**",
+              "name": "options",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        Post process the given dictionary of files (called from collectstatic).\n\n        Processing is actually two separate operations:\n\n        1. renaming files to include a hash of their content for cache-busting,\n           and copying those files to the target storage.\n        2. adjusting files which contain references to other files so they\n           refer to the cache-busting filenames.\n\n        If either of these are performed on a file, then that file is considered\n        post-processed.\n        \"\"\""
+        },
+        {
+          "name": "clean_name",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "name",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "hash_key",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "name",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "stored_name",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "name",
+              "annotation": null
+            }
+          ]
+        }
+      ],
+      "classes": []
+    },
+    {
+      "name": "ManifestFilesMixin",
+      "methods": [
+        {
+          "name": "read_manifest",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "load_manifest",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "post_process",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "*",
+              "name": "args",
+              "annotation": null
+            },
+            {
+              "prefix": "**",
+              "name": "kwargs",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "save_manifest",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "stored_name",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "name",
+              "annotation": null
+            }
+          ]
+        }
+      ],
+      "classes": []
+    },
+    {
+      "name": "ManifestStaticFilesStorage",
+      "methods": [],
+      "classes": [],
+      "docstring": "\"\"\"\n    A static file system storage backend which also saves\n    hashed copies of the files it saves.\n    \"\"\""
+    },
+    {
+      "name": "ConfiguredStorage",
+      "methods": [],
+      "classes": []
+    }
+  ]
+}

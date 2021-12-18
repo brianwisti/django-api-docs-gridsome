@@ -1,0 +1,13 @@
+{
+  "name": "django-api-docs",
+  "private": true,
+  "scripts": {
+    "build": "gridsome build",
+    "develop": "gridsome develop",
+    "explore": "gridsome explore",
+    "pybuild": "poetry run python parse.py"
+  },
+  "dependencies": {
+    "gridsome": "^0.7.0"
+  }
+}

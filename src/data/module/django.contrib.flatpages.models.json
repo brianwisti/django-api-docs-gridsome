@@ -1,0 +1,27 @@
+{
+  "functions": [],
+  "classes": [
+    {
+      "name": "FlatPage",
+      "methods": [
+        {
+          "name": "get_absolute_url",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "Meta",
+          "methods": [],
+          "classes": []
+        }
+      ]
+    }
+  ]
+}

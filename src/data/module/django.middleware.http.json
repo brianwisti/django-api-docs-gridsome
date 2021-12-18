@@ -1,0 +1,48 @@
+{
+  "functions": [],
+  "classes": [
+    {
+      "name": "ConditionalGetMiddleware",
+      "methods": [
+        {
+          "name": "process_response",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "request",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "response",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "needs_etag",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "response",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"Return True if an ETag header should be added to response.\"\"\""
+        }
+      ],
+      "classes": [],
+      "docstring": "\"\"\"\n    Handle conditional GET operations. If the response has an ETag or\n    Last-Modified header and the request has If-None-Match or If-Modified-Since,\n    replace the response with HttpNotModified. Add an ETag header if needed.\n    \"\"\""
+    }
+  ]
+}

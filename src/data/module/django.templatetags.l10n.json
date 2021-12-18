@@ -1,0 +1,80 @@
+{
+  "functions": [
+    {
+      "name": "localize",
+      "params": [
+        {
+          "prefix": "",
+          "name": "value",
+          "annotation": null
+        }
+      ],
+      "decorators": [
+        {
+          "name": "@register.filter(is_safe=False)"
+        }
+      ],
+      "docstring": "\"\"\"\n    Force a value to be rendered as a localized value,\n    regardless of the value of ``settings.USE_L10N``.\n    \"\"\""
+    },
+    {
+      "name": "unlocalize",
+      "params": [
+        {
+          "prefix": "",
+          "name": "value",
+          "annotation": null
+        }
+      ],
+      "decorators": [
+        {
+          "name": "@register.filter(is_safe=False)"
+        }
+      ],
+      "docstring": "\"\"\"\n    Force a value to be rendered as a non-localized value,\n    regardless of the value of ``settings.USE_L10N``.\n    \"\"\""
+    },
+    {
+      "name": "localize_tag",
+      "params": [
+        {
+          "prefix": "",
+          "name": "parser",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "token",
+          "annotation": null
+        }
+      ],
+      "decorators": [
+        {
+          "name": "@register.tag('localize')"
+        }
+      ],
+      "docstring": "\"\"\"\n    Force or prevents localization of values, regardless of the value of\n    `settings.USE_L10N`.\n\n    Sample usage::\n\n        {% localize off %}\n            var pi = {{ 3.1415 }};\n        {% endlocalize %}\n    \"\"\""
+    }
+  ],
+  "classes": [
+    {
+      "name": "LocalizeNode",
+      "methods": [
+        {
+          "name": "render",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "context",
+              "annotation": null
+            }
+          ]
+        }
+      ],
+      "classes": []
+    }
+  ]
+}

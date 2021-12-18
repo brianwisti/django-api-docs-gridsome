@@ -1,0 +1,26 @@
+{
+  "functions": [
+    {
+      "name": "add_legacy_name",
+      "params": [
+        {
+          "prefix": "",
+          "name": "apps",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "schema_editor",
+          "annotation": null
+        }
+      ]
+    }
+  ],
+  "classes": [
+    {
+      "name": "Migration",
+      "methods": [],
+      "classes": []
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "functions": [
+    {
+      "name": "reset_queries",
+      "params": [
+        {
+          "prefix": "**",
+          "name": "kwargs",
+          "annotation": null
+        }
+      ]
+    },
+    {
+      "name": "close_old_connections",
+      "params": [
+        {
+          "prefix": "**",
+          "name": "kwargs",
+          "annotation": null
+        }
+      ]
+    }
+  ],
+  "classes": []
+}

@@ -1,0 +1,286 @@
+{
+  "functions": [
+    {
+      "name": "capfirst",
+      "params": [
+        {
+          "prefix": "",
+          "name": "x",
+          "annotation": null
+        }
+      ],
+      "decorators": [
+        {
+          "name": "@keep_lazy_text"
+        }
+      ],
+      "docstring": "\"\"\"Capitalize the first letter of a string.\"\"\""
+    },
+    {
+      "name": "wrap",
+      "params": [
+        {
+          "prefix": "",
+          "name": "text",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "width",
+          "annotation": null
+        }
+      ],
+      "decorators": [
+        {
+          "name": "@keep_lazy_text"
+        }
+      ],
+      "docstring": "\"\"\"\n    A word-wrap function that preserves existing line breaks. Expects that\n    existing line breaks are posix newlines.\n\n    Preserve all white space except added line breaks consume the space on\n    which they break the line.\n\n    Don't wrap long words, thus the output text may have lines longer than\n    ``width``.\n    \"\"\""
+    },
+    {
+      "name": "get_valid_filename",
+      "params": [
+        {
+          "prefix": "",
+          "name": "name",
+          "annotation": null
+        }
+      ],
+      "decorators": [
+        {
+          "name": "@keep_lazy_text"
+        }
+      ],
+      "docstring": "\"\"\"\n    Return the given string converted to a string that can be used for a clean\n    filename. Remove leading and trailing spaces; convert other spaces to\n    underscores; and remove anything that is not an alphanumeric, dash,\n    underscore, or dot.\n    >>> get_valid_filename(\"john's portrait in 2004.jpg\")\n    'johns_portrait_in_2004.jpg'\n    \"\"\""
+    },
+    {
+      "name": "get_text_list",
+      "params": [
+        {
+          "prefix": "",
+          "name": "list_",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "last_word",
+          "annotation": null
+        }
+      ],
+      "decorators": [
+        {
+          "name": "@keep_lazy_text"
+        }
+      ],
+      "docstring": "\"\"\"\n    >>> get_text_list(['a', 'b', 'c', 'd'])\n    'a, b, c or d'\n    >>> get_text_list(['a', 'b', 'c'], 'and')\n    'a, b and c'\n    >>> get_text_list(['a', 'b'], 'and')\n    'a and b'\n    >>> get_text_list(['a'])\n    'a'\n    >>> get_text_list([])\n    ''\n    \"\"\""
+    },
+    {
+      "name": "normalize_newlines",
+      "params": [
+        {
+          "prefix": "",
+          "name": "text",
+          "annotation": null
+        }
+      ],
+      "decorators": [
+        {
+          "name": "@keep_lazy_text"
+        }
+      ],
+      "docstring": "\"\"\"Normalize CRLF and CR newlines to just LF.\"\"\""
+    },
+    {
+      "name": "phone2numeric",
+      "params": [
+        {
+          "prefix": "",
+          "name": "phone",
+          "annotation": null
+        }
+      ],
+      "decorators": [
+        {
+          "name": "@keep_lazy_text"
+        }
+      ],
+      "docstring": "\"\"\"Convert a phone number with letters into its numeric equivalent.\"\"\""
+    },
+    {
+      "name": "compress_string",
+      "params": [
+        {
+          "prefix": "",
+          "name": "s",
+          "annotation": null
+        }
+      ]
+    },
+    {
+      "name": "compress_sequence",
+      "params": [
+        {
+          "prefix": "",
+          "name": "sequence",
+          "annotation": null
+        }
+      ]
+    },
+    {
+      "name": "smart_split",
+      "params": [
+        {
+          "prefix": "",
+          "name": "text",
+          "annotation": null
+        }
+      ],
+      "docstring": "r\"\"\"\n    Generator that splits a string by spaces, leaving quoted phrases together.\n    Supports both single and double quotes, and supports escaping quotes with\n    backslashes. In the output, strings will keep their initial and trailing\n    quote marks and escaped quotes will remain escaped (the results can then\n    be further processed with unescape_string_literal()).\n\n    >>> list(smart_split(r'This is \"a person\\'s\" test.'))\n    ['This', 'is', '\"a person\\\\\\'s\"', 'test.']\n    >>> list(smart_split(r\"Another 'person\\'s' test.\"))\n    ['Another', \"'person\\\\'s'\", 'test.']\n    >>> list(smart_split(r'A \"\\\"funky\\\" style\" test.'))\n    ['A', '\"\\\\\"funky\\\\\" style\"', 'test.']\n    \"\"\""
+    },
+    {
+      "name": "unescape_string_literal",
+      "params": [
+        {
+          "prefix": "",
+          "name": "s",
+          "annotation": null
+        }
+      ],
+      "decorators": [
+        {
+          "name": "@keep_lazy_text"
+        }
+      ],
+      "docstring": "r\"\"\"\n    Convert quoted string literals to unquoted strings with escaped quotes and\n    backslashes unquoted::\n\n        >>> unescape_string_literal('\"abc\"')\n        'abc'\n        >>> unescape_string_literal(\"'abc'\")\n        'abc'\n        >>> unescape_string_literal('\"a \\\"bc\\\"\"')\n        'a \"bc\"'\n        >>> unescape_string_literal(\"'\\'ab\\' c'\")\n        \"'ab' c\"\n    \"\"\""
+    },
+    {
+      "name": "slugify",
+      "params": [
+        {
+          "prefix": "",
+          "name": "value",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "allow_unicode",
+          "annotation": null
+        }
+      ],
+      "decorators": [
+        {
+          "name": "@keep_lazy_text"
+        }
+      ],
+      "docstring": "\"\"\"\n    Convert to ASCII if 'allow_unicode' is False. Convert spaces or repeated\n    dashes to single dashes. Remove characters that aren't alphanumerics,\n    underscores, or hyphens. Convert to lowercase. Also strip leading and\n    trailing whitespace, dashes, and underscores.\n    \"\"\""
+    },
+    {
+      "name": "camel_case_to_spaces",
+      "params": [
+        {
+          "prefix": "",
+          "name": "value",
+          "annotation": null
+        }
+      ],
+      "docstring": "\"\"\"\n    Split CamelCase and convert to lowercase. Strip surrounding whitespace.\n    \"\"\""
+    }
+  ],
+  "classes": [
+    {
+      "name": "Truncator",
+      "methods": [
+        {
+          "name": "add_truncation_text",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "text",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "truncate",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "chars",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "num",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "truncate",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "html",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        Return the text truncated to be no longer than the specified number\n        of characters.\n\n        `truncate` specifies what should be used to notify that the string has\n        been truncated, defaulting to a translatable string of an ellipsis.\n        \"\"\""
+        },
+        {
+          "name": "words",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "num",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "truncate",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "html",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        Truncate a string after a certain number of words. `truncate` specifies\n        what should be used to notify that the string has been truncated,\n        defaulting to ellipsis.\n        \"\"\""
+        }
+      ],
+      "classes": [],
+      "docstring": "\"\"\"\n    An object used to truncate text, either by characters or words.\n    \"\"\""
+    },
+    {
+      "name": "StreamingBuffer",
+      "methods": [
+        {
+          "name": "read",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ]
+        }
+      ],
+      "classes": []
+    }
+  ]
+}

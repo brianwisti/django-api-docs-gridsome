@@ -1,0 +1,296 @@
+{
+  "functions": [
+    {
+      "name": "subclasses",
+      "params": [
+        {
+          "prefix": "",
+          "name": "cls",
+          "annotation": null
+        }
+      ]
+    },
+    {
+      "name": "select_related_descend",
+      "params": [
+        {
+          "prefix": "",
+          "name": "field",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "restricted",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "requested",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "load_fields",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "reverse",
+          "annotation": null
+        }
+      ],
+      "docstring": "\"\"\"\n    Return True if this field should be used to descend deeper for\n    select_related() purposes. Used by both the query construction code\n    (sql.query.fill_related_selections()) and the model instance creation code\n    (query.get_klass_info()).\n\n    Arguments:\n     * field - the field to be checked\n     * restricted - a boolean field, indicating if the field list has been\n       manually restricted using a requested clause)\n     * requested - The select_related() dictionary.\n     * load_fields - the set of fields to be loaded on this model\n     * reverse - boolean, True if we are checking a reverse select related\n    \"\"\""
+    },
+    {
+      "name": "refs_expression",
+      "params": [
+        {
+          "prefix": "",
+          "name": "lookup_parts",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "annotations",
+          "annotation": null
+        }
+      ],
+      "docstring": "\"\"\"\n    Check if the lookup_parts contains references to the given annotations set.\n    Because the LOOKUP_SEP is contained in the default annotation names, check\n    each prefix of the lookup_parts for a match.\n    \"\"\""
+    },
+    {
+      "name": "check_rel_lookup_compatibility",
+      "params": [
+        {
+          "prefix": "",
+          "name": "model",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "target_opts",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "field",
+          "annotation": null
+        }
+      ],
+      "docstring": "\"\"\"\n    Check that self.model is compatible with target_opts. Compatibility\n    is OK if:\n      1) model and opts match (where proxy inheritance is removed)\n      2) model is parent of opts' model or the other way around\n    \"\"\""
+    }
+  ],
+  "classes": [
+    {
+      "name": "Q",
+      "methods": [
+        {
+          "name": "resolve_expression",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "query",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "allow_joins",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "reuse",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "summarize",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "for_save",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "deconstruct",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ]
+        }
+      ],
+      "classes": [],
+      "docstring": "\"\"\"\n    Encapsulate filters as objects that can then be combined logically (using\n    `&` and `|`).\n    \"\"\""
+    },
+    {
+      "name": "DeferredAttribute",
+      "methods": [],
+      "classes": [],
+      "docstring": "\"\"\"\n    A wrapper for a deferred-loading field. When the value is read from this\n    object the first time, the query is executed.\n    \"\"\""
+    },
+    {
+      "name": "RegisterLookupMixin",
+      "methods": [
+        {
+          "name": "get_lookups",
+          "params": [
+            {
+              "prefix": "",
+              "name": "cls",
+              "annotation": null
+            }
+          ],
+          "decorators": [
+            {
+              "name": "@classmethod"
+            },
+            {
+              "name": "@functools.lru_cache(maxsize=None)"
+            }
+          ]
+        },
+        {
+          "name": "get_lookup",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "lookup_name",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "get_transform",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "lookup_name",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "merge_dicts",
+          "params": [
+            {
+              "prefix": "",
+              "name": "dicts",
+              "annotation": null
+            }
+          ],
+          "decorators": [
+            {
+              "name": "@staticmethod"
+            }
+          ],
+          "docstring": "\"\"\"\n        Merge dicts in reverse to preference the order of the original list. e.g.,\n        merge_dicts([a, b]) will preference the keys in 'a' over those in 'b'.\n        \"\"\""
+        },
+        {
+          "name": "register_lookup",
+          "params": [
+            {
+              "prefix": "",
+              "name": "cls",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "lookup",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "lookup_name",
+              "annotation": null
+            }
+          ],
+          "decorators": [
+            {
+              "name": "@classmethod"
+            }
+          ]
+        }
+      ],
+      "classes": []
+    },
+    {
+      "name": "FilteredRelation",
+      "methods": [
+        {
+          "name": "clone",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "resolve_expression",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "*",
+              "name": "args",
+              "annotation": null
+            },
+            {
+              "prefix": "**",
+              "name": "kwargs",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        QuerySet.annotate() only accepts expression-like arguments\n        (with a resolve_expression() method).\n        \"\"\""
+        },
+        {
+          "name": "as_sql",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "compiler",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "connection",
+              "annotation": null
+            }
+          ]
+        }
+      ],
+      "classes": [],
+      "docstring": "\"\"\"Specify custom filtering in the ON clause of SQL joins.\"\"\""
+    }
+  ],
+  "doc": "\"\"\"\nVarious data structures used in query construction.\n\nFactored out from django.db.models.query to avoid making the main module very\nlarge and/or so that they can be used by other modules without getting into\ncircular import difficulties.\n\"\"\""
+}

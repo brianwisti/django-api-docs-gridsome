@@ -1,0 +1,159 @@
+{
+  "functions": [],
+  "classes": [
+    {
+      "name": "Point",
+      "methods": [
+        {
+          "name": "x",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ],
+          "decorators": [
+            {
+              "name": "@property"
+            }
+          ],
+          "docstring": "\"Return the X component of the Point.\""
+        },
+        {
+          "name": "x",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "value",
+              "annotation": null
+            }
+          ],
+          "decorators": [
+            {
+              "name": "@x.setter"
+            }
+          ],
+          "docstring": "\"Set the X component of the Point.\""
+        },
+        {
+          "name": "y",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ],
+          "decorators": [
+            {
+              "name": "@property"
+            }
+          ],
+          "docstring": "\"Return the Y component of the Point.\""
+        },
+        {
+          "name": "y",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "value",
+              "annotation": null
+            }
+          ],
+          "decorators": [
+            {
+              "name": "@y.setter"
+            }
+          ],
+          "docstring": "\"Set the Y component of the Point.\""
+        },
+        {
+          "name": "z",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ],
+          "decorators": [
+            {
+              "name": "@property"
+            }
+          ],
+          "docstring": "\"Return the Z component of the Point.\""
+        },
+        {
+          "name": "z",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "value",
+              "annotation": null
+            }
+          ],
+          "decorators": [
+            {
+              "name": "@z.setter"
+            }
+          ],
+          "docstring": "\"Set the Z component of the Point.\""
+        },
+        {
+          "name": "tuple",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ],
+          "decorators": [
+            {
+              "name": "# ### Tuple setting and retrieval routines. ###\n    @property"
+            }
+          ],
+          "docstring": "\"Return a tuple of the point.\""
+        },
+        {
+          "name": "tuple",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "tup",
+              "annotation": null
+            }
+          ],
+          "decorators": [
+            {
+              "name": "@tuple.setter"
+            }
+          ],
+          "docstring": "\"Set the coordinates of the point with the given tuple.\""
+        }
+      ],
+      "classes": []
+    }
+  ]
+}

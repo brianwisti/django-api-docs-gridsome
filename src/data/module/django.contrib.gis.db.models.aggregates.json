@@ -1,0 +1,193 @@
+{
+  "functions": [],
+  "classes": [
+    {
+      "name": "GeoAggregate",
+      "methods": [
+        {
+          "name": "output_field",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ],
+          "decorators": [
+            {
+              "name": "@cached_property"
+            }
+          ]
+        },
+        {
+          "name": "as_sql",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "compiler",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "connection",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "function",
+              "annotation": null
+            },
+            {
+              "prefix": "**",
+              "name": "extra_context",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "as_oracle",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "compiler",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "connection",
+              "annotation": null
+            },
+            {
+              "prefix": "**",
+              "name": "extra_context",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "resolve_expression",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "query",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "allow_joins",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "reuse",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "summarize",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "for_save",
+              "annotation": null
+            }
+          ]
+        }
+      ],
+      "classes": []
+    },
+    {
+      "name": "Collect",
+      "methods": [],
+      "classes": []
+    },
+    {
+      "name": "Extent",
+      "methods": [
+        {
+          "name": "convert_value",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "value",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "expression",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "connection",
+              "annotation": null
+            }
+          ]
+        }
+      ],
+      "classes": []
+    },
+    {
+      "name": "Extent3D",
+      "methods": [
+        {
+          "name": "convert_value",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "value",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "expression",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "connection",
+              "annotation": null
+            }
+          ]
+        }
+      ],
+      "classes": []
+    },
+    {
+      "name": "MakeLine",
+      "methods": [],
+      "classes": []
+    },
+    {
+      "name": "Union",
+      "methods": [],
+      "classes": []
+    }
+  ]
+}

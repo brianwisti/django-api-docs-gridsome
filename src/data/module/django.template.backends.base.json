@@ -1,0 +1,90 @@
+{
+  "functions": [],
+  "classes": [
+    {
+      "name": "BaseEngine",
+      "methods": [
+        {
+          "name": "app_dirname",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ],
+          "decorators": [
+            {
+              "name": "@property"
+            }
+          ]
+        },
+        {
+          "name": "from_string",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "template_code",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        Create and return a template for the given source code.\n\n        This method is optional.\n        \"\"\""
+        },
+        {
+          "name": "get_template",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "template_name",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        Load and return a template for the given name.\n\n        Raise TemplateDoesNotExist if no such template exists.\n        \"\"\""
+        },
+        {
+          "name": "template_dirs",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ],
+          "decorators": [
+            {
+              "name": "# Utility methods: they are provided to minimize code duplication and\n    #                  security issues in third-party backends.\n\n    @cached_property"
+            }
+          ],
+          "docstring": "\"\"\"\n        Return a list of directories to search for templates.\n        \"\"\""
+        },
+        {
+          "name": "iter_template_filenames",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "template_name",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        Iterate over candidate files for template_name.\n\n        Ignore files that don't lie inside configured template dirs to avoid\n        directory traversal attacks.\n        \"\"\""
+        }
+      ],
+      "classes": []
+    }
+  ]
+}

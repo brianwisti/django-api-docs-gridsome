@@ -1,0 +1,178 @@
+{
+  "functions": [],
+  "classes": [
+    {
+      "name": "FieldDoesNotExist",
+      "methods": [],
+      "classes": [],
+      "docstring": "\"\"\"The requested model field does not exist\"\"\""
+    },
+    {
+      "name": "AppRegistryNotReady",
+      "methods": [],
+      "classes": [],
+      "docstring": "\"\"\"The django.apps registry is not populated yet\"\"\""
+    },
+    {
+      "name": "ObjectDoesNotExist",
+      "methods": [],
+      "classes": [],
+      "docstring": "\"\"\"The requested object does not exist\"\"\""
+    },
+    {
+      "name": "MultipleObjectsReturned",
+      "methods": [],
+      "classes": [],
+      "docstring": "\"\"\"The query returned multiple objects when only one was expected.\"\"\""
+    },
+    {
+      "name": "SuspiciousOperation",
+      "methods": [],
+      "classes": [],
+      "docstring": "\"\"\"The user did something suspicious\"\"\""
+    },
+    {
+      "name": "SuspiciousMultipartForm",
+      "methods": [],
+      "classes": [],
+      "docstring": "\"\"\"Suspect MIME request in multipart form data\"\"\""
+    },
+    {
+      "name": "SuspiciousFileOperation",
+      "methods": [],
+      "classes": [],
+      "docstring": "\"\"\"A Suspicious filesystem operation was attempted\"\"\""
+    },
+    {
+      "name": "DisallowedHost",
+      "methods": [],
+      "classes": [],
+      "docstring": "\"\"\"HTTP_HOST header contains invalid value\"\"\""
+    },
+    {
+      "name": "DisallowedRedirect",
+      "methods": [],
+      "classes": [],
+      "docstring": "\"\"\"Redirect to scheme not in allowed list\"\"\""
+    },
+    {
+      "name": "TooManyFieldsSent",
+      "methods": [],
+      "classes": [],
+      "docstring": "\"\"\"\n    The number of fields in a GET or POST request exceeded\n    settings.DATA_UPLOAD_MAX_NUMBER_FIELDS.\n    \"\"\""
+    },
+    {
+      "name": "RequestDataTooBig",
+      "methods": [],
+      "classes": [],
+      "docstring": "\"\"\"\n    The size of the request (excluding any file uploads) exceeded\n    settings.DATA_UPLOAD_MAX_MEMORY_SIZE.\n    \"\"\""
+    },
+    {
+      "name": "RequestAborted",
+      "methods": [],
+      "classes": [],
+      "docstring": "\"\"\"The request was closed before it was completed, or timed out.\"\"\""
+    },
+    {
+      "name": "BadRequest",
+      "methods": [],
+      "classes": [],
+      "docstring": "\"\"\"The request is malformed and cannot be processed.\"\"\""
+    },
+    {
+      "name": "PermissionDenied",
+      "methods": [],
+      "classes": [],
+      "docstring": "\"\"\"The user did not have permission to do that\"\"\""
+    },
+    {
+      "name": "ViewDoesNotExist",
+      "methods": [],
+      "classes": [],
+      "docstring": "\"\"\"The requested view does not exist\"\"\""
+    },
+    {
+      "name": "MiddlewareNotUsed",
+      "methods": [],
+      "classes": [],
+      "docstring": "\"\"\"This middleware is not used in this server configuration\"\"\""
+    },
+    {
+      "name": "ImproperlyConfigured",
+      "methods": [],
+      "classes": [],
+      "docstring": "\"\"\"Django is somehow improperly configured\"\"\""
+    },
+    {
+      "name": "FieldError",
+      "methods": [],
+      "classes": [],
+      "docstring": "\"\"\"Some kind of problem with a model field.\"\"\""
+    },
+    {
+      "name": "ValidationError",
+      "methods": [
+        {
+          "name": "message_dict",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ],
+          "decorators": [
+            {
+              "name": "@property"
+            }
+          ]
+        },
+        {
+          "name": "messages",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ],
+          "decorators": [
+            {
+              "name": "@property"
+            }
+          ]
+        },
+        {
+          "name": "update_error_dict",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "error_dict",
+              "annotation": null
+            }
+          ]
+        }
+      ],
+      "classes": [],
+      "docstring": "\"\"\"An error while validating data.\"\"\""
+    },
+    {
+      "name": "EmptyResultSet",
+      "methods": [],
+      "classes": [],
+      "docstring": "\"\"\"A database query predicate is impossible.\"\"\""
+    },
+    {
+      "name": "SynchronousOnlyOperation",
+      "methods": [],
+      "classes": [],
+      "docstring": "\"\"\"The user tried to call a sync-only function from an async context.\"\"\""
+    }
+  ],
+  "doc": "\"\"\"\nGlobal Django exception and warning classes.\n\"\"\""
+}

@@ -1,0 +1,78 @@
+{
+  "functions": [],
+  "classes": [
+    {
+      "name": "ArrayMaxLengthValidator",
+      "methods": [],
+      "classes": []
+    },
+    {
+      "name": "ArrayMinLengthValidator",
+      "methods": [],
+      "classes": []
+    },
+    {
+      "name": "KeysValidator",
+      "methods": [],
+      "classes": [],
+      "docstring": "\"\"\"A validator designed for HStore to require/restrict keys.\"\"\"",
+      "decorators": [
+        {
+          "name": "@deconstructible"
+        }
+      ]
+    },
+    {
+      "name": "RangeMaxValueValidator",
+      "methods": [
+        {
+          "name": "compare",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "a",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "b",
+              "annotation": null
+            }
+          ]
+        }
+      ],
+      "classes": []
+    },
+    {
+      "name": "RangeMinValueValidator",
+      "methods": [
+        {
+          "name": "compare",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "a",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "b",
+              "annotation": null
+            }
+          ]
+        }
+      ],
+      "classes": []
+    }
+  ]
+}

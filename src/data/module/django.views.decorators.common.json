@@ -1,0 +1,16 @@
+{
+  "functions": [
+    {
+      "name": "no_append_slash",
+      "params": [
+        {
+          "prefix": "",
+          "name": "view_func",
+          "annotation": null
+        }
+      ],
+      "docstring": "\"\"\"\n    Mark a view function as excluded from CommonMiddleware's APPEND_SLASH\n    redirection.\n    \"\"\""
+    }
+  ],
+  "classes": []
+}

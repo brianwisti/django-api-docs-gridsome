@@ -1,0 +1,274 @@
+{
+  "functions": [],
+  "classes": [
+    {
+      "name": "BaseSpatialOperations",
+      "methods": [
+        {
+          "name": "select_extent",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ],
+          "decorators": [
+            {
+              "name": "@cached_property"
+            }
+          ]
+        },
+        {
+          "name": "convert_extent",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "box",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "srid",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "convert_extent3d",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "box",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "srid",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "geo_quote_name",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "name",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "geo_db_type",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "f",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        Return the database column type for the geometry field on\n        the spatial backend.\n        \"\"\""
+        },
+        {
+          "name": "get_distance",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "f",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "value",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "lookup_type",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        Return the distance parameters for the given geometry field,\n        lookup value, and lookup type.\n        \"\"\""
+        },
+        {
+          "name": "get_geom_placeholder",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "f",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "value",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "compiler",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        Return the placeholder for the given geometry field with the given\n        value.  Depending on the spatial backend, the placeholder may contain a\n        stored procedure call to the transformation function of the spatial\n        backend.\n        \"\"\""
+        },
+        {
+          "name": "check_expression_support",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "expression",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "spatial_aggregate_name",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "agg_name",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "spatial_function_name",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "func_name",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "geometry_columns",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "spatial_ref_sys",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "get_db_converters",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "expression",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "get_geometry_converter",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "expression",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "get_area_att_for_field",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "field",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "get_distance_att_for_field",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "field",
+              "annotation": null
+            }
+          ]
+        }
+      ],
+      "classes": []
+    }
+  ]
+}

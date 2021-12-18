@@ -1,0 +1,188 @@
+{
+  "functions": [],
+  "classes": [
+    {
+      "name": "DatabaseSchemaEditor",
+      "methods": [
+        {
+          "name": "quote_value",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "value",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "alter_db_table",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "model",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "old_db_table",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "new_db_table",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "disable_constraints",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "alter_field",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "model",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "old_field",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "new_field",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "strict",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "delete_model",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "model",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "handle_autom2m",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "add_field",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "model",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "field",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        Create a field on a model. Usually involves adding a column, but may\n        involve adding a table instead (for M2M fields).\n        \"\"\""
+        },
+        {
+          "name": "remove_field",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "model",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "field",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        Remove a field from a model. Usually involves deleting a column,\n        but for M2Ms may involve deleting a table.\n        \"\"\""
+        },
+        {
+          "name": "add_constraint",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "model",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "constraint",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "remove_constraint",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "model",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "constraint",
+              "annotation": null
+            }
+          ]
+        }
+      ],
+      "classes": []
+    }
+  ]
+}

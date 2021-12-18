@@ -1,0 +1,51 @@
+{
+  "functions": [],
+  "classes": [
+    {
+      "name": "DatabaseClient",
+      "methods": [
+        {
+          "name": "connect_string",
+          "params": [
+            {
+              "prefix": "",
+              "name": "settings_dict",
+              "annotation": null
+            }
+          ],
+          "decorators": [
+            {
+              "name": "@staticmethod"
+            }
+          ]
+        },
+        {
+          "name": "settings_to_cmd_args_env",
+          "params": [
+            {
+              "prefix": "",
+              "name": "cls",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "settings_dict",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "parameters",
+              "annotation": null
+            }
+          ],
+          "decorators": [
+            {
+              "name": "@classmethod"
+            }
+          ]
+        }
+      ],
+      "classes": []
+    }
+  ]
+}

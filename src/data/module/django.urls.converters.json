@@ -1,0 +1,158 @@
+{
+  "functions": [
+    {
+      "name": "register_converter",
+      "params": [
+        {
+          "prefix": "",
+          "name": "converter",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "type_name",
+          "annotation": null
+        }
+      ]
+    },
+    {
+      "name": "get_converters",
+      "params": [],
+      "decorators": [
+        {
+          "name": "@lru_cache(maxsize=None)"
+        }
+      ]
+    },
+    {
+      "name": "get_converter",
+      "params": [
+        {
+          "prefix": "",
+          "name": "raw_converter",
+          "annotation": null
+        }
+      ]
+    }
+  ],
+  "classes": [
+    {
+      "name": "IntConverter",
+      "methods": [
+        {
+          "name": "to_python",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "value",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "to_url",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "value",
+              "annotation": null
+            }
+          ]
+        }
+      ],
+      "classes": []
+    },
+    {
+      "name": "StringConverter",
+      "methods": [
+        {
+          "name": "to_python",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "value",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "to_url",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "value",
+              "annotation": null
+            }
+          ]
+        }
+      ],
+      "classes": []
+    },
+    {
+      "name": "UUIDConverter",
+      "methods": [
+        {
+          "name": "to_python",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "value",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "to_url",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "value",
+              "annotation": null
+            }
+          ]
+        }
+      ],
+      "classes": []
+    },
+    {
+      "name": "SlugConverter",
+      "methods": [],
+      "classes": []
+    },
+    {
+      "name": "PathConverter",
+      "methods": [],
+      "classes": []
+    }
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "functions": [],
+  "classes": [
+    {
+      "name": "CIText",
+      "methods": [
+        {
+          "name": "get_internal_type",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "db_type",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "connection",
+              "annotation": null
+            }
+          ]
+        }
+      ],
+      "classes": []
+    },
+    {
+      "name": "CICharField",
+      "methods": [],
+      "classes": []
+    },
+    {
+      "name": "CIEmailField",
+      "methods": [],
+      "classes": []
+    },
+    {
+      "name": "CITextField",
+      "methods": [],
+      "classes": []
+    }
+  ]
+}

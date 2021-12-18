@@ -1,0 +1,531 @@
+{
+  "functions": [
+    {
+      "name": "normalize_together",
+      "params": [
+        {
+          "prefix": "",
+          "name": "option_together",
+          "annotation": null
+        }
+      ],
+      "docstring": "\"\"\"\n    option_together can be either a tuple of tuples, or a single\n    tuple of two strings. Normalize it to a tuple of tuples, so that\n    calling code can uniformly expect that.\n    \"\"\""
+    },
+    {
+      "name": "make_immutable_fields_list",
+      "params": [
+        {
+          "prefix": "",
+          "name": "name",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "data",
+          "annotation": null
+        }
+      ]
+    }
+  ],
+  "classes": [
+    {
+      "name": "Options",
+      "methods": [
+        {
+          "name": "label",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ],
+          "decorators": [
+            {
+              "name": "@property"
+            }
+          ]
+        },
+        {
+          "name": "label_lower",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ],
+          "decorators": [
+            {
+              "name": "@property"
+            }
+          ]
+        },
+        {
+          "name": "app_config",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ],
+          "decorators": [
+            {
+              "name": "@property"
+            }
+          ]
+        },
+        {
+          "name": "installed",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ],
+          "decorators": [
+            {
+              "name": "@property"
+            }
+          ]
+        },
+        {
+          "name": "contribute_to_class",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "cls",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "name",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "add_manager",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "manager",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "add_field",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "field",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "private",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "setup_pk",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "field",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "setup_proxy",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "target",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        Do the internal setup so that the current model is a proxy for\n        \"target\".\n        \"\"\""
+        },
+        {
+          "name": "can_migrate",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "connection",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        Return True if the model can/should be migrated on the `connection`.\n        `connection` can be either a real connection or a connection alias.\n        \"\"\""
+        },
+        {
+          "name": "verbose_name_raw",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ],
+          "decorators": [
+            {
+              "name": "@property"
+            }
+          ],
+          "docstring": "\"\"\"Return the untranslated verbose name.\"\"\""
+        },
+        {
+          "name": "swapped",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ],
+          "decorators": [
+            {
+              "name": "@property"
+            }
+          ],
+          "docstring": "\"\"\"\n        Has this model been swapped out for another? If so, return the model\n        name of the replacement; otherwise, return None.\n\n        For historical reasons, model name lookups using get_model() are\n        case insensitive, so we make sure we are case insensitive here.\n        \"\"\""
+        },
+        {
+          "name": "managers",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ],
+          "decorators": [
+            {
+              "name": "@cached_property"
+            }
+          ]
+        },
+        {
+          "name": "managers_map",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ],
+          "decorators": [
+            {
+              "name": "@cached_property"
+            }
+          ]
+        },
+        {
+          "name": "base_manager",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ],
+          "decorators": [
+            {
+              "name": "@cached_property"
+            }
+          ]
+        },
+        {
+          "name": "default_manager",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ],
+          "decorators": [
+            {
+              "name": "@cached_property"
+            }
+          ]
+        },
+        {
+          "name": "fields",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ],
+          "decorators": [
+            {
+              "name": "@cached_property"
+            }
+          ],
+          "docstring": "\"\"\"\n        Return a list of all forward fields on the model and its parents,\n        excluding ManyToManyFields.\n\n        Private API intended only to be used by Django itself; get_fields()\n        combined with filtering of field properties is the public API for\n        obtaining this field list.\n        \"\"\""
+        },
+        {
+          "name": "concrete_fields",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ],
+          "decorators": [
+            {
+              "name": "@cached_property"
+            }
+          ],
+          "docstring": "\"\"\"\n        Return a list of all concrete fields on the model and its parents.\n\n        Private API intended only to be used by Django itself; get_fields()\n        combined with filtering of field properties is the public API for\n        obtaining this field list.\n        \"\"\""
+        },
+        {
+          "name": "local_concrete_fields",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ],
+          "decorators": [
+            {
+              "name": "@cached_property"
+            }
+          ],
+          "docstring": "\"\"\"\n        Return a list of all concrete fields on the model.\n\n        Private API intended only to be used by Django itself; get_fields()\n        combined with filtering of field properties is the public API for\n        obtaining this field list.\n        \"\"\""
+        },
+        {
+          "name": "many_to_many",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ],
+          "decorators": [
+            {
+              "name": "@cached_property"
+            }
+          ],
+          "docstring": "\"\"\"\n        Return a list of all many to many fields on the model and its parents.\n\n        Private API intended only to be used by Django itself; get_fields()\n        combined with filtering of field properties is the public API for\n        obtaining this list.\n        \"\"\""
+        },
+        {
+          "name": "related_objects",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ],
+          "decorators": [
+            {
+              "name": "@cached_property"
+            }
+          ],
+          "docstring": "\"\"\"\n        Return all related objects pointing to the current model. The related\n        objects can come from a one-to-one, one-to-many, or many-to-many field\n        relation type.\n\n        Private API intended only to be used by Django itself; get_fields()\n        combined with filtering of field properties is the public API for\n        obtaining this field list.\n        \"\"\""
+        },
+        {
+          "name": "fields_map",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ],
+          "decorators": [
+            {
+              "name": "@cached_property"
+            }
+          ]
+        },
+        {
+          "name": "get_field",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "field_name",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        Return a field instance given the name of a forward or reverse field.\n        \"\"\""
+        },
+        {
+          "name": "get_base_chain",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "model",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        Return a list of parent classes leading to `model` (ordered from\n        closest to most distant ancestor). This has to handle the case where\n        `model` is a grandparent or even more distant relation.\n        \"\"\""
+        },
+        {
+          "name": "get_parent_list",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        Return all the ancestors of this model as a list ordered by MRO.\n        Useful for determining if something is an ancestor, regardless of lineage.\n        \"\"\""
+        },
+        {
+          "name": "get_ancestor_link",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "ancestor",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        Return the field on the current model which points to the given\n        \"ancestor\". This is possible an indirect link (a pointer to a parent\n        model, which points, eventually, to the ancestor). Used when\n        constructing table joins for model inheritance.\n\n        Return None if the model isn't an ancestor of this one.\n        \"\"\""
+        },
+        {
+          "name": "get_path_to_parent",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "parent",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        Return a list of PathInfos containing the path from the current\n        model to the parent model, or an empty list if parent is not a\n        parent of the current model.\n        \"\"\""
+        },
+        {
+          "name": "get_path_from_parent",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "parent",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        Return a list of PathInfos containing the path from the parent\n        model to the current model, or an empty list if parent is not a\n        parent of the current model.\n        \"\"\""
+        },
+        {
+          "name": "get_fields",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "include_parents",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "include_hidden",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        Return a list of fields associated to the model. By default, include\n        forward and reverse fields, fields derived from inheritance, but not\n        hidden fields. The returned fields can be changed using the parameters:\n\n        - include_parents: include fields derived from inheritance\n        - include_hidden:  include fields that have a related_name that\n                           starts with a \"+\"\n        \"\"\""
+        },
+        {
+          "name": "total_unique_constraints",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ],
+          "decorators": [
+            {
+              "name": "@cached_property"
+            }
+          ],
+          "docstring": "\"\"\"\n        Return a list of total unique constraints. Useful for determining set\n        of fields guaranteed to be unique for all rows.\n        \"\"\""
+        },
+        {
+          "name": "db_returning_fields",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ],
+          "decorators": [
+            {
+              "name": "@cached_property"
+            }
+          ],
+          "docstring": "\"\"\"\n        Private API intended only to be used by Django itself.\n        Fields to be returned after a database insert.\n        \"\"\""
+        }
+      ],
+      "classes": []
+    }
+  ]
+}

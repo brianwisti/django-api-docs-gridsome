@@ -1,0 +1,32 @@
+{
+  "functions": [],
+  "classes": [
+    {
+      "name": "GZipMiddleware",
+      "methods": [
+        {
+          "name": "process_response",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "request",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "response",
+              "annotation": null
+            }
+          ]
+        }
+      ],
+      "classes": [],
+      "docstring": "\"\"\"\n    Compress content if the browser allows gzip compression.\n    Set the Vary header accordingly, so that caches will base their storage\n    on the Accept-Encoding header.\n    \"\"\""
+    }
+  ]
+}

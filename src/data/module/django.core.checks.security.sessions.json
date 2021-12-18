@@ -1,0 +1,65 @@
+{
+  "functions": [
+    {
+      "name": "add_session_cookie_message",
+      "params": [
+        {
+          "prefix": "",
+          "name": "message",
+          "annotation": null
+        }
+      ]
+    },
+    {
+      "name": "add_httponly_message",
+      "params": [
+        {
+          "prefix": "",
+          "name": "message",
+          "annotation": null
+        }
+      ]
+    },
+    {
+      "name": "check_session_cookie_secure",
+      "params": [
+        {
+          "prefix": "",
+          "name": "app_configs",
+          "annotation": null
+        },
+        {
+          "prefix": "**",
+          "name": "kwargs",
+          "annotation": null
+        }
+      ],
+      "decorators": [
+        {
+          "name": "@register(Tags.security, deploy=True)"
+        }
+      ]
+    },
+    {
+      "name": "check_session_cookie_httponly",
+      "params": [
+        {
+          "prefix": "",
+          "name": "app_configs",
+          "annotation": null
+        },
+        {
+          "prefix": "**",
+          "name": "kwargs",
+          "annotation": null
+        }
+      ],
+      "decorators": [
+        {
+          "name": "@register(Tags.security, deploy=True)"
+        }
+      ]
+    }
+  ],
+  "classes": []
+}

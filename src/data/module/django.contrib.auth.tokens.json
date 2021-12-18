@@ -1,0 +1,49 @@
+{
+  "functions": [],
+  "classes": [
+    {
+      "name": "PasswordResetTokenGenerator",
+      "methods": [
+        {
+          "name": "make_token",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "user",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        Return a token that can be used once to do a password reset\n        for the given user.\n        \"\"\""
+        },
+        {
+          "name": "check_token",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "user",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "token",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        Check that a password reset token is correct for a given user.\n        \"\"\""
+        }
+      ],
+      "classes": [],
+      "docstring": "\"\"\"\n    Strategy object used to generate and check tokens for the password\n    reset mechanism.\n    \"\"\""
+    }
+  ]
+}

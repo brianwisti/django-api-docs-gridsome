@@ -1,0 +1,22 @@
+{
+  "functions": [],
+  "classes": [
+    {
+      "name": "CachedDnsName",
+      "methods": [
+        {
+          "name": "get_fqdn",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ]
+        }
+      ],
+      "classes": []
+    }
+  ],
+  "doc": "\"\"\"\nEmail message and email sending related helper functions.\n\"\"\""
+}

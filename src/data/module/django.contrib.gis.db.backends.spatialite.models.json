@@ -1,0 +1,79 @@
+{
+  "functions": [],
+  "classes": [
+    {
+      "name": "SpatialiteGeometryColumns",
+      "methods": [
+        {
+          "name": "table_name_col",
+          "params": [
+            {
+              "prefix": "",
+              "name": "cls",
+              "annotation": null
+            }
+          ],
+          "decorators": [
+            {
+              "name": "@classmethod"
+            }
+          ],
+          "docstring": "\"\"\"\n        Return the name of the metadata column used to store the feature table\n        name.\n        \"\"\""
+        },
+        {
+          "name": "geom_col_name",
+          "params": [
+            {
+              "prefix": "",
+              "name": "cls",
+              "annotation": null
+            }
+          ],
+          "decorators": [
+            {
+              "name": "@classmethod"
+            }
+          ],
+          "docstring": "\"\"\"\n        Return the name of the metadata column used to store the feature\n        geometry column.\n        \"\"\""
+        }
+      ],
+      "classes": [
+        {
+          "name": "Meta",
+          "methods": [],
+          "classes": []
+        }
+      ],
+      "docstring": "\"\"\"\n    The 'geometry_columns' table from SpatiaLite.\n    \"\"\""
+    },
+    {
+      "name": "SpatialiteSpatialRefSys",
+      "methods": [
+        {
+          "name": "wkt",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ],
+          "decorators": [
+            {
+              "name": "@property"
+            }
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "Meta",
+          "methods": [],
+          "classes": []
+        }
+      ],
+      "docstring": "\"\"\"\n    The 'spatial_ref_sys' table from SpatiaLite.\n    \"\"\""
+    }
+  ],
+  "doc": "\"\"\"\n The GeometryColumns and SpatialRefSys models for the SpatiaLite backend.\n\"\"\""
+}

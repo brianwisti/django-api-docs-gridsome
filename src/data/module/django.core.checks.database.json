@@ -1,0 +1,25 @@
+{
+  "functions": [
+    {
+      "name": "check_database_backends",
+      "params": [
+        {
+          "prefix": "",
+          "name": "databases",
+          "annotation": null
+        },
+        {
+          "prefix": "**",
+          "name": "kwargs",
+          "annotation": null
+        }
+      ],
+      "decorators": [
+        {
+          "name": "@register(Tags.database)"
+        }
+      ]
+    }
+  ],
+  "classes": []
+}

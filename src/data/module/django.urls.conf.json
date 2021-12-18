@@ -1,0 +1,21 @@
+{
+  "functions": [
+    {
+      "name": "include",
+      "params": [
+        {
+          "prefix": "",
+          "name": "arg",
+          "annotation": null
+        },
+        {
+          "prefix": "",
+          "name": "namespace",
+          "annotation": null
+        }
+      ]
+    }
+  ],
+  "classes": [],
+  "doc": "\"\"\"Functions for use in URLsconfs.\"\"\""
+}

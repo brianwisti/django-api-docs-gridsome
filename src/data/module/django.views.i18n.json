@@ -1,0 +1,151 @@
+{
+  "functions": [
+    {
+      "name": "set_language",
+      "params": [
+        {
+          "prefix": "",
+          "name": "request",
+          "annotation": null
+        }
+      ],
+      "docstring": "\"\"\"\n    Redirect to a given URL while setting the chosen language in the session\n    (if enabled) and in a cookie. The URL and the language code need to be\n    specified in the request parameters.\n\n    Since this view changes how the user will see the rest of the site, it must\n    only be accessed as a POST request. If called as a GET request, it will\n    redirect to the page in the request (the 'next' parameter) without changing\n    any state.\n    \"\"\""
+    },
+    {
+      "name": "get_formats",
+      "params": [],
+      "docstring": "\"\"\"Return all formats strings required for i18n to work.\"\"\""
+    }
+  ],
+  "classes": [
+    {
+      "name": "JavaScriptCatalog",
+      "methods": [
+        {
+          "name": "get",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "request",
+              "annotation": null
+            },
+            {
+              "prefix": "*",
+              "name": "args",
+              "annotation": null
+            },
+            {
+              "prefix": "**",
+              "name": "kwargs",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "get_paths",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "packages",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "get_plural",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "get_catalog",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "get_context_data",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "**",
+              "name": "kwargs",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "render_to_response",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "context",
+              "annotation": null
+            },
+            {
+              "prefix": "**",
+              "name": "response_kwargs",
+              "annotation": null
+            }
+          ]
+        }
+      ],
+      "classes": [],
+      "docstring": "\"\"\"\n    Return the selected language catalog as a JavaScript library.\n\n    Receive the list of packages to check for translations in the `packages`\n    kwarg either from the extra dictionary passed to the path() function or as\n    a plus-sign delimited string from the request. Default is 'django.conf'.\n\n    You can override the gettext domain for this view, but usually you don't\n    want to do that as JavaScript messages go to the djangojs domain. This\n    might be needed if you deliver your JavaScript source from Django templates.\n    \"\"\""
+    },
+    {
+      "name": "JSONCatalog",
+      "methods": [
+        {
+          "name": "render_to_response",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "context",
+              "annotation": null
+            },
+            {
+              "prefix": "**",
+              "name": "response_kwargs",
+              "annotation": null
+            }
+          ]
+        }
+      ],
+      "classes": [],
+      "docstring": "\"\"\"\n    Return the selected language catalog as a JSON object.\n\n    Receive the same parameters as JavaScriptCatalog and return a response\n    with a JSON object of the following format:\n\n        {\n            \"catalog\": {\n                # Translations catalog\n            },\n            \"formats\": {\n                # Language formats for date, time, etc.\n            },\n            \"plural\": '...'  # Expression for plural forms, or null.\n        }\n    \"\"\""
+    }
+  ]
+}

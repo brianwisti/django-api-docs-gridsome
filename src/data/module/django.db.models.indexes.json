@@ -1,0 +1,220 @@
+{
+  "functions": [],
+  "classes": [
+    {
+      "name": "Index",
+      "methods": [
+        {
+          "name": "contains_expressions",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ],
+          "decorators": [
+            {
+              "name": "@property"
+            }
+          ]
+        },
+        {
+          "name": "create_sql",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "model",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "schema_editor",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "using",
+              "annotation": null
+            },
+            {
+              "prefix": "**",
+              "name": "kwargs",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "remove_sql",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "model",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "schema_editor",
+              "annotation": null
+            },
+            {
+              "prefix": "**",
+              "name": "kwargs",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "deconstruct",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "clone",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"Create a copy of this Index.\"\"\""
+        },
+        {
+          "name": "set_name_with_model",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "model",
+              "annotation": null
+            }
+          ],
+          "docstring": "\"\"\"\n        Generate a unique name for the index.\n\n        The name is divided into 3 parts - table name (12 chars), field name\n        (8 chars) and unique hash + suffix (10 chars). Each part is made to\n        fit its size by truncating the excess length.\n        \"\"\""
+        }
+      ],
+      "classes": []
+    },
+    {
+      "name": "IndexExpression",
+      "methods": [
+        {
+          "name": "set_wrapper_classes",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "connection",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "register_wrappers",
+          "params": [
+            {
+              "prefix": "",
+              "name": "cls",
+              "annotation": null
+            },
+            {
+              "prefix": "*",
+              "name": "wrapper_classes",
+              "annotation": null
+            }
+          ],
+          "decorators": [
+            {
+              "name": "@classmethod"
+            }
+          ]
+        },
+        {
+          "name": "resolve_expression",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "query",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "allow_joins",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "reuse",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "summarize",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "for_save",
+              "annotation": null
+            }
+          ]
+        },
+        {
+          "name": "as_sqlite",
+          "params": [
+            {
+              "prefix": "",
+              "name": "self",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "compiler",
+              "annotation": null
+            },
+            {
+              "prefix": "",
+              "name": "connection",
+              "annotation": null
+            },
+            {
+              "prefix": "**",
+              "name": "extra_context",
+              "annotation": null
+            }
+          ]
+        }
+      ],
+      "classes": [],
+      "docstring": "\"\"\"Order and wrap expressions for CREATE INDEX statements.\"\"\""
+    }
+  ]
+}
