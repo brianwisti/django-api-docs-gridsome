@@ -1,14 +1,10 @@
-# Default starter for Gridsome
+# A [Django][] API doc site using [Gridsome][]
 
-This is the project you get when you run `gridsome create new-project`.
+[Django]: https://djangoproject.com
+[Gridsome]: https://gridsome.org
 
-### 1. Install Gridsome CLI tool if you don't have
+And [Parso][] to parse the Django source.
 
-`npm install --global @gridsome/cli`
+[Parso]: https://parso.readthedocs.io/en/latest/index.html
 
-### 2. Create a Gridsome project
-
-1. `gridsome create my-gridsome-site` to install default starter
-2. `cd my-gridsome-site` to open the folder
-3. `gridsome develop` to start a local dev server at `http://localhost:8080`
-4. Happy coding 🎉🙌
+More notes if I make any real progress.
