@@ -1,5 +1,0 @@
-{
-  "functions": [],
-  "classes": [],
-  "docstring": "\"\"\"\nThis module houses the ctypes function prototypes for GDAL DataSource (raster)\nrelated data structures.\n\"\"\""
-}
