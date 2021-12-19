@@ -1,0 +1,52 @@
+{
+    "name": "django.contrib.gis.gdal",
+    "docstring": "\"\"\"\n This module houses ctypes interfaces for GDAL objects.  The following GDAL\n objects are supported:\n\n CoordTransform: Used for coordinate transformations from one spatial\n  reference system to another.\n\n Driver: Wraps an OGR data source driver.\n\n DataSource: Wrapper for the OGR data source object, supports\n  OGR-supported data sources.\n\n Envelope: A ctypes structure for bounding boxes (GDAL library\n  not required).\n\n OGRGeometry: Object for accessing OGR Geometry functionality.\n\n OGRGeomType: A class for representing the different OGR Geometry\n  types (GDAL library not required).\n\n SpatialReference: Represents OSR Spatial Reference objects.\n\n The GDAL library will be imported from the system path using the default\n library name for the current OS. The default library path may be overridden\n by setting `GDAL_LIBRARY_PATH` in your settings with the path to the GDAL C\n library on your system.\n\"\"\"",
+    "modules": [
+        {
+            "namespace": "django.contrib.gis.gdal.envelope"
+        },
+        {
+            "namespace": "django.contrib.gis.gdal.feature"
+        },
+        {
+            "namespace": "django.contrib.gis.gdal.datasource"
+        },
+        {
+            "namespace": "django.contrib.gis.gdal.base"
+        },
+        {
+            "namespace": "django.contrib.gis.gdal.srs"
+        },
+        {
+            "namespace": "django.contrib.gis.gdal.geomtype"
+        },
+        {
+            "namespace": "django.contrib.gis.gdal.driver"
+        },
+        {
+            "namespace": "django.contrib.gis.gdal.error"
+        },
+        {
+            "namespace": "django.contrib.gis.gdal.libgdal"
+        },
+        {
+            "namespace": "django.contrib.gis.gdal.field"
+        },
+        {
+            "namespace": "django.contrib.gis.gdal.layer"
+        },
+        {
+            "namespace": "django.contrib.gis.gdal.geometries"
+        }
+    ],
+    "subpackages": [
+        {
+            "name": "django.contrib.gis.gdal.raster",
+            "docstring": ""
+        },
+        {
+            "name": "django.contrib.gis.gdal.prototypes",
+            "docstring": ""
+        }
+    ]
+}

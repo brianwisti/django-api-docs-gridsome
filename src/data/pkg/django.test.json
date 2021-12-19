@@ -1,0 +1,28 @@
+{
+    "name": "django.test",
+    "docstring": "\"\"\"Django Unit Test framework.\"\"\"",
+    "modules": [
+        {
+            "namespace": "django.test.selenium"
+        },
+        {
+            "namespace": "django.test.client"
+        },
+        {
+            "namespace": "django.test.signals"
+        },
+        {
+            "namespace": "django.test.utils"
+        },
+        {
+            "namespace": "django.test.runner"
+        },
+        {
+            "namespace": "django.test.testcases"
+        },
+        {
+            "namespace": "django.test.html"
+        }
+    ],
+    "subpackages": []
+}

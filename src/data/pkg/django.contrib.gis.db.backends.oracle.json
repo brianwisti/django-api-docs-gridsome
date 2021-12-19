@@ -1,0 +1,28 @@
+{
+    "name": "django.contrib.gis.db.backends.oracle",
+    "docstring": "",
+    "modules": [
+        {
+            "namespace": "django.contrib.gis.db.backends.oracle.introspection"
+        },
+        {
+            "namespace": "django.contrib.gis.db.backends.oracle.base"
+        },
+        {
+            "namespace": "django.contrib.gis.db.backends.oracle.adapter"
+        },
+        {
+            "namespace": "django.contrib.gis.db.backends.oracle.operations"
+        },
+        {
+            "namespace": "django.contrib.gis.db.backends.oracle.features"
+        },
+        {
+            "namespace": "django.contrib.gis.db.backends.oracle.schema"
+        },
+        {
+            "namespace": "django.contrib.gis.db.backends.oracle.models"
+        }
+    ],
+    "subpackages": []
+}

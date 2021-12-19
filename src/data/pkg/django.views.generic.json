@@ -1,0 +1,22 @@
+{
+    "name": "django.views.generic",
+    "docstring": "",
+    "modules": [
+        {
+            "namespace": "django.views.generic.list"
+        },
+        {
+            "namespace": "django.views.generic.base"
+        },
+        {
+            "namespace": "django.views.generic.dates"
+        },
+        {
+            "namespace": "django.views.generic.edit"
+        },
+        {
+            "namespace": "django.views.generic.detail"
+        }
+    ],
+    "subpackages": []
+}

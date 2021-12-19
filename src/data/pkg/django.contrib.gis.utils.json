@@ -1,0 +1,19 @@
+{
+    "name": "django.contrib.gis.utils",
+    "docstring": "\"\"\"\n This module contains useful utilities for GeoDjango.\n\"\"\"",
+    "modules": [
+        {
+            "namespace": "django.contrib.gis.utils.ogrinfo"
+        },
+        {
+            "namespace": "django.contrib.gis.utils.ogrinspect"
+        },
+        {
+            "namespace": "django.contrib.gis.utils.srs"
+        },
+        {
+            "namespace": "django.contrib.gis.utils.layermapping"
+        }
+    ],
+    "subpackages": []
+}

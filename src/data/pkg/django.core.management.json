@@ -1,0 +1,27 @@
+{
+    "name": "django.core.management",
+    "docstring": "",
+    "modules": [
+        {
+            "namespace": "django.core.management.color"
+        },
+        {
+            "namespace": "django.core.management.base"
+        },
+        {
+            "namespace": "django.core.management.templates"
+        },
+        {
+            "namespace": "django.core.management.sql"
+        },
+        {
+            "namespace": "django.core.management.utils"
+        }
+    ],
+    "subpackages": [
+        {
+            "name": "django.core.management.commands",
+            "docstring": ""
+        }
+    ]
+}

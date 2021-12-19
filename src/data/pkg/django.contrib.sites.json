@@ -1,0 +1,39 @@
+{
+    "name": "django.contrib.sites",
+    "docstring": "",
+    "modules": [
+        {
+            "namespace": "django.contrib.sites.middleware"
+        },
+        {
+            "namespace": "django.contrib.sites.management"
+        },
+        {
+            "namespace": "django.contrib.sites.apps"
+        },
+        {
+            "namespace": "django.contrib.sites.admin"
+        },
+        {
+            "namespace": "django.contrib.sites.requests"
+        },
+        {
+            "namespace": "django.contrib.sites.shortcuts"
+        },
+        {
+            "namespace": "django.contrib.sites.checks"
+        },
+        {
+            "namespace": "django.contrib.sites.models"
+        },
+        {
+            "namespace": "django.contrib.sites.managers"
+        }
+    ],
+    "subpackages": [
+        {
+            "name": "django.contrib.sites.migrations",
+            "docstring": ""
+        }
+    ]
+}

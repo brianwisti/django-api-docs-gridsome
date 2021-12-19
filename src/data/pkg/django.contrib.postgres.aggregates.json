@@ -1,0 +1,16 @@
+{
+    "name": "django.contrib.postgres.aggregates",
+    "docstring": "",
+    "modules": [
+        {
+            "namespace": "django.contrib.postgres.aggregates.statistics"
+        },
+        {
+            "namespace": "django.contrib.postgres.aggregates.mixins"
+        },
+        {
+            "namespace": "django.contrib.postgres.aggregates.general"
+        }
+    ],
+    "subpackages": []
+}

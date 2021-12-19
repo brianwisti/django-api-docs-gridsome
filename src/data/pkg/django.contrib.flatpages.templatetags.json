@@ -1,0 +1,10 @@
+{
+    "name": "django.contrib.flatpages.templatetags",
+    "docstring": "",
+    "modules": [
+        {
+            "namespace": "django.contrib.flatpages.templatetags.flatpages"
+        }
+    ],
+    "subpackages": []
+}

@@ -1,0 +1,19 @@
+{
+    "name": "django.contrib.gis.db.backends.base",
+    "docstring": "",
+    "modules": [
+        {
+            "namespace": "django.contrib.gis.db.backends.base.adapter"
+        },
+        {
+            "namespace": "django.contrib.gis.db.backends.base.operations"
+        },
+        {
+            "namespace": "django.contrib.gis.db.backends.base.features"
+        },
+        {
+            "namespace": "django.contrib.gis.db.backends.base.models"
+        }
+    ],
+    "subpackages": []
+}

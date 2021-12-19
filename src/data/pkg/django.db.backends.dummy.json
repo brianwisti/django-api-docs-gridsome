@@ -1,0 +1,13 @@
+{
+    "name": "django.db.backends.dummy",
+    "docstring": "",
+    "modules": [
+        {
+            "namespace": "django.db.backends.dummy.base"
+        },
+        {
+            "namespace": "django.db.backends.dummy.features"
+        }
+    ],
+    "subpackages": []
+}

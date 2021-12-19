@@ -1,0 +1,37 @@
+{
+    "name": "django.db.backends.oracle",
+    "docstring": "",
+    "modules": [
+        {
+            "namespace": "django.db.backends.oracle.creation"
+        },
+        {
+            "namespace": "django.db.backends.oracle.introspection"
+        },
+        {
+            "namespace": "django.db.backends.oracle.client"
+        },
+        {
+            "namespace": "django.db.backends.oracle.base"
+        },
+        {
+            "namespace": "django.db.backends.oracle.functions"
+        },
+        {
+            "namespace": "django.db.backends.oracle.operations"
+        },
+        {
+            "namespace": "django.db.backends.oracle.utils"
+        },
+        {
+            "namespace": "django.db.backends.oracle.features"
+        },
+        {
+            "namespace": "django.db.backends.oracle.validation"
+        },
+        {
+            "namespace": "django.db.backends.oracle.schema"
+        }
+    ],
+    "subpackages": []
+}

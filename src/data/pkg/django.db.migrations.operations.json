@@ -1,0 +1,19 @@
+{
+    "name": "django.db.migrations.operations",
+    "docstring": "",
+    "modules": [
+        {
+            "namespace": "django.db.migrations.operations.base"
+        },
+        {
+            "namespace": "django.db.migrations.operations.fields"
+        },
+        {
+            "namespace": "django.db.migrations.operations.models"
+        },
+        {
+            "namespace": "django.db.migrations.operations.special"
+        }
+    ],
+    "subpackages": []
+}

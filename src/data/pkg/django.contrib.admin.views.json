@@ -1,0 +1,16 @@
+{
+    "name": "django.contrib.admin.views",
+    "docstring": "",
+    "modules": [
+        {
+            "namespace": "django.contrib.admin.views.decorators"
+        },
+        {
+            "namespace": "django.contrib.admin.views.main"
+        },
+        {
+            "namespace": "django.contrib.admin.views.autocomplete"
+        }
+    ],
+    "subpackages": []
+}

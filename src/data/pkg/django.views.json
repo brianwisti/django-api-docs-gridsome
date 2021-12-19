@@ -1,0 +1,31 @@
+{
+    "name": "django.views",
+    "docstring": "",
+    "modules": [
+        {
+            "namespace": "django.views.defaults"
+        },
+        {
+            "namespace": "django.views.static"
+        },
+        {
+            "namespace": "django.views.i18n"
+        },
+        {
+            "namespace": "django.views.debug"
+        },
+        {
+            "namespace": "django.views.csrf"
+        }
+    ],
+    "subpackages": [
+        {
+            "name": "django.views.decorators",
+            "docstring": ""
+        },
+        {
+            "name": "django.views.generic",
+            "docstring": ""
+        }
+    ]
+}

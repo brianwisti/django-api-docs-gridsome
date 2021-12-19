@@ -1,0 +1,13 @@
+{
+    "name": "django.apps",
+    "docstring": "",
+    "modules": [
+        {
+            "namespace": "django.apps.registry"
+        },
+        {
+            "namespace": "django.apps.config"
+        }
+    ],
+    "subpackages": []
+}

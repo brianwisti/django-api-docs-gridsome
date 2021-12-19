@@ -1,0 +1,22 @@
+{
+    "name": "django.contrib.admindocs",
+    "docstring": "",
+    "modules": [
+        {
+            "namespace": "django.contrib.admindocs.middleware"
+        },
+        {
+            "namespace": "django.contrib.admindocs.views"
+        },
+        {
+            "namespace": "django.contrib.admindocs.apps"
+        },
+        {
+            "namespace": "django.contrib.admindocs.urls"
+        },
+        {
+            "namespace": "django.contrib.admindocs.utils"
+        }
+    ],
+    "subpackages": []
+}

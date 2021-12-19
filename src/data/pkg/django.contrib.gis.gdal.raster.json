@@ -1,0 +1,19 @@
+{
+    "name": "django.contrib.gis.gdal.raster",
+    "docstring": "",
+    "modules": [
+        {
+            "namespace": "django.contrib.gis.gdal.raster.base"
+        },
+        {
+            "namespace": "django.contrib.gis.gdal.raster.const"
+        },
+        {
+            "namespace": "django.contrib.gis.gdal.raster.source"
+        },
+        {
+            "namespace": "django.contrib.gis.gdal.raster.band"
+        }
+    ],
+    "subpackages": []
+}

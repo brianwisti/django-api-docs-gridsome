@@ -1,0 +1,13 @@
+{
+    "name": "django.contrib.gis.forms",
+    "docstring": "",
+    "modules": [
+        {
+            "namespace": "django.contrib.gis.forms.widgets"
+        },
+        {
+            "namespace": "django.contrib.gis.forms.fields"
+        }
+    ],
+    "subpackages": []
+}

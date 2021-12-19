@@ -1,0 +1,16 @@
+{
+    "name": "django.contrib.admin.migrations",
+    "docstring": "",
+    "modules": [
+        {
+            "namespace": "django.contrib.admin.migrations.0003_logentry_add_action_flag_choices"
+        },
+        {
+            "namespace": "django.contrib.admin.migrations.0002_logentry_remove_auto_add"
+        },
+        {
+            "namespace": "django.contrib.admin.migrations.0001_initial"
+        }
+    ],
+    "subpackages": []
+}

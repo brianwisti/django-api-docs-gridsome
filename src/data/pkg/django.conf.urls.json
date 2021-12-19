@@ -1,0 +1,13 @@
+{
+    "name": "django.conf.urls",
+    "docstring": "",
+    "modules": [
+        {
+            "namespace": "django.conf.urls.static"
+        },
+        {
+            "namespace": "django.conf.urls.i18n"
+        }
+    ],
+    "subpackages": []
+}

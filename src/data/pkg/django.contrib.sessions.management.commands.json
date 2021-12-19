@@ -1,0 +1,10 @@
+{
+    "name": "django.contrib.sessions.management.commands",
+    "docstring": "",
+    "modules": [
+        {
+            "namespace": "django.contrib.sessions.management.commands.clearsessions"
+        }
+    ],
+    "subpackages": []
+}

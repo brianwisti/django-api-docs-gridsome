@@ -1,0 +1,28 @@
+{
+    "name": "django.db.backends.sqlite3",
+    "docstring": "",
+    "modules": [
+        {
+            "namespace": "django.db.backends.sqlite3.creation"
+        },
+        {
+            "namespace": "django.db.backends.sqlite3.introspection"
+        },
+        {
+            "namespace": "django.db.backends.sqlite3.client"
+        },
+        {
+            "namespace": "django.db.backends.sqlite3.base"
+        },
+        {
+            "namespace": "django.db.backends.sqlite3.operations"
+        },
+        {
+            "namespace": "django.db.backends.sqlite3.features"
+        },
+        {
+            "namespace": "django.db.backends.sqlite3.schema"
+        }
+    ],
+    "subpackages": []
+}

@@ -1,0 +1,10 @@
+{
+    "name": "django.contrib.sitemaps.management.commands",
+    "docstring": "",
+    "modules": [
+        {
+            "namespace": "django.contrib.sitemaps.management.commands.ping_google"
+        }
+    ],
+    "subpackages": []
+}

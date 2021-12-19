@@ -1,0 +1,25 @@
+{
+    "name": "django.contrib.gis.gdal.prototypes",
+    "docstring": "",
+    "modules": [
+        {
+            "namespace": "django.contrib.gis.gdal.prototypes.generation"
+        },
+        {
+            "namespace": "django.contrib.gis.gdal.prototypes.ds"
+        },
+        {
+            "namespace": "django.contrib.gis.gdal.prototypes.errcheck"
+        },
+        {
+            "namespace": "django.contrib.gis.gdal.prototypes.raster"
+        },
+        {
+            "namespace": "django.contrib.gis.gdal.prototypes.srs"
+        },
+        {
+            "namespace": "django.contrib.gis.gdal.prototypes.geom"
+        }
+    ],
+    "subpackages": []
+}

@@ -1,0 +1,22 @@
+{
+    "name": "django.template.backends",
+    "docstring": "",
+    "modules": [
+        {
+            "namespace": "django.template.backends.base"
+        },
+        {
+            "namespace": "django.template.backends.dummy"
+        },
+        {
+            "namespace": "django.template.backends.utils"
+        },
+        {
+            "namespace": "django.template.backends.jinja2"
+        },
+        {
+            "namespace": "django.template.backends.django"
+        }
+    ],
+    "subpackages": []
+}

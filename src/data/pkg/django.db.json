@@ -1,0 +1,26 @@
+{
+    "name": "django.db",
+    "docstring": "",
+    "modules": [
+        {
+            "namespace": "django.db.transaction"
+        },
+        {
+            "namespace": "django.db.utils"
+        }
+    ],
+    "subpackages": [
+        {
+            "name": "django.db.migrations",
+            "docstring": ""
+        },
+        {
+            "name": "django.db.backends",
+            "docstring": ""
+        },
+        {
+            "name": "django.db.models",
+            "docstring": ""
+        }
+    ]
+}

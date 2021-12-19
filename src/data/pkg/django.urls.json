@@ -1,0 +1,25 @@
+{
+    "name": "django.urls",
+    "docstring": "",
+    "modules": [
+        {
+            "namespace": "django.urls.exceptions"
+        },
+        {
+            "namespace": "django.urls.base"
+        },
+        {
+            "namespace": "django.urls.converters"
+        },
+        {
+            "namespace": "django.urls.resolvers"
+        },
+        {
+            "namespace": "django.urls.utils"
+        },
+        {
+            "namespace": "django.urls.conf"
+        }
+    ],
+    "subpackages": []
+}

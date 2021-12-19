@@ -1,0 +1,19 @@
+{
+    "name": "django.contrib.messages.storage",
+    "docstring": "",
+    "modules": [
+        {
+            "namespace": "django.contrib.messages.storage.cookie"
+        },
+        {
+            "namespace": "django.contrib.messages.storage.session"
+        },
+        {
+            "namespace": "django.contrib.messages.storage.base"
+        },
+        {
+            "namespace": "django.contrib.messages.storage.fallback"
+        }
+    ],
+    "subpackages": []
+}

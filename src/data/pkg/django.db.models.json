@@ -1,0 +1,65 @@
+{
+    "name": "django.db.models",
+    "docstring": "",
+    "modules": [
+        {
+            "namespace": "django.db.models.constants"
+        },
+        {
+            "namespace": "django.db.models.query"
+        },
+        {
+            "namespace": "django.db.models.base"
+        },
+        {
+            "namespace": "django.db.models.query_utils"
+        },
+        {
+            "namespace": "django.db.models.enums"
+        },
+        {
+            "namespace": "django.db.models.indexes"
+        },
+        {
+            "namespace": "django.db.models.expressions"
+        },
+        {
+            "namespace": "django.db.models.aggregates"
+        },
+        {
+            "namespace": "django.db.models.signals"
+        },
+        {
+            "namespace": "django.db.models.deletion"
+        },
+        {
+            "namespace": "django.db.models.utils"
+        },
+        {
+            "namespace": "django.db.models.options"
+        },
+        {
+            "namespace": "django.db.models.manager"
+        },
+        {
+            "namespace": "django.db.models.constraints"
+        },
+        {
+            "namespace": "django.db.models.lookups"
+        }
+    ],
+    "subpackages": [
+        {
+            "name": "django.db.models.fields",
+            "docstring": ""
+        },
+        {
+            "name": "django.db.models.functions",
+            "docstring": ""
+        },
+        {
+            "name": "django.db.models.sql",
+            "docstring": ""
+        }
+    ]
+}

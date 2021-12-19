@@ -1,0 +1,46 @@
+{
+    "name": "django.core.checks",
+    "docstring": "",
+    "modules": [
+        {
+            "namespace": "django.core.checks.database"
+        },
+        {
+            "namespace": "django.core.checks.templates"
+        },
+        {
+            "namespace": "django.core.checks.registry"
+        },
+        {
+            "namespace": "django.core.checks.urls"
+        },
+        {
+            "namespace": "django.core.checks.messages"
+        },
+        {
+            "namespace": "django.core.checks.model_checks"
+        },
+        {
+            "namespace": "django.core.checks.files"
+        },
+        {
+            "namespace": "django.core.checks.translation"
+        },
+        {
+            "namespace": "django.core.checks.async_checks"
+        },
+        {
+            "namespace": "django.core.checks.caches"
+        }
+    ],
+    "subpackages": [
+        {
+            "name": "django.core.checks.compatibility",
+            "docstring": ""
+        },
+        {
+            "name": "django.core.checks.security",
+            "docstring": ""
+        }
+    ]
+}

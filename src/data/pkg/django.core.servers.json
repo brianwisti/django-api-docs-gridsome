@@ -1,0 +1,10 @@
+{
+    "name": "django.core.servers",
+    "docstring": "",
+    "modules": [
+        {
+            "namespace": "django.core.servers.basehttp"
+        }
+    ],
+    "subpackages": []
+}

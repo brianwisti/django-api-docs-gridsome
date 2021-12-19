@@ -1,0 +1,16 @@
+{
+    "name": "django.core.checks.security",
+    "docstring": "",
+    "modules": [
+        {
+            "namespace": "django.core.checks.security.base"
+        },
+        {
+            "namespace": "django.core.checks.security.sessions"
+        },
+        {
+            "namespace": "django.core.checks.security.csrf"
+        }
+    ],
+    "subpackages": []
+}

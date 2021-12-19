@@ -1,0 +1,10 @@
+{
+    "name": "django.contrib.contenttypes.management.commands",
+    "docstring": "",
+    "modules": [
+        {
+            "namespace": "django.contrib.contenttypes.management.commands.remove_stale_contenttypes"
+        }
+    ],
+    "subpackages": []
+}

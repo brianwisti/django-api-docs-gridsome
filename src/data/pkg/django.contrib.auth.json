@@ -1,0 +1,74 @@
+{
+    "name": "django.contrib.auth",
+    "docstring": "",
+    "modules": [
+        {
+            "namespace": "django.contrib.auth.middleware"
+        },
+        {
+            "namespace": "django.contrib.auth.tokens"
+        },
+        {
+            "namespace": "django.contrib.auth.decorators"
+        },
+        {
+            "namespace": "django.contrib.auth.password_validation"
+        },
+        {
+            "namespace": "django.contrib.auth.views"
+        },
+        {
+            "namespace": "django.contrib.auth.apps"
+        },
+        {
+            "namespace": "django.contrib.auth.signals"
+        },
+        {
+            "namespace": "django.contrib.auth.urls"
+        },
+        {
+            "namespace": "django.contrib.auth.hashers"
+        },
+        {
+            "namespace": "django.contrib.auth.admin"
+        },
+        {
+            "namespace": "django.contrib.auth.backends"
+        },
+        {
+            "namespace": "django.contrib.auth.base_user"
+        },
+        {
+            "namespace": "django.contrib.auth.forms"
+        },
+        {
+            "namespace": "django.contrib.auth.mixins"
+        },
+        {
+            "namespace": "django.contrib.auth.checks"
+        },
+        {
+            "namespace": "django.contrib.auth.validators"
+        },
+        {
+            "namespace": "django.contrib.auth.context_processors"
+        },
+        {
+            "namespace": "django.contrib.auth.models"
+        }
+    ],
+    "subpackages": [
+        {
+            "name": "django.contrib.auth.handlers",
+            "docstring": ""
+        },
+        {
+            "name": "django.contrib.auth.management",
+            "docstring": "\"\"\"\nCreates permissions for all installed apps that need permissions.\n\"\"\""
+        },
+        {
+            "name": "django.contrib.auth.migrations",
+            "docstring": ""
+        }
+    ]
+}

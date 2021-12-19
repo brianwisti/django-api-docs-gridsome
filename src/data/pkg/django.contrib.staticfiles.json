@@ -1,0 +1,39 @@
+{
+    "name": "django.contrib.staticfiles",
+    "docstring": "",
+    "modules": [
+        {
+            "namespace": "django.contrib.staticfiles.storage"
+        },
+        {
+            "namespace": "django.contrib.staticfiles.views"
+        },
+        {
+            "namespace": "django.contrib.staticfiles.apps"
+        },
+        {
+            "namespace": "django.contrib.staticfiles.testing"
+        },
+        {
+            "namespace": "django.contrib.staticfiles.urls"
+        },
+        {
+            "namespace": "django.contrib.staticfiles.handlers"
+        },
+        {
+            "namespace": "django.contrib.staticfiles.utils"
+        },
+        {
+            "namespace": "django.contrib.staticfiles.checks"
+        },
+        {
+            "namespace": "django.contrib.staticfiles.finders"
+        }
+    ],
+    "subpackages": [
+        {
+            "name": "django.contrib.staticfiles.management",
+            "docstring": ""
+        }
+    ]
+}

@@ -1,0 +1,22 @@
+{
+    "name": "django.contrib.admin.templatetags",
+    "docstring": "",
+    "modules": [
+        {
+            "namespace": "django.contrib.admin.templatetags.base"
+        },
+        {
+            "namespace": "django.contrib.admin.templatetags.log"
+        },
+        {
+            "namespace": "django.contrib.admin.templatetags.admin_modify"
+        },
+        {
+            "namespace": "django.contrib.admin.templatetags.admin_list"
+        },
+        {
+            "namespace": "django.contrib.admin.templatetags.admin_urls"
+        }
+    ],
+    "subpackages": []
+}

@@ -1,0 +1,37 @@
+{
+    "name": "django.contrib.contenttypes",
+    "docstring": "",
+    "modules": [
+        {
+            "namespace": "django.contrib.contenttypes.views"
+        },
+        {
+            "namespace": "django.contrib.contenttypes.apps"
+        },
+        {
+            "namespace": "django.contrib.contenttypes.admin"
+        },
+        {
+            "namespace": "django.contrib.contenttypes.fields"
+        },
+        {
+            "namespace": "django.contrib.contenttypes.forms"
+        },
+        {
+            "namespace": "django.contrib.contenttypes.checks"
+        },
+        {
+            "namespace": "django.contrib.contenttypes.models"
+        }
+    ],
+    "subpackages": [
+        {
+            "name": "django.contrib.contenttypes.management",
+            "docstring": ""
+        },
+        {
+            "name": "django.contrib.contenttypes.migrations",
+            "docstring": ""
+        }
+    ]
+}

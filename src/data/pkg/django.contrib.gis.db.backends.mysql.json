@@ -1,0 +1,22 @@
+{
+    "name": "django.contrib.gis.db.backends.mysql",
+    "docstring": "",
+    "modules": [
+        {
+            "namespace": "django.contrib.gis.db.backends.mysql.introspection"
+        },
+        {
+            "namespace": "django.contrib.gis.db.backends.mysql.base"
+        },
+        {
+            "namespace": "django.contrib.gis.db.backends.mysql.operations"
+        },
+        {
+            "namespace": "django.contrib.gis.db.backends.mysql.features"
+        },
+        {
+            "namespace": "django.contrib.gis.db.backends.mysql.schema"
+        }
+    ],
+    "subpackages": []
+}

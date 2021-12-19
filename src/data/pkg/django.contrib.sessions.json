@@ -1,0 +1,38 @@
+{
+    "name": "django.contrib.sessions",
+    "docstring": "",
+    "modules": [
+        {
+            "namespace": "django.contrib.sessions.exceptions"
+        },
+        {
+            "namespace": "django.contrib.sessions.middleware"
+        },
+        {
+            "namespace": "django.contrib.sessions.serializers"
+        },
+        {
+            "namespace": "django.contrib.sessions.apps"
+        },
+        {
+            "namespace": "django.contrib.sessions.models"
+        },
+        {
+            "namespace": "django.contrib.sessions.base_session"
+        }
+    ],
+    "subpackages": [
+        {
+            "name": "django.contrib.sessions.management",
+            "docstring": ""
+        },
+        {
+            "name": "django.contrib.sessions.migrations",
+            "docstring": ""
+        },
+        {
+            "name": "django.contrib.sessions.backends",
+            "docstring": ""
+        }
+    ]
+}

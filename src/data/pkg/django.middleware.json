@@ -1,0 +1,31 @@
+{
+    "name": "django.middleware",
+    "docstring": "",
+    "modules": [
+        {
+            "namespace": "django.middleware.locale"
+        },
+        {
+            "namespace": "django.middleware.gzip"
+        },
+        {
+            "namespace": "django.middleware.common"
+        },
+        {
+            "namespace": "django.middleware.security"
+        },
+        {
+            "namespace": "django.middleware.http"
+        },
+        {
+            "namespace": "django.middleware.clickjacking"
+        },
+        {
+            "namespace": "django.middleware.cache"
+        },
+        {
+            "namespace": "django.middleware.csrf"
+        }
+    ],
+    "subpackages": []
+}

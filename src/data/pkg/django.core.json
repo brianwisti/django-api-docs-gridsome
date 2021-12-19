@@ -1,0 +1,61 @@
+{
+    "name": "django.core",
+    "docstring": "",
+    "modules": [
+        {
+            "namespace": "django.core.exceptions"
+        },
+        {
+            "namespace": "django.core.signing"
+        },
+        {
+            "namespace": "django.core.signals"
+        },
+        {
+            "namespace": "django.core.wsgi"
+        },
+        {
+            "namespace": "django.core.paginator"
+        },
+        {
+            "namespace": "django.core.asgi"
+        },
+        {
+            "namespace": "django.core.validators"
+        }
+    ],
+    "subpackages": [
+        {
+            "name": "django.core.handlers",
+            "docstring": ""
+        },
+        {
+            "name": "django.core.checks",
+            "docstring": ""
+        },
+        {
+            "name": "django.core.management",
+            "docstring": ""
+        },
+        {
+            "name": "django.core.mail",
+            "docstring": "\"\"\"\nTools for sending email.\n\"\"\""
+        },
+        {
+            "name": "django.core.files",
+            "docstring": ""
+        },
+        {
+            "name": "django.core.cache",
+            "docstring": "\"\"\"\nCaching framework.\n\nThis package defines set of cache backends that all conform to a simple API.\nIn a nutshell, a cache is a set of values -- which can be any object that\nmay be pickled -- identified by string keys.  For the complete API, see\nthe abstract BaseCache class in django.core.cache.backends.base.\n\nClient code should use the `cache` variable defined here to access the default\ncache backend and look up non-default cache backends in the `caches` dict-like\nobject.\n\nSee docs/topics/cache.txt for information on the public API.\n\"\"\""
+        },
+        {
+            "name": "django.core.servers",
+            "docstring": ""
+        },
+        {
+            "name": "django.core.serializers",
+            "docstring": "\"\"\"\nInterfaces for serializing Django objects.\n\nUsage::\n\n    from django.core import serializers\n    json = serializers.serialize(\"json\", some_queryset)\n    objects = list(serializers.deserialize(\"json\", json))\n\nTo add your own serializers, use the SERIALIZATION_MODULES setting::\n\n    SERIALIZATION_MODULES = {\n        \"csv\": \"path.to.csv.serializer\",\n        \"txt\": \"path.to.txt.serializer\",\n    }\n\n\"\"\""
+        }
+    ]
+}

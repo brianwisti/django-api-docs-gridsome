@@ -1,0 +1,10 @@
+{
+    "name": "django.contrib.gis.serializers",
+    "docstring": "",
+    "modules": [
+        {
+            "namespace": "django.contrib.gis.serializers.geojson"
+        }
+    ],
+    "subpackages": []
+}

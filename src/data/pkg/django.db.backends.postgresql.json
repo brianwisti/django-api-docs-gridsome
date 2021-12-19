@@ -1,0 +1,28 @@
+{
+    "name": "django.db.backends.postgresql",
+    "docstring": "",
+    "modules": [
+        {
+            "namespace": "django.db.backends.postgresql.creation"
+        },
+        {
+            "namespace": "django.db.backends.postgresql.introspection"
+        },
+        {
+            "namespace": "django.db.backends.postgresql.client"
+        },
+        {
+            "namespace": "django.db.backends.postgresql.base"
+        },
+        {
+            "namespace": "django.db.backends.postgresql.operations"
+        },
+        {
+            "namespace": "django.db.backends.postgresql.features"
+        },
+        {
+            "namespace": "django.db.backends.postgresql.schema"
+        }
+    ],
+    "subpackages": []
+}

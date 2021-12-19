@@ -1,0 +1,138 @@
+{
+    "name": "django.utils",
+    "docstring": "",
+    "modules": [
+        {
+            "namespace": "django.utils.text"
+        },
+        {
+            "namespace": "django.utils.hashable"
+        },
+        {
+            "namespace": "django.utils.tree"
+        },
+        {
+            "namespace": "django.utils.xmlutils"
+        },
+        {
+            "namespace": "django.utils.deprecation"
+        },
+        {
+            "namespace": "django.utils.duration"
+        },
+        {
+            "namespace": "django.utils.timesince"
+        },
+        {
+            "namespace": "django.utils.safestring"
+        },
+        {
+            "namespace": "django.utils.decorators"
+        },
+        {
+            "namespace": "django.utils.log"
+        },
+        {
+            "namespace": "django.utils.functional"
+        },
+        {
+            "namespace": "django.utils.ipv6"
+        },
+        {
+            "namespace": "django.utils.inspect"
+        },
+        {
+            "namespace": "django.utils.module_loading"
+        },
+        {
+            "namespace": "django.utils.encoding"
+        },
+        {
+            "namespace": "django.utils.dateparse"
+        },
+        {
+            "namespace": "django.utils.topological_sort"
+        },
+        {
+            "namespace": "django.utils.version"
+        },
+        {
+            "namespace": "django.utils.asyncio"
+        },
+        {
+            "namespace": "django.utils.deconstruct"
+        },
+        {
+            "namespace": "django.utils.lorem_ipsum"
+        },
+        {
+            "namespace": "django.utils.crypto"
+        },
+        {
+            "namespace": "django.utils.dates"
+        },
+        {
+            "namespace": "django.utils.termcolors"
+        },
+        {
+            "namespace": "django.utils.baseconv"
+        },
+        {
+            "namespace": "django.utils.dateformat"
+        },
+        {
+            "namespace": "django.utils.archive"
+        },
+        {
+            "namespace": "django.utils.regex_helper"
+        },
+        {
+            "namespace": "django.utils.datastructures"
+        },
+        {
+            "namespace": "django.utils.http"
+        },
+        {
+            "namespace": "django.utils.timezone"
+        },
+        {
+            "namespace": "django.utils.formats"
+        },
+        {
+            "namespace": "django.utils._os"
+        },
+        {
+            "namespace": "django.utils.jslex"
+        },
+        {
+            "namespace": "django.utils.autoreload"
+        },
+        {
+            "namespace": "django.utils.connection"
+        },
+        {
+            "namespace": "django.utils.itercompat"
+        },
+        {
+            "namespace": "django.utils.feedgenerator"
+        },
+        {
+            "namespace": "django.utils.datetime_safe"
+        },
+        {
+            "namespace": "django.utils.html"
+        },
+        {
+            "namespace": "django.utils.cache"
+        },
+        {
+            "namespace": "django.utils.numberformat"
+        }
+    ],
+    "subpackages": [
+        {
+            "name": "django.utils.translation",
+            "docstring": "\"\"\"\nInternationalization support.\n\"\"\""
+        }
+    ]
+}

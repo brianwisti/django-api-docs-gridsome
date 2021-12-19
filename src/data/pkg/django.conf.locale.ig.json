@@ -1,0 +1,10 @@
+{
+    "name": "django.conf.locale.ig",
+    "docstring": "",
+    "modules": [
+        {
+            "namespace": "django.conf.locale.ig.formats"
+        }
+    ],
+    "subpackages": []
+}

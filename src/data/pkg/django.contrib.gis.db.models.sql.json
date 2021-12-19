@@ -1,0 +1,10 @@
+{
+    "name": "django.contrib.gis.db.models.sql",
+    "docstring": "",
+    "modules": [
+        {
+            "namespace": "django.contrib.gis.db.models.sql.conversion"
+        }
+    ],
+    "subpackages": []
+}

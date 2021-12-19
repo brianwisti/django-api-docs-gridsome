@@ -1,0 +1,10 @@
+{
+    "name": "django.conf.locale.zh_Hans",
+    "docstring": "",
+    "modules": [
+        {
+            "namespace": "django.conf.locale.zh_Hans.formats"
+        }
+    ],
+    "subpackages": []
+}

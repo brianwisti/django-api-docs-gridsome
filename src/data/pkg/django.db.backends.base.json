@@ -1,0 +1,31 @@
+{
+    "name": "django.db.backends.base",
+    "docstring": "",
+    "modules": [
+        {
+            "namespace": "django.db.backends.base.creation"
+        },
+        {
+            "namespace": "django.db.backends.base.introspection"
+        },
+        {
+            "namespace": "django.db.backends.base.client"
+        },
+        {
+            "namespace": "django.db.backends.base.base"
+        },
+        {
+            "namespace": "django.db.backends.base.operations"
+        },
+        {
+            "namespace": "django.db.backends.base.features"
+        },
+        {
+            "namespace": "django.db.backends.base.validation"
+        },
+        {
+            "namespace": "django.db.backends.base.schema"
+        }
+    ],
+    "subpackages": []
+}

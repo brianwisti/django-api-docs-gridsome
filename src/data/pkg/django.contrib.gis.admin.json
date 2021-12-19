@@ -1,0 +1,13 @@
+{
+    "name": "django.contrib.gis.admin",
+    "docstring": "",
+    "modules": [
+        {
+            "namespace": "django.contrib.gis.admin.widgets"
+        },
+        {
+            "namespace": "django.contrib.gis.admin.options"
+        }
+    ],
+    "subpackages": []
+}

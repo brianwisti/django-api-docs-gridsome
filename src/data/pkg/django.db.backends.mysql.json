@@ -1,0 +1,34 @@
+{
+    "name": "django.db.backends.mysql",
+    "docstring": "",
+    "modules": [
+        {
+            "namespace": "django.db.backends.mysql.creation"
+        },
+        {
+            "namespace": "django.db.backends.mysql.introspection"
+        },
+        {
+            "namespace": "django.db.backends.mysql.client"
+        },
+        {
+            "namespace": "django.db.backends.mysql.base"
+        },
+        {
+            "namespace": "django.db.backends.mysql.operations"
+        },
+        {
+            "namespace": "django.db.backends.mysql.features"
+        },
+        {
+            "namespace": "django.db.backends.mysql.validation"
+        },
+        {
+            "namespace": "django.db.backends.mysql.compiler"
+        },
+        {
+            "namespace": "django.db.backends.mysql.schema"
+        }
+    ],
+    "subpackages": []
+}

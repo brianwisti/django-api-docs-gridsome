@@ -1,0 +1,25 @@
+{
+    "name": "django.db.models.sql",
+    "docstring": "",
+    "modules": [
+        {
+            "namespace": "django.db.models.sql.constants"
+        },
+        {
+            "namespace": "django.db.models.sql.subqueries"
+        },
+        {
+            "namespace": "django.db.models.sql.query"
+        },
+        {
+            "namespace": "django.db.models.sql.where"
+        },
+        {
+            "namespace": "django.db.models.sql.datastructures"
+        },
+        {
+            "namespace": "django.db.models.sql.compiler"
+        }
+    ],
+    "subpackages": []
+}

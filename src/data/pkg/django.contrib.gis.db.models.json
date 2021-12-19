@@ -1,0 +1,27 @@
+{
+    "name": "django.contrib.gis.db.models",
+    "docstring": "",
+    "modules": [
+        {
+            "namespace": "django.contrib.gis.db.models.aggregates"
+        },
+        {
+            "namespace": "django.contrib.gis.db.models.functions"
+        },
+        {
+            "namespace": "django.contrib.gis.db.models.proxy"
+        },
+        {
+            "namespace": "django.contrib.gis.db.models.fields"
+        },
+        {
+            "namespace": "django.contrib.gis.db.models.lookups"
+        }
+    ],
+    "subpackages": [
+        {
+            "name": "django.contrib.gis.db.models.sql",
+            "docstring": ""
+        }
+    ]
+}

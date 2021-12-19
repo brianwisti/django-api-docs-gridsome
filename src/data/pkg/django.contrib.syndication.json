@@ -1,0 +1,13 @@
+{
+    "name": "django.contrib.syndication",
+    "docstring": "",
+    "modules": [
+        {
+            "namespace": "django.contrib.syndication.views"
+        },
+        {
+            "namespace": "django.contrib.syndication.apps"
+        }
+    ],
+    "subpackages": []
+}

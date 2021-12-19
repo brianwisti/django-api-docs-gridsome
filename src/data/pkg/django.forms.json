@@ -1,0 +1,31 @@
+{
+    "name": "django.forms",
+    "docstring": "\"\"\"\nDjango validation and HTML form handling.\n\"\"\"",
+    "modules": [
+        {
+            "namespace": "django.forms.widgets"
+        },
+        {
+            "namespace": "django.forms.formsets"
+        },
+        {
+            "namespace": "django.forms.utils"
+        },
+        {
+            "namespace": "django.forms.renderers"
+        },
+        {
+            "namespace": "django.forms.fields"
+        },
+        {
+            "namespace": "django.forms.forms"
+        },
+        {
+            "namespace": "django.forms.boundfield"
+        },
+        {
+            "namespace": "django.forms.models"
+        }
+    ],
+    "subpackages": []
+}

@@ -1,0 +1,62 @@
+{
+    "name": "django.contrib.admin",
+    "docstring": "",
+    "modules": [
+        {
+            "namespace": "django.contrib.admin.exceptions"
+        },
+        {
+            "namespace": "django.contrib.admin.widgets"
+        },
+        {
+            "namespace": "django.contrib.admin.sites"
+        },
+        {
+            "namespace": "django.contrib.admin.decorators"
+        },
+        {
+            "namespace": "django.contrib.admin.actions"
+        },
+        {
+            "namespace": "django.contrib.admin.tests"
+        },
+        {
+            "namespace": "django.contrib.admin.apps"
+        },
+        {
+            "namespace": "django.contrib.admin.helpers"
+        },
+        {
+            "namespace": "django.contrib.admin.utils"
+        },
+        {
+            "namespace": "django.contrib.admin.options"
+        },
+        {
+            "namespace": "django.contrib.admin.filters"
+        },
+        {
+            "namespace": "django.contrib.admin.forms"
+        },
+        {
+            "namespace": "django.contrib.admin.checks"
+        },
+        {
+            "namespace": "django.contrib.admin.models"
+        }
+    ],
+    "subpackages": [
+        {
+            "name": "django.contrib.admin.templatetags",
+            "docstring": ""
+        },
+        {
+            "name": "django.contrib.admin.migrations",
+            "docstring": ""
+        },
+        {
+            "name": "django.contrib.admin.views",
+            "docstring": ""
+        }
+    ]
+}

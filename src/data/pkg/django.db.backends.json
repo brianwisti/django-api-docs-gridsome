@@ -1,0 +1,41 @@
+{
+    "name": "django.db.backends",
+    "docstring": "",
+    "modules": [
+        {
+            "namespace": "django.db.backends.ddl_references"
+        },
+        {
+            "namespace": "django.db.backends.signals"
+        },
+        {
+            "namespace": "django.db.backends.utils"
+        }
+    ],
+    "subpackages": [
+        {
+            "name": "django.db.backends.oracle",
+            "docstring": ""
+        },
+        {
+            "name": "django.db.backends.postgresql",
+            "docstring": ""
+        },
+        {
+            "name": "django.db.backends.mysql",
+            "docstring": ""
+        },
+        {
+            "name": "django.db.backends.base",
+            "docstring": ""
+        },
+        {
+            "name": "django.db.backends.dummy",
+            "docstring": ""
+        },
+        {
+            "name": "django.db.backends.sqlite3",
+            "docstring": ""
+        }
+    ]
+}

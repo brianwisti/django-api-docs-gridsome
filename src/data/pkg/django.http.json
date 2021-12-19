@@ -1,0 +1,19 @@
+{
+    "name": "django.http",
+    "docstring": "",
+    "modules": [
+        {
+            "namespace": "django.http.cookie"
+        },
+        {
+            "namespace": "django.http.multipartparser"
+        },
+        {
+            "namespace": "django.http.response"
+        },
+        {
+            "namespace": "django.http.request"
+        }
+    ],
+    "subpackages": []
+}

@@ -1,0 +1,16 @@
+{
+    "name": "django.contrib.postgres.forms",
+    "docstring": "",
+    "modules": [
+        {
+            "namespace": "django.contrib.postgres.forms.array"
+        },
+        {
+            "namespace": "django.contrib.postgres.forms.ranges"
+        },
+        {
+            "namespace": "django.contrib.postgres.forms.hstore"
+        }
+    ],
+    "subpackages": []
+}

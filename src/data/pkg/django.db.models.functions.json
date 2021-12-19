@@ -1,0 +1,25 @@
+{
+    "name": "django.db.models.functions",
+    "docstring": "",
+    "modules": [
+        {
+            "namespace": "django.db.models.functions.text"
+        },
+        {
+            "namespace": "django.db.models.functions.window"
+        },
+        {
+            "namespace": "django.db.models.functions.comparison"
+        },
+        {
+            "namespace": "django.db.models.functions.math"
+        },
+        {
+            "namespace": "django.db.models.functions.datetime"
+        },
+        {
+            "namespace": "django.db.models.functions.mixins"
+        }
+    ],
+    "subpackages": []
+}

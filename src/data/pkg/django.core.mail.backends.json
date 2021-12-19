@@ -1,0 +1,25 @@
+{
+    "name": "django.core.mail.backends",
+    "docstring": "",
+    "modules": [
+        {
+            "namespace": "django.core.mail.backends.filebased"
+        },
+        {
+            "namespace": "django.core.mail.backends.locmem"
+        },
+        {
+            "namespace": "django.core.mail.backends.base"
+        },
+        {
+            "namespace": "django.core.mail.backends.dummy"
+        },
+        {
+            "namespace": "django.core.mail.backends.console"
+        },
+        {
+            "namespace": "django.core.mail.backends.smtp"
+        }
+    ],
+    "subpackages": []
+}

@@ -1,0 +1,10 @@
+{
+    "name": "django.conf.locale.km",
+    "docstring": "",
+    "modules": [
+        {
+            "namespace": "django.conf.locale.km.formats"
+        }
+    ],
+    "subpackages": []
+}

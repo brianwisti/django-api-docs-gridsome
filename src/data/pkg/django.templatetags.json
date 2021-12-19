@@ -1,0 +1,22 @@
+{
+    "name": "django.templatetags",
+    "docstring": "",
+    "modules": [
+        {
+            "namespace": "django.templatetags.static"
+        },
+        {
+            "namespace": "django.templatetags.i18n"
+        },
+        {
+            "namespace": "django.templatetags.tz"
+        },
+        {
+            "namespace": "django.templatetags.l10n"
+        },
+        {
+            "namespace": "django.templatetags.cache"
+        }
+    ],
+    "subpackages": []
+}

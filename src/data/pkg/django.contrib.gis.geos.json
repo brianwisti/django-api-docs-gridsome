@@ -1,0 +1,51 @@
+{
+    "name": "django.contrib.gis.geos",
+    "docstring": "\"\"\"\nThe GeoDjango GEOS module.  Please consult the GeoDjango documentation\nfor more details: https://docs.djangoproject.com/en/dev/ref/contrib/gis/geos/\n\"\"\"",
+    "modules": [
+        {
+            "namespace": "django.contrib.gis.geos.coordseq"
+        },
+        {
+            "namespace": "django.contrib.gis.geos.prepared"
+        },
+        {
+            "namespace": "django.contrib.gis.geos.factory"
+        },
+        {
+            "namespace": "django.contrib.gis.geos.point"
+        },
+        {
+            "namespace": "django.contrib.gis.geos.mutable_list"
+        },
+        {
+            "namespace": "django.contrib.gis.geos.base"
+        },
+        {
+            "namespace": "django.contrib.gis.geos.geometry"
+        },
+        {
+            "namespace": "django.contrib.gis.geos.polygon"
+        },
+        {
+            "namespace": "django.contrib.gis.geos.collections"
+        },
+        {
+            "namespace": "django.contrib.gis.geos.libgeos"
+        },
+        {
+            "namespace": "django.contrib.gis.geos.error"
+        },
+        {
+            "namespace": "django.contrib.gis.geos.io"
+        },
+        {
+            "namespace": "django.contrib.gis.geos.linestring"
+        }
+    ],
+    "subpackages": [
+        {
+            "name": "django.contrib.gis.geos.prototypes",
+            "docstring": "\"\"\"\n This module contains all of the GEOS ctypes function prototypes. Each\n prototype handles the interaction between the GEOS library and Python\n via ctypes.\n\"\"\""
+        }
+    ]
+}

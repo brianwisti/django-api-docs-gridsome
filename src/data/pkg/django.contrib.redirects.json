@@ -1,0 +1,24 @@
+{
+    "name": "django.contrib.redirects",
+    "docstring": "",
+    "modules": [
+        {
+            "namespace": "django.contrib.redirects.middleware"
+        },
+        {
+            "namespace": "django.contrib.redirects.apps"
+        },
+        {
+            "namespace": "django.contrib.redirects.admin"
+        },
+        {
+            "namespace": "django.contrib.redirects.models"
+        }
+    ],
+    "subpackages": [
+        {
+            "name": "django.contrib.redirects.migrations",
+            "docstring": ""
+        }
+    ]
+}

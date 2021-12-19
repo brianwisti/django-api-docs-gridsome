@@ -1,0 +1,16 @@
+{
+    "name": "django.contrib.staticfiles.management.commands",
+    "docstring": "",
+    "modules": [
+        {
+            "namespace": "django.contrib.staticfiles.management.commands.collectstatic"
+        },
+        {
+            "namespace": "django.contrib.staticfiles.management.commands.runserver"
+        },
+        {
+            "namespace": "django.contrib.staticfiles.management.commands.findstatic"
+        }
+    ],
+    "subpackages": []
+}

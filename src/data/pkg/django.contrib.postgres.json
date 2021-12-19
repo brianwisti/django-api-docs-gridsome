@@ -1,0 +1,56 @@
+{
+    "name": "django.contrib.postgres",
+    "docstring": "",
+    "modules": [
+        {
+            "namespace": "django.contrib.postgres.serializers"
+        },
+        {
+            "namespace": "django.contrib.postgres.indexes"
+        },
+        {
+            "namespace": "django.contrib.postgres.expressions"
+        },
+        {
+            "namespace": "django.contrib.postgres.apps"
+        },
+        {
+            "namespace": "django.contrib.postgres.signals"
+        },
+        {
+            "namespace": "django.contrib.postgres.functions"
+        },
+        {
+            "namespace": "django.contrib.postgres.search"
+        },
+        {
+            "namespace": "django.contrib.postgres.operations"
+        },
+        {
+            "namespace": "django.contrib.postgres.utils"
+        },
+        {
+            "namespace": "django.contrib.postgres.validators"
+        },
+        {
+            "namespace": "django.contrib.postgres.constraints"
+        },
+        {
+            "namespace": "django.contrib.postgres.lookups"
+        }
+    ],
+    "subpackages": [
+        {
+            "name": "django.contrib.postgres.fields",
+            "docstring": ""
+        },
+        {
+            "name": "django.contrib.postgres.forms",
+            "docstring": ""
+        },
+        {
+            "name": "django.contrib.postgres.aggregates",
+            "docstring": ""
+        }
+    ]
+}

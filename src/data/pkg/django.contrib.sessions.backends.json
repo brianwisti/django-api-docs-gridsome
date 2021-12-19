@@ -1,0 +1,25 @@
+{
+    "name": "django.contrib.sessions.backends",
+    "docstring": "",
+    "modules": [
+        {
+            "namespace": "django.contrib.sessions.backends.db"
+        },
+        {
+            "namespace": "django.contrib.sessions.backends.base"
+        },
+        {
+            "namespace": "django.contrib.sessions.backends.signed_cookies"
+        },
+        {
+            "namespace": "django.contrib.sessions.backends.cached_db"
+        },
+        {
+            "namespace": "django.contrib.sessions.backends.file"
+        },
+        {
+            "namespace": "django.contrib.sessions.backends.cache"
+        }
+    ],
+    "subpackages": []
+}

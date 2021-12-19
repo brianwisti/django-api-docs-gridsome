@@ -1,0 +1,10 @@
+{
+    "name": "django.contrib.auth.handlers",
+    "docstring": "",
+    "modules": [
+        {
+            "namespace": "django.contrib.auth.handlers.modwsgi"
+        }
+    ],
+    "subpackages": []
+}

@@ -1,0 +1,34 @@
+{
+    "name": "django.core.files",
+    "docstring": "",
+    "modules": [
+        {
+            "namespace": "django.core.files.images"
+        },
+        {
+            "namespace": "django.core.files.base"
+        },
+        {
+            "namespace": "django.core.files.storage"
+        },
+        {
+            "namespace": "django.core.files.uploadedfile"
+        },
+        {
+            "namespace": "django.core.files.locks"
+        },
+        {
+            "namespace": "django.core.files.utils"
+        },
+        {
+            "namespace": "django.core.files.move"
+        },
+        {
+            "namespace": "django.core.files.uploadhandler"
+        },
+        {
+            "namespace": "django.core.files.temp"
+        }
+    ],
+    "subpackages": []
+}

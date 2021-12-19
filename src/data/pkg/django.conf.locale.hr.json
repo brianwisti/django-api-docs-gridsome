@@ -1,0 +1,10 @@
+{
+    "name": "django.conf.locale.hr",
+    "docstring": "",
+    "modules": [
+        {
+            "namespace": "django.conf.locale.hr.formats"
+        }
+    ],
+    "subpackages": []
+}

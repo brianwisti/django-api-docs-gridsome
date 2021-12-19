@@ -1,0 +1,13 @@
+{
+    "name": "django.contrib.gis.management.commands",
+    "docstring": "",
+    "modules": [
+        {
+            "namespace": "django.contrib.gis.management.commands.ogrinspect"
+        },
+        {
+            "namespace": "django.contrib.gis.management.commands.inspectdb"
+        }
+    ],
+    "subpackages": []
+}

@@ -1,0 +1,18 @@
+{
+    "name": "django.contrib.sitemaps",
+    "docstring": "",
+    "modules": [
+        {
+            "namespace": "django.contrib.sitemaps.views"
+        },
+        {
+            "namespace": "django.contrib.sitemaps.apps"
+        }
+    ],
+    "subpackages": [
+        {
+            "name": "django.contrib.sitemaps.management",
+            "docstring": ""
+        }
+    ]
+}

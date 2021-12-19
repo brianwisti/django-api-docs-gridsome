@@ -1,0 +1,79 @@
+{
+    "name": "django.core.management.commands",
+    "docstring": "",
+    "modules": [
+        {
+            "namespace": "django.core.management.commands.dbshell"
+        },
+        {
+            "namespace": "django.core.management.commands.diffsettings"
+        },
+        {
+            "namespace": "django.core.management.commands.showmigrations"
+        },
+        {
+            "namespace": "django.core.management.commands.createcachetable"
+        },
+        {
+            "namespace": "django.core.management.commands.sqlflush"
+        },
+        {
+            "namespace": "django.core.management.commands.flush"
+        },
+        {
+            "namespace": "django.core.management.commands.compilemessages"
+        },
+        {
+            "namespace": "django.core.management.commands.startapp"
+        },
+        {
+            "namespace": "django.core.management.commands.makemessages"
+        },
+        {
+            "namespace": "django.core.management.commands.dumpdata"
+        },
+        {
+            "namespace": "django.core.management.commands.sqlsequencereset"
+        },
+        {
+            "namespace": "django.core.management.commands.test"
+        },
+        {
+            "namespace": "django.core.management.commands.shell"
+        },
+        {
+            "namespace": "django.core.management.commands.startproject"
+        },
+        {
+            "namespace": "django.core.management.commands.makemigrations"
+        },
+        {
+            "namespace": "django.core.management.commands.runserver"
+        },
+        {
+            "namespace": "django.core.management.commands.migrate"
+        },
+        {
+            "namespace": "django.core.management.commands.squashmigrations"
+        },
+        {
+            "namespace": "django.core.management.commands.sqlmigrate"
+        },
+        {
+            "namespace": "django.core.management.commands.testserver"
+        },
+        {
+            "namespace": "django.core.management.commands.inspectdb"
+        },
+        {
+            "namespace": "django.core.management.commands.loaddata"
+        },
+        {
+            "namespace": "django.core.management.commands.sendtestemail"
+        },
+        {
+            "namespace": "django.core.management.commands.check"
+        }
+    ],
+    "subpackages": []
+}

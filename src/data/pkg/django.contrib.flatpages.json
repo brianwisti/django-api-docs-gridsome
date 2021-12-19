@@ -1,0 +1,40 @@
+{
+    "name": "django.contrib.flatpages",
+    "docstring": "",
+    "modules": [
+        {
+            "namespace": "django.contrib.flatpages.middleware"
+        },
+        {
+            "namespace": "django.contrib.flatpages.views"
+        },
+        {
+            "namespace": "django.contrib.flatpages.apps"
+        },
+        {
+            "namespace": "django.contrib.flatpages.urls"
+        },
+        {
+            "namespace": "django.contrib.flatpages.sitemaps"
+        },
+        {
+            "namespace": "django.contrib.flatpages.admin"
+        },
+        {
+            "namespace": "django.contrib.flatpages.forms"
+        },
+        {
+            "namespace": "django.contrib.flatpages.models"
+        }
+    ],
+    "subpackages": [
+        {
+            "name": "django.contrib.flatpages.templatetags",
+            "docstring": ""
+        },
+        {
+            "name": "django.contrib.flatpages.migrations",
+            "docstring": ""
+        }
+    ]
+}

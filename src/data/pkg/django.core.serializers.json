@@ -1,0 +1,25 @@
+{
+    "name": "django.core.serializers",
+    "docstring": "\"\"\"\nInterfaces for serializing Django objects.\n\nUsage::\n\n    from django.core import serializers\n    json = serializers.serialize(\"json\", some_queryset)\n    objects = list(serializers.deserialize(\"json\", json))\n\nTo add your own serializers, use the SERIALIZATION_MODULES setting::\n\n    SERIALIZATION_MODULES = {\n        \"csv\": \"path.to.csv.serializer\",\n        \"txt\": \"path.to.txt.serializer\",\n    }\n\n\"\"\"",
+    "modules": [
+        {
+            "namespace": "django.core.serializers.base"
+        },
+        {
+            "namespace": "django.core.serializers.xml_serializer"
+        },
+        {
+            "namespace": "django.core.serializers.jsonl"
+        },
+        {
+            "namespace": "django.core.serializers.json"
+        },
+        {
+            "namespace": "django.core.serializers.pyyaml"
+        },
+        {
+            "namespace": "django.core.serializers.python"
+        }
+    ],
+    "subpackages": []
+}

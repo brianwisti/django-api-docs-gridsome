@@ -1,0 +1,34 @@
+{
+    "name": "django.contrib.gis.db.backends.postgis",
+    "docstring": "",
+    "modules": [
+        {
+            "namespace": "django.contrib.gis.db.backends.postgis.pgraster"
+        },
+        {
+            "namespace": "django.contrib.gis.db.backends.postgis.introspection"
+        },
+        {
+            "namespace": "django.contrib.gis.db.backends.postgis.base"
+        },
+        {
+            "namespace": "django.contrib.gis.db.backends.postgis.const"
+        },
+        {
+            "namespace": "django.contrib.gis.db.backends.postgis.adapter"
+        },
+        {
+            "namespace": "django.contrib.gis.db.backends.postgis.operations"
+        },
+        {
+            "namespace": "django.contrib.gis.db.backends.postgis.features"
+        },
+        {
+            "namespace": "django.contrib.gis.db.backends.postgis.schema"
+        },
+        {
+            "namespace": "django.contrib.gis.db.backends.postgis.models"
+        }
+    ],
+    "subpackages": []
+}

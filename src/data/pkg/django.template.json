@@ -1,0 +1,58 @@
+{
+    "name": "django.template",
+    "docstring": "\"\"\"\nDjango's support for templates.\n\nThe django.template namespace contains two independent subsystems:\n\n1. Multiple Template Engines: support for pluggable template backends,\n   built-in backends and backend-independent APIs\n2. Django Template Language: Django's own template engine, including its\n   built-in loaders, context processors, tags and filters.\n\nIdeally these subsystems would be implemented in distinct packages. However\nkeeping them together made the implementation of Multiple Template Engines\nless disruptive .\n\nHere's a breakdown of which modules belong to which subsystem.\n\nMultiple Template Engines:\n\n- django.template.backends.*\n- django.template.loader\n- django.template.response\n\nDjango Template Language:\n\n- django.template.base\n- django.template.context\n- django.template.context_processors\n- django.template.loaders.*\n- django.template.debug\n- django.template.defaultfilters\n- django.template.defaulttags\n- django.template.engine\n- django.template.loader_tags\n- django.template.smartif\n\nShared:\n\n- django.template.utils\n\n\"\"\"",
+    "modules": [
+        {
+            "namespace": "django.template.loader"
+        },
+        {
+            "namespace": "django.template.exceptions"
+        },
+        {
+            "namespace": "django.template.engine"
+        },
+        {
+            "namespace": "django.template.context"
+        },
+        {
+            "namespace": "django.template.base"
+        },
+        {
+            "namespace": "django.template.library"
+        },
+        {
+            "namespace": "django.template.defaulttags"
+        },
+        {
+            "namespace": "django.template.response"
+        },
+        {
+            "namespace": "django.template.utils"
+        },
+        {
+            "namespace": "django.template.smartif"
+        },
+        {
+            "namespace": "django.template.autoreload"
+        },
+        {
+            "namespace": "django.template.loader_tags"
+        },
+        {
+            "namespace": "django.template.context_processors"
+        },
+        {
+            "namespace": "django.template.defaultfilters"
+        }
+    ],
+    "subpackages": [
+        {
+            "name": "django.template.loaders",
+            "docstring": ""
+        },
+        {
+            "name": "django.template.backends",
+            "docstring": ""
+        }
+    ]
+}

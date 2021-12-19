@@ -1,0 +1,22 @@
+{
+    "name": "django.template.loaders",
+    "docstring": "",
+    "modules": [
+        {
+            "namespace": "django.template.loaders.locmem"
+        },
+        {
+            "namespace": "django.template.loaders.base"
+        },
+        {
+            "namespace": "django.template.loaders.app_directories"
+        },
+        {
+            "namespace": "django.template.loaders.filesystem"
+        },
+        {
+            "namespace": "django.template.loaders.cached"
+        }
+    ],
+    "subpackages": []
+}

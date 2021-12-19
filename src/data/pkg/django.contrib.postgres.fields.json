@@ -1,0 +1,25 @@
+{
+    "name": "django.contrib.postgres.fields",
+    "docstring": "",
+    "modules": [
+        {
+            "namespace": "django.contrib.postgres.fields.citext"
+        },
+        {
+            "namespace": "django.contrib.postgres.fields.array"
+        },
+        {
+            "namespace": "django.contrib.postgres.fields.ranges"
+        },
+        {
+            "namespace": "django.contrib.postgres.fields.utils"
+        },
+        {
+            "namespace": "django.contrib.postgres.fields.jsonb"
+        },
+        {
+            "namespace": "django.contrib.postgres.fields.hstore"
+        }
+    ],
+    "subpackages": []
+}

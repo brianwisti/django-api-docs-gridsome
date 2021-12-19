@@ -1,0 +1,31 @@
+{
+    "name": "django.views.decorators",
+    "docstring": "",
+    "modules": [
+        {
+            "namespace": "django.views.decorators.gzip"
+        },
+        {
+            "namespace": "django.views.decorators.vary"
+        },
+        {
+            "namespace": "django.views.decorators.common"
+        },
+        {
+            "namespace": "django.views.decorators.http"
+        },
+        {
+            "namespace": "django.views.decorators.debug"
+        },
+        {
+            "namespace": "django.views.decorators.clickjacking"
+        },
+        {
+            "namespace": "django.views.decorators.cache"
+        },
+        {
+            "namespace": "django.views.decorators.csrf"
+        }
+    ],
+    "subpackages": []
+}

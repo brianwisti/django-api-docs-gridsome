@@ -1,0 +1,10 @@
+{
+    "name": "django.conf.locale.uk",
+    "docstring": "",
+    "modules": [
+        {
+            "namespace": "django.conf.locale.uk.formats"
+        }
+    ],
+    "subpackages": []
+}

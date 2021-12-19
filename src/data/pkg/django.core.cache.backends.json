@@ -1,0 +1,28 @@
+{
+    "name": "django.core.cache.backends",
+    "docstring": "",
+    "modules": [
+        {
+            "namespace": "django.core.cache.backends.filebased"
+        },
+        {
+            "namespace": "django.core.cache.backends.db"
+        },
+        {
+            "namespace": "django.core.cache.backends.redis"
+        },
+        {
+            "namespace": "django.core.cache.backends.locmem"
+        },
+        {
+            "namespace": "django.core.cache.backends.base"
+        },
+        {
+            "namespace": "django.core.cache.backends.dummy"
+        },
+        {
+            "namespace": "django.core.cache.backends.memcached"
+        }
+    ],
+    "subpackages": []
+}

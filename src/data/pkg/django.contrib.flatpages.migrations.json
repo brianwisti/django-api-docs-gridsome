@@ -1,0 +1,10 @@
+{
+    "name": "django.contrib.flatpages.migrations",
+    "docstring": "",
+    "modules": [
+        {
+            "namespace": "django.contrib.flatpages.migrations.0001_initial"
+        }
+    ],
+    "subpackages": []
+}

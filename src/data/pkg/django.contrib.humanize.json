@@ -1,0 +1,15 @@
+{
+    "name": "django.contrib.humanize",
+    "docstring": "",
+    "modules": [
+        {
+            "namespace": "django.contrib.humanize.apps"
+        }
+    ],
+    "subpackages": [
+        {
+            "name": "django.contrib.humanize.templatetags",
+            "docstring": ""
+        }
+    ]
+}

@@ -1,0 +1,19 @@
+{
+    "name": "django.core.handlers",
+    "docstring": "",
+    "modules": [
+        {
+            "namespace": "django.core.handlers.base"
+        },
+        {
+            "namespace": "django.core.handlers.wsgi"
+        },
+        {
+            "namespace": "django.core.handlers.exception"
+        },
+        {
+            "namespace": "django.core.handlers.asgi"
+        }
+    ],
+    "subpackages": []
+}
