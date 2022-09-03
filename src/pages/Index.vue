@@ -6,24 +6,13 @@
       processed by Parso.
     </p>
     <p>I gotta be me, I guess.</p>
-    <h2>Django Modules</h2>
-    <ModuleSummary
-      v-for="edge in $page.modules.edges"
-      v-bind:key="edge.node.id"
-      v-bind:module="edge.node"
-    />
   </Layout>
 </template>
 
 <script>
-import ModuleSummary from "~/components/ModuleSummary.vue";
-
 export default {
   metaInfo: {
     title: "Hello, world!",
-  },
-  components: {
-    ModuleSummary,
   },
 };
 </script>
@@ -33,18 +22,3 @@ export default {
   margin-right: 1rem;
 }
 </style>
-
-<page-query>
-query {
-  modules: allDjangoModule(sortBy: "module", order: ASC) {
-    edges {
-      node {
-        id
-        module
-        docstring
-        path
-      }
-    }
-  }
-}
-</page-query>

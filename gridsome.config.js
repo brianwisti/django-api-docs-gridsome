@@ -8,11 +8,11 @@ module.exports = {
   siteName: 'Django API Docs',
   plugins: [],
   templates: {
-    DjangoModule: [
-      {
-        path: '/module/:module',
-        component: './src/templates/DjangoModule.vue',
-      },
-    ]
+    // DjangoModule: [
+    //   {
+    //     path: '/module/:module',
+    //     component: './src/templates/DjangoModule.vue',
+    //   },
+    // ]
   }
 }
